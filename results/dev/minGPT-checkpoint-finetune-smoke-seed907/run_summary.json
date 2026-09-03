@@ -1,0 +1,68 @@
+{
+  "data_policy": "All numeric values were emitted by this real training/generation invocation; no article value was loaded.",
+  "repo": "/home/yi/paper-reproductions/bundled-source-smoke.FxFjmk/vendor/PolyGen-1.0.0",
+  "task": "conditional",
+  "seed": 907,
+  "training": {
+    "initialization": "checkpoint",
+    "starting_checkpoint": "/home/yi/paper-reproductions/bundled-source-smoke.FxFjmk/vendor/PolyGen-1.0.0/minGPT/ckpts/10000.pt",
+    "starting_checkpoint_sha256": "8fe47744b2edb197d6e7b6ec95b42be714603cdeba20bc491292514cc6438d19",
+    "max_iters": 10,
+    "batch_size": 8,
+    "num_workers": 0,
+    "learning_rate": 5e-05,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.1,
+    "grad_norm_clip": 1.0,
+    "elapsed_seconds": 0.42676281929016113,
+    "train_rows": 9126,
+    "validation_rows": 2282,
+    "loss_rows": 10,
+    "first_train_loss": 0.14837101101875305,
+    "last_train_loss": 0.16325823962688446,
+    "minimum_train_loss": 0.14837101101875305,
+    "first_validation_loss": 0.19536781311035156,
+    "last_validation_loss": 0.1517646759748459,
+    "minimum_validation_loss": 0.1352018564939499
+  },
+  "model": {
+    "model_type": "gpt-nano",
+    "block_size": 64,
+    "label_length": 5,
+    "vocab_size": 591
+  },
+  "generation": {
+    "num_samples": 100,
+    "nonempty_samples": 100,
+    "unique_nonempty_samples": 97,
+    "temperature": 1.0,
+    "elapsed_seconds": 0.2612011432647705
+  },
+  "metrics": {
+    "uniqueness": 0.97,
+    "novelty": 0.65,
+    "validity": 0.95,
+    "synthesizability": 1.0,
+    "similarity": 0.25981651498989794,
+    "diversity": 0.683870044031783
+  },
+  "evaluation": {
+    "completed_without_exception": true,
+    "notes": [],
+    "error_file": null
+  },
+  "checkpoint": "/home/yi/paper-reproductions/bundled-source-smoke.FxFjmk/results/minGPT-checkpoint-finetune-smoke-seed907/checkpoints/final.pt",
+  "artifacts": {
+    "runner_sha256": "cdb373efcea448dcc0b6270c8e9d8af8fe0f8585f995b4e0b777b26fe4d7bdf6",
+    "dataset_sha256": "fac9c1a260ac8b6d3bafb3f6d47d6287d86e9e513bfb90f43be08368af55a7c4",
+    "checkpoint_sha256": "928f5df335ad50276d7e5bb2fc607b3c4ceebc1b3d1c234789e7cef2a6b436ab",
+    "loss_history_sha256": "5d77b6d5362f7216f7b7ce4a25dd68e6aaa12eead61e5349a706a371340f0c48",
+    "samples_sha256": "4e6a6d9e4ca1b4c17ad0b95e834fd6fac1d504bf2da02223bd04c71e0b6f1bbd"
+  },
+  "torch_version": "2.2.0",
+  "cuda_available": true,
+  "cuda_device": "NVIDIA A10G"
+}

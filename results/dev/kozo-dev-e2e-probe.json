@@ -1,0 +1,233 @@
+{
+  "activity_users": {
+    "backend_count": 14,
+    "expected_backend_matches": [
+      {
+        "id": "yi_cao",
+        "name": "Yi Cao"
+      }
+    ],
+    "expected_gateway_matches": [
+      {
+        "id": "yi_cao",
+        "name": "Yi Cao"
+      }
+    ],
+    "gateway_count": 14,
+    "responses_equal": true
+  },
+  "all_checks_passed": true,
+  "core_checks": {
+    "backend_healthy": true,
+    "expected_user_present": true,
+    "gateway_healthy": true,
+    "gateway_matches_backend_health": true,
+    "gateway_matches_backend_users": true,
+    "search_reported_no_error": true,
+    "search_returned_results": true,
+    "structure_contains_atom_site_fields": true,
+    "structure_payload_present": true
+  },
+  "core_checks_passed": true,
+  "database_search": {
+    "content_type": "application/json",
+    "first_result": {
+      "energy": -5590.5205078125,
+      "formula": "Fe2Li2O8P2",
+      "nsites": 14,
+      "original_id": 11723,
+      "source": 6
+    },
+    "http_status": 200,
+    "reported_error": null,
+    "reported_total_count": 15493,
+    "returned_count": 50
+  },
+  "health": {
+    "backend_body": {
+      "cache_available": false,
+      "gpu_enabled": true,
+      "packmol_available": true,
+      "status": "healthy"
+    },
+    "backend_content_type": "application/json",
+    "backend_http_status": 200,
+    "bodies_equal": true,
+    "gateway_body": {
+      "cache_available": false,
+      "gpu_enabled": true,
+      "packmol_available": true,
+      "status": "healthy"
+    },
+    "gateway_content_type": "application/json",
+    "gateway_http_status": 200
+  },
+  "launcher_registry": {
+    "content_type": "application/json",
+    "entry_count": 7,
+    "entry_health": [
+      {
+        "body": {
+          "cache_available": false,
+          "gpu_enabled": true,
+          "packmol_available": true,
+          "status": "healthy"
+        },
+        "content_type": "application/json",
+        "error_fields": {},
+        "health_path": "/health",
+        "healthy": true,
+        "http_status": 200,
+        "id": null,
+        "name": "KO-POCHI",
+        "reachable": true,
+        "status_fields": {
+          "status": "healthy"
+        }
+      },
+      {
+        "body": {
+          "cache_available": false,
+          "gpu_enabled": true,
+          "packmol_available": true,
+          "status": "healthy"
+        },
+        "content_type": "application/json",
+        "error_fields": {},
+        "health_path": "/health",
+        "healthy": true,
+        "http_status": 200,
+        "id": null,
+        "name": "CL-POCHI",
+        "reachable": true,
+        "status_fields": {
+          "status": "healthy"
+        }
+      },
+      {
+        "body": {
+          "cache_available": false,
+          "gpu_enabled": true,
+          "packmol_available": true,
+          "status": "healthy"
+        },
+        "content_type": "application/json",
+        "error_fields": {},
+        "health_path": "/health",
+        "healthy": true,
+        "http_status": 200,
+        "id": null,
+        "name": "SO-POCHI",
+        "reachable": true,
+        "status_fields": {
+          "status": "healthy"
+        }
+      },
+      {
+        "body": {
+          "cache_available": false,
+          "gpu_enabled": true,
+          "packmol_available": true,
+          "status": "healthy"
+        },
+        "content_type": "application/json",
+        "error_fields": {},
+        "health_path": "/health",
+        "healthy": true,
+        "http_status": 200,
+        "id": null,
+        "name": "PI-POCHI",
+        "reachable": true,
+        "status_fields": {
+          "status": "healthy"
+        }
+      },
+      {
+        "body": {
+          "packmol": true,
+          "status": "ok"
+        },
+        "content_type": "application/json",
+        "error_fields": {},
+        "health_path": "/build-api/health",
+        "healthy": true,
+        "http_status": 200,
+        "id": null,
+        "name": "BI-POCHI",
+        "reachable": true,
+        "status_fields": {
+          "status": "ok"
+        }
+      },
+      {
+        "body": {
+          "dry_run": false,
+          "service": "shoshin-api",
+          "status": "ok"
+        },
+        "content_type": "application/json",
+        "error_fields": {},
+        "health_path": "/arc-api/health",
+        "healthy": true,
+        "http_status": 200,
+        "id": null,
+        "name": "SS-POCHI",
+        "reachable": true,
+        "status_fields": {
+          "status": "ok"
+        }
+      },
+      {
+        "body": {
+          "mcpError": null,
+          "mcpServerStatus": "operational",
+          "status": "ok",
+          "usingMatlantis": true
+        },
+        "content_type": "application/json",
+        "error_fields": {},
+        "health_path": "/arc-md-api/api/md/health",
+        "healthy": true,
+        "http_status": 200,
+        "id": null,
+        "name": "MD-POCHI",
+        "reachable": true,
+        "status_fields": {
+          "mcpServerStatus": "operational",
+          "status": "ok"
+        }
+      }
+    ],
+    "health_urls": [
+      "/health",
+      "/health",
+      "/health",
+      "/health",
+      "/build-api/health",
+      "/arc-api/health",
+      "/arc-md-api/api/md/health"
+    ],
+    "http_status": 200
+  },
+  "probe_policy": "All values in this record were observed from live HTTP responses by scripts/probe_kozo_dev.py.",
+  "registry_checks": {
+    "every_registry_entry_healthy": true,
+    "every_registry_health_reachable": true
+  },
+  "request": {
+    "backend": "http://127.0.0.1:8010",
+    "composition": "Li-Fe-P-O",
+    "expected_user_id": "yi_cao",
+    "gateway": "http://127.0.0.1:8090",
+    "health_timeout_seconds": 5,
+    "timeout_seconds": 120
+  },
+  "structure_fetch": {
+    "bytes": 1066,
+    "contains_atom_site_fields": true,
+    "contains_data_block": true,
+    "content_type": "text/plain; charset=utf-8",
+    "http_status": 200,
+    "line_count": 38
+  }
+}

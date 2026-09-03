@@ -1,0 +1,119 @@
+--- a/minGPT/trainer_custom.py
++++ b/minGPT/trainer_custom.py
+@@ -110,7 +110,7 @@
+             batch_val = [t.to(self.device) for t in batch_val]
+ 
+             x, y = batch
+-            x_val, y_val = batch
++            x_val, y_val = batch_val
+ 
+             # forward the model
+             logits, self.loss = model(x, y)
+--- a/minGPT/pipeline.py
++++ b/minGPT/pipeline.py
+@@ -67,13 +67,14 @@
+         C.model = None
+         C.call_back = None
+         C.pretrain = None
++        C.ckpt_path = None
+         return C
+     
+     @staticmethod
+     def get_default_generate_config():
+         C = CN()
+         # number of the samples to generate
+-        C.ckpts_path = None
++        C.ckpt_path = None
+         C.num_samples = 100
+         # tempareture of GPT2 (higher values lead to higher diversity and lower validity)
+         C.temperature = 1.0
+@@ -151,10 +152,14 @@
+         raw = []
+         for i in range(self.num_samples):
+             out = (self.tokenizer.decode(y[i].squeeze()))
+-            if "[CLS]" in out:
+-                start = out.index("[CLS]")
+-            if "[SEP]" in out:
+-                end = out.index("[SEP]")
++            if "[CLS]" not in out or "[SEP]" not in out:
++                generated_out.append("")
++                continue
++            start = out.index("[CLS]")
++            end = out.find("[SEP]", start + len("[CLS]"))
++            if end < 0:
++                generated_out.append("")
++                continue
+             out = out[start + len("[CLS]") + 1: end]
+             
+             out = str(out).strip().replace(" ", "")
+@@ -206,4 +211,3 @@
+ 
+         
+         return uniqueness, novelty, validity, synthesibility, similarity, diversity
+-
+--- a/diffusion1D/metrics.py
++++ b/diffusion1D/metrics.py
+@@ -13,6 +13,8 @@
+ import sys
+ from io import StringIO
+ import math
++import os
++import json
+ import os.path as op
+ import pickle
+ from collections import defaultdict
+--- a/diffusionLM/metrics.py
++++ b/diffusionLM/metrics.py
+@@ -7,6 +7,7 @@
+ from rdkit import Chem
+ import sys
+ from deepchem.feat.smiles_tokenizer import SmilesTokenizer
+ import os
++import json
+ 
+ import sys
+ from io import StringIO
+--- a/diffusion1D/pipeline.py
++++ b/diffusion1D/pipeline.py
+@@ -5,7 +5,7 @@
+ from denoising_diffusion_pytorch import Unet1D, GaussianDiffusion1D, Trainer1D
+ from denoising_diffusion_pytorch.utils import CfgNode as CN
+ from denoising_diffusion_pytorch.utils import token2smiles
+-from metrics import *
++from diffusion1D.metrics import *
+ import pandas as pd
+ from deepchem.feat.smiles_tokenizer import SmilesTokenizer
+ from rdkit import Chem
+@@ -92,7 +92,7 @@
+ 
+         self.block_size = model_config.block_size
+         self.vocab_size = model_config.vocab_size
+-        self.device = "cuda"
++        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+ 
+     
+     def data_preprocessing(self, data_config):
+@@ -147,6 +147,7 @@
+     def train(self, train_config):
+         
+         self.model.to(self.device)
++        use_cuda = self.device.type == "cuda"
+         self.trainer = Trainer1D(
+             self.diffusion,
+             train_dataset = self.train_dataset,
+@@ -156,8 +157,8 @@
+             train_num_steps = train_config.num_steps,         # total training steps
+             gradient_accumulate_every = train_config.gradient_accumulate_every,    # gradient accumulation steps
+             ema_decay = train_config.ema_decay,                # exponential moving average decay
+-            amp = True,                       # turn on mixed precision
+-            fp16 = True, 
++            amp = use_cuda,
++            fp16 = use_cuda,
+             results_folder = train_config.ckpts_path
+         )
+ 
+@@ -253,4 +254,3 @@
+         
+         return uniqueness, novelty, validity, synthesibility, similarity, diversity
+ 
+-

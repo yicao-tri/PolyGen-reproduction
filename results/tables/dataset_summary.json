@@ -1,0 +1,173 @@
+{
+  "binary_training_data": {
+    "conflicting_label_count": 0,
+    "row_class_counts": {
+      "0": 5704,
+      "1": 5704
+    },
+    "rows": 11408,
+    "unique_class_conductivity_s_per_cm": {
+      "0": {
+        "count": 5704,
+        "maximum": 0.000123409095164,
+        "mean": 5.6286562964757544e-05,
+        "median": 5.2651345275507303e-05,
+        "minimum": 6.9170087078404095e-06,
+        "population_standard_deviation": 2.383561529793121e-05,
+        "q1": 3.826328800883335e-05,
+        "q3": 7.050892685646961e-05
+      },
+      "1": {
+        "count": 320,
+        "maximum": 0.0005065615516805,
+        "mean": 0.00016594266581655532,
+        "median": 0.00015056804816754999,
+        "minimum": 0.0001234217947219,
+        "population_standard_deviation": 4.9231222726870804e-05,
+        "q1": 0.00013213677779765,
+        "q3": 0.000181729054314125
+      }
+    },
+    "unique_class_counts": {
+      "0": 5704,
+      "1": 320
+    },
+    "unique_mol_smiles": 6024,
+    "unmatched_to_release_training_count": 0
+  },
+  "cross_checks": {
+    "training_row_counts_equal": true,
+    "training_smiles_sets_equal": true
+  },
+  "data_policy": "Every scientific value in this file was computed from machine-readable input files by scripts/reproduce_actual_data.py; no PDF value was used.",
+  "full_training_data": {
+    "conductivity_s_per_cm": {
+      "count": 6024,
+      "maximum": 0.0005065615516805,
+      "mean": 6.211158834865119e-05,
+      "median": 5.42846879185799e-05,
+      "minimum": 6.9170087078404095e-06,
+      "population_standard_deviation": 3.565844965467433e-05,
+      "q1": 3.9083649685264854e-05,
+      "q3": 7.480164157020085e-05
+    },
+    "rows": 6024,
+    "transference_number": {
+      "count": 6024,
+      "maximum": 0.821687902605073,
+      "mean": 0.05410172553439282,
+      "median": 0.10569125908079549,
+      "minimum": -1.64186423613927,
+      "population_standard_deviation": 0.28651336986157433,
+      "q1": -0.08923697888330984,
+      "q3": 0.25107995894929247
+    },
+    "unique_mol_smiles": 6024
+  },
+  "generated_polymers_two_iterations": {
+    "completed_rows": 64,
+    "conductivity_s_per_cm": {
+      "count": 64,
+      "maximum": 0.00204128486,
+      "mean": 0.0007986158396872396,
+      "median": 0.00076495432525,
+      "minimum": 0.0,
+      "population_standard_deviation": 0.0004665200573566046,
+      "q1": 0.00042622916983333335,
+      "q3": 0.001059207439
+    },
+    "failed_rows": 37,
+    "iterations": [
+      {
+        "completed_rows": 33,
+        "conductivity_maximum_s_per_cm": 0.00204128486,
+        "conductivity_mean_s_per_cm": 0.0007533444343934344,
+        "conductivity_median_s_per_cm": 0.0007014564666666667,
+        "conductivity_minimum_s_per_cm": 0.0,
+        "failed_rows": 17,
+        "iteration": "1",
+        "rows": 50,
+        "transference_maximum": 2.39207715,
+        "transference_mean": 0.45216706255625,
+        "transference_median": 0.416883393,
+        "transference_minimum": -0.1131160422,
+        "unique_monomer_smiles": 49
+      },
+      {
+        "completed_rows": 31,
+        "conductivity_maximum_s_per_cm": 0.001605377875,
+        "conductivity_mean_s_per_cm": 0.0008468079808064516,
+        "conductivity_median_s_per_cm": 0.000896784244,
+        "conductivity_minimum_s_per_cm": 0.0001358829425,
+        "failed_rows": 20,
+        "iteration": "2",
+        "rows": 51,
+        "transference_maximum": 0.73360395,
+        "transference_mean": 0.40120533271451614,
+        "transference_median": 0.41267905000000005,
+        "transference_minimum": 0.0736925744,
+        "unique_monomer_smiles": 51
+      }
+    ],
+    "rows": 101,
+    "transference_number": {
+      "count": 63,
+      "maximum": 2.39207715,
+      "mean": 0.4270906558087302,
+      "median": 0.4158132425,
+      "minimum": -0.1131160422,
+      "population_standard_deviation": 0.2778174116267786,
+      "q1": 0.36294048125,
+      "q3": 0.4564652685
+    },
+    "unique_monomer_smiles": 100
+  },
+  "release_training_data": {
+    "conductivity_s_per_cm": {
+      "count": 6024,
+      "maximum": 0.0005065615516805,
+      "mean": 6.211158834865119e-05,
+      "median": 5.42846879185799e-05,
+      "minimum": 6.9170087078404095e-06,
+      "population_standard_deviation": 3.565844965467433e-05,
+      "q1": 3.9083649685264854e-05,
+      "q3": 7.480164157020085e-05
+    },
+    "rows": 6024,
+    "unique_mol_smiles": 6024
+  },
+  "validation_md": {
+    "attempt_rows": 250,
+    "candidate_groups": 50,
+    "candidate_groups_with_completed_replicas": 46,
+    "candidate_groups_without_completed_replicas": 4,
+    "candidate_mean_conductivity_s_per_cm": {
+      "count": 46,
+      "maximum": 0.0011327942249999997,
+      "mean": 0.0005339433966811594,
+      "median": 0.000483779223,
+      "minimum": 0.00031433849599999997,
+      "population_standard_deviation": 0.0001981709564976778,
+      "q1": 0.00040127214925,
+      "q3": 0.00055740109875
+    },
+    "candidate_means_above_release_training_maximum": 18,
+    "completed_rows": 206,
+    "failure_reason_counts": {
+      "True: unavailable force field parameter": 20,
+      "True: unstable configuration": 24
+    },
+    "incomplete_rows": 44,
+    "release_training_maximum_s_per_cm": 0.0005065615516805,
+    "replica_conductivity_s_per_cm": {
+      "count": 206,
+      "maximum": 0.0014131004999999993,
+      "mean": 0.0005220867795631067,
+      "median": 0.00048552059000000005,
+      "minimum": 0.00021681200000000004,
+      "population_standard_deviation": 0.0002075110457541931,
+      "q1": 0.00037736476499999986,
+      "q3": 0.0005887058999999994
+    }
+  }
+}

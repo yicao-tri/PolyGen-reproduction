@@ -1,0 +1,251 @@
+,monomer_smiles,simulation_name,ionic_conductivity(S/cm),incomplete
+0,CN(COCCOC(=O)[Au])CCOCCO[Cu],simulation_0_rep1,0.0006902633000000002,False
+1,CN(COCCOC(=O)[Au])CCOCCO[Cu],simulation_0_rep2,0.0005848107399999998,False
+2,CN(COCCOC(=O)[Au])CCOCCO[Cu],simulation_0_rep3,0.0004897993599999999,False
+3,CN(COCCOC(=O)[Au])CCOCCO[Cu],simulation_0_rep4,0.0003386856000000001,False
+4,CN(COCCOC(=O)[Au])CCOCCO[Cu],simulation_0_rep5,0.0006489691399999992,False
+5,N(CCOCCOC(=O)[Au])CCOCCO[Cu],simulation_10_rep1,0.0005497688000000002,False
+6,N(CCOCCOC(=O)[Au])CCOCCO[Cu],simulation_10_rep2,0.0004594001199999998,False
+7,N(CCOCCOC(=O)[Au])CCOCCO[Cu],simulation_10_rep3,0.00042384114999999994,False
+8,N(CCOCCOC(=O)[Au])CCOCCO[Cu],simulation_10_rep4,0.00038791170000000014,False
+9,N(CCOCCOC(=O)[Au])CCOCCO[Cu],simulation_10_rep5,0.0005011481699999998,False
+10,CN(CCNP(=O)[Au])CCOCCCCO[Cu],simulation_11_rep1,,True: unavailable force field parameter
+11,CN(CCNP(=O)[Au])CCOCCCCO[Cu],simulation_11_rep2,,True: unavailable force field parameter
+12,CN(CCNP(=O)[Au])CCOCCCCO[Cu],simulation_11_rep3,,True: unavailable force field parameter
+13,CN(CCNP(=O)[Au])CCOCCCCO[Cu],simulation_11_rep4,,True: unavailable force field parameter
+14,CN(CCNP(=O)[Au])CCOCCCCO[Cu],simulation_11_rep5,,True: unavailable force field parameter
+15,O=C([Au])OCCOCCNCCOCCCOCCO[Cu],simulation_12_rep1,0.0005019828,False
+16,O=C([Au])OCCOCCNCCOCCCOCCO[Cu],simulation_12_rep2,0.0004858719199999998,False
+17,O=C([Au])OCCOCCNCCOCCCOCCO[Cu],simulation_12_rep3,0.00033225396,False
+18,O=C([Au])OCCOCCNCCOCCCOCCO[Cu],simulation_12_rep4,0.0005636150599999998,False
+19,O=C([Au])OCCOCCNCCOCCCOCCO[Cu],simulation_12_rep5,0.0005407733999999998,False
+20,C=C(COCCOC(=O)[Au])COCCO[Cu],simulation_13_rep1,0.00036176109999999987,False
+21,C=C(COCCOC(=O)[Au])COCCO[Cu],simulation_13_rep2,,True: unstable configuration
+22,C=C(COCCOC(=O)[Au])COCCO[Cu],simulation_13_rep3,0.0003726199000000001,False
+23,C=C(COCCOC(=O)[Au])COCCO[Cu],simulation_13_rep4,0.0004866362999999999,False
+24,C=C(COCCOC(=O)[Au])COCCO[Cu],simulation_13_rep5,0.0004914880000000002,False
+25,C(CCOCCOC(=O)[Au])OCCOCCO[Cu],simulation_14_rep1,0.00044589958000000005,False
+26,C(CCOCCOC(=O)[Au])OCCOCCO[Cu],simulation_14_rep2,0.00036050867999999994,False
+27,C(CCOCCOC(=O)[Au])OCCOCCO[Cu],simulation_14_rep3,0.00039193759999999985,False
+28,C(CCOCCOC(=O)[Au])OCCOCCO[Cu],simulation_14_rep4,0.00038905276,False
+29,C(CCOCCOC(=O)[Au])OCCOCCO[Cu],simulation_14_rep5,0.00036394942000000013,False
+30,O=C([Au])OCCOCCCOCCOCCO[Cu],simulation_16_rep1,0.00030441215000000005,False
+31,O=C([Au])OCCOCCCOCCOCCO[Cu],simulation_16_rep2,0.00041619258000000003,False
+32,O=C([Au])OCCOCCCOCCOCCO[Cu],simulation_16_rep3,0.00037858019999999996,False
+33,O=C([Au])OCCOCCCOCCOCCO[Cu],simulation_16_rep4,0.0003771062999999998,False
+34,O=C([Au])OCCOCCCOCCOCCO[Cu],simulation_16_rep5,0.0005048081000000005,False
+35,O=C([Au])OCCOCCCCOCCOCCO[Cu],simulation_17_rep1,0.0003451929700000001,False
+36,O=C([Au])OCCOCCCCOCCOCCO[Cu],simulation_17_rep2,0.000428394,False
+37,O=C([Au])OCCOCCCCOCCOCCO[Cu],simulation_17_rep3,,True: unstable configuration
+38,O=C([Au])OCCOCCCCOCCOCCO[Cu],simulation_17_rep4,0.0004091710700000001,False
+39,O=C([Au])OCCOCCCCOCCOCCO[Cu],simulation_17_rep5,0.0002958878499999999,False
+40,O=C([Au])OCCOCCOCCCCOCCO[Cu],simulation_18_rep1,0.0002971546999999998,False
+41,O=C([Au])OCCOCCOCCCCOCCO[Cu],simulation_18_rep2,0.0003781401599999999,False
+42,O=C([Au])OCCOCCOCCCCOCCO[Cu],simulation_18_rep3,0.00038633303000000003,False
+43,O=C([Au])OCCOCCOCCCCOCCO[Cu],simulation_18_rep4,0.0005145352300000002,False
+44,O=C([Au])OCCOCCOCCCCOCCO[Cu],simulation_18_rep5,0.00037683529999999984,False
+45,CCN(CCOCP(=O)[Au])CCOCCO[Cu],simulation_19_rep1,,True: unavailable force field parameter
+46,CCN(CCOCP(=O)[Au])CCOCCO[Cu],simulation_19_rep2,,True: unavailable force field parameter
+47,CCN(CCOCP(=O)[Au])CCOCCO[Cu],simulation_19_rep3,,True: unavailable force field parameter
+48,CCN(CCOCP(=O)[Au])CCOCCO[Cu],simulation_19_rep4,,True: unavailable force field parameter
+49,CCN(CCOCP(=O)[Au])CCOCCO[Cu],simulation_19_rep5,,True: unavailable force field parameter
+50,COCCN(CCO[Cu])CCOC(F)[Au],simulation_1_rep1,,True: unstable configuration
+51,COCCN(CCO[Cu])CCOC(F)[Au],simulation_1_rep2,0.0011965089000000005,False
+52,COCCN(CCO[Cu])CCOC(F)[Au],simulation_1_rep3,0.0008487369599999996,False
+53,COCCN(CCO[Cu])CCOC(F)[Au],simulation_1_rep4,0.0011757917999999997,False
+54,COCCN(CCO[Cu])CCOC(F)[Au],simulation_1_rep5,,True: unstable configuration
+55,O=C([Au])OCCOCCOCCOCCCCCO[Cu],simulation_20_rep1,0.0005275841699999999,False
+56,O=C([Au])OCCOCCOCCOCCCCCO[Cu],simulation_20_rep2,0.0003707989999999999,False
+57,O=C([Au])OCCOCCOCCOCCCCCO[Cu],simulation_20_rep3,0.00027851513000000004,False
+58,O=C([Au])OCCOCCOCCOCCCCCO[Cu],simulation_20_rep4,0.00034739940999999974,False
+59,O=C([Au])OCCOCCOCCOCCCCCO[Cu],simulation_20_rep5,0.0004426134999999999,False
+60,O=C([Au])OCCCOCCOCCOCCO[Cu],simulation_21_rep1,0.0003114195400000001,False
+61,O=C([Au])OCCCOCCOCCOCCO[Cu],simulation_21_rep2,0.0005280397999999997,False
+62,O=C([Au])OCCCOCCOCCOCCO[Cu],simulation_21_rep3,0.00037202776999999994,False
+63,O=C([Au])OCCCOCCOCCOCCO[Cu],simulation_21_rep4,0.0004873917000000001,False
+64,O=C([Au])OCCCOCCOCCOCCO[Cu],simulation_21_rep5,0.0002966760000000004,False
+65,O=C([Au])OCCOCCOCCOCCCO[Cu],simulation_22_rep1,0.0003306904699999998,False
+66,O=C([Au])OCCOCCOCCOCCCO[Cu],simulation_22_rep2,0.00032505806,False
+67,O=C([Au])OCCOCCOCCOCCCO[Cu],simulation_22_rep3,0.0006080741999999996,False
+68,O=C([Au])OCCOCCOCCOCCCO[Cu],simulation_22_rep4,0.0003345162999999998,False
+69,O=C([Au])OCCOCCOCCOCCCO[Cu],simulation_22_rep5,0.0004255153799999997,False
+70,O=C([Au])OCCSCCOCCOCCO[Cu],simulation_23_rep1,0.0003976603300000002,False
+71,O=C([Au])OCCSCCOCCOCCO[Cu],simulation_23_rep2,,True: unstable configuration
+72,O=C([Au])OCCSCCOCCOCCO[Cu],simulation_23_rep3,0.00030951483999999994,False
+73,O=C([Au])OCCSCCOCCOCCO[Cu],simulation_23_rep4,0.00032961636000000005,False
+74,O=C([Au])OCCSCCOCCOCCO[Cu],simulation_23_rep5,,True: unstable configuration
+75,O=C([Au])OCCOCCOCCSCCO[Cu],simulation_24_rep1,0.00039295500000000044,False
+76,O=C([Au])OCCOCCOCCSCCO[Cu],simulation_24_rep2,0.00038592305000000016,False
+77,O=C([Au])OCCOCCOCCSCCO[Cu],simulation_24_rep3,0.00028927028,False
+78,O=C([Au])OCCOCCOCCSCCO[Cu],simulation_24_rep4,0.00026243142,False
+79,O=C([Au])OCCOCCOCCSCCO[Cu],simulation_24_rep5,0.00025185482999999997,False
+80,O=C([Au])OCCOCCCNCCOCCOCCO[Cu],simulation_25_rep1,0.0003175527700000004,False
+81,O=C([Au])OCCOCCCNCCOCCOCCO[Cu],simulation_25_rep2,0.0005500975500000002,False
+82,O=C([Au])OCCOCCCNCCOCCOCCO[Cu],simulation_25_rep3,0.00045384769999999987,False
+83,O=C([Au])OCCOCCCNCCOCCOCCO[Cu],simulation_25_rep4,0.0005696862400000003,False
+84,O=C([Au])OCCOCCCNCCOCCOCCO[Cu],simulation_25_rep5,0.0004959163999999998,False
+85,O=CC([Au])OCCCCOCCOCCN[Cu],simulation_26_rep1,0.0003127759299999999,False
+86,O=CC([Au])OCCCCOCCOCCN[Cu],simulation_26_rep2,0.0003209461999999999,False
+87,O=CC([Au])OCCCCOCCOCCN[Cu],simulation_26_rep3,0.00033523921999999997,False
+88,O=CC([Au])OCCCCOCCOCCN[Cu],simulation_26_rep4,0.00045542867000000016,False
+89,O=CC([Au])OCCCCOCCOCCN[Cu],simulation_26_rep5,0.0005303875000000001,False
+90,O=C([Au])OCCOCCNCCOCOCCO[Cu],simulation_27_rep1,0.00042704999999999957,False
+91,O=C([Au])OCCOCCNCCOCOCCO[Cu],simulation_27_rep2,0.0006119748600000007,False
+92,O=C([Au])OCCOCCNCCOCOCCO[Cu],simulation_27_rep3,0.00048727455000000024,False
+93,O=C([Au])OCCOCCNCCOCOCCO[Cu],simulation_27_rep4,,True: unstable configuration
+94,O=C([Au])OCCOCCNCCOCOCCO[Cu],simulation_27_rep5,0.00033177366,False
+95,O=C([Au])OCCOCCOCCCNCCOCCO[Cu],simulation_28_rep1,0.0003644322000000001,False
+96,O=C([Au])OCCOCCOCCCNCCOCCO[Cu],simulation_28_rep2,0.00031604465999999994,False
+97,O=C([Au])OCCOCCOCCCNCCOCCO[Cu],simulation_28_rep3,0.0004704601999999996,False
+98,O=C([Au])OCCOCCOCCCNCCOCCO[Cu],simulation_28_rep4,0.00036424619999999967,False
+99,O=C([Au])OCCOCCOCCCNCCOCCO[Cu],simulation_28_rep5,0.0006478011499999997,False
+100,CN(CCP(=O)[Au])CCOCCO[Cu],simulation_29_rep1,,True: unavailable force field parameter
+101,CN(CCP(=O)[Au])CCOCCO[Cu],simulation_29_rep2,,True: unavailable force field parameter
+102,CN(CCP(=O)[Au])CCOCCO[Cu],simulation_29_rep3,,True: unavailable force field parameter
+103,CN(CCP(=O)[Au])CCOCCO[Cu],simulation_29_rep4,,True: unavailable force field parameter
+104,CN(CCP(=O)[Au])CCOCCO[Cu],simulation_29_rep5,,True: unavailable force field parameter
+105,CN(CCOCCOC(=O)[Au])CCOCCO[Cu],simulation_2_rep1,0.00042523159999999997,False
+106,CN(CCOCCOC(=O)[Au])CCOCCO[Cu],simulation_2_rep2,0.0005828775499999991,False
+107,CN(CCOCCOC(=O)[Au])CCOCCO[Cu],simulation_2_rep3,0.0006461328600000002,False
+108,CN(CCOCCOC(=O)[Au])CCOCCO[Cu],simulation_2_rep4,0.00047401779999999986,False
+109,CN(CCOCCOC(=O)[Au])CCOCCO[Cu],simulation_2_rep5,0.0005838235999999999,False
+110,NN(CCOCCOCCO[Cu])COC(=O)[Au],simulation_30_rep1,0.0005872778999999997,False
+111,NN(CCOCCOCCO[Cu])COC(=O)[Au],simulation_30_rep2,0.00047570933000000003,False
+112,NN(CCOCCOCCO[Cu])COC(=O)[Au],simulation_30_rep3,0.0004515774,False
+113,NN(CCOCCOCCO[Cu])COC(=O)[Au],simulation_30_rep4,0.00036884856000000006,False
+114,NN(CCOCCOCCO[Cu])COC(=O)[Au],simulation_30_rep5,0.0006130393600000002,False
+115,O=CC([Au])OCCSCCOCCN[Cu],simulation_31_rep1,0.0006202510600000001,False
+116,O=CC([Au])OCCSCCOCCN[Cu],simulation_31_rep2,0.0004171767799999997,False
+117,O=CC([Au])OCCSCCOCCN[Cu],simulation_31_rep3,0.0004827588000000001,False
+118,O=CC([Au])OCCSCCOCCN[Cu],simulation_31_rep4,,True: unstable configuration
+119,O=CC([Au])OCCSCCOCCN[Cu],simulation_31_rep5,,True: unstable configuration
+120,CN(CCCCO[Cu])CCOCC[Au],simulation_32_rep1,,True: unstable configuration
+121,CN(CCCCO[Cu])CCOCC[Au],simulation_32_rep2,,True: unstable configuration
+122,CN(CCCCO[Cu])CCOCC[Au],simulation_32_rep3,,True: unstable configuration
+123,CN(CCCCO[Cu])CCOCC[Au],simulation_32_rep4,,True: unstable configuration
+124,CN(CCCCO[Cu])CCOCC[Au],simulation_32_rep5,0.0009031308599999996,False
+125,O=C([Au])OCCOCCOCCCOCCSCCO[Cu],simulation_33_rep1,,True: unstable configuration
+126,O=C([Au])OCCOCCOCCCOCCSCCO[Cu],simulation_33_rep2,0.0003700859400000002,False
+127,O=C([Au])OCCOCCOCCCOCCSCCO[Cu],simulation_33_rep3,0.0004687833400000002,False
+128,O=C([Au])OCCOCCOCCCOCCSCCO[Cu],simulation_33_rep4,,True: unstable configuration
+129,O=C([Au])OCCOCCOCCCOCCSCCO[Cu],simulation_33_rep5,0.00035368490000000003,False
+130,NOCCN(CCP(=O)[Au])CCCOCO[Cu],simulation_34_rep1,,True: unavailable force field parameter
+131,NOCCN(CCP(=O)[Au])CCCOCO[Cu],simulation_34_rep2,,True: unavailable force field parameter
+132,NOCCN(CCP(=O)[Au])CCCOCO[Cu],simulation_34_rep3,,True: unavailable force field parameter
+133,NOCCN(CCP(=O)[Au])CCCOCO[Cu],simulation_34_rep4,,True: unavailable force field parameter
+134,NOCCN(CCP(=O)[Au])CCCOCO[Cu],simulation_34_rep5,,True: unavailable force field parameter
+135,O=C([Au])OCCOCCOCCOCCCCO[Cu],simulation_35_rep1,0.0005140821,False
+136,O=C([Au])OCCOCCOCCOCCCCO[Cu],simulation_35_rep2,0.00035170523999999986,False
+137,O=C([Au])OCCOCCOCCOCCCCO[Cu],simulation_35_rep3,0.00045930207,False
+138,O=C([Au])OCCOCCOCCOCCCCO[Cu],simulation_35_rep4,0.00037008350000000006,False
+139,O=C([Au])OCCOCCOCCOCCCCO[Cu],simulation_35_rep5,0.0004912811000000001,False
+140,CC(CNCCOCCOCCOC[Au])O[Cu],simulation_36_rep1,,True: unstable configuration
+141,CC(CNCCOCCOCCOC[Au])O[Cu],simulation_36_rep2,0.0011181199999999994,False
+142,CC(CNCCOCCOCCOC[Au])O[Cu],simulation_36_rep3,0.0013058140999999991,False
+143,CC(CNCCOCCOCCOC[Au])O[Cu],simulation_36_rep4,0.0010550993,False
+144,CC(CNCCOCCOCCOC[Au])O[Cu],simulation_36_rep5,0.0010521435000000001,False
+145,O=C([Au])OCCOCCNCCOCCOCO[Cu],simulation_37_rep1,0.0005617549000000001,False
+146,O=C([Au])OCCOCCNCCOCCOCO[Cu],simulation_37_rep2,0.0006149664000000003,False
+147,O=C([Au])OCCOCCNCCOCCOCO[Cu],simulation_37_rep3,0.0005187515000000005,False
+148,O=C([Au])OCCOCCNCCOCCOCO[Cu],simulation_37_rep4,0.00074181694,False
+149,O=C([Au])OCCOCCNCCOCCOCO[Cu],simulation_37_rep5,0.00069357303,False
+150,C=C(COC(=O)[Au])COCCOCCOCCO[Cu],simulation_38_rep1,0.00038720207999999985,False
+151,C=C(COC(=O)[Au])COCCOCCOCCO[Cu],simulation_38_rep2,0.0004862244200000001,False
+152,C=C(COC(=O)[Au])COCCOCCOCCO[Cu],simulation_38_rep3,0.0005634560000000002,False
+153,C=C(COC(=O)[Au])COCCOCCOCCO[Cu],simulation_38_rep4,0.0005372212599999998,False
+154,C=C(COC(=O)[Au])COCCOCCOCCO[Cu],simulation_38_rep5,0.00047951726999999995,False
+155,OC([Au])OCCCOCCOCCN[Cu],simulation_39_rep1,0.0005968456000000002,False
+156,OC([Au])OCCCOCCOCCN[Cu],simulation_39_rep2,0.0009794452999999997,False
+157,OC([Au])OCCCOCCOCCN[Cu],simulation_39_rep3,0.0008992329000000004,False
+158,OC([Au])OCCCOCCOCCN[Cu],simulation_39_rep4,0.00077341334,False
+159,OC([Au])OCCCOCCOCCN[Cu],simulation_39_rep5,0.000812874930000001,False
+160,O=C([Au])OCCOCCN(CCOCCO[Cu])C,simulation_3_rep1,0.0007182358000000001,False
+161,O=C([Au])OCCOCCN(CCOCCO[Cu])C,simulation_3_rep2,0.0007785603499999997,False
+162,O=C([Au])OCCOCCN(CCOCCO[Cu])C,simulation_3_rep3,0.0005007949999999998,False
+163,O=C([Au])OCCOCCN(CCOCCO[Cu])C,simulation_3_rep4,0.0005331695400000002,False
+164,O=C([Au])OCCOCCN(CCOCCO[Cu])C,simulation_3_rep5,0.0006628996299999996,False
+165,O=C([Au])OCCOCCNCCOCCOCCO[Cu],simulation_40_rep1,0.0007333701,False
+166,O=C([Au])OCCOCCNCCOCCOCCO[Cu],simulation_40_rep2,0.00039935082999999953,False
+167,O=C([Au])OCCOCCNCCOCCOCCO[Cu],simulation_40_rep3,0.00043887504999999983,False
+168,O=C([Au])OCCOCCNCCOCCOCCO[Cu],simulation_40_rep4,0.0003431238600000001,False
+169,O=C([Au])OCCOCCNCCOCCOCCO[Cu],simulation_40_rep5,0.0005275179999999998,False
+170,OOC([Au])OCCO[Cu],simulation_41_rep1,0.0009279060999999999,False
+171,OOC([Au])OCCO[Cu],simulation_41_rep2,0.0010060301000000002,False
+172,OOC([Au])OCCO[Cu],simulation_41_rep3,0.0014131004999999993,False
+173,OOC([Au])OCCO[Cu],simulation_41_rep4,0.0011308686,False
+174,OOC([Au])OCCO[Cu],simulation_41_rep5,0.0010100481999999996,False
+175,O=C([Au])OCCOCCOCCOCCOCCCO[Cu],simulation_42_rep1,0.0004881901800000001,False
+176,O=C([Au])OCCOCCOCCOCCOCCCO[Cu],simulation_42_rep2,0.0005379790999999993,False
+177,O=C([Au])OCCOCCOCCOCCOCCCO[Cu],simulation_42_rep3,0.0005904514000000002,False
+178,O=C([Au])OCCOCCOCCOCCOCCCO[Cu],simulation_42_rep4,0.00044286107999999986,False
+179,O=C([Au])OCCOCCOCCOCCOCCCO[Cu],simulation_42_rep5,0.0004860313,False
+180,CN(CCO[Cu])CCCOCC[Au],simulation_43_rep1,0.0009252419700000004,False
+181,CN(CCO[Cu])CCCOCC[Au],simulation_43_rep2,,True: unstable configuration
+182,CN(CCO[Cu])CCCOCC[Au],simulation_43_rep3,0.0008143223999999996,False
+183,CN(CCO[Cu])CCCOCC[Au],simulation_43_rep4,0.0008076287000000004,False
+184,CN(CCO[Cu])CCCOCC[Au],simulation_43_rep5,0.0012621957999999994,False
+185,O=C([Au])OCCOCCSCCOCCOCCO[Cu],simulation_44_rep1,0.0006310016599999999,False
+186,O=C([Au])OCCOCCSCCOCCOCCO[Cu],simulation_44_rep2,0.00059428916,False
+187,O=C([Au])OCCOCCSCCOCCOCCO[Cu],simulation_44_rep3,0.0005312052,False
+188,O=C([Au])OCCOCCSCCOCCOCCO[Cu],simulation_44_rep4,0.0005291746300000001,False
+189,O=C([Au])OCCOCCSCCOCCOCCO[Cu],simulation_44_rep5,,True: unstable configuration
+190,O=C([Au])OCCSCCOCCOCCOCCO[Cu],simulation_45_rep1,0.0004794116200000001,False
+191,O=C([Au])OCCSCCOCCOCCOCCO[Cu],simulation_45_rep2,0.0004938008499999998,False
+192,O=C([Au])OCCSCCOCCOCCOCCO[Cu],simulation_45_rep3,0.00048653470000000024,False
+193,O=C([Au])OCCSCCOCCOCCOCCO[Cu],simulation_45_rep4,0.00046650216000000016,False
+194,O=C([Au])OCCSCCOCCOCCOCCO[Cu],simulation_45_rep5,0.00036959701999999986,False
+195,O=C([Au])SCCOCCOCCOCCO[Cu],simulation_46_rep1,0.0005949479499999991,False
+196,O=C([Au])SCCOCCOCCOCCO[Cu],simulation_46_rep2,0.00040071146000000005,False
+197,O=C([Au])SCCOCCOCCOCCO[Cu],simulation_46_rep3,0.0005152917999999999,False
+198,O=C([Au])SCCOCCOCCOCCO[Cu],simulation_46_rep4,0.00048516926000000024,False
+199,O=C([Au])SCCOCCOCCOCCO[Cu],simulation_46_rep5,0.0005986228999999993,False
+200,OOC([Au])OCCNCCOCCO[Cu],simulation_47_rep1,0.0006536025000000002,False
+201,OOC([Au])OCCNCCOCCO[Cu],simulation_47_rep2,0.0005442026300000001,False
+202,OOC([Au])OCCNCCOCCO[Cu],simulation_47_rep3,0.0006786695999999997,False
+203,OOC([Au])OCCNCCOCCO[Cu],simulation_47_rep4,,True: unstable configuration
+204,OOC([Au])OCCNCCOCCO[Cu],simulation_47_rep5,0.0004976081999999999,False
+205,O=C([Au])OCCOCCOCCOCCOCO[Cu],simulation_48_rep1,0.00039769415000000014,False
+206,O=C([Au])OCCOCCOCCOCCOCO[Cu],simulation_48_rep2,0.00032954267000000014,False
+207,O=C([Au])OCCOCCOCCOCCOCO[Cu],simulation_48_rep3,0.0004676192799999994,False
+208,O=C([Au])OCCOCCOCCOCCOCO[Cu],simulation_48_rep4,0.0006824393999999999,False
+209,O=C([Au])OCCOCCOCCOCCOCO[Cu],simulation_48_rep5,0.0005866359999999999,False
+210,O=C([Au])OCCOCCOCCOCCOCCO[Cu],simulation_49_rep1,0.0006211850599999998,False
+211,O=C([Au])OCCOCCOCCOCCOCCO[Cu],simulation_49_rep2,0.0004656591599999998,False
+212,O=C([Au])OCCOCCOCCOCCOCCO[Cu],simulation_49_rep3,0.0004427883500000005,False
+213,O=C([Au])OCCOCCOCCOCCOCCO[Cu],simulation_49_rep4,0.0005106547000000002,False
+214,O=C([Au])OCCOCCOCCOCCOCCO[Cu],simulation_49_rep5,0.00037300782000000005,False
+215,CN(CCOCCO[Cu])CCOCCOC(=O)[Au],simulation_4_rep1,,True: unstable configuration
+216,CN(CCOCCO[Cu])CCOCCOC(=O)[Au],simulation_4_rep2,0.0004663323,False
+217,CN(CCOCCO[Cu])CCOCCOC(=O)[Au],simulation_4_rep3,0.00056710484,False
+218,CN(CCOCCO[Cu])CCOCCOC(=O)[Au],simulation_4_rep4,0.0005273071999999998,False
+219,CN(CCOCCO[Cu])CCOCCOC(=O)[Au],simulation_4_rep5,0.0006677082,False
+220,O=C([Au])OCCOCCOCCCCCOCCO[Cu],simulation_5_rep1,0.00021681200000000004,False
+221,O=C([Au])OCCOCCOCCCCCOCCO[Cu],simulation_5_rep2,0.00029870518,False
+222,O=C([Au])OCCOCCOCCCCCOCCO[Cu],simulation_5_rep3,0.0003215110299999999,False
+223,O=C([Au])OCCOCCOCCCCCOCCO[Cu],simulation_5_rep4,0.00038072946999999997,False
+224,O=C([Au])OCCOCCOCCCCCOCCO[Cu],simulation_5_rep5,0.0003539347999999998,False
+225,O=CC([Au])OCCOCCOCCCCN[Cu],simulation_6_rep1,0.0004613235000000001,False
+226,O=CC([Au])OCCOCCOCCCCN[Cu],simulation_6_rep2,0.00043200366999999985,False
+227,O=CC([Au])OCCOCCOCCCCN[Cu],simulation_6_rep3,,True: unstable configuration
+228,O=CC([Au])OCCOCCOCCCCN[Cu],simulation_6_rep4,0.0003949377000000001,False
+229,O=CC([Au])OCCOCCOCCCCN[Cu],simulation_6_rep5,0.0003634767999999999,False
+230,O=C([Au])OCCOCCSCCOCCO[Cu],simulation_7_rep1,0.00038491340000000005,False
+231,O=C([Au])OCCOCCSCCOCCO[Cu],simulation_7_rep2,0.00045583310000000003,False
+232,O=C([Au])OCCOCCSCCOCCO[Cu],simulation_7_rep3,0.0004998675000000003,False
+233,O=C([Au])OCCOCCSCCOCCO[Cu],simulation_7_rep4,0.00032011696000000013,False
+234,O=C([Au])OCCOCCSCCOCCO[Cu],simulation_7_rep5,0.00040002521999999986,False
+235,O=C([Au])OCCOCCOCCCOCCCOCO[Cu],simulation_8_rep1,0.0007085993000000001,False
+236,O=C([Au])OCCOCCOCCCOCCCOCO[Cu],simulation_8_rep2,0.0005891818999999993,False
+237,O=C([Au])OCCOCCOCCCOCCCOCO[Cu],simulation_8_rep3,0.0006564765400000001,False
+238,O=C([Au])OCCOCCOCCCOCCCOCO[Cu],simulation_8_rep4,0.0003564128699999999,False
+239,O=C([Au])OCCOCCOCCCOCCCOCO[Cu],simulation_8_rep5,0.0005937782700000001,False
+240,ON([Au])CCCCSCCOCCN[Cu],simulation_9_rep1,,True: unstable configuration
+241,ON([Au])CCCCSCCOCCN[Cu],simulation_9_rep2,0.0005457388500000002,False
+242,ON([Au])CCCCSCCOCCN[Cu],simulation_9_rep3,0.0005090795499999998,False
+243,ON([Au])CCCCSCCOCCN[Cu],simulation_9_rep4,,True: unstable configuration
+244,ON([Au])CCCCSCCOCCN[Cu],simulation_9_rep5,0.0006176728600000003,False
+245,O=C([Au])OCCOCCOCCCOCCO[Cu],simulation_rep1,0.00036003604000000016,False
+246,O=C([Au])OCCOCCOCCCOCCO[Cu],simulation_rep2,0.00038246962,False
+247,O=C([Au])OCCOCCOCCCOCCO[Cu],simulation_rep3,0.0005185283000000001,False
+248,O=C([Au])OCCOCCOCCCOCCO[Cu],simulation_rep4,0.0003393896599999999,False
+249,O=C([Au])OCCOCCOCCCOCCO[Cu],simulation_rep5,,True: unstable configuration

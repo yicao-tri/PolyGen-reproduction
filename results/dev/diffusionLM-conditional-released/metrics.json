@@ -1,0 +1,17 @@
+{
+  "samples": "/home/yi/paper-reproductions/PolyGen-1.0.0/diffusionLM/improved-diffusion/generation_outputs/conditional/generated_mol_sample.txt",
+  "label": "conditional",
+  "input_rows": 500,
+  "selected_rows": 200,
+  "selected_low_rows": 211,
+  "clean_rows": 1,
+  "torch_version": "2.2.0",
+  "metrics": {
+    "uniqueness": 0.845,
+    "novelty": 1.0,
+    "validity": 0.005,
+    "synthesizability": 1.0,
+    "similarity": 0.2608940253310579,
+    "diversity": null
+  }
+}

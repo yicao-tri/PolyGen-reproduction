@@ -1,0 +1,26 @@
+{
+  "steps": 1000,
+  "batch_size": 64,
+  "workers": 4,
+  "seed": 42,
+  "elapsed_seconds": 63.761165380477905,
+  "recorded_loss_rows": 1,
+  "train_loss_first_recorded": 0.5791305303573608,
+  "train_loss_last_recorded": 0.5791305303573608,
+  "train_loss_min_recorded": 0.5791305303573608,
+  "validation_loss_first_recorded": 0.591315507888794,
+  "validation_loss_last_recorded": 0.591315507888794,
+  "torch_version": "2.2.0",
+  "cuda_available": true,
+  "cuda_device": "NVIDIA A10G",
+  "model": {
+    "dim": 128,
+    "dim_mults": [
+      1,
+      2
+    ],
+    "diffusion_steps": 1000,
+    "vocab_size": 22,
+    "block_size": 64
+  }
+}

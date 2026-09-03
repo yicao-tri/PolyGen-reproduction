@@ -1,0 +1,19 @@
+{
+  "repo": "/home/yi/paper-reproductions/PolyGen-1.0.0",
+  "checkpoint": "/home/yi/paper-reproductions/PolyGen-1.0.0/minGPT/ckpts/10000.pt",
+  "task": "conditional",
+  "num_samples": 100,
+  "temperature": 1.0,
+  "seed": 42,
+  "torch_version": "2.2.0",
+  "cuda_available": true,
+  "cuda_device": "NVIDIA A10G",
+  "metrics": {
+    "uniqueness": 0.94,
+    "novelty": 0.5700000000000001,
+    "validity": 0.97,
+    "synthesizability": 0.9411764705882353,
+    "similarity": 0.26579602773586514,
+    "diversity": 0.6918083263520143
+  }
+}

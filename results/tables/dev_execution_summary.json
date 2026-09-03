@@ -1,0 +1,618 @@
+{
+  "csv_artifacts": [
+    {
+      "bytes": 3340,
+      "columns": [
+        "sample_index",
+        "decoded",
+        "condition"
+      ],
+      "data_rows": 25,
+      "path": "results/dev/diffusion1D-milestone1000-seed42/decoded_samples.csv",
+      "sha256": "32005797c1fbde6110040a7ad66b4904a71196028f313f719f8ee2c9308d279c"
+    },
+    {
+      "bytes": 9387,
+      "columns": [
+        "mol_smiles",
+        "duplicate",
+        "diversity",
+        "validity",
+        "has_two_ends"
+      ],
+      "data_rows": 200,
+      "path": "results/dev/diffusionLM-conditional-released/scored_samples.csv",
+      "sha256": "b7e0cda8d848910383c441e3659db3225a5b92337a7bbcc7774fe6c5a66d8ca0"
+    },
+    {
+      "bytes": 9427,
+      "columns": [
+        "mol_smiles",
+        "duplicate",
+        "diversity",
+        "validity",
+        "has_two_ends"
+      ],
+      "data_rows": 200,
+      "path": "results/dev/diffusionLM-unconditional-released/scored_samples.csv",
+      "sha256": "5aa0acccb8f5c886d1c6fa10b6f7547f798ffecf04ce988c387c9c0f7e48f1fb"
+    },
+    {
+      "bytes": 464,
+      "columns": [
+        "iteration",
+        "train_loss",
+        "validation_loss"
+      ],
+      "data_rows": 10,
+      "path": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/loss_history.csv",
+      "sha256": "5d77b6d5362f7216f7b7ce4a25dd68e6aaa12eead61e5349a706a371340f0c48"
+    },
+    {
+      "bytes": 3248,
+      "columns": [
+        "sample_index",
+        "mol_smiles"
+      ],
+      "data_rows": 100,
+      "path": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/samples.csv",
+      "sha256": "4e6a6d9e4ca1b4c17ad0b95e834fd6fac1d504bf2da02223bd04c71e0b6f1bbd"
+    },
+    {
+      "bytes": 3167,
+      "columns": [
+        "sample_index",
+        "mol_smiles"
+      ],
+      "data_rows": 100,
+      "path": "results/dev/minGPT-conditional-seed42/samples.csv",
+      "sha256": "b5ea7d3ba74b4a840b8a247d2b5c0bc36bc804c0a12b64fb84fe409d324327b8"
+    }
+  ],
+  "data_policy": "Every value in this file is read from a real execution artifact under results/dev and cross-checked where a matching sample CSV exists; no paper value is used.",
+  "internal_consistency_checks": [
+    {
+      "claim_field": "samples",
+      "claim_source": "results/dev/diffusion1D-milestone1000-seed42/sample_summary.json",
+      "claimed": 25,
+      "matches": true,
+      "observed": 25,
+      "observed_source": "results/dev/diffusion1D-milestone1000-seed42/decoded_samples.csv"
+    },
+    {
+      "claim_field": "selected_rows",
+      "claim_source": "results/dev/diffusionLM-conditional-released/metrics.json",
+      "claimed": 200,
+      "matches": true,
+      "observed": 200,
+      "observed_source": "results/dev/diffusionLM-conditional-released/scored_samples.csv"
+    },
+    {
+      "claim_field": "selected_rows",
+      "claim_source": "results/dev/diffusionLM-unconditional-released/metrics.json",
+      "claimed": 200,
+      "matches": true,
+      "observed": 200,
+      "observed_source": "results/dev/diffusionLM-unconditional-released/scored_samples.csv"
+    },
+    {
+      "claim_field": "artifacts.loss_history_sha256",
+      "claim_source": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/run_summary.json",
+      "claimed": "5d77b6d5362f7216f7b7ce4a25dd68e6aaa12eead61e5349a706a371340f0c48",
+      "matches": true,
+      "observed": "5d77b6d5362f7216f7b7ce4a25dd68e6aaa12eead61e5349a706a371340f0c48",
+      "observed_source": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/loss_history.csv"
+    },
+    {
+      "claim_field": "artifacts.samples_sha256",
+      "claim_source": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/run_summary.json",
+      "claimed": "4e6a6d9e4ca1b4c17ad0b95e834fd6fac1d504bf2da02223bd04c71e0b6f1bbd",
+      "matches": true,
+      "observed": "4e6a6d9e4ca1b4c17ad0b95e834fd6fac1d504bf2da02223bd04c71e0b6f1bbd",
+      "observed_source": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/samples.csv"
+    },
+    {
+      "claim_field": "artifacts.runner_sha256",
+      "claim_source": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/run_summary.json",
+      "claimed": "cdb373efcea448dcc0b6270c8e9d8af8fe0f8585f995b4e0b777b26fe4d7bdf6",
+      "matches": true,
+      "observed": "cdb373efcea448dcc0b6270c8e9d8af8fe0f8585f995b4e0b777b26fe4d7bdf6",
+      "observed_source": "scripts/run_mingpt_training.py"
+    },
+    {
+      "claim_field": "artifacts.dataset_sha256",
+      "claim_source": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/run_summary.json",
+      "claimed": "fac9c1a260ac8b6d3bafb3f6d47d6287d86e9e513bfb90f43be08368af55a7c4",
+      "matches": true,
+      "observed": "fac9c1a260ac8b6d3bafb3f6d47d6287d86e9e513bfb90f43be08368af55a7c4",
+      "observed_source": "vendor/PolyGen-1.0.0/minGPT/htp_md.csv"
+    },
+    {
+      "claim_field": "training.starting_checkpoint_sha256",
+      "claim_source": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/run_summary.json",
+      "claimed": "8fe47744b2edb197d6e7b6ec95b42be714603cdeba20bc491292514cc6438d19",
+      "matches": true,
+      "observed": "8fe47744b2edb197d6e7b6ec95b42be714603cdeba20bc491292514cc6438d19",
+      "observed_source": "vendor/PolyGen-1.0.0/minGPT/ckpts/10000.pt"
+    },
+    {
+      "claim_field": "generation.num_samples",
+      "claim_source": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/run_summary.json",
+      "claimed": 100,
+      "matches": true,
+      "observed": 100,
+      "observed_source": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/samples.csv"
+    },
+    {
+      "claim_field": "training.loss_rows",
+      "claim_source": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/run_summary.json",
+      "claimed": 10,
+      "matches": true,
+      "observed": 10,
+      "observed_source": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/loss_history.csv"
+    },
+    {
+      "claim_field": "num_samples",
+      "claim_source": "results/dev/minGPT-conditional-seed42/metrics.json",
+      "claimed": 100,
+      "matches": true,
+      "observed": 100,
+      "observed_source": "results/dev/minGPT-conditional-seed42/samples.csv"
+    }
+  ],
+  "json_artifacts": [
+    {
+      "bytes": 632,
+      "content": {
+        "batch_size": 64,
+        "cuda_available": true,
+        "cuda_device": "NVIDIA A10G",
+        "elapsed_seconds": 63.761165380477905,
+        "model": {
+          "block_size": 64,
+          "diffusion_steps": 1000,
+          "dim": 128,
+          "dim_mults": [
+            1,
+            2
+          ],
+          "vocab_size": 22
+        },
+        "recorded_loss_rows": 1,
+        "seed": 42,
+        "steps": 1000,
+        "torch_version": "2.2.0",
+        "train_loss_first_recorded": 0.5791305303573608,
+        "train_loss_last_recorded": 0.5791305303573608,
+        "train_loss_min_recorded": 0.5791305303573608,
+        "validation_loss_first_recorded": 0.591315507888794,
+        "validation_loss_last_recorded": 0.591315507888794,
+        "workers": 4
+      },
+      "path": "results/dev/diffusion1D-milestone1000-seed42/run_summary.json",
+      "sha256": "79e95954a93b7bd614b57a929ff559c7a4fcbae55cdcb7c6d91626fb74c101bd"
+    },
+    {
+      "bytes": 100,
+      "content": {
+        "high_label": 11,
+        "low_label": 10,
+        "no_label": 4,
+        "samples": 25,
+        "unique_decoded": 25
+      },
+      "path": "results/dev/diffusion1D-milestone1000-seed42/sample_summary.json",
+      "sha256": "45fa3d1b4330fb02efa9f09f614d98791eccaefcdca6d0233ba40ab496e18226"
+    },
+    {
+      "bytes": 630,
+      "content": {
+        "batch_size": 64,
+        "cuda_available": true,
+        "cuda_device": "NVIDIA A10G",
+        "elapsed_seconds": 1.4163789749145508,
+        "model": {
+          "block_size": 64,
+          "diffusion_steps": 1000,
+          "dim": 128,
+          "dim_mults": [
+            1,
+            2
+          ],
+          "vocab_size": 22
+        },
+        "recorded_loss_rows": 1,
+        "seed": 42,
+        "steps": 10,
+        "torch_version": "2.2.0",
+        "train_loss_first_recorded": 0.5791305303573608,
+        "train_loss_last_recorded": 0.5791305303573608,
+        "train_loss_min_recorded": 0.5791305303573608,
+        "validation_loss_first_recorded": 0.591315507888794,
+        "validation_loss_last_recorded": 0.591315507888794,
+        "workers": 4
+      },
+      "path": "results/dev/diffusion1D-smoke10-seed42/run_summary.json",
+      "sha256": "00c44bc90b1a29946e4791a1490d5511a438a556340b31284e5d8c70fc82fac0"
+    },
+    {
+      "bytes": 472,
+      "content": {
+        "clean_rows": 1,
+        "input_rows": 500,
+        "label": "conditional",
+        "metrics": {
+          "diversity": null,
+          "novelty": 1.0,
+          "similarity": 0.2608940253310579,
+          "synthesizability": 1.0,
+          "uniqueness": 0.845,
+          "validity": 0.005
+        },
+        "samples": "/home/yi/paper-reproductions/PolyGen-1.0.0/diffusionLM/improved-diffusion/generation_outputs/conditional/generated_mol_sample.txt",
+        "selected_low_rows": 211,
+        "selected_rows": 200,
+        "torch_version": "2.2.0"
+      },
+      "path": "results/dev/diffusionLM-conditional-released/metrics.json",
+      "sha256": "78764daebc2283fd62efd4445f4108b5f09b5c01b8d538e33e1bd4d829b5bbdf"
+    },
+    {
+      "bytes": 491,
+      "content": {
+        "clean_rows": 4,
+        "input_rows": 200,
+        "label": "unconditional",
+        "metrics": {
+          "diversity": 0.7405932646852743,
+          "novelty": 1.0,
+          "similarity": 0.22179136768166996,
+          "synthesizability": 1.0,
+          "uniqueness": 0.725,
+          "validity": 0.02
+        },
+        "samples": "/home/yi/paper-reproductions/PolyGen-1.0.0/diffusionLM/improved-diffusion/generation_outputs/unconditional/generated_mol_sample.txt",
+        "selected_low_rows": null,
+        "selected_rows": 200,
+        "torch_version": "2.2.0"
+      },
+      "path": "results/dev/diffusionLM-unconditional-released/metrics.json",
+      "sha256": "bfac925456ad99b5344fba48381be8713b40ad55e53b712a1aef0ae305736401"
+    },
+    {
+      "bytes": 5879,
+      "content": {
+        "activity_users": {
+          "backend_count": 14,
+          "expected_backend_matches": [
+            {
+              "id": "yi_cao",
+              "name": "Yi Cao"
+            }
+          ],
+          "expected_gateway_matches": [
+            {
+              "id": "yi_cao",
+              "name": "Yi Cao"
+            }
+          ],
+          "gateway_count": 14,
+          "responses_equal": true
+        },
+        "all_checks_passed": true,
+        "core_checks": {
+          "backend_healthy": true,
+          "expected_user_present": true,
+          "gateway_healthy": true,
+          "gateway_matches_backend_health": true,
+          "gateway_matches_backend_users": true,
+          "search_reported_no_error": true,
+          "search_returned_results": true,
+          "structure_contains_atom_site_fields": true,
+          "structure_payload_present": true
+        },
+        "core_checks_passed": true,
+        "database_search": {
+          "content_type": "application/json",
+          "first_result": {
+            "energy": -5590.5205078125,
+            "formula": "Fe2Li2O8P2",
+            "nsites": 14,
+            "original_id": 11723,
+            "source": 6
+          },
+          "http_status": 200,
+          "reported_error": null,
+          "reported_total_count": 15493,
+          "returned_count": 50
+        },
+        "health": {
+          "backend_body": {
+            "cache_available": false,
+            "gpu_enabled": true,
+            "packmol_available": true,
+            "status": "healthy"
+          },
+          "backend_content_type": "application/json",
+          "backend_http_status": 200,
+          "bodies_equal": true,
+          "gateway_body": {
+            "cache_available": false,
+            "gpu_enabled": true,
+            "packmol_available": true,
+            "status": "healthy"
+          },
+          "gateway_content_type": "application/json",
+          "gateway_http_status": 200
+        },
+        "launcher_registry": {
+          "content_type": "application/json",
+          "entry_count": 7,
+          "entry_health": [
+            {
+              "body": {
+                "cache_available": false,
+                "gpu_enabled": true,
+                "packmol_available": true,
+                "status": "healthy"
+              },
+              "content_type": "application/json",
+              "error_fields": {},
+              "health_path": "/health",
+              "healthy": true,
+              "http_status": 200,
+              "id": null,
+              "name": "KO-POCHI",
+              "reachable": true,
+              "status_fields": {
+                "status": "healthy"
+              }
+            },
+            {
+              "body": {
+                "cache_available": false,
+                "gpu_enabled": true,
+                "packmol_available": true,
+                "status": "healthy"
+              },
+              "content_type": "application/json",
+              "error_fields": {},
+              "health_path": "/health",
+              "healthy": true,
+              "http_status": 200,
+              "id": null,
+              "name": "CL-POCHI",
+              "reachable": true,
+              "status_fields": {
+                "status": "healthy"
+              }
+            },
+            {
+              "body": {
+                "cache_available": false,
+                "gpu_enabled": true,
+                "packmol_available": true,
+                "status": "healthy"
+              },
+              "content_type": "application/json",
+              "error_fields": {},
+              "health_path": "/health",
+              "healthy": true,
+              "http_status": 200,
+              "id": null,
+              "name": "SO-POCHI",
+              "reachable": true,
+              "status_fields": {
+                "status": "healthy"
+              }
+            },
+            {
+              "body": {
+                "cache_available": false,
+                "gpu_enabled": true,
+                "packmol_available": true,
+                "status": "healthy"
+              },
+              "content_type": "application/json",
+              "error_fields": {},
+              "health_path": "/health",
+              "healthy": true,
+              "http_status": 200,
+              "id": null,
+              "name": "PI-POCHI",
+              "reachable": true,
+              "status_fields": {
+                "status": "healthy"
+              }
+            },
+            {
+              "body": {
+                "packmol": true,
+                "status": "ok"
+              },
+              "content_type": "application/json",
+              "error_fields": {},
+              "health_path": "/build-api/health",
+              "healthy": true,
+              "http_status": 200,
+              "id": null,
+              "name": "BI-POCHI",
+              "reachable": true,
+              "status_fields": {
+                "status": "ok"
+              }
+            },
+            {
+              "body": {
+                "dry_run": false,
+                "service": "shoshin-api",
+                "status": "ok"
+              },
+              "content_type": "application/json",
+              "error_fields": {},
+              "health_path": "/arc-api/health",
+              "healthy": true,
+              "http_status": 200,
+              "id": null,
+              "name": "SS-POCHI",
+              "reachable": true,
+              "status_fields": {
+                "status": "ok"
+              }
+            },
+            {
+              "body": {
+                "mcpError": null,
+                "mcpServerStatus": "operational",
+                "status": "ok",
+                "usingMatlantis": true
+              },
+              "content_type": "application/json",
+              "error_fields": {},
+              "health_path": "/arc-md-api/api/md/health",
+              "healthy": true,
+              "http_status": 200,
+              "id": null,
+              "name": "MD-POCHI",
+              "reachable": true,
+              "status_fields": {
+                "mcpServerStatus": "operational",
+                "status": "ok"
+              }
+            }
+          ],
+          "health_urls": [
+            "/health",
+            "/health",
+            "/health",
+            "/health",
+            "/build-api/health",
+            "/arc-api/health",
+            "/arc-md-api/api/md/health"
+          ],
+          "http_status": 200
+        },
+        "probe_policy": "All values in this record were observed from live HTTP responses by scripts/probe_kozo_dev.py.",
+        "registry_checks": {
+          "every_registry_entry_healthy": true,
+          "every_registry_health_reachable": true
+        },
+        "request": {
+          "backend": "http://127.0.0.1:8010",
+          "composition": "Li-Fe-P-O",
+          "expected_user_id": "yi_cao",
+          "gateway": "http://127.0.0.1:8090",
+          "health_timeout_seconds": 5,
+          "timeout_seconds": 120
+        },
+        "structure_fetch": {
+          "bytes": 1066,
+          "contains_atom_site_fields": true,
+          "contains_data_block": true,
+          "content_type": "text/plain; charset=utf-8",
+          "http_status": 200,
+          "line_count": 38
+        }
+      },
+      "path": "results/dev/kozo-dev-e2e-probe.json",
+      "sha256": "7b290dc366cfec2b27322ff9cc3bdb7271b79c8ba58ca98f37770422ca21def5"
+    },
+    {
+      "bytes": 2435,
+      "content": {
+        "artifacts": {
+          "checkpoint_sha256": "928f5df335ad50276d7e5bb2fc607b3c4ceebc1b3d1c234789e7cef2a6b436ab",
+          "dataset_sha256": "fac9c1a260ac8b6d3bafb3f6d47d6287d86e9e513bfb90f43be08368af55a7c4",
+          "loss_history_sha256": "5d77b6d5362f7216f7b7ce4a25dd68e6aaa12eead61e5349a706a371340f0c48",
+          "runner_sha256": "cdb373efcea448dcc0b6270c8e9d8af8fe0f8585f995b4e0b777b26fe4d7bdf6",
+          "samples_sha256": "4e6a6d9e4ca1b4c17ad0b95e834fd6fac1d504bf2da02223bd04c71e0b6f1bbd"
+        },
+        "checkpoint": "/home/yi/paper-reproductions/bundled-source-smoke.FxFjmk/results/minGPT-checkpoint-finetune-smoke-seed907/checkpoints/final.pt",
+        "cuda_available": true,
+        "cuda_device": "NVIDIA A10G",
+        "data_policy": "All numeric values were emitted by this real training/generation invocation; no article value was loaded.",
+        "evaluation": {
+          "completed_without_exception": true,
+          "error_file": null,
+          "notes": []
+        },
+        "generation": {
+          "elapsed_seconds": 0.2612011432647705,
+          "nonempty_samples": 100,
+          "num_samples": 100,
+          "temperature": 1.0,
+          "unique_nonempty_samples": 97
+        },
+        "metrics": {
+          "diversity": 0.683870044031783,
+          "novelty": 0.65,
+          "similarity": 0.25981651498989794,
+          "synthesizability": 1.0,
+          "uniqueness": 0.97,
+          "validity": 0.95
+        },
+        "model": {
+          "block_size": 64,
+          "label_length": 5,
+          "model_type": "gpt-nano",
+          "vocab_size": 591
+        },
+        "repo": "/home/yi/paper-reproductions/bundled-source-smoke.FxFjmk/vendor/PolyGen-1.0.0",
+        "seed": 907,
+        "task": "conditional",
+        "torch_version": "2.2.0",
+        "training": {
+          "batch_size": 8,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "elapsed_seconds": 0.42676281929016113,
+          "first_train_loss": 0.14837101101875305,
+          "first_validation_loss": 0.19536781311035156,
+          "grad_norm_clip": 1.0,
+          "initialization": "checkpoint",
+          "last_train_loss": 0.16325823962688446,
+          "last_validation_loss": 0.1517646759748459,
+          "learning_rate": 5e-05,
+          "loss_rows": 10,
+          "max_iters": 10,
+          "minimum_train_loss": 0.14837101101875305,
+          "minimum_validation_loss": 0.1352018564939499,
+          "num_workers": 0,
+          "starting_checkpoint": "/home/yi/paper-reproductions/bundled-source-smoke.FxFjmk/vendor/PolyGen-1.0.0/minGPT/ckpts/10000.pt",
+          "starting_checkpoint_sha256": "8fe47744b2edb197d6e7b6ec95b42be714603cdeba20bc491292514cc6438d19",
+          "train_rows": 9126,
+          "validation_rows": 2282,
+          "weight_decay": 0.1
+        }
+      },
+      "path": "results/dev/minGPT-checkpoint-finetune-smoke-seed907/run_summary.json",
+      "sha256": "379efa0843df8b58030fe2b651ba2f5a17eea7aed0b1af9dcdbd59d763aa7697"
+    },
+    {
+      "bytes": 532,
+      "content": {
+        "checkpoint": "/home/yi/paper-reproductions/PolyGen-1.0.0/minGPT/ckpts/10000.pt",
+        "cuda_available": true,
+        "cuda_device": "NVIDIA A10G",
+        "metrics": {
+          "diversity": 0.6918083263520143,
+          "novelty": 0.5700000000000001,
+          "similarity": 0.26579602773586514,
+          "synthesizability": 0.9411764705882353,
+          "uniqueness": 0.94,
+          "validity": 0.97
+        },
+        "num_samples": 100,
+        "repo": "/home/yi/paper-reproductions/PolyGen-1.0.0",
+        "seed": 42,
+        "task": "conditional",
+        "temperature": 1.0,
+        "torch_version": "2.2.0"
+      },
+      "path": "results/dev/minGPT-conditional-seed42/metrics.json",
+      "sha256": "095f5d19272bba10f32c0658dbcd68912ceeb11b0767d7f99a4f30d5f0dbd136"
+    }
+  ]
+}

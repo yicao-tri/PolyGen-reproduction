@@ -1,0 +1,201 @@
+mol_smiles,duplicate,diversity,validity,has_two_ends
+CC(CCCC(CCCNC)CCCCCNCC)O,False,novel,More than two ends,False
+,False,novel,More than two ends,False
+CC(C)C((CCC())CC(=(=))(C)O,False,novel,,False
+,True,novel,More than two ends,False
+CC(C)(CNCCN(C)C=)C(NO)CCCC[Cu],False,novel,,False
+CC(CCC(CCCCC(CCC(OOC(C))C,False,novel,,False
+,True,novel,More than two ends,False
+CC(C)(CN(C)C(CCO[Cu])CCCC(C)O[Cu],False,novel,,False
+CC(CN)CCCCCOCCCC(C)C)C)O[Cu],False,novel,,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+NCC(CC(C)CCCC)CC)C(C)CO[Cu],False,novel,,False
+CCCCC(CCCCC(COCCC(C)O(=O)[Au],False,novel,,False
+CC(CN(CCC(C)CC(CC(C)OC(=O)[Au],False,novel,,False
+,True,novel,More than two ends,False
+CCCC)CC(C)CCCCCOCCC(COO)[Au],False,novel,,False
+CC(CCCCCC)C(C(COO)OO(C)O[Cu],False,novel,,False
+C#CCCCC(CC)C(=O)CC(C(=C)[Au],False,novel,,False
+CC(CCCC(CCC(CCC)C(=O)[Au])O[Cu],False,novel,,True
+C=C(CCCC()C(C)CC(CO))OO,False,novel,,False
+CCC(C)CNC(CC)CC([Cu])C(=O)[Au],False,novel,ok,True
+CC(CCCNCC(C)COCC[Cu])C)CCCO,False,novel,,False
+,True,novel,More than two ends,False
+CCCCCC)(CNCCCC(CO)CCCCC)[Au],False,novel,,False
+,True,novel,More than two ends,False
+CC(C)CCC(CC(C)C(=O)CCC)O[Cu],False,novel,More than two ends,False
+CCCCC(COCC(C)C(C)CCOC)O[Cu],False,novel,More than two ends,False
+,True,novel,More than two ends,False
+CC(C)(CCCCCCCCOCOC(NOC[Au])O,False,novel,,False
+,True,novel,More than two ends,False
+CC(CCC)CC([Cu]))CCOCC(CO)C,False,novel,,False
+CC(CCCN()CCC(=C)CC())C)=O)C)O,False,novel,,False
+C=CCCCCC)C(=O)[Au]CCCC)OC(C)O[Cu],False,novel,,True
+CCCC(CNC(CC(CCCC(C)COC))C,False,novel,,False
+,True,novel,More than two ends,False
+CC((C([Cu]C)CCC)C(C)=O)O)CCCCPAD)PAD,False,novel,,False
+CCC(C)CCCC(CCCCC))C)OC(CC)PADPAD,False,novel,,False
+CCCCCC(C)C(CC)(C))[Au])C(=))C[Cu],False,novel,,True
+CCCC(CC(CNN)CCC)(C(=O)[Au]NO)PAD,False,novel,,False
+CC(CO(CCCC(CO))CC(=O)NC(=O)[Au],False,novel,,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+CCCNC(C(CC)C(C)((CCOO)CC)O[Cu],False,novel,,False
+CCC(C)C(CO))CCO[Cu])C(=O)[Au],False,novel,,True
+C=CCCCCCCC(CCC(=O)(=OCO,False,novel,,False
+CCCCCCC(CO)CCC[Cu])CCC(=O)[Au],False,novel,,True
+CCCC)CCCC(NO)C(COCCCCCCOO[Cu],False,novel,,False
+CC(CCC[Cu]CCN(CCOCCCC(C))=,False,novel,,False
+CC(CCCCCC(C)CCCCC(CC)O)[Cu],False,novel,More than two ends,False
+CCCCCCCCN)C(COC(CNCC)=O,False,novel,,False
+CC(CC([Cu]CCNCCCCCCC)C(C)C[Au],False,novel,,True
+CCCCC(C)CCCCC(COC(=O)[Au])O[Cu],False,novel,ok,True
+CCCCCCNCC(CC)CC)CCCO)C)O[Cu],False,novel,,False
+CC(CC()C)C)CC(C)CC(C)CC(C)O[Cu],False,novel,,False
+,True,novel,More than two ends,False
+CC(CO[Cu]CCCCC(CCCCC)C)OC(=O)[Au])PAD,False,novel,,True
+,True,novel,More than two ends,False
+CC(CCC)((C))CCCCOCN)C)[Cu],False,novel,,False
+CC(CCC(CNCCC)OC(=O)[Au]CC(=O)O,False,novel,,False
+,True,novel,More than two ends,False
+CC(CN(CCCCCCCNCCCC)CO),False,novel,More than two ends,False
+CC(CCCCCCC)C(COC)CC)CC)[Cu],False,novel,,False
+CC(CCNC)CC=NC(N)[Cu])CCCC)O),False,novel,,False
+CCC(CNCCCC)C)(CC)(COO))C,False,novel,,False
+CC(CCCNNCCCCOCC)CCOCCO))[Cu],False,novel,,False
+CCCCCCCC(CCCC(C)CC)O)(=O)[Au],False,novel,,False
+,True,novel,More than two ends,False
+COCCCCCCCCCOCC(CCCC(=O)[Au],False,novel,,False
+CC(CCCC(C)CC)CCCCC(C)CC[Cu],False,novel,More than two ends,False
+CC(CC(NC(C)CC(C)OOC(CC([Au],False,novel,,False
+,True,novel,More than two ends,False
+COCCCCC(C)CCCC)C)OC(=O)[Au],False,novel,,False
+CC(CCCCCCC(CCCOCO=C)CC,False,novel,,False
+CCCCCCCCCC)))NCO(C)CC(=))[Au]O[Cu],False,novel,,True
+CC((CCCCCCCC)CCCCCCO=)O[Cu],False,novel,,False
+CCC(CCCCCCCOOCC())CO)CCCC,False,novel,,False
+CCCCC(OCCCCCCO[Cu])C)C)CC)(C)F,False,novel,,False
+CC(CC)CCCC(CCC)CC(C))C)O[Cu],False,novel,,False
+CCCC(COCCCCCCC)OCCCC)O[Cu],False,novel,,False
+CCC(C(C)(COCCCO=)C)CCCO[Cu],False,novel,,False
+CC(CC(COCC(C)CC(OC)CCC))C,False,novel,More than two ends,False
+CC(C(CN)CCCC)CC(CON)CCO)[Cu],False,novel,,False
+CC(CCCN(CCCC()OC)C(CC)C,False,novel,,False
+CCCCC(CC(COO)CCC=C=C(C))C(C)[Cu],False,novel,More than two ends,False
+CC(CCCCCC)C(=C)N)CCCCCCCO[Cu],False,novel,,False
+CCCCC(C)CCCCC(CCC)CO[Cu])=O,False,novel,,False
+CC(CCNCC([Cu])CC=OC(COC(=O)[Au],False,novel,,True
+CCCCC(C((CO=O)C(CCC))()OC,False,novel,,False
+,True,novel,More than two ends,False
+CC(C(CCCC(C)(C)C(=OCC=CC[Au])))[Cu],False,novel,,True
+CC(CC(CCNCCCCN[Cu])OCC)CC[Au],False,novel,ok,True
+C=CCC)C(=O)CC(CC)C(CCC[Cu]CO[Cu],False,novel,,False
+,True,novel,More than two ends,False
+CCCC(CN(CCCCOCCCOC(=O)[Au],False,novel,,False
+,True,novel,More than two ends,False
+CC(C)CC)(C)CC)CCC(CO)C)O,False,novel,,False
+CCCCC(CCCNCC)CC(C)OC(=O)[Au],False,novel,More than two ends,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+CC(C)CC)CCC(C)CCCCCOCC,False,novel,,False
+,True,novel,More than two ends,False
+CCC(O)CCN()CC)CCO[Cu]C)OCC,False,novel,,False
+CCC(CCCNC(CCCCCCC(=C)C,False,novel,,False
+,True,novel,More than two ends,False
+C=(CCCN(CCC(C)CCCC(C)C(C))[Cu],False,novel,,False
+,True,novel,More than two ends,False
+CCN(CCCCCC(COCCCC(CO)))CC,False,novel,More than two ends,False
+CCCC(CCCNCCCC)(COC[Au])O,False,novel,More than two ends,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+CC(C)(CC(CCC)C(C))C)C(=O)[Au],False,novel,,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+C=(CC(C)CC(O)O)(C(=O)CCC)F)PAD,False,novel,,False
+CCCC(CC(NC)C)C(COC(CO)))C,False,novel,,False
+CC(C)(C(C)CCCCCCC(C)=O)[Au],False,novel,More than two ends,False
+CCCCCCC(CC)CCC())CCCCC)=O)[Au],False,novel,,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+CCC(CCC(CCCN)CCCC)N)CC(C),False,novel,,False
+CC(CC(C)N(C)CC(CCCCOC(=O)[Au],False,novel,,False
+CCCCNNCCC))CCCCCCCN(C)=)O[Cu],False,novel,,False
+CCC(CC)CCCC)C)OONC(CO)C)C,False,novel,,False
+CC(CCCCCCCC(OO)CCC(=O)[Au],False,novel,,False
+CNC(CCO)CCCC)C(C==C)CCO[Cu],False,novel,,False
+CCCCC(CC(CCCCCCO[Cu])CCOC,False,novel,,False
+CC(C)(NCCNC)COC)CC)CNCC(O,False,novel,,False
+,True,novel,More than two ends,False
+CCC(CCN(CCCC)C(=O)[Au])CN,False,novel,More than two ends,False
+CC(()C(CC)CC)CCCCCC)CCC,False,novel,,False
+CCCC(CNC(C))CCC(=O)[Au]CCCCO[Cu],False,novel,More than one bonds at the end point,True
+CCCCCCNC(CO[Cu])CC(C)CC(=O)[Au],False,novel,ok,True
+CC(C)CCCCCCCC(COC(CO)C)[Au],False,novel,More than two ends,False
+,True,novel,More than two ends,False
+C=CCCCCNCCCC)N)C)CC[Cu])C(C,False,novel,,False
+CC(CCCCC(CO)C)C(C)CC=[Cu])C),False,novel,,False
+CCCC(CC(C)CCCC(C)NC(C(C)(C)O,False,novel,,False
+CC((CC(CCN)C(C)CCC)C(CO=)FPAD,False,novel,,False
+CCCCC(COC)(CCN[Cu])O)C=O)C)PAD,False,novel,,False
+CCC(CCNCCCC(C)CC((NO))=C)[Au],False,novel,,False
+,True,novel,More than two ends,False
+CCC(CNC(C)CC(CCCC(OOO))C,False,novel,,False
+C=CCC)C(CC(C)C(CO)CO)OC[Cu],False,novel,,False
+C=C(CCC(C)CCCC(CCC)C)C)O[Cu],False,novel,,False
+CCCCCCCCNC(C)(CCCCCCO)[Au],False,novel,More than two ends,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+CC(CCC(CNCCC=OO(=)O))(C)C(C)[Cu],False,novel,,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+CCCCC(CCC(C)CO(=OC(CCCC)C,False,novel,,False
+CCCCC(C(CO))C()C)C((O))[Au]CPADOPAD,False,novel,,False
+CN(CCNCCCC(CCO)COC(=O)[Au],False,novel,,False
+CCCC(CN(CNCCCCCC(C)C(CO=O)[Au],False,novel,,False
+CCC(CC)CCNC)CC(C)CCOC(=O)[Au],False,novel,,False
+CCNCCC(CNCC(COCC(C))C(=O)[Au],False,novel,,False
+CC(C)(CCC)C)OCCCN)(=O)C)C)O[Cu],False,novel,,False
+,True,novel,More than two ends,False
+CC(CCCCCOC)CC(C)NC(=O)[Au],False,novel,More than two ends,False
+,True,novel,More than two ends,False
+CCC(CCCNCCCO[Cu]))C(=O)[Au],False,novel,,True
+CCCC(CCC(CCOO)CCC=[Cu])(=O)[Au],False,novel,,True
+CCCCC(CCC(OCC)CCCC(CCCC))O,False,novel,More than two ends,False
+CC(CCCCC(C)CCCNCCC(O))O[Cu],False,novel,More than two ends,False
+CC(C)CCCCN)CNCCCC)(CNN)CCC,False,novel,,False
+CC(CC(C)NC)CO)C(CCOOOO),False,novel,,False
+CCCC(CCCC(CCC)CCCC)(CO[Cu])OF,False,novel,More than two ends,False
+CC(CC(CCC(C)CCCC(CC)(CNC,False,novel,,False
+,True,novel,More than two ends,False
+CC(CC(C)C(CCCCCCOC(=O)[Au])C[Cu],False,novel,,True
+,True,novel,More than two ends,False
+CC(CCC)(NCC=C)CCCC)C(=O)[Au],False,novel,,False
+CC(CN)(COCCC(C)CCCCNC(=O)[Au],False,novel,,False
+CC(CCCC(CNC(CO)[Au])CCC))C)[Cu],False,novel,,True
+CN(CCCC(CCCO)CCCC)C)[Au])C)O,False,novel,,False
+CC(CC(CC(C)C)NCC(C)CCO)C(=O)[Au],False,novel,More than two ends,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+CC(CCCCCC(CCCC(C))(C)C,False,novel,,False
+CC(C(CCCCCCCCCC=C))CN(=O[Cu],False,novel,,False
+CCCC(CNCCCCC)CCC(CO[Cu])CO[Cu],False,novel,More than two ends,False
+CCCCCC(C)CCCO[Cu])CCC(=O)[Au],False,novel,,True
+,True,novel,More than two ends,False
+CC((C)C(NCC(CCCCC)CC)O)()O[Cu],False,novel,,False
+CCC(CCC(C[Cu])CC(C)CC(C)(C)PAD,False,novel,,False
+,True,novel,More than two ends,False
+CCCCCCCC((CC)CCC(=O)[Au]CO[Cu],False,novel,,True
+CCCC(CCOCCCO)(CNCCCCO))C(C)OO,False,novel,,False
+,True,novel,More than two ends,False
+CC(C)CCC)N(C)CCCCCC=O)[Au],False,novel,,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+,True,novel,More than two ends,False
+CC(CCCC()NCC((C)C(CC))O,False,novel,,False
+,True,novel,More than two ends,False
+CCC(CCNCC(C)C(CCO=C)OCC)[Cu],False,novel,,False
