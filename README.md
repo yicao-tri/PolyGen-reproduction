@@ -116,6 +116,23 @@ The bundled source is the upstream v1.0.0 release with only the changes recorded
 in `patches/polygen-v1.0.0-reproducibility.patch`. See `VENDORED_SOURCE.md` for
 the inclusion and exclusion policy.
 
+## Experiment B: complete-system formulation prototype
+
+Run the scoped physics-informed PCL formulation pipeline with:
+
+```bash
+./run_experiment_b.sh
+```
+
+It uses the CC BY 4.0 MIT/Zenodo formulation dataset to generate complete
+specifications containing repeat unit, molecular weight, architecture status,
+salt, molality, plasticizer status, and temperature. A fixed-`T0` VTF basis,
+group-held-out validation, group bootstrap uncertainty, and worst-window lower
+confidence bound produce robust rankings. The experiment deliberately blocks
+PolyGen-generated repeat units from ranking because the formulation source has
+only one polymer chemistry and one molecular weight. See
+`EXPERIMENT_B_REPORT.md` for the result and boundary.
+
 ## What is and is not compared
 
 Actual released data and actual DEV output are reported exactly as computed. A

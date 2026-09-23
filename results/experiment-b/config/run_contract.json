@@ -1,0 +1,40 @@
+{
+  "experiment": "B: complete-system PCL formulation generation",
+  "primary_question": "Can a physics-informed, uncertainty-aware layer generate and robustly rank complete PCL electrolyte specifications using the existing PolyGen workspace?",
+  "estimand": "Group-held-out RMSE of log10 conductivity and the minimum lower-confidence-bound conductivity over 303.15--363.15 K for each candidate formulation.",
+  "interpretation_boundary": "Validated only for 80 kDa PCL, observed salts, in-range molality and temperature. PolyGen-generated repeat units are interface/OOD tests, not cross-chemistry predictions.",
+  "source": {
+    "doi": "10.5281/zenodo.16741235",
+    "record_url": "https://zenodo.org/records/16741235",
+    "license": "CC BY 4.0",
+    "expected_sha256": "94e80bdcc2386cd6412618c4bd7857afbfdf37094dc9fa232d321d6401a0b936"
+  },
+  "unit_of_observation": "one measured conductivity at one salt/molality/temperature condition",
+  "pairing_group": "salt identity plus molality; all temperatures for a formulation remain in one fold",
+  "model": {
+    "temperature_skeleton": "fixed-T0 VTF basis: 1/(T_K - 180 K)",
+    "regression": "ridge with salt, molality polynomial, VTF and salt-by-molality interactions",
+    "uncertainty": "40 formulation-group bootstrap fits; 5th percentile is the lower confidence bound",
+    "cv": "5-fold GroupKFold by salt/molality formulation"
+  },
+  "candidate_space": {
+    "repeat_unit": "[Cu]OC(=O)CCCCC[Au]",
+    "mw_g_mol": 80000,
+    "architecture": "linear (dataset-level assumption; not varied)",
+    "plasticizer": "none recorded",
+    "salts": "all 17 observed salts with at least two distinct molalities",
+    "molality_grid_points_per_salt": 9,
+    "temperatures_K": [303.15, 323.15, 343.15, 363.15]
+  },
+  "selection": "maximize the minimum 5th-percentile predicted log10 conductivity across the temperature window",
+  "seed": 20260923,
+  "expected_outputs": [
+    "data_audit.json",
+    "cv_predictions.csv",
+    "model_metrics.json",
+    "candidate_predictions.csv",
+    "robust_rankings.csv",
+    "polygen_interface_audit.csv",
+    "run_manifest.json"
+  ]
+}

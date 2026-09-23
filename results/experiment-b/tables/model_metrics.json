@@ -1,0 +1,10 @@
+{
+  "group_cv_folds": 5,
+  "group_definition": "salt_shortname|molality",
+  "rmse_log10_S_cm": 0.9615957470749583,
+  "temperature_agnostic_null_rmse_log10_S_cm": 1.2607091857986228,
+  "rmse_improvement_over_temperature_agnostic_null": 0.29911343872366447,
+  "mae_log10_S_cm": 0.7180562570201037,
+  "r2": 0.5389207499202233,
+  "interpretation": "Formulation-held-out interpolation diagnostic; not a cross-polymer generalization estimate."
+}

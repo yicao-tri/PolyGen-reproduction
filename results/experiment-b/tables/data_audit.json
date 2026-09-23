@@ -1,0 +1,32 @@
+{
+  "source_sha256": "94e80bdcc2386cd6412618c4bd7857afbfdf37094dc9fa232d321d6401a0b936",
+  "rows": 711,
+  "repeat_units": 1,
+  "molecular_weights": [
+    80000.0
+  ],
+  "salts": 17,
+  "molality_values": 37,
+  "formulation_groups": 51,
+  "temperature_C_range": [
+    29.2,
+    90.2
+  ],
+  "conductivity_range": [
+    5.0600000000000057e-11,
+    0.0007269999999999
+  ],
+  "exact_condition_duplicate_rows": 414,
+  "missing_required_values": 0,
+  "identified_effects": [
+    "salt",
+    "molality",
+    "temperature"
+  ],
+  "non_identified_effects": [
+    "repeat_unit",
+    "mw_or_dp",
+    "architecture",
+    "plasticizer"
+  ]
+}
