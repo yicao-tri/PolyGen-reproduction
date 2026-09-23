@@ -1,0 +1,108 @@
+{
+  "metrics": {
+    "group_cv_folds": 5,
+    "group_definition": "salt_shortname|molality",
+    "rmse_log10_S_cm": 0.9615957470749583,
+    "temperature_agnostic_null_rmse_log10_S_cm": 1.2607091857986228,
+    "rmse_improvement_over_temperature_agnostic_null": 0.29911343872366447,
+    "mae_log10_S_cm": 0.7180562570201037,
+    "r2": 0.5389207499202233,
+    "interpretation": "Formulation-held-out interpolation diagnostic; not a cross-polymer generalization estimate."
+  },
+  "top5": [
+    {
+      "robust_rank": 1,
+      "formulation_id": "TFSI-m0.9000",
+      "salt_shortname": "TFSI",
+      "molality": 0.9000000000000001,
+      "worst_window_lcb_log10_S_cm": -5.929628334805704,
+      "mean_window_prediction_log10_S_cm": -4.665979522258427,
+      "max_uncertainty_sd_log10_S_cm": 0.16058328682950085,
+      "temperature_points": 4,
+      "selection_status": "eligible_in_domain_PCL_only"
+    },
+    {
+      "robust_rank": 2,
+      "formulation_id": "FSI-m0.6375",
+      "salt_shortname": "FSI",
+      "molality": 0.6375000000000002,
+      "worst_window_lcb_log10_S_cm": -5.94258053945658,
+      "mean_window_prediction_log10_S_cm": -4.516561600760809,
+      "max_uncertainty_sd_log10_S_cm": 0.26864446716499446,
+      "temperature_points": 4,
+      "selection_status": "eligible_in_domain_PCL_only"
+    },
+    {
+      "robust_rank": 3,
+      "formulation_id": "FSI-m0.2000",
+      "salt_shortname": "FSI",
+      "molality": 0.2,
+      "worst_window_lcb_log10_S_cm": -6.077674606639058,
+      "mean_window_prediction_log10_S_cm": -4.594875194152024,
+      "max_uncertainty_sd_log10_S_cm": 0.43628679884657406,
+      "temperature_points": 4,
+      "selection_status": "eligible_in_domain_PCL_only"
+    },
+    {
+      "robust_rank": 4,
+      "formulation_id": "FSI-m1.0750",
+      "salt_shortname": "FSI",
+      "molality": 1.0750000000000004,
+      "worst_window_lcb_log10_S_cm": -6.085774806121723,
+      "mean_window_prediction_log10_S_cm": -4.677552128168845,
+      "max_uncertainty_sd_log10_S_cm": 0.23663456612770248,
+      "temperature_points": 4,
+      "selection_status": "eligible_in_domain_PCL_only"
+    },
+    {
+      "robust_rank": 5,
+      "formulation_id": "TFSI-m1.3375",
+      "salt_shortname": "TFSI",
+      "molality": 1.3375000000000004,
+      "worst_window_lcb_log10_S_cm": -6.0960027711815385,
+      "mean_window_prediction_log10_S_cm": -4.7634260303081,
+      "max_uncertainty_sd_log10_S_cm": 0.13830810666715107,
+      "temperature_points": 4,
+      "selection_status": "eligible_in_domain_PCL_only"
+    }
+  ],
+  "manifest": {
+    "status": "complete",
+    "seed": 20260923,
+    "input": "/Users/yicao/.codex/.chatgpt-projects/g-p-6aac94e5fbf48191a04f8a6e7af92676/PolyGen-reproduction/inputs/external/mit-pcl-formulation/supplemental_data_all_experiments.csv",
+    "input_sha256": "94e80bdcc2386cd6412618c4bd7857afbfdf37094dc9fa232d321d6401a0b936",
+    "script_sha256": "5e34888f8a276bc92da16e61440d398a7aed5237edddbdbcc90b74a98f81da53",
+    "python": "3.9.6",
+    "sklearn": "1.6.1",
+    "rows": 711,
+    "candidate_condition_rows": 576,
+    "ranked_formulations": 144,
+    "bootstrap_repetitions": 40,
+    "artifacts": {
+      "data_audit.json": {
+        "sha256": "afe45075b237f30762a00fd3151bad2321add7532c5c1962fdc4b2bc45a9c5b0",
+        "bytes": 627
+      },
+      "model_metrics.json": {
+        "sha256": "96b6d8a72a2e09c80057e47dcfa7a715ec4dda91b8af49f641d78ccc1671d32d",
+        "bytes": 440
+      },
+      "cv_predictions.csv": {
+        "sha256": "526a20679f57158f6577febefd3577c921ffef38d04e8ea8dd5f78062ba68e31",
+        "bytes": 37196
+      },
+      "candidate_predictions.csv": {
+        "sha256": "0007494721e29a207bf45942e2784382cc670cc1f4f04228d7c99921fc7ed8a7",
+        "bytes": 128786
+      },
+      "robust_rankings.csv": {
+        "sha256": "f481c845b216d557660a8c7ce6f76028e7a3670ec452086b5519c030b75de0dc",
+        "bytes": 18216
+      },
+      "polygen_interface_audit.csv": {
+        "sha256": "3382f5a5c849fa8c55820e6f915cf42cfab30f0eeda80b88e30dc661b545ee73",
+        "bytes": 2518
+      }
+    }
+  }
+}
