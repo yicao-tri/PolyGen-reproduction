@@ -94,6 +94,24 @@ the caller. Run them inside the prepared PolyGen environment on DEV, write to a
 new directory, then copy the resulting JSON/CSV artifacts under `results/dev/`
 and rerun `./run_end_to_end.sh`.
 
+## Experiment A: structure-disjoint minGPT split
+
+The released conditional table is balanced before the pipeline performs its
+row-random 80/20 split. Audit both the released behavior and the corrected
+structure-disjoint behavior with:
+
+```bash
+python scripts/audit_mingpt_split.py \
+  --input vendor/PolyGen-1.0.0/minGPT/htp_md.csv \
+  --output results/experiment-a/split_audit.json
+```
+
+For a corrected run, add `--split-policy structure-disjoint --split-seed 42`
+to `scripts/run_mingpt_training.py`. The corrected policy deduplicates by exact
+p-SMILES, performs a label-stratified 80/20 split, asserts zero structural
+overlap, and oversamples the minority class in the training partition only.
+The released behavior remains the default for backward compatibility.
+
 The bundled source is the upstream v1.0.0 release with only the changes recorded
 in `patches/polygen-v1.0.0-reproducibility.patch`. See `VENDORED_SOURCE.md` for
 the inclusion and exclusion policy.

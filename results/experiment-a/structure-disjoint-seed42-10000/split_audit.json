@@ -1,0 +1,76 @@
+{
+  "policy": "structure-disjoint",
+  "seed": 42,
+  "test_size": 0.2,
+  "balance_stage": "training_partition_only",
+  "released_source": {
+    "rows": 11408,
+    "unique_structures": 6024,
+    "by_label": {
+      "0": {
+        "rows": 5704,
+        "unique_structures": 5704
+      },
+      "1": {
+        "rows": 5704,
+        "unique_structures": 320
+      }
+    }
+  },
+  "unique_source": {
+    "rows": 6024,
+    "unique_structures": 6024,
+    "by_label": {
+      "0": {
+        "rows": 5704,
+        "unique_structures": 5704
+      },
+      "1": {
+        "rows": 320,
+        "unique_structures": 320
+      }
+    }
+  },
+  "train": {
+    "rows": 9126,
+    "unique_structures": 4819,
+    "by_label": {
+      "0": {
+        "rows": 4563,
+        "unique_structures": 4563
+      },
+      "1": {
+        "rows": 4563,
+        "unique_structures": 256
+      }
+    }
+  },
+  "validation": {
+    "rows": 1205,
+    "unique_structures": 1205,
+    "by_label": {
+      "0": {
+        "rows": 1141,
+        "unique_structures": 1141
+      },
+      "1": {
+        "rows": 64,
+        "unique_structures": 64
+      }
+    }
+  },
+  "overlap_by_label": {
+    "0": {
+      "overlap_unique_structures": 0,
+      "validation_unique_structures": 1141,
+      "overlap_validation_rows": 0,
+      "validation_rows": 1141
+    },
+    "1": {
+      "overlap_unique_structures": 0,
+      "validation_unique_structures": 64,
+      "overlap_validation_rows": 0,
+      "validation_rows": 64
+    }
+  }
+}

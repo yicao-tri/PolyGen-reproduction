@@ -40,6 +40,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-iters", type=int, required=True)
     parser.add_argument("--batch-size", type=int, required=True)
     parser.add_argument("--num-workers", type=int, required=True)
+    parser.add_argument("--device", choices=("auto", "cpu", "cuda"), default="auto")
     parser.add_argument("--seed", type=int, required=True)
     parser.add_argument("--model-type", required=True)
     parser.add_argument("--block-size", type=int, required=True)
@@ -51,6 +52,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--grad-norm-clip", type=float, required=True)
     parser.add_argument("--num-samples", type=int, required=True)
     parser.add_argument("--temperature", type=float, required=True)
+    parser.add_argument(
+        "--split-policy",
+        choices=("released-random", "structure-disjoint"),
+        default="released-random",
+        help="Use the released row-random split or split unique structures before training-only balancing",
+    )
+    parser.add_argument("--split-seed", type=int, default=42)
     parser.add_argument(
         "--pretrain",
         type=Path,
@@ -96,7 +104,10 @@ def main() -> None:
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(args.seed)
 
+    from deepchem.feat.smiles_tokenizer import SmilesTokenizer  # pylint: disable=import-outside-toplevel
+    from minGPT.dataset import SmilesDataset  # pylint: disable=import-outside-toplevel
     from minGPT.pipeline import minGPT  # pylint: disable=import-outside-toplevel
+    from mingpt_split import build_split, write_prepared_split  # pylint: disable=import-outside-toplevel
 
     pipeline = minGPT()
     data_config = pipeline.get_default_data_config()
@@ -104,7 +115,37 @@ def main() -> None:
     data_config.task = args.task
     data_config.block_size = args.block_size
     data_config.length = args.label_length
-    train_dataset, test_dataset = pipeline.data_preprocessing(data_config)
+    source_data = repo / "minGPT" / "htp_md.csv"
+    split_result = build_split(source_data, args.split_policy, seed=args.split_seed)
+    prepared_data = output / "prepared_split.tsv"
+    train_indices, test_indices = write_prepared_split(split_result, prepared_data)
+    pipeline.tokenizer = SmilesTokenizer(vocab_file=str(repo / "minGPT" / "vocab.txt"))
+    pipeline.df = split_result.unique_source.copy()
+    pipeline.data_num = len(pipeline.df)
+    pipeline.length = data_config.length
+    train_dataset = SmilesDataset(
+        smiles_file=prepared_data,
+        data_index=train_indices,
+        tokenizer=pipeline.tokenizer,
+        input_col=data_config.input_col,
+        length=data_config.length,
+        block_size=data_config.block_size,
+        task=data_config.task,
+    )
+    test_dataset = SmilesDataset(
+        smiles_file=prepared_data,
+        data_index=test_indices,
+        tokenizer=pipeline.tokenizer,
+        input_col=data_config.input_col,
+        length=data_config.length,
+        block_size=data_config.block_size,
+        task=data_config.task,
+    )
+    pipeline.train_dataset = train_dataset
+    pipeline.test_dataset = test_dataset
+    (output / "split_audit.json").write_text(
+        json.dumps(split_result.metadata, indent=2) + "\n", encoding="utf-8"
+    )
 
     model_config = pipeline.get_default_model_config()
     model_config.model_type = args.model_type
@@ -114,6 +155,7 @@ def main() -> None:
 
     train_config = pipeline.get_default_train_config()
     train_config.max_iters = args.max_iters
+    train_config.device = args.device
     train_config.batch_size = args.batch_size
     train_config.num_workers = args.num_workers
     train_config.learning_rate = args.learning_rate
@@ -202,6 +244,7 @@ def main() -> None:
         "repo": str(repo),
         "task": args.task,
         "seed": args.seed,
+        "split": split_result.metadata,
         "training": {
             "initialization": "checkpoint" if pretrain_path is not None else "random",
             "starting_checkpoint": str(pretrain_path) if pretrain_path is not None else None,
@@ -209,6 +252,7 @@ def main() -> None:
             "max_iters": args.max_iters,
             "batch_size": args.batch_size,
             "num_workers": args.num_workers,
+            "device": args.device,
             "learning_rate": args.learning_rate,
             "betas": [args.beta1, args.beta2],
             "weight_decay": args.weight_decay,
@@ -246,7 +290,8 @@ def main() -> None:
         "checkpoint": str(final_checkpoint),
         "artifacts": {
             "runner_sha256": digest(Path(__file__).resolve()),
-            "dataset_sha256": digest(repo / "minGPT" / "htp_md.csv"),
+            "dataset_sha256": digest(source_data),
+            "prepared_split_sha256": digest(prepared_data),
             "checkpoint_sha256": digest(final_checkpoint),
             "loss_history_sha256": digest(loss_path),
             "samples_sha256": digest(sample_path),

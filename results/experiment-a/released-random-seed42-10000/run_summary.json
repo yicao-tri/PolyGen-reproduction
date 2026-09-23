@@ -1,0 +1,146 @@
+{
+  "data_policy": "All numeric values were emitted by this real training/generation invocation; no article value was loaded.",
+  "repo": "vendor/PolyGen-1.0.0",
+  "task": "conditional",
+  "seed": 42,
+  "split": {
+    "policy": "released-random",
+    "seed": 42,
+    "test_size": 0.2,
+    "balance_stage": "before_split_in_released_file",
+    "released_source": {
+      "rows": 11408,
+      "unique_structures": 6024,
+      "by_label": {
+        "0": {
+          "rows": 5704,
+          "unique_structures": 5704
+        },
+        "1": {
+          "rows": 5704,
+          "unique_structures": 320
+        }
+      }
+    },
+    "unique_source": {
+      "rows": 6024,
+      "unique_structures": 6024,
+      "by_label": {
+        "0": {
+          "rows": 5704,
+          "unique_structures": 5704
+        },
+        "1": {
+          "rows": 320,
+          "unique_structures": 320
+        }
+      }
+    },
+    "train": {
+      "rows": 9126,
+      "unique_structures": 4864,
+      "by_label": {
+        "0": {
+          "rows": 4544,
+          "unique_structures": 4544
+        },
+        "1": {
+          "rows": 4582,
+          "unique_structures": 320
+        }
+      }
+    },
+    "validation": {
+      "rows": 2282,
+      "unique_structures": 1472,
+      "by_label": {
+        "0": {
+          "rows": 1160,
+          "unique_structures": 1160
+        },
+        "1": {
+          "rows": 1122,
+          "unique_structures": 312
+        }
+      }
+    },
+    "overlap_by_label": {
+      "0": {
+        "overlap_unique_structures": 0,
+        "validation_unique_structures": 1160,
+        "overlap_validation_rows": 0,
+        "validation_rows": 1160
+      },
+      "1": {
+        "overlap_unique_structures": 312,
+        "validation_unique_structures": 312,
+        "overlap_validation_rows": 1122,
+        "validation_rows": 1122
+      }
+    }
+  },
+  "training": {
+    "initialization": "random",
+    "starting_checkpoint": null,
+    "starting_checkpoint_sha256": null,
+    "max_iters": 10000,
+    "batch_size": 64,
+    "num_workers": 0,
+    "device": "cpu",
+    "learning_rate": 0.0005,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "weight_decay": 0.1,
+    "grad_norm_clip": 1.0,
+    "elapsed_seconds": 823.753867149353,
+    "train_rows": 9126,
+    "validation_rows": 2282,
+    "loss_rows": 10000,
+    "first_train_loss": 6.405919551849365,
+    "last_train_loss": 0.17306049168109894,
+    "minimum_train_loss": 0.14430686831474304,
+    "first_validation_loss": 6.41129732131958,
+    "last_validation_loss": 0.16988608241081238,
+    "minimum_validation_loss": 0.14625555276870728
+  },
+  "model": {
+    "model_type": "gpt-nano",
+    "block_size": 64,
+    "label_length": 5,
+    "vocab_size": 591
+  },
+  "generation": {
+    "num_samples": 100,
+    "nonempty_samples": 100,
+    "unique_nonempty_samples": 99,
+    "temperature": 1.0,
+    "elapsed_seconds": 1.7268648147583008
+  },
+  "metrics": {
+    "uniqueness": 0.99,
+    "novelty": 0.61,
+    "validity": 0.96,
+    "synthesizability": 0.875,
+    "similarity": 0.2608285137647713,
+    "diversity": 0.7193458106239853
+  },
+  "evaluation": {
+    "completed_without_exception": true,
+    "notes": [],
+    "error_file": null
+  },
+  "checkpoint": "results/experiment-a/released-random-seed42-10000/checkpoints/final.pt",
+  "artifacts": {
+    "runner_sha256": "393f7cffcc98478a27009cd073d22d118b8cfc70772edddb8e0a7c93d1571bb8",
+    "dataset_sha256": "fac9c1a260ac8b6d3bafb3f6d47d6287d86e9e513bfb90f43be08368af55a7c4",
+    "prepared_split_sha256": "ddd32b10792473fe355fab83f4d2f00c700405a4054be083397114e252ae0c8f",
+    "checkpoint_sha256": "68d2794e0d63f36d0a659e6c75cce033d33eed2f1addeb8c132748e12b5a01cd",
+    "loss_history_sha256": "89904d4d216f59e5bc430275a18953eef2c6f37178aa0d9ce0719bca79aedf39",
+    "samples_sha256": "426557d9cf6ea03bd852474c76d623f84334d537232077d52867399960302ca9"
+  },
+  "torch_version": "2.0.1",
+  "cuda_available": false,
+  "cuda_device": null
+}

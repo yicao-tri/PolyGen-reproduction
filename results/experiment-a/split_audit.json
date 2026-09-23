@@ -1,0 +1,157 @@
+{
+  "claim": "The released balanced rows are split after positive structures were duplicated.",
+  "source": "vendor/PolyGen-1.0.0/minGPT/htp_md.csv",
+  "source_sha256": "fac9c1a260ac8b6d3bafb3f6d47d6287d86e9e513bfb90f43be08368af55a7c4",
+  "released_random": {
+    "policy": "released-random",
+    "seed": 42,
+    "test_size": 0.2,
+    "balance_stage": "before_split_in_released_file",
+    "released_source": {
+      "rows": 11408,
+      "unique_structures": 6024,
+      "by_label": {
+        "0": {
+          "rows": 5704,
+          "unique_structures": 5704
+        },
+        "1": {
+          "rows": 5704,
+          "unique_structures": 320
+        }
+      }
+    },
+    "unique_source": {
+      "rows": 6024,
+      "unique_structures": 6024,
+      "by_label": {
+        "0": {
+          "rows": 5704,
+          "unique_structures": 5704
+        },
+        "1": {
+          "rows": 320,
+          "unique_structures": 320
+        }
+      }
+    },
+    "train": {
+      "rows": 9126,
+      "unique_structures": 4864,
+      "by_label": {
+        "0": {
+          "rows": 4544,
+          "unique_structures": 4544
+        },
+        "1": {
+          "rows": 4582,
+          "unique_structures": 320
+        }
+      }
+    },
+    "validation": {
+      "rows": 2282,
+      "unique_structures": 1472,
+      "by_label": {
+        "0": {
+          "rows": 1160,
+          "unique_structures": 1160
+        },
+        "1": {
+          "rows": 1122,
+          "unique_structures": 312
+        }
+      }
+    },
+    "overlap_by_label": {
+      "0": {
+        "overlap_unique_structures": 0,
+        "validation_unique_structures": 1160,
+        "overlap_validation_rows": 0,
+        "validation_rows": 1160
+      },
+      "1": {
+        "overlap_unique_structures": 312,
+        "validation_unique_structures": 312,
+        "overlap_validation_rows": 1122,
+        "validation_rows": 1122
+      }
+    }
+  },
+  "structure_disjoint": {
+    "policy": "structure-disjoint",
+    "seed": 42,
+    "test_size": 0.2,
+    "balance_stage": "training_partition_only",
+    "released_source": {
+      "rows": 11408,
+      "unique_structures": 6024,
+      "by_label": {
+        "0": {
+          "rows": 5704,
+          "unique_structures": 5704
+        },
+        "1": {
+          "rows": 5704,
+          "unique_structures": 320
+        }
+      }
+    },
+    "unique_source": {
+      "rows": 6024,
+      "unique_structures": 6024,
+      "by_label": {
+        "0": {
+          "rows": 5704,
+          "unique_structures": 5704
+        },
+        "1": {
+          "rows": 320,
+          "unique_structures": 320
+        }
+      }
+    },
+    "train": {
+      "rows": 9126,
+      "unique_structures": 4819,
+      "by_label": {
+        "0": {
+          "rows": 4563,
+          "unique_structures": 4563
+        },
+        "1": {
+          "rows": 4563,
+          "unique_structures": 256
+        }
+      }
+    },
+    "validation": {
+      "rows": 1205,
+      "unique_structures": 1205,
+      "by_label": {
+        "0": {
+          "rows": 1141,
+          "unique_structures": 1141
+        },
+        "1": {
+          "rows": 64,
+          "unique_structures": 64
+        }
+      }
+    },
+    "overlap_by_label": {
+      "0": {
+        "overlap_unique_structures": 0,
+        "validation_unique_structures": 1141,
+        "overlap_validation_rows": 0,
+        "validation_rows": 1141
+      },
+      "1": {
+        "overlap_unique_structures": 0,
+        "validation_unique_structures": 64,
+        "overlap_validation_rows": 0,
+        "validation_rows": 64
+      }
+    }
+  }
+}
