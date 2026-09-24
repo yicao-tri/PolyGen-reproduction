@@ -1,0 +1,28 @@
+{
+  "experiment": "C1 paired binary-versus-continuous chemistry generation",
+  "frozen_before_run": true,
+  "primary_estimand": "paired seed difference in valid in-domain target-hit rate, continuous minus binary",
+  "hit_definition": "RDKit-valid, exactly one [Cu] and [Au], nearest-training Tanimoto >= 0.35, verifier tree SD < 0.35 log10(S/cm), and absolute target error < 0.5 log10(S/cm)",
+  "arms": {
+    "binary": "two-level condition embedding using the original 1e-4 S/cm threshold",
+    "continuous": "scalar normalized log10 conductivity projected to a learned soft-prefix embedding"
+  },
+  "shared": {
+    "source": "inputs/release-data/htpmd-trainset.csv",
+    "split_seed": 20260923,
+    "generator_train_fraction": 0.8,
+    "model": "gpt-nano, block size 64, prefix length 5",
+    "optimizer_steps": 1000,
+    "batch_size": 64,
+    "learning_rate": 0.0005,
+    "generation_targets_log10_S_cm": [-5.0, -4.0, -3.0],
+    "samples_per_target": 100,
+    "sampling_temperature": 1.0,
+    "seeds": [17, 42, 907]
+  },
+  "forward_verifier": "frozen 300-tree Morgan-fingerprint random forest trained only on generator-train structures; 20% structure-disjoint test is never used by either generator",
+  "secondary_metrics": ["validity", "two-ended validity", "uniqueness", "novelty", "target MAE", "target-prediction correlation", "monotonicity", "OOD rate"],
+  "interpretation_boundary": "LiTFSI, 353 K, released HTP-MD protocol only; no salt, temperature, DP, architecture, or experimental conductivity claim",
+  "stopping_rule": "all six runs finish 1000 optimizer steps and emit 300 samples each; no result-dependent reruns",
+  "multiplicity": "one prespecified primary paired contrast; secondary metrics descriptive"
+}

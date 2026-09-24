@@ -1,0 +1,11 @@
+{
+  "experiment": "C1b support-aware frozen-checkpoint follow-up",
+  "status": "prespecified after C1 support audit; not part of C1 primary inference",
+  "reason": "C1 target -3 is outside observed HTP-MD conductivity support and -5 is near the lower edge.",
+  "models": "exact six frozen C1 checkpoints; no retraining or seed selection",
+  "targets": "10th, 50th, and 90th percentiles of generator-training log10 conductivity, computed before generation",
+  "samples_per_target": 100,
+  "seeds": [17, 42, 907],
+  "metrics_and_thresholds": "identical to C1",
+  "interpretation": "support-aware controllability diagnostic; reported separately from the frozen C1 primary estimand"
+}

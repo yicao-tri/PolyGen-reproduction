@@ -1,0 +1,19 @@
+{
+  "system_rows": 655,
+  "conductivity_points": 5225,
+  "temperature_columns": 22,
+  "polymers": 78,
+  "smiles_1": 70,
+  "anions": 12,
+  "dois": 65,
+  "architectures": 3,
+  "rows_with_mn": 325,
+  "rows_with_mw": 528,
+  "source_sha256": "c85f0568e8bde46913c009935ce0bf0643a72b9f086f5cc5d21ac724412baa63",
+  "limitations": [
+    "secondary literature compilation",
+    "SMILES descriptors are not standardized two-ended p-SMILES",
+    "temperature curves are sparse and irregular",
+    "Mn/Mw/architecture fields are missing for many systems"
+  ]
+}

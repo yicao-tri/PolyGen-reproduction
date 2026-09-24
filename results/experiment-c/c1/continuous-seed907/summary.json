@@ -1,0 +1,9 @@
+{
+  "arm": "continuous",
+  "seed": 907,
+  "steps": 1000,
+  "elapsed_seconds": 59.85732102394104,
+  "first_loss": 6.371424198150635,
+  "last_loss": 0.2692369520664215,
+  "samples": 300
+}
