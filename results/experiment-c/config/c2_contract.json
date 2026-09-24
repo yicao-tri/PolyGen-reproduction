@@ -1,0 +1,17 @@
+{
+  "experiment": "C2 conditional PCL formulation generation",
+  "primary_estimand": "paired seed difference in in-support target-hit rate relative to random enumeration",
+  "arms": {
+    "random": "uniform salt/loading candidate enumeration",
+    "conditional_knn": "inverse generator sampling formulations near requested conductivity and temperature in standardized condition space",
+    "forward_optimization": "frozen-surrogate grid ranking; strong non-generative baseline"
+  },
+  "split": "80/20 by salt+molality formulation group; all temperatures from a formulation stay together",
+  "seeds": [17, 42, 907],
+  "queries": "three within-training-support conductivity quantiles at 303.15, 343.15, and 363.15 K",
+  "samples_per_query": 100,
+  "hit_definition": "absolute frozen-verifier target error < 0.25 log10(S/cm), bootstrap SD < 0.35, and salt/loading/temperature within training support",
+  "proposal_model": "20 formulation-group bootstrap fits of the Experiment B fixed-T0 VTF ridge model",
+  "independent_verifier": "300-tree random forest over salt identity, molality, and temperature; never used for proposal or optimization",
+  "interpretation_boundary": "80 kDa PCL only; formulation-selection benchmark, not cross-polymer generation"
+}

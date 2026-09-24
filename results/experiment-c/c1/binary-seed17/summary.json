@@ -1,0 +1,9 @@
+{
+  "arm": "binary",
+  "seed": 17,
+  "steps": 1000,
+  "elapsed_seconds": 61.45810890197754,
+  "first_loss": 6.414120197296143,
+  "last_loss": 0.27912938594818115,
+  "samples": 300
+}

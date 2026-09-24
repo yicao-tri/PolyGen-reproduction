@@ -133,6 +133,14 @@ PolyGen-generated repeat units from ranking because the formulation source has
 only one polymer chemistry and one molecular weight. See
 `EXPERIMENT_B_REPORT.md` for the result and boundary.
 
+## Experiment C: binary versus richer conditioning
+
+Run `./run_experiment_c.sh` to reproduce the paired binary/continuous chemistry
+generator comparison, support-aware frozen-checkpoint follow-up, PCL formulation
+baseline comparison, PEDatamine audit, deliberately blocked hierarchical demo,
+figures, and artifact verification. The complete interpretation and publication
+gate are in `EXPERIMENT_C_REPORT.md`.
+
 ## What is and is not compared
 
 Actual released data and actual DEV output are reported exactly as computed. A

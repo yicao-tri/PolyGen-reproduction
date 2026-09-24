@@ -1,0 +1,11 @@
+repeat_unit,chemistry_target_log_sigma,chemistry_verifier_prediction,salt,molality,temperature_K,formulation_target_log_sigma,formulation_verifier_prediction,joint_support_status,eligible_for_physical_claim
+CN(CCCN(C)COCCOC(=O)[Au])O[Cu],-3.987596508989849,-3.9785586863956346,ClO4,2.000000000000001,303.15,-6.460208124540202,-6.474280025665547,BLOCKED_no_training_data_for_generated_chemistry_plus_formulation,False
+O=C([Au])OCOCCCO[Cu],-3.987596508989849,-3.977219766959623,ClO4,2.3000000000000007,303.15,-6.460208124540202,-6.482993308833698,BLOCKED_no_training_data_for_generated_chemistry_plus_formulation,False
+CC(=O)N(COCCO[Cu])NC(=O)[Au],-3.987596508989849,-3.999127732265309,ClO4,1.9000000000000008,303.15,-6.460208124540202,-6.485819827705369,BLOCKED_no_training_data_for_generated_chemistry_plus_formulation,False
+CN(CCO[Cu])CCCOC(=O)[Au],-3.987596508989849,-3.956613359570555,ClO4,2.200000000000001,303.15,-6.460208124540202,-6.662826885452352,BLOCKED_no_training_data_for_generated_chemistry_plus_formulation,False
+CN(CC(=O)CCCO[Cu])CCOC(=O)[Au],-3.987596508989849,-4.02306973317424,DFOB,3.8000000000000016,303.15,-6.460208124540202,-6.348774594762374,BLOCKED_no_training_data_for_generated_chemistry_plus_formulation,False
+CNCCOCCC(CN[Cu])OC(=O)[Au],-3.987596508989849,-4.024821089743206,ClO4,2.000000000000001,303.15,-6.460208124540202,-6.474280025665547,BLOCKED_no_training_data_for_generated_chemistry_plus_formulation,False
+CNCCCNCN(CCOC(=O)[Au])CCCO[Cu],-3.987596508989849,-4.035465423343861,ClO4,2.200000000000001,303.15,-6.460208124540202,-6.662826885452352,BLOCKED_no_training_data_for_generated_chemistry_plus_formulation,False
+O=C([Au])N(COCCCCCO[Cu])OCCCOC,-3.987596508989849,-4.035832259601907,ClO4,2.000000000000001,303.15,-6.460208124540202,-6.474280025665547,BLOCKED_no_training_data_for_generated_chemistry_plus_formulation,False
+CS(CNCCCO[Cu])CCOC(=O)[Au],-3.987596508989849,-4.050825247613062,TCM,2.1000000000000005,303.15,-6.460208124540202,-6.606207864014229,BLOCKED_no_training_data_for_generated_chemistry_plus_formulation,False
+CC(CCOCC(=O)[Au])NCCO[Cu],-3.987596508989849,-4.059236665868531,BOB,0.2,303.15,-6.460208124540202,-6.214232988548161,BLOCKED_no_training_data_for_generated_chemistry_plus_formulation,False
