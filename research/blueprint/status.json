@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-24",
+  "canonical_blueprint": "RESEARCH_BLUEPRINT.md",
+  "current_stage": "S2",
+  "claim_tier": "offline-controlled",
+  "stages": [
+    {
+      "id": "S0",
+      "name": "Reproduction and governance",
+      "status": "complete",
+      "paper_sections": ["Methods: data and provenance", "Supplement: reproduction audit"],
+      "evidence": ["AUDIT.md", "REPRODUCTION_COVERAGE.md", "tests/test_mingpt_split.py"],
+      "blockers": [],
+      "next_target": null
+    },
+    {
+      "id": "S1",
+      "name": "Five-seed offline comparison",
+      "status": "complete",
+      "paper_sections": ["Results 1: continuous conditioning", "Figure 1", "Figure 2", "Table 1"],
+      "evidence": [
+        "results/experiment-c/publication/c1_five_seed_summary.json",
+        "results/experiment-c/figures/c1_five_seed_publication.svg",
+        "results/experiment-c/verification.json"
+      ],
+      "blockers": [],
+      "next_target": null
+    },
+    {
+      "id": "S2",
+      "name": "Physical-validation readiness",
+      "status": "current",
+      "paper_sections": ["Methods: candidate selection", "Methods: MD preregistration"],
+      "evidence": [
+        "results/experiment-c/md-validation/md_batch_manifest.csv",
+        "results/experiment-c/md-validation/MD_VALIDATION_PROTOCOL.md"
+      ],
+      "blockers": [
+        "Exact PEO/build/formulation/protocol specification not yet frozen",
+        "Buildability and force-field coverage not yet audited for every candidate",
+        "Blinded IDs, replica seeds, resource plan, and frozen analysis smoke test remain open"
+      ],
+      "next_target": "Produce a build-qualified immutable MD manifest and pass the S2 dry-run gate"
+    },
+    {
+      "id": "S3",
+      "name": "Blinded common-protocol MD",
+      "status": "planned",
+      "paper_sections": ["Results 2: physical validation", "MD figure", "MD table"],
+      "evidence": [],
+      "blockers": ["S2 acceptance gate"],
+      "next_target": "Run the frozen randomized MD batch without cohort-specific replacement"
+    },
+    {
+      "id": "S4",
+      "name": "Original PolyGen alignment and generator repair",
+      "status": "planned",
+      "paper_sections": ["Results 3: model alignment and ablations", "Supplement: baseline coverage"],
+      "evidence": ["REPRODUCTION_COVERAGE.md"],
+      "blockers": ["S3 physical-validation decision", "Missing original publication artifacts for some experiments"],
+      "next_target": "Close the six-metric, architecture, scale, functional-group, and pretraining gaps"
+    },
+    {
+      "id": "S5",
+      "name": "Multi-condition complete-system generation",
+      "status": "planned",
+      "paper_sections": ["Results 4: beyond repeat-unit generation"],
+      "evidence": ["EXPERIMENT_B_REPORT.md", "EXPERIMENT_C_REPORT.md"],
+      "blockers": ["Multi-domain verifier has not passed a frozen quality gate", "C2 verifier is accuracy-limited"],
+      "next_target": "Build leakage-safe PEDatamine harmonization and a calibrated crossed-condition verifier"
+    },
+    {
+      "id": "S6",
+      "name": "Closed-loop and confirmatory evaluation",
+      "status": "planned",
+      "paper_sections": ["Results 5: self-improving discovery"],
+      "evidence": [],
+      "blockers": ["Prospective MD outcomes unavailable", "Sealed external test not defined"],
+      "next_target": "Freeze acquisition arms, feedback budgets, and sealed evaluation"
+    },
+    {
+      "id": "S7",
+      "name": "Manuscript freeze and release",
+      "status": "planned",
+      "paper_sections": ["Full manuscript", "Data and code availability"],
+      "evidence": ["evidence/obsidian/experiment-c-five-seed-milestone/OVERLEAF_HANDOFF.md"],
+      "blockers": ["Upstream scientific stages incomplete"],
+      "next_target": "Freeze the claim-evidence table after S6"
+    }
+  ],
+  "exploratory_branches": [
+    {
+      "id": "E-S4-CONSTRAINED",
+      "parent_stage": "S4",
+      "status": "planned",
+      "question": "Can constrained decoding recover validity and novelty without losing target adherence?"
+    },
+    {
+      "id": "E-S4-SUPPORT",
+      "parent_stage": "S4",
+      "status": "planned",
+      "question": "Does continuous conditioning remain superior when trained prospectively on support-aware targets?"
+    },
+    {
+      "id": "E-S5-PEDATAMINE",
+      "parent_stage": "S5",
+      "status": "planned",
+      "question": "Can PEDatamine support leakage-safe temperature and formulation controllability?"
+    },
+    {
+      "id": "E-S5-C2-VERIFIER",
+      "parent_stage": "S5",
+      "status": "planned",
+      "question": "Can C2 verifier accuracy and calibration reach a prespecified physical-claim gate?"
+    }
+  ]
+}

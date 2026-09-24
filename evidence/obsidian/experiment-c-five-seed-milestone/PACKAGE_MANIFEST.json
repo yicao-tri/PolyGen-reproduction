@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "generated_by": "obsidian-evidence-report/scripts/validate_package.py",
+  "files": [
+    {
+      "path": ".DS_Store",
+      "bytes": 6148,
+      "sha256": "bd71cdc16185de40a1d42e7d34b8555d03073398bd75448b0146502828cdf589"
+    },
+    {
+      "path": "Continuous conditioning beyond binary PolyGen — five-seed milestone.md",
+      "bytes": 11674,
+      "sha256": "c989f8479266e53255896e9d146339dbcc65f93a37e28e4122ace51483fa111c"
+    },
+    {
+      "path": "OVERLEAF_HANDOFF.md",
+      "bytes": 5471,
+      "sha256": "ffe3bc15f58a9fdfc44c7411e0fce28a80c66d2095abeb0ccb8d337aa6d0a6c3"
+    },
+    {
+      "path": "PROVENANCE.csv",
+      "bytes": 3975,
+      "sha256": "b191be954c3f251a6ad8af362d6e262b519b3da0c988ca7939a72b01621fe5f0"
+    },
+    {
+      "path": "assets/.DS_Store",
+      "bytes": 6148,
+      "sha256": "aa8fd167d82ccf4dfb82476cc3a47227ed3872124849b2d366ff3f88eca4ffa8"
+    },
+    {
+      "path": "assets/figures/binary_30_candidates.png",
+      "bytes": 413230,
+      "sha256": "6f1e14f69f77e5198c9f7079669f375b3ecbaab3b6f5d8ecafbfc2b94c89adac"
+    },
+    {
+      "path": "assets/figures/c1_five_seed_primary_effect.png",
+      "bytes": 56241,
+      "sha256": "daa3ecfc2e5399cf00d7add34e1ba192545a85c1ce88cde60bff3ad4d7e89e81"
+    },
+    {
+      "path": "assets/figures/c1_five_seed_primary_effect.svg",
+      "bytes": 12243,
+      "sha256": "564ed2c913a06f93cfdfe615c212bc5233c3ada028cf808f2fea91ecfe6c3895"
+    },
+    {
+      "path": "assets/figures/c1_five_seed_publication.png",
+      "bytes": 148049,
+      "sha256": "5c9c51d2d23319d6a250118b984c67f51e737ea514b6146f21e5c4e9d1a828f7"
+    },
+    {
+      "path": "assets/figures/c1_five_seed_publication.svg",
+      "bytes": 34147,
+      "sha256": "f12f617add4bead94783fbebd05949e89fe37a4fc1870819af73e6ef1b183b9e"
+    },
+    {
+      "path": "assets/figures/continuous_30_candidates.png",
+      "bytes": 403711,
+      "sha256": "1557f5238d8905e767082559648a3b78307d09f95b6475fa6b020c9fa7ea06ed"
+    },
+    {
+      "path": "assets/tables/binary_top20.csv",
+      "bytes": 5865,
+      "sha256": "24af9f66fb9bf53393fa46ee46c86dc5d1e3a4108c25cd9e12fb8dd58f824644"
+    },
+    {
+      "path": "assets/tables/c1_five_seed_effect_summary.csv",
+      "bytes": 1005,
+      "sha256": "68cf9038e5d1d16cf48b715f6b106f926c85214035ff534a072223cecd67ef59"
+    },
+    {
+      "path": "assets/tables/c1_five_seed_paired_effects.csv",
+      "bytes": 1612,
+      "sha256": "937a168becdfbe1b14d0c8330298234c46d0daf5ac356088d15cf93d4d67784a"
+    },
+    {
+      "path": "assets/tables/c1_five_seed_target_summary.csv",
+      "bytes": 639,
+      "sha256": "cb5fb892fb9cde89e13dd56d631970e05169b3beb8de28c5ec44a094b5a12917"
+    },
+    {
+      "path": "assets/tables/candidate_structure_index.csv",
+      "bytes": 15922,
+      "sha256": "4c15232c662c93de7c01ca4571c6850d62f1788a586cc8f70e12242ccece31af"
+    },
+    {
+      "path": "assets/tables/continuous_top20.csv",
+      "bytes": 6150,
+      "sha256": "e1a4b644fe70270dbd6c9c8bf6e5bf05e4a55b894e4ce9ade5d19a4ea3047cf4"
+    },
+    {
+      "path": "assets/tables/legacy_polygen_hash20.csv",
+      "bytes": 3367,
+      "sha256": "4ecbf1a6ff1aa404a6897565217ee3f5e867c349413827aeec14753f211d760c"
+    },
+    {
+      "path": "assets/tables/md_batch_manifest.csv",
+      "bytes": 8925,
+      "sha256": "00713586a6785dce92938ec9a54b40969e4ff0579f87aca4909de1d4f418e68e"
+    },
+    {
+      "path": "assets/tables/structure_comparison.csv",
+      "bytes": 649,
+      "sha256": "617e8e0bd124fb284105f3c42b857813527e2e9d1b562e0ca8c5c7905df3c4bb"
+    },
+    {
+      "path": "evidence/.DS_Store",
+      "bytes": 6148,
+      "sha256": "fa73a9222059b3591bb4311e6ebfc511c65c4ca605097847522158da56a66d6e"
+    },
+    {
+      "path": "evidence/data/MD_VALIDATION_PROTOCOL.md",
+      "bytes": 2083,
+      "sha256": "b3118daeed118114d8351d99fd615bb218318c5c4cb93f8093975fbe3b79ca14"
+    },
+    {
+      "path": "evidence/data/POLYGEN_ALIGNMENT_TODO.md",
+      "bytes": 5305,
+      "sha256": "79c30d5a24b2b3584d199beafeeddbecc66ada5ad058b3c96165c32a996b1916"
+    },
+    {
+      "path": "evidence/data/c1_five_seed_arm_target_metrics.csv",
+      "bytes": 3048,
+      "sha256": "ebed240eca66dd663bcc82ed1fbf5de57277d559802449245222332e40131849"
+    },
+    {
+      "path": "evidence/data/c1_five_seed_controllability.csv",
+      "bytes": 426,
+      "sha256": "902a8aa0bbf39d78ef707e77de3ea618cd16307938ef2cc394a68713a424c108"
+    },
+    {
+      "path": "evidence/data/c1_five_seed_summary.json",
+      "bytes": 1609,
+      "sha256": "a34732a841c55c1bb30c4f5510edcdd2b87e8447cfbd632f2d1d465c8d9aee08"
+    },
+    {
+      "path": "evidence/data/manifest.json",
+      "bytes": 779,
+      "sha256": "008b64a4e68f76dca591d43765cdf80f6c760f7e02855fd40cc5a763d3394248"
+    },
+    {
+      "path": "evidence/data/verification.json",
+      "bytes": 6582,
+      "sha256": "383f70a460d2f946d3e89e46d26ccaded184423faaabf83fb19444db55683fe0"
+    },
+    {
+      "path": "evidence/scripts/build_md_validation_plan.py",
+      "bytes": 5098,
+      "sha256": "b70a906b853ea1b40fd38a035cddad634803c8b658d993ab7543bbeb8bbaf182"
+    },
+    {
+      "path": "evidence/scripts/plot_experiment_c.py",
+      "bytes": 7667,
+      "sha256": "dff4bf1c2f9aead518a69e732a112597b2a3acdc510382c075a1459236123621"
+    },
+    {
+      "path": "evidence/scripts/postprocess_experiment_c_publication.py",
+      "bytes": 13215,
+      "sha256": "f69f7450f5f047975d35cbcc6a452ff98183344a17758167bb7611d173efe9a5"
+    },
+    {
+      "path": "evidence/scripts/render_experiment_c1_candidates.py",
+      "bytes": 11132,
+      "sha256": "4f7c7de252c293069fa1f54a58e1820922bf81bbfd6e2b508efe2ea4a4280832"
+    },
+    {
+      "path": "evidence/scripts/verify_experiment_c.py",
+      "bytes": 3706,
+      "sha256": "a1d24d6082d23548261f6d31d84c72b88eee88821d44c1ddd4d72c95685eaced"
+    }
+  ]
+}
