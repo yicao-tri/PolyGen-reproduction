@@ -1,0 +1,29 @@
+{
+  "arm": "multibin",
+  "seed": 101,
+  "steps": 10000,
+  "samples_per_target": 500,
+  "targets": [
+    -4.546434200781119,
+    -4.376274402846922,
+    -4.2647613156759645,
+    -4.155615129663432,
+    -3.9836005362112976
+  ],
+  "binary_threshold_q95": -3.899833921878417,
+  "bin_edges": [
+    -4.448619529039221,
+    -4.315522642368978,
+    -4.2116653059852815,
+    -4.082000094363398
+  ],
+  "train_unique": 4819,
+  "train_rows_after_oversampling": 9209,
+  "validation_unique": 602,
+  "test_unique": 603,
+  "mu": -4.264776319299146,
+  "std": 0.22483531108169458,
+  "elapsed_seconds": 169.53035402297974,
+  "device": "mps",
+  "checkpoint_sha256": "70e6ea3fb9cd886b38c6c997a2a770fe9acee24109fd5941ce8557fb1a09551c"
+}

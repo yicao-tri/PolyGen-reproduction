@@ -1,0 +1,7 @@
+contrast,seed,metric,binary,comparison,effect,interpretation
+continuous_minus_binary,101,mean_abs_calibration_error,0.1593922635,0.1052458930,-0.0541463705,descriptive_only_single_seed
+continuous_minus_binary,101,mean_strict_hit_rate,0.3064111260,0.4324983313,0.1260872053,descriptive_only_single_seed
+continuous_minus_binary,101,mean_relaxed_hit_rate,0.5725483425,0.7401933135,0.1676449710,descriptive_only_single_seed
+continuous_minus_binary,101,slope,-0.0024977694,0.3483637438,0.3508615132,descriptive_only_single_seed
+multibin_minus_continuous,101,mean_abs_calibration_error,0.1052458930,0.0801941188,-0.0250517742,descriptive_only_single_seed
+multibin_minus_continuous,101,slope,0.3483637438,0.6815892095,0.3332254657,descriptive_only_single_seed

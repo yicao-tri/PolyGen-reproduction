@@ -1,0 +1,4 @@
+source,run,seed,n_samples,validity,uniqueness,novelty,synthesizability,diversity,comparability_note
+local_released_checkpoint,minGPT_conditional,42,100,0.97,0.94,0.57,0.9411764706,0.6918083264,small_sanity_run_not_directly_comparable
+matched_matrix,binary_mean_across_targets,101,2500,0.8252,0.8336,0.7348,0.6480,0.744756,primary_binary_baseline
+matched_matrix,continuous_mlp_mean_across_targets,101,2500,0.8484,0.8508,0.7440,0.6788,0.737282,primary_continuous_arm

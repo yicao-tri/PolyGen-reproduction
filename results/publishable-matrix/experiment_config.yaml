@@ -1,0 +1,26 @@
+experiment: polygen_conditioning_resolution_ablation
+status: one_seed_complete_md_pending
+seed: 101
+deferred_seeds: [202, 303]
+split:
+  method: canonical_identity_grouped
+  seed: 42
+  train_unique: 4819
+  validation_unique: 602
+  test_unique: 603
+training:
+  architecture: minGPT_gpt-nano
+  block_size: 64
+  prefix_tokens: 5
+  steps: 10000
+  batch_size: 64
+  learning_rate: 0.0005
+  oversampled_conditional_rows: 9209
+sampling:
+  temperature: 1.0
+  samples_per_target: 500
+  targets_quantiles: [0.1, 0.3, 0.5, 0.7, 0.9]
+arms: [binary, continuous, linear, multibin, shuffled, unconditional]
+binary_high_threshold_quantile: 0.95
+surrogate_policy: screening_only_not_final_validation
+md_status: WAITING_FOR_SYSTEM_BUILD
