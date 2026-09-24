@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "design": {
+    "seeds": [
+      17,
+      42,
+      202,
+      303,
+      907
+    ],
+    "paired_unit": "training/generation seed",
+    "targets_log10_S_per_cm": [
+      -5.0,
+      -4.0,
+      -3.0
+    ],
+    "samples_per_arm_seed_target": 100,
+    "total_generated_samples": 3000,
+    "generator_steps": 1000,
+    "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+    "row_fingerprints": {
+      "train_rows.csv": "d096839e6778050c9acba4fde4d0c2c9b9c57ad9e4cf40a70973b1045b3c53e4",
+      "test_rows.csv": "9f605993fd7544566fdecf530715d05c78df2590ff1c216221616f31d2b6ab93"
+    }
+  },
+  "verifier": {
+    "test_rows": 1205,
+    "rmse": 0.15694132332055197,
+    "mae": 0.12427464729106281,
+    "r2": 0.4979499498164405
+  },
+  "primary_effect": {
+    "binary_mean": 0.15866666666666668,
+    "continuous_mean": 0.178,
+    "mean": 0.019333333333333348,
+    "sd": 0.01038160766826496,
+    "sem": 0.004642796092394707,
+    "ci95_low": 0.006442864848172598,
+    "ci95_high": 0.0322238018184941,
+    "paired_t": 4.164157319982883,
+    "paired_t_p_two_sided": 0.01409765394805085,
+    "positive_seeds": 5,
+    "n_seeds": 5,
+    "exact_sign_test_p_two_sided": 0.0625,
+    "interpretation": "Exploratory five-seed evidence; seed is the inferential unit."
+  },
+  "controllability": {
+    "binary": {
+      "mean_target_prediction_correlation": 0.8728655964874656,
+      "monotonic_seeds": 4,
+      "n_seeds": 5
+    },
+    "continuous": {
+      "mean_target_prediction_correlation": 0.9906571842589875,
+      "monotonic_seeds": 5,
+      "n_seeds": 5
+    }
+  }
+}

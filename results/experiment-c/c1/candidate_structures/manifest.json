@@ -1,0 +1,30 @@
+{
+  "selection_rule": "two lowest (target_error + 0.25*uncertainty) eligible unique structures per arm/seed/target",
+  "eligibility": "valid and novel and support >= 0.35 and uncertainty < 0.35",
+  "input_roots": [
+    "results/experiment-c/c1",
+    "results/experiment-c/extra-seeds/seeds202-303"
+  ],
+  "paired_seeds": [
+    17,
+    42,
+    202,
+    303,
+    907
+  ],
+  "selected_per_arm": {
+    "binary": 30,
+    "continuous": 30
+  },
+  "eligible_unique_per_arm": {
+    "binary": 746,
+    "continuous": 622
+  },
+  "shared_eligible_unique": 56,
+  "eligible_jaccard": 0.042682926829268296,
+  "md_queue_rule": "top 20 unique eligible structures per arm at target -3 by predicted_log_sigma - 1.96*uncertainty",
+  "md_queue_per_arm": {
+    "binary": 20,
+    "continuous": 20
+  }
+}

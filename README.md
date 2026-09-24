@@ -8,6 +8,122 @@ The scientific numbers in this folder are not copied from the paper. They are
 generated from the machine-readable inputs under `inputs/` or from real execution
 artifacts under `results/dev/`. See `DATA_POLICY.md` for the enforceable rule.
 
+## Current milestone: five-seed continuous conditioning
+
+The current research milestone compares the released binary high/low PolyGen
+interface with continuous conductivity conditioning under the same HTP-MD split,
+model size, 1,000-step training budget, sampling budget, and frozen independent
+verifier. The unit of replication is the paired training/generation seed
+(`17, 42, 202, 303, 907`), not the individual generated candidate.
+
+| Five-seed C1 outcome | Binary | Continuous | Paired change |
+| --- | ---: | ---: | ---: |
+| Strict target-hit rate | 0.1587 | 0.1780 | **+0.0193** |
+| Target MAE (log10 S/cm; lower is better) | 0.6940 | 0.6331 | **-0.0609** |
+| Validity | 0.5220 | 0.4547 | -0.0673 |
+| Novelty | 0.5033 | 0.4313 | -0.0720 |
+
+All five paired seeds favor continuous conditioning for strict target-hit rate.
+The mean difference has a 95% t interval of `[0.0064, 0.0322]`; because only five
+seeds were run, the exact two-sided sign-test result (`p = 0.0625`) is also
+reported. The result supports improved **verifier-defined target adherence**, not
+yet higher MD or experimental conductivity.
+
+![Five-seed target adherence, paired effects, and validity tradeoff](results/experiment-c/figures/c1_five_seed_publication.png)
+
+The corresponding seed-level effect plot is available as
+[PNG](results/experiment-c/figures/c1_five_seed_primary_effect.png) and
+[SVG](results/experiment-c/figures/c1_five_seed_primary_effect.svg). Exact
+statistics, captions, and manuscript-ready discussion are under
+[`results/experiment-c/publication/`](results/experiment-c/publication/).
+
+### Generated chemistry across all five seeds
+
+Candidate sheets are selected deterministically across every
+`arm × seed × target` stratum: two valid, novel, in-support, low-uncertainty
+structures per stratum, ranked by target error plus `0.25 × uncertainty`.
+This prevents a gallery from being assembled from one favorable seed.
+
+<p align="center">
+  <img src="results/experiment-c/c1/candidate_structures/binary_30_candidates.png" width="49%" alt="Thirty binary PolyGen candidates across five seeds and three targets">
+  <img src="results/experiment-c/c1/candidate_structures/continuous_30_candidates.png" width="49%" alt="Thirty continuous-conditioning candidates across five seeds and three targets">
+</p>
+
+Across the common eligibility gate, the binary arm contains 746 unique
+structures and the continuous arm 622; 56 are shared (exact-structure Jaccard
+`0.043`). Median heavy-atom count is 13 in both arms and median TPSA is 53.38 Å²
+versus 52.60 Å². The arms therefore explore mostly different exact structures,
+but current descriptors do not show a clearly distinct superior chemistry class.
+
+Machine-readable outputs:
+
+- [candidate structure index](results/experiment-c/c1/candidate_structures/candidate_structure_index.csv)
+- [eligible-pool structure comparison](results/experiment-c/c1/candidate_structures/structure_comparison.csv)
+- [candidate selection manifest](results/experiment-c/c1/candidate_structures/manifest.json)
+- [five-seed paired generator comparison](results/experiment-c/figures/c1_candidate_comparison.png)
+
+### Frozen top-20 MD validation queue
+
+The next physical-validation milestone is frozen but **not yet run**. Candidate
+ranking uses the conservative score
+`predicted_log_sigma - 1.96 × verifier_uncertainty` after the same validity,
+novelty, support, and uncertainty gates.
+
+```mermaid
+flowchart LR
+    A[Five-seed generated samples] --> B[Validity + novelty gate]
+    B --> C[Support >= 0.35 and uncertainty < 0.35]
+    C --> D[Unique target -3 candidates]
+    D --> E[Rank by conservative predicted conductivity]
+    E --> F[Continuous top 20]
+    E --> G[Binary top 20]
+    H[Published PolyGen MD candidates] --> I[Outcome-independent SHA-256 selection]
+    I --> J[Legacy PolyGen controls: 20]
+    F --> K[Common blinded LiTFSI / 353 K MD batch]
+    G --> K
+    J --> K
+```
+
+The first five frozen continuous candidates are shown below; the full table is
+the authoritative queue.
+
+| Rank | Seed | Repeat-unit p-SMILES | Predicted log sigma | Uncertainty | Support | Conservative score |
+| ---: | ---: | --- | ---: | ---: | ---: | ---: |
+| 1 | 202 | `O=C([Au])OCCCOCCO[Cu]` | -3.779 | 0.137 | 0.917 | -4.048 |
+| 2 | 202 | `O=C([Au])OCCCCOCCO[Cu]` | -3.789 | 0.140 | 0.917 | -4.063 |
+| 3 | 17 | `O=C([Au])OCCOCCNCCO[Cu]` | -3.791 | 0.153 | 0.926 | -4.090 |
+| 4 | 42 | `O=C([Au])OCCOCCCCO[Cu]` | -3.811 | 0.144 | 0.917 | -4.094 |
+| 5 | 202 | `O=C([Au])OCCOCCCCCO[Cu]` | -3.819 | 0.151 | 0.880 | -4.114 |
+
+- [continuous top-20](results/experiment-c/md-validation/continuous_top20.csv)
+- [binary top-20](results/experiment-c/md-validation/binary_top20.csv)
+- [legacy PolyGen control panel](results/experiment-c/md-validation/legacy_polygen_hash20.csv)
+- [prospective 60-structure MD manifest](results/experiment-c/md-validation/md_batch_manifest.csv)
+- [MD validation protocol](results/experiment-c/md-validation/MD_VALIDATION_PROTOCOL.md)
+
+The prospective primary comparison is continuous top-20 versus binary top-20
+under one randomized, blinded simulation batch with five independent replicas
+per structure. Legacy PolyGen is a secondary control. Build or force-field
+failures remain in the denominator rather than being silently replaced.
+
+### Progress and claim boundary
+
+| Stage | Status | What it currently supports |
+| --- | --- | --- |
+| Reproduction and split audit | Complete | Auditable released and structure-disjoint baselines |
+| Frozen independent verifier | Complete | Common offline scoring, uncertainty, and support status |
+| Five-seed binary vs continuous C1 | Complete | Improved target adherence with lower valid/novel yield |
+| Five-seed candidate chemistry sheets | Complete | Deterministic cross-seed chemical output audit |
+| PCL formulation prototype C2 | Complete, verifier-limited | End-to-end formulation pipeline execution only |
+| PEDatamine audit | Complete | Data basis for later chemistry/formulation/temperature modeling |
+| Top-20 MD queue | Frozen, not run | Prospective candidate and control cohorts only |
+| Higher physical conductivity claim | Not available | Requires the common-protocol MD experiment |
+
+For the consolidated evidence package, open the
+[Obsidian milestone report](evidence/obsidian/experiment-c-five-seed-milestone/Continuous%20conditioning%20beyond%20binary%20PolyGen%20%E2%80%94%20five-seed%20milestone.md),
+the [Overleaf handoff](evidence/obsidian/experiment-c-five-seed-milestone/OVERLEAF_HANDOFF.md),
+and the [PolyGen alignment TODO](results/experiment-c/publication/POLYGEN_ALIGNMENT_TODO.md).
+
 ## Run the complete local pipeline
 
 ```bash
@@ -138,7 +254,9 @@ only one polymer chemistry and one molecular weight. See
 Run `./run_experiment_c.sh` to reproduce the paired binary/continuous chemistry
 generator comparison, support-aware frozen-checkpoint follow-up, PCL formulation
 baseline comparison, PEDatamine audit, deliberately blocked hierarchical demo,
-figures, and artifact verification. The complete interpretation and publication
+paired quantitative figures, deterministic stratified polymer structure sheets,
+five-seed publication statistics (when the checked-in 202/303 extension is
+present), and artifact verification. The complete interpretation and publication
 gate are in `EXPERIMENT_C_REPORT.md`.
 
 ## What is and is not compared

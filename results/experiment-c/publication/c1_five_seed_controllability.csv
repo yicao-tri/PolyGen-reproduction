@@ -1,0 +1,11 @@
+arm,seed,target_prediction_correlation,monotonic_increasing
+binary,17,0.9404528288480951,True
+binary,42,0.6640508625126457,False
+binary,202,0.9413107647382029,True
+binary,303,0.8940184689476263,True
+binary,907,0.924495057390758,True
+continuous,17,0.9992852060154874,True
+continuous,42,0.9855583675857051,True
+continuous,202,0.9929172443224993,True
+continuous,303,0.9923911573268844,True
+continuous,907,0.9831339460443613,True

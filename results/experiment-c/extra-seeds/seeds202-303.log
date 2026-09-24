@@ -1,0 +1,66 @@
+number of parameters: 0.12M
+number of parameters: 0.12M
+number of parameters: 0.12M
+number of parameters: 0.12M
+{
+  "seeds": [
+    202,
+    303
+  ],
+  "verifier": {
+    "test_rows": 1205,
+    "rmse": 0.15694132332055197,
+    "mae": 0.12427464729106281,
+    "r2": 0.4979499498164406
+  },
+  "mean_paired_delta_hit": 0.01833333333333334,
+  "paired_deltas": [
+    {
+      "seed": 202,
+      "delta_hit_continuous_minus_binary": 0.010000000000000009
+    },
+    {
+      "seed": 303,
+      "delta_hit_continuous_minus_binary": 0.026666666666666672
+    }
+  ],
+  "runs": [
+    {
+      "arm": "binary",
+      "seed": 202,
+      "steps": 1000,
+      "elapsed_seconds": 60.718597173690796,
+      "first_loss": 6.282356262207031,
+      "last_loss": 0.2555750608444214,
+      "samples": 300
+    },
+    {
+      "arm": "continuous",
+      "seed": 202,
+      "steps": 1000,
+      "elapsed_seconds": 60.924630880355835,
+      "first_loss": 6.282628536224365,
+      "last_loss": 0.2533401548862457,
+      "samples": 300
+    },
+    {
+      "arm": "binary",
+      "seed": 303,
+      "steps": 1000,
+      "elapsed_seconds": 63.57348132133484,
+      "first_loss": 6.366544246673584,
+      "last_loss": 0.28604644536972046,
+      "samples": 300
+    },
+    {
+      "arm": "continuous",
+      "seed": 303,
+      "steps": 1000,
+      "elapsed_seconds": 61.180392026901245,
+      "first_loss": 6.372587203979492,
+      "last_loss": 0.2728058993816376,
+      "samples": 300
+    }
+  ],
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69"
+}

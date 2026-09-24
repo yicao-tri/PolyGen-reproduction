@@ -110,14 +110,25 @@ def run_arm(arm,seed,train,model_v,train_fp,tokenizer,out):
     return rows,summary
 
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--output',type=Path,default=ROOT/'results/experiment-c/c1'); args=ap.parse_args()
+    ap=argparse.ArgumentParser()
+    ap.add_argument('--output',type=Path,default=ROOT/'results/experiment-c/c1')
+    ap.add_argument(
+        '--seeds',
+        type=int,
+        nargs='+',
+        default=[17,42,907],
+        help='One or more paired training/generation seeds (default: 17 42 907)',
+    )
+    args=ap.parse_args()
+    if len(set(args.seeds)) != len(args.seeds):
+        ap.error('--seeds must not contain duplicates')
     train,test=prepare(); mv,tfp,vm=verifier(train,test); tok=SmilesTokenizer(vocab_file=str(REPO/'minGPT/vocab.txt'))
     args.output.mkdir(parents=True,exist_ok=True); train.assign(split='generator_train_and_verifier_train').to_csv(args.output/'train_rows.csv',index=False); test.assign(split='verifier_test_only').to_csv(args.output/'test_rows.csv',index=False)
     allrows=[]; runs=[]
-    for seed in (17,42,907):
+    for seed in args.seeds:
       for arm in ('binary','continuous'):
         rows,s=run_arm(arm,seed,train,mv,tfp,tok,args.output/f'{arm}-seed{seed}'); allrows+=rows; runs.append(s)
     raw=pd.DataFrame(allrows); summary=raw.groupby(['arm','seed','target']).agg(n=('hit','size'),validity=('valid','mean'),novelty=('novel','mean'),hit_rate=('hit','mean'),target_mae=('target_error','mean'),ood_rate=('support',lambda x:float((x<.35).mean()))).reset_index(); summary.to_csv(args.output/'arm_seed_target_metrics.csv',index=False)
     per=summary.groupby(['arm','seed']).agg(hit_rate=('hit_rate','mean'),target_mae=('target_mae','mean'),validity=('validity','mean')).reset_index(); wide=per.pivot(index='seed',columns='arm',values='hit_rate'); paired=pd.DataFrame({'seed':wide.index,'delta_hit_continuous_minus_binary':wide.continuous-wide.binary}); paired.to_csv(args.output/'paired_primary.csv',index=False)
-    agg={'verifier':vm,'mean_paired_delta_hit':float(paired.delta_hit_continuous_minus_binary.mean()),'paired_deltas':paired.to_dict('records'),'runs':runs,'source_sha256':digest(ROOT/'inputs/release-data/htpmd-trainset.csv')}; (args.output/'result.json').write_text(json.dumps(agg,indent=2)+'\n'); print(json.dumps(agg,indent=2))
+    agg={'seeds':args.seeds,'verifier':vm,'mean_paired_delta_hit':float(paired.delta_hit_continuous_minus_binary.mean()),'paired_deltas':paired.to_dict('records'),'runs':runs,'source_sha256':digest(ROOT/'inputs/release-data/htpmd-trainset.csv')}; (args.output/'result.json').write_text(json.dumps(agg,indent=2)+'\n'); print(json.dumps(agg,indent=2))
 if __name__=='__main__':main()
