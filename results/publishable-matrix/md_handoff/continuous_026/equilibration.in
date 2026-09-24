@@ -69,7 +69,7 @@ thermo_modify	flush yes
 thermo 			10
 
 # Change box size
-change_box all x scale ${boxscale} y scale ${boxscale} z scale ${boxscale} remap
+change_box all x scale ${boxscale} y scale ${boxscale} z scale ${boxscale} remap 
 
 minimize   1e-6 1e-6 1000 1000
 
@@ -85,7 +85,7 @@ run 			${nsteps}
 unfix 			addcations
 
 
-# Define groups based on atom types.
+# Define groups based on atom types. 
 group           ions        type > 89
 group           poly        subtract all ions
 
@@ -237,11 +237,11 @@ fix				2 all ave/time 500      1      500 v_time c_thermo_temp c_thermo_press &
 fix				3 all ave/time 1    49999    50000 v_time c_thermo_temp c_thermo_press &
 							 v_pe v_ke v_etotal &
 							 file nVT_averages.txt off 1
-# Define chunks for polymer chains.
+# Define chunks for polymer chains. 
 compute     cc_p    poly chunk/atom molecule compress yes
-# Compute the radius of gyration for all polymer chains.
+# Compute the radius of gyration for all polymer chains. 
 compute     rg_p    poly gyration/chunk cc_p
-# Output the data, for each polymer chain, every 100 timesteps.
+# Output the data, for each polymer chain, every 100 timesteps. 
 fix         rgout   poly ave/time 100 1 100 c_rg_p file radgyr.txt mode vector
 
 variable 		nsteps 		equal floor(v_eqfactor*1000*1e3/dt)

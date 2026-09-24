@@ -12,20 +12,11 @@ done
 .venv/bin/python scripts/analyze_publishable_matrix.py \
   --run results/publishable-matrix --seed 101
 
-# Optional house style: point this at a Plot Atlas checkout's src directory.
-PYTHONPATH="${PLOT_ATLAS_SRC:-/path/to/plot_library/src}" \
+PYTHONPATH=/Users/yicao/.codex/.chatgpt-projects/g-p-6aa88e35293481918a7b8159df39d546/plot_library/src \
   .venv/bin/python scripts/plot_publishable_matrix.py \
   --run results/publishable-matrix
 
 .venv/bin/python scripts/build_md_handoff.py --run results/publishable-matrix
-
-# Render all 40 selected repeat units, the two 20-candidate grids, and the
-# seven-structure overlap grid. Set PLOT_ATLAS_SRC to use the house style;
-# otherwise the script uses its deterministic local fallback.
-PLOT_ATLAS_SRC="${PLOT_ATLAS_SRC:-}" \
-  .venv/bin/python scripts/render_candidate_structures.py \
-  --candidates results/publishable-matrix/tables/md_candidates.csv \
-  --output results/publishable-matrix/candidate_structures
 ```
 
 Deferred robustness run (TODO, not part of current claims): repeat the six-arm

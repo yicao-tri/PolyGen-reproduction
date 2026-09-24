@@ -8,7 +8,6 @@
 - RDKit 2026.03.6
 - SciPy 1.17.1
 - Matplotlib 3.10.6
-- Plot Atlas house style (optional external dependency); set `PLOT_ATLAS_SRC`
-  to the checkout's `src` directory. Candidate rendering has a local fallback.
+- Plot Atlas: `/Users/yicao/.codex/.chatgpt-projects/g-p-6aa88e35293481918a7b8159df39d546/plot_library`
 
 Checkpoint SHA-256 hashes are recorded separately in each arm's `run.json`.

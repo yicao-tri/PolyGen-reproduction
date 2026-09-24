@@ -87,14 +87,6 @@ complete records are in `tables/md_candidates.csv`; each also has a folder under
 is marked `WAITING_FOR_SYSTEM_BUILD`. A runnable topology is intentionally not
 fabricated.
 
-The two 20-candidate sets contain seven identical canonical p-SMILES (35% of
-each list; Jaccard overlap 7/33 = 21.2%). The 33 distinct repeat units are
-rendered in `candidate_structures/`; publication overview copies are also in
-`figures/binary_20_candidates.*`, `figures/continuous_20_candidates.*`, and
-`figures/shared_7_candidates.*`. `[Cu]` and `[Au]` are connection markers in
-the released p-SMILES convention, not a claim that the polymers contain copper
-or gold.
-
 ## Claim boundary and TODO
 
 Can claim now: for seed 101 and frozen surrogate screening, continuous and
