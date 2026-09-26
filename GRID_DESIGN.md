@@ -42,9 +42,9 @@ The executable primary grid is:
 | targets | `-5.0`, `-4.0`, `-3.0` log10 S/cm |
 
 This yields 60 executable cells and 30 binary/continuous paired config-seed
-comparisons. Each cell-seed-arm has 200 raw samples, allocated as `67/67/66`
-across targets, giving 1,000 raw samples per arm/config. The planned gpt-nano
-grid therefore contains 60,000 raw samples and an estimated 45 GPU-hours,
+comparisons. Each cell-seed-arm has 300 raw samples, allocated as `100/100/100`
+across targets, giving 1,500 raw samples per arm/config. The planned gpt-nano
+grid therefore contains 90,000 raw samples and an estimated 67.5 GPU-hours,
 subject to a smoke-run timing check.
 
 The model-size extension is represented explicitly but blocked:
@@ -68,10 +68,9 @@ The staged interpretation of the executable grid is:
    target allocation, and verifier contract. Do not merge it into the C1
    binary/continuous estimand.
 
-For every new arm/config, use the same five paired seeds and at least 1,000 raw
-samples per arm/config. A simple allocation is 200 samples per seed, with an
-explicit deterministic target allocation such as 67/67/66. Binary and
-continuous arms must use exactly the same allocation.
+For every new arm/config, use the same five paired seeds and 1,500 raw samples
+per arm/config. Each seed/arm uses exactly 300 samples: 100 at each target.
+Binary and continuous arms must use exactly the same allocation.
 
 ## Required artifact contract
 
