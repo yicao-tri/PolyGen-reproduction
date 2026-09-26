@@ -85,18 +85,19 @@ def decode(tokenizer,row):
     if '[CLS]' not in s or '[SEP]' not in s:return ''
     return s.split('[CLS]',1)[1].split('[SEP]',1)[0]
 
-def run_arm(arm,seed,train,model_v,train_fp,tokenizer,out):
+def run_arm(arm,seed,train,model_v,train_fp,tokenizer,out,steps=1000,temperature=1.0,samples_per_target=100,allocation=None):
     random.seed(seed); np.random.seed(seed); torch.manual_seed(seed)
     cfg=GPT.get_default_config(); cfg.model_type='gpt-nano'; cfg.vocab_size=tokenizer.vocab_size; cfg.block_size=BLOCK
     model=SoftConditionGPT(cfg,arm,float(train.log_sigma.mean()),float(train.log_sigma.std())); opt=model.configure_optimizers(5e-4)
     loader=iter(DataLoader(SeqDataset(train,tokenizer),batch_size=64,sampler=torch.utils.data.RandomSampler(train,replacement=True,num_samples=10**9)))
     losses=[]; started=time.time(); model.train()
-    for step in range(1000):
+    for step in range(steps):
         x,y,c=next(loader); _,loss=model(x,c,y); opt.zero_grad(); loss.backward(); torch.nn.utils.clip_grad_norm_(model.parameters(),1); opt.step(); losses.append(float(loss))
     rows=[]; model.eval(); train_smiles=set(train.mol_smiles)
-    for target in TARGETS:
-        cond=torch.full((100,),target)
-        toks=model.generate(cond,100)
+    for target_i,target in enumerate(TARGETS):
+        n = allocation[target_i] if allocation is not None else samples_per_target
+        cond=torch.full((n,),target)
+        toks=model.generate(cond,n,temperature=temperature)
         for i,t in enumerate(toks):
             s=decode(tokenizer,t); f=fp(s) if s else None; valid=f is not None and s.count('[Cu]')==1 and s.count('[Au]')==1
             if valid:
@@ -105,7 +106,7 @@ def run_arm(arm,seed,train,model_v,train_fp,tokenizer,out):
             hit=bool(valid and novel and support>=.35 and unc<.35 and abs(pred-target)<.5)
             rows.append(dict(arm=arm,seed=seed,target=target,index=i,smiles=s,valid=valid,novel=novel,predicted_log_sigma=pred,uncertainty=unc,support=support,target_error=abs(pred-target) if valid else np.nan,hit=hit))
     out.mkdir(parents=True,exist_ok=True); pd.DataFrame(rows).to_csv(out/'samples.csv',index=False)
-    summary={'arm':arm,'seed':seed,'steps':1000,'elapsed_seconds':time.time()-started,'first_loss':losses[0],'last_loss':losses[-1],'samples':len(rows)}
+    summary={'arm':arm,'seed':seed,'steps':steps,'temperature':temperature,'samples_per_target':samples_per_target,'allocation':allocation,'elapsed_seconds':time.time()-started,'first_loss':losses[0],'last_loss':losses[-1],'samples':len(rows)}
     (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n'); torch.save(model.state_dict(),out/'final.pt')
     return rows,summary
 
@@ -119,6 +120,10 @@ def main():
         default=[17,42,907],
         help='One or more paired training/generation seeds (default: 17 42 907)',
     )
+    ap.add_argument('--steps',type=int,default=1000)
+    ap.add_argument('--temperature',type=float,default=1.0)
+    ap.add_argument('--samples-per-target',type=int,default=100)
+    ap.add_argument('--allocation',type=int,nargs=3,default=None,metavar=('N1','N2','N3'))
     args=ap.parse_args()
     if len(set(args.seeds)) != len(args.seeds):
         ap.error('--seeds must not contain duplicates')
@@ -127,7 +132,7 @@ def main():
     allrows=[]; runs=[]
     for seed in args.seeds:
       for arm in ('binary','continuous'):
-        rows,s=run_arm(arm,seed,train,mv,tfp,tok,args.output/f'{arm}-seed{seed}'); allrows+=rows; runs.append(s)
+        rows,s=run_arm(arm,seed,train,mv,tfp,tok,args.output/f'{arm}-seed{seed}',args.steps,args.temperature,args.samples_per_target,args.allocation); allrows+=rows; runs.append(s)
     raw=pd.DataFrame(allrows); summary=raw.groupby(['arm','seed','target']).agg(n=('hit','size'),validity=('valid','mean'),novelty=('novel','mean'),hit_rate=('hit','mean'),target_mae=('target_error','mean'),ood_rate=('support',lambda x:float((x<.35).mean()))).reset_index(); summary.to_csv(args.output/'arm_seed_target_metrics.csv',index=False)
     per=summary.groupby(['arm','seed']).agg(hit_rate=('hit_rate','mean'),target_mae=('target_mae','mean'),validity=('validity','mean')).reset_index(); wide=per.pivot(index='seed',columns='arm',values='hit_rate'); paired=pd.DataFrame({'seed':wide.index,'delta_hit_continuous_minus_binary':wide.continuous-wide.binary}); paired.to_csv(args.output/'paired_primary.csv',index=False)
     agg={'seeds':args.seeds,'verifier':vm,'mean_paired_delta_hit':float(paired.delta_hit_continuous_minus_binary.mean()),'paired_deltas':paired.to_dict('records'),'runs':runs,'source_sha256':digest(ROOT/'inputs/release-data/htpmd-trainset.csv')}; (args.output/'result.json').write_text(json.dumps(agg,indent=2)+'\n'); print(json.dumps(agg,indent=2))
