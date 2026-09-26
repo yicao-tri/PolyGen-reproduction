@@ -1,0 +1,130 @@
+{
+  "schema_version": "polygen-grid-manifest-v1",
+  "canonical_root": "/Users/yicao/Documents/ARC/PolyGen-reproduction",
+  "purpose": "Inventory historical PolyGen generation evidence without pooling non-comparable runs",
+  "comparison_policy": {
+    "primary_unit": "arm x seed x target x config_id",
+    "pooling": "forbidden across config_id, data split, model family, or sample budget",
+    "existing_results_are_not_new_grid_runs": true,
+    "stage_3_pfp_md": "separate from generation grid"
+  },
+  "entries": [
+    {
+      "config_id": "experiment_a_mingpt_split_seed42_10000",
+      "status": "existing evidence",
+      "family": "minGPT",
+      "model": "released/minGPT training path",
+      "steps": null,
+      "temperature": null,
+      "seeds": [42],
+      "sample_budget": 10000,
+      "data_split": "released-random and structure-disjoint variants; do not pool",
+      "paths": ["results/experiment-a/released-random-seed42-10000", "results/experiment-a/structure-disjoint-seed42-10000"],
+      "comparability": "diagnostic only; split policy differs"
+    },
+    {
+      "config_id": "experiment_b_formulation_temperature_robustness",
+      "status": "existing evidence",
+      "family": "formulation verifier/baselines",
+      "model": "not a repeat-unit generation arm",
+      "steps": null,
+      "temperature": "multiple formulation temperatures",
+      "seeds": [17, 42, 907],
+      "sample_budget": null,
+      "data_split": "formulation-group split",
+      "paths": ["results/experiment-b"],
+      "comparability": "not comparable to C1 chemistry generation"
+    },
+    {
+      "config_id": "dev_mingpt_conditional_seed42",
+      "status": "smoke",
+      "family": "minGPT",
+      "model": "conditional released implementation",
+      "steps": null,
+      "temperature": null,
+      "seeds": [42],
+      "sample_budget": null,
+      "data_split": "development run; inspect run metadata before reuse",
+      "paths": ["results/dev/minGPT-conditional-seed42"],
+      "comparability": "not a paired C1 result"
+    },
+    {
+      "config_id": "dev_mingpt_checkpoint_finetune_seed907",
+      "status": "smoke",
+      "family": "minGPT",
+      "model": "released checkpoint fine-tune",
+      "steps": null,
+      "temperature": null,
+      "seeds": [907],
+      "sample_budget": null,
+      "data_split": "development checkpoint path",
+      "paths": ["results/dev/minGPT-checkpoint-finetune-smoke-seed907"],
+      "comparability": "checkpoint initialization differs from C1"
+    },
+    {
+      "config_id": "dev_diffusionlm_conditional_released",
+      "status": "existing evidence",
+      "family": "diffusionLM",
+      "model": "released diffusionLM conditional samples",
+      "steps": null,
+      "temperature": null,
+      "seeds": [],
+      "sample_budget": null,
+      "data_split": "released sample provenance; not paired with C1",
+      "paths": ["results/dev/diffusionLM-conditional-released"],
+      "comparability": "architecture/reference evidence only"
+    },
+    {
+      "config_id": "dev_diffusionlm_unconditional_released",
+      "status": "existing evidence",
+      "family": "diffusionLM",
+      "model": "released diffusionLM unconditional samples",
+      "steps": null,
+      "temperature": null,
+      "seeds": [],
+      "sample_budget": null,
+      "data_split": "released sample provenance; not paired with C1",
+      "paths": ["results/dev/diffusionLM-unconditional-released"],
+      "comparability": "architecture/reference evidence only"
+    },
+    {
+      "config_id": "dev_diffusion1d_milestone1000_seed42",
+      "status": "milestone",
+      "family": "diffusion1D",
+      "model": "PolyGen diffusion1D",
+      "steps": 1000,
+      "temperature": null,
+      "seeds": [42],
+      "sample_budget": null,
+      "data_split": "development diffusion1D path",
+      "paths": ["results/dev/diffusion1D-milestone1000-seed42"],
+      "comparability": "not a paired binary-vs-continuous C1 arm"
+    },
+    {
+      "config_id": "c1_gptnano_steps1000_temp1_raw300_seedtarget100",
+      "status": "existing evidence",
+      "family": "minGPT",
+      "model": "gpt-nano soft-prefix binary/continuous",
+      "steps": 1000,
+      "temperature": 1.0,
+      "seeds": [17, 42, 202, 303, 907],
+      "sample_budget": 300,
+      "data_split": "fixed C1 split seed 20260923",
+      "paths": ["results/experiment-c/c1", "results/experiment-c/extra-seeds/seeds202-303"],
+      "comparability": "primary existing paired generation evidence"
+    },
+    {
+      "config_id": "grid_new_runs_placeholder",
+      "status": "new grid run",
+      "family": "minGPT and diffusion families, if separately authorized",
+      "model": "to be frozen per arm",
+      "steps": "to be frozen",
+      "temperature": "to be frozen",
+      "seeds": [17, 42, 202, 303, 907],
+      "sample_budget": 1000,
+      "data_split": "must match the declared config contract",
+      "paths": ["results/experiment-c/grid/"],
+      "comparability": "not executed; placeholder only"
+    }
+  ]
+}
