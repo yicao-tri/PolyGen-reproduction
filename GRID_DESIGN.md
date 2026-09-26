@@ -24,9 +24,35 @@ binary versus continuous arms, and 300 raw samples per arm/seed (100 per
 target). It is not silently pooled with development diffusion or minGPT smoke
 runs.
 
-## Proposed grid
+## Explicit cell-level grid
 
-Use a staged grid rather than an unconstrained Cartesian explosion:
+The complete cell table is generated in `GRID_CELLS.csv` by
+`scripts/build_grid_plan.py`; `GRID_PLAN.json` records totals, allocation and
+budget. It is a design manifest only and does not imply that any cell has run.
+
+The executable primary grid is:
+
+| dimension | values |
+|---|---|
+| model | `gpt-nano` |
+| training steps | `1000`, `2000` |
+| temperature | `0.8`, `1.0`, `1.2` |
+| seeds | `17`, `42`, `202`, `303`, `907` |
+| arms | `binary`, `continuous` |
+| targets | `-5.0`, `-4.0`, `-3.0` log10 S/cm |
+
+This yields 60 executable cells and 30 binary/continuous paired config-seed
+comparisons. Each cell-seed-arm has 200 raw samples, allocated as `67/67/66`
+across targets, giving 1,000 raw samples per arm/config. The planned gpt-nano
+grid therefore contains 60,000 raw samples and an estimated 45 GPU-hours,
+subject to a smoke-run timing check.
+
+The model-size extension is represented explicitly but blocked:
+`gpt-small × {1000,2000} × {0.8,1.0,1.2} × five seeds × two arms` adds 60 blocked
+cells. It remains blocked until a real checkpoint and training entry point are
+identified.
+
+The staged interpretation of the executable grid is:
 
 1. **Baseline replay:** gpt-nano, 1,000 steps, temperature 1.0, the fixed C1
    split, binary and continuous arms, five paired seeds.

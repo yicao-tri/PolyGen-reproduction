@@ -1,0 +1,51 @@
+{
+  "schema_version": "polygen-grid-plan-v1",
+  "status": "design_only_not_executed",
+  "dimensions": {
+    "models": [
+      "gpt-nano",
+      "gpt-small"
+    ],
+    "steps": [
+      1000,
+      2000
+    ],
+    "temperatures": [
+      0.8,
+      1.0,
+      1.2
+    ],
+    "seeds": [
+      17,
+      42,
+      202,
+      303,
+      907
+    ],
+    "arms": [
+      "binary",
+      "continuous"
+    ],
+    "targets": [
+      -5.0,
+      -4.0,
+      -3.0
+    ]
+  },
+  "cells_total": 120,
+  "planned_executable_cells": 60,
+  "blocked_cells": 60,
+  "raw_samples_per_arm_config": 1000,
+  "raw_samples_per_seed_arm": 200,
+  "target_allocation_per_seed_arm": {
+    "-5.0": 67,
+    "-4.0": 67,
+    "-3.0": 66
+  },
+  "planned_raw_samples_gpt_nano": 60000,
+  "estimated_gpu_hours_gpt_nano": 45.0,
+  "pairing_rule": "same seed, target allocation, split, steps, temperature, and sample budget for binary/continuous",
+  "identity_key": "model x steps x temperature x seed x arm",
+  "primary_ranking": "valid + novel + in-support + uncertainty gate, then predicted_log_sigma - 1.96 * uncertainty descending",
+  "stage_3_pfp_md": "out of scope and requires explicit user sign-off"
+}
