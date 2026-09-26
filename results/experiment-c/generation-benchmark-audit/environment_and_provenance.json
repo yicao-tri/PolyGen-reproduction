@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "cwd": "/Users/yicao/.codex/.chatgpt-projects/g-p-6aac94e5fbf48191a04f8a6e7af92676/PolyGen-reproduction",
+  "git_head": "bdbc64e87fac8276c7afdaaf7878a022ca3167c0",
+  "packages": {
+    "torch": "UNAVAILABLE: ModuleNotFoundError: No module named 'torch'",
+    "deepchem": "UNAVAILABLE: ModuleNotFoundError: No module named 'deepchem'",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "rdkit": "2026.03.6",
+    "sklearn": "1.9.1"
+  },
+  "source_sha256": {
+    "inputs/release-data/htpmd-trainset.csv": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+    "scripts/run_experiment_c1.py": "eaad380a33247005f9b4e6619bae2c6db1f3d6e5866fced1cd1c0ad9207b85e9",
+    "patches/polygen-v1.0.0-reproducibility.patch": "d370f91c09ddb6a3e2df4c0374cc6f0814cc2c7ac9e416c5c108af50f784a552"
+  }
+}

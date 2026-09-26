@@ -1,0 +1,11 @@
+evidence_layer,arm,objective_x,objective_y,status,rows,note
+existing C1 evidence,binary,predicted_log_sigma,novelty,available_descriptive_not_pareto_audited,1500,novelty available; exact candidate-level Pareto frontier not frozen for historical C1
+existing C1 evidence,binary,predicted_log_sigma,diversity,unavailable,0,not present in historical C1 samples; do not infer from PFP/MD
+existing C1 evidence,binary,predicted_log_sigma,synthesizability,unavailable,0,not present in historical C1 samples; do not infer from PFP/MD
+existing C1 evidence,continuous,predicted_log_sigma,diversity,unavailable,0,not present in historical C1 samples; do not infer from PFP/MD
+existing C1 evidence,continuous,predicted_log_sigma,synthesizability,unavailable,0,not present in historical C1 samples; do not infer from PFP/MD
+existing C1 evidence,continuous,predicted_log_sigma,novelty,available_descriptive_not_pareto_audited,1500,novelty available; exact candidate-level Pareto frontier not frozen for historical C1
+existing C1 evidence,binary,predicted_log_sigma,diversity,unavailable,0,not present in historical C1 samples; do not infer from PFP/MD
+existing C1 evidence,binary,predicted_log_sigma,synthesizability,unavailable,0,not present in historical C1 samples; do not infer from PFP/MD
+existing C1 evidence,continuous,predicted_log_sigma,diversity,unavailable,0,not present in historical C1 samples; do not infer from PFP/MD
+existing C1 evidence,continuous,predicted_log_sigma,synthesizability,unavailable,0,not present in historical C1 samples; do not infer from PFP/MD

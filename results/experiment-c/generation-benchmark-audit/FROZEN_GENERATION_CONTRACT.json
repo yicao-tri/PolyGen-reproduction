@@ -1,0 +1,46 @@
+{
+  "status": "FROZEN_AUDIT_ONLY_PENDING_EXECUTION",
+  "primary_arms": [
+    "binary",
+    "continuous"
+  ],
+  "generator": "vendor/PolyGen-1.0.0/minGPT with scripts/run_experiment_c1.py semantics",
+  "model_size": "gpt-nano only; no larger checkpoint available; no fabricated sensitivity",
+  "paired_seeds": [
+    17,
+    42,
+    202,
+    303,
+    907
+  ],
+  "targets_log10_S_cm": [
+    -5.0,
+    -4.0,
+    -3.0
+  ],
+  "temperatures": [
+    1.0,
+    0.8,
+    1.2
+  ],
+  "training_steps": [
+    1000,
+    2000
+  ],
+  "raw_allocation": {
+    "per_arm_config": 1000,
+    "per_seed_arm_config": 200,
+    "per_target": 66,
+    "allocation_note": "exact integer allocation must be frozen before launch; use 334/333/333 per arm/config if one config is run with one seed"
+  },
+  "identity_key": "evidence_layer x arm x seed x target x config_id",
+  "primary_ranking": "valid AND novel AND support>=0.35 AND uncertainty<0.35; sort predicted_log_sigma - 1.96*uncertainty descending; top 50 per arm/config",
+  "secondary_pareto": [
+    "predicted_log_sigma x novelty",
+    "predicted_log_sigma x diversity",
+    "predicted_log_sigma x synthesizability"
+  ],
+  "no_pfp_md": true,
+  "stage_3": "requires explicit user sign-off; this package does not authorize or execute PFP/MD",
+  "new_sensitivity_status": "NOT_EXECUTED: torch and deepchem unavailable in current runtime; no released larger model checkpoint"
+}

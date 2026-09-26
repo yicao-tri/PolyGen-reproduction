@@ -1,0 +1,31 @@
+{
+  "status": "PARTIAL_AUDIT_COMPLETE_NEW_RUNS_BLOCKED",
+  "existing_c1": {
+    "raw_total": 3000,
+    "raw_per_arm": {
+      "binary": 1500,
+      "continuous": 1500
+    },
+    "eligible_total": 1382,
+    "eligible_by_arm": {
+      "binary": 749,
+      "continuous": 633
+    }
+  },
+  "new_sensitivity": {
+    "status": "not executed",
+    "reason": "missing torch and deepchem; no larger checkpoint"
+  },
+  "layer_1": "existing C1 raw/verifier metrics audited; generation rerun not performed",
+  "layer_2": "top-50 and Pareto audit contract frozen; candidate ranking cannot be completed for new configs",
+  "top50_audit": "blocked for new configs; existing C1 candidate panel remains separate",
+  "stage_3_readiness": "BLOCKED; explicit user sign-off required before any PFP/MD",
+  "files": [
+    "existing_c1_file_audit.csv",
+    "existing_c1_arm_seed_target_metrics.csv",
+    "existing_c1_raw_with_identity.csv",
+    "FROZEN_GENERATION_CONTRACT.json",
+    "environment_and_provenance.json",
+    "AUDIT_CHECKLIST.md"
+  ]
+}

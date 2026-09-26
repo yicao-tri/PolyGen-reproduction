@@ -1,0 +1,14 @@
+{
+  "existing_c1_top50_rows": {
+    "binary": 50,
+    "continuous": 50
+  },
+  "ranking": "valid + novel + support>=0.35 + uncertainty<0.35; descending predicted_log_sigma - 1.96*uncertainty",
+  "new_sensitivity_top50": "not produced",
+  "pareto": {
+    "novelty": "available as raw flag; historical frontier not frozen",
+    "diversity": "unavailable",
+    "synthesizability": "unavailable",
+    "buildable_yield": "unavailable"
+  }
+}
