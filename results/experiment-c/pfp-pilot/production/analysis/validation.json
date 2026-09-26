@@ -1,0 +1,254 @@
+{
+  "schema_version": "polygen.pfp-top1-validator.v1",
+  "status": "passed",
+  "checks_total": 41,
+  "checks_passed": 41,
+  "checks": [
+    {
+      "name": "candidate_count",
+      "passed": true,
+      "observed": 2,
+      "expected": 2
+    },
+    {
+      "name": "preflight_status",
+      "passed": true,
+      "observed": "succeeded",
+      "expected": "succeeded"
+    },
+    {
+      "name": "preflight_protocol_equal",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "continuous.source_sha256",
+      "passed": true,
+      "observed": "09f4e53c8ec6fefb0ff0c1e6b8b5fe80d36ef2c78fe64a0a4e0a27242ecfb13a",
+      "expected": "09f4e53c8ec6fefb0ff0c1e6b8b5fe80d36ef2c78fe64a0a4e0a27242ecfb13a"
+    },
+    {
+      "name": "continuous.relaxation_force_gate",
+      "passed": true,
+      "observed": 0.19675430683957748,
+      "expected": 0.2
+    },
+    {
+      "name": "continuous.relaxed_file_hash",
+      "passed": true,
+      "observed": "9621c78672525fb8109d72f7a7287a15c0f0c26158dd71feaf425321252ae8d8",
+      "expected": "9621c78672525fb8109d72f7a7287a15c0f0c26158dd71feaf425321252ae8d8"
+    },
+    {
+      "name": "binary.source_sha256",
+      "passed": true,
+      "observed": "fe96523becfd706c08258c10459594a0d3bbfc7e1522c954c282ddf55bd3bb0d",
+      "expected": "fe96523becfd706c08258c10459594a0d3bbfc7e1522c954c282ddf55bd3bb0d"
+    },
+    {
+      "name": "binary.relaxation_force_gate",
+      "passed": true,
+      "observed": 0.1702215691121179,
+      "expected": 0.2
+    },
+    {
+      "name": "binary.relaxed_file_hash",
+      "passed": true,
+      "observed": "984fa69a50829da7c87ea56d2cfb352030586e0ec5e9d12107bc552e15087f2c",
+      "expected": "984fa69a50829da7c87ea56d2cfb352030586e0ec5e9d12107bc552e15087f2c"
+    },
+    {
+      "name": "continuous.production_summary_exists",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "continuous.production_status",
+      "passed": true,
+      "observed": "succeeded",
+      "expected": "succeeded"
+    },
+    {
+      "name": "continuous.production_source_chain",
+      "passed": true,
+      "observed": "9621c78672525fb8109d72f7a7287a15c0f0c26158dd71feaf425321252ae8d8",
+      "expected": "9621c78672525fb8109d72f7a7287a15c0f0c26158dd71feaf425321252ae8d8"
+    },
+    {
+      "name": "continuous.protocol.temperature_K",
+      "passed": true,
+      "observed": 353.0,
+      "expected": 353.0
+    },
+    {
+      "name": "continuous.protocol.timestep_fs",
+      "passed": true,
+      "observed": 1.0,
+      "expected": 1.0
+    },
+    {
+      "name": "continuous.protocol.steps",
+      "passed": true,
+      "observed": 200000,
+      "expected": 200000
+    },
+    {
+      "name": "continuous.protocol.trajectory_interval_steps",
+      "passed": true,
+      "observed": 100,
+      "expected": 100
+    },
+    {
+      "name": "continuous.protocol.friction_per_fs",
+      "passed": true,
+      "observed": 0.01,
+      "expected": 0.01
+    },
+    {
+      "name": "continuous.protocol.velocity_seed",
+      "passed": true,
+      "observed": 20260924,
+      "expected": 20260924
+    },
+    {
+      "name": "continuous.frame_count",
+      "passed": true,
+      "observed": 2001,
+      "expected": 2001
+    },
+    {
+      "name": "continuous.trajectory_hash",
+      "passed": true,
+      "observed": "c8a920f0bc0cc7bc0f52f7272860b134e345cd9b81c931938ec8d89f1376a57f",
+      "expected": "c8a920f0bc0cc7bc0f52f7272860b134e345cd9b81c931938ec8d89f1376a57f"
+    },
+    {
+      "name": "binary.production_summary_exists",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "binary.production_status",
+      "passed": true,
+      "observed": "succeeded",
+      "expected": "succeeded"
+    },
+    {
+      "name": "binary.production_source_chain",
+      "passed": true,
+      "observed": "984fa69a50829da7c87ea56d2cfb352030586e0ec5e9d12107bc552e15087f2c",
+      "expected": "984fa69a50829da7c87ea56d2cfb352030586e0ec5e9d12107bc552e15087f2c"
+    },
+    {
+      "name": "binary.protocol.temperature_K",
+      "passed": true,
+      "observed": 353.0,
+      "expected": 353.0
+    },
+    {
+      "name": "binary.protocol.timestep_fs",
+      "passed": true,
+      "observed": 1.0,
+      "expected": 1.0
+    },
+    {
+      "name": "binary.protocol.steps",
+      "passed": true,
+      "observed": 200000,
+      "expected": 200000
+    },
+    {
+      "name": "binary.protocol.trajectory_interval_steps",
+      "passed": true,
+      "observed": 100,
+      "expected": 100
+    },
+    {
+      "name": "binary.protocol.friction_per_fs",
+      "passed": true,
+      "observed": 0.01,
+      "expected": 0.01
+    },
+    {
+      "name": "binary.protocol.velocity_seed",
+      "passed": true,
+      "observed": 20260924,
+      "expected": 20260924
+    },
+    {
+      "name": "binary.frame_count",
+      "passed": true,
+      "observed": 2001,
+      "expected": 2001
+    },
+    {
+      "name": "binary.trajectory_hash",
+      "passed": true,
+      "observed": "5e92e931ec697ba03340286c4d4684fc874f01e0b0a1a30cc9a14ecd5d98d234",
+      "expected": "5e92e931ec697ba03340286c4d4684fc874f01e0b0a1a30cc9a14ecd5d98d234"
+    },
+    {
+      "name": "continuous.analysis_exists",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "continuous.analysis_status",
+      "passed": true,
+      "observed": "succeeded",
+      "expected": "succeeded"
+    },
+    {
+      "name": "continuous.analysis_finite",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "continuous.analysis_constant_cell",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "continuous.analysis_ion_conservation",
+      "passed": true,
+      "observed": 19.999999999999996,
+      "expected": 20
+    },
+    {
+      "name": "binary.analysis_exists",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "binary.analysis_status",
+      "passed": true,
+      "observed": "succeeded",
+      "expected": "succeeded"
+    },
+    {
+      "name": "binary.analysis_finite",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "binary.analysis_constant_cell",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "name": "binary.analysis_ion_conservation",
+      "passed": true,
+      "observed": 20.0,
+      "expected": 20
+    }
+  ]
+}

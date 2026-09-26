@@ -1,0 +1,11 @@
+{
+  "schema_version": "polygen.pfp-pilot-progress.v1",
+  "label": "continuous_top1_relaxed",
+  "status": "completed",
+  "completed_steps": 200000,
+  "total_steps": 200000,
+  "completed_ps": 200.0,
+  "elapsed_seconds": 15411.965052366257,
+  "estimated_remaining_seconds": 0.0,
+  "updated_unix_seconds": 1790317952.754675
+}

@@ -1,0 +1,6 @@
+{
+  "schema_version": "polygen.pfp-analysis-watcher.v1",
+  "status": "succeeded",
+  "detail": "analysis and evidence validation completed after floating-point tolerance fix",
+  "updated_utc": "2026-09-25T22:10:39Z"
+}

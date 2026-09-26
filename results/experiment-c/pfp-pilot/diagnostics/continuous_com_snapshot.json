@@ -1,0 +1,72 @@
+{
+  "schema_version": "polygen.pfp-htpmd-analysis.v1",
+  "label": "continuous_snapshot",
+  "status": "succeeded",
+  "source": {
+    "trajectory": "production.traj",
+    "trajectory_sha256": "a074bcd043573348d784d0d6e6d3f4ee5ac281be9c63b9ccd805da42ac33cfe1",
+    "htpmd_reference_commit": "4076e9baa8d2da0c9ee250bd2b75daa58d03986a",
+    "adapter_definition": "HTP-MD endpoint diffusivity, TFSI-N identity, 3.4-A O/S/N ion clusters, and range(10) cNE sum"
+  },
+  "frames_total": 117,
+  "frames_analyzed": 117,
+  "discard_ps": 0.0,
+  "analysis_ps": 11.600000000000001,
+  "frame_dt_ps": 0.1,
+  "temperature_K": 353.0,
+  "volume_A3": 39476.43013529834,
+  "polymer_atom_count": 924,
+  "ion_pairs": 10,
+  "diffusivity": {
+    "htpmd_endpoint": {
+      "li_msd_A2": 92.31853210168721,
+      "li_cm2_s": 0.00013264156911161953,
+      "tfsi_N_msd_A2": 9.583491772742313,
+      "tfsi_cm2_s": 1.3769384730951598e-05
+    },
+    "system_com_drift_diagnostic": {
+      "system_com_displacement_A": 0.021782884827790262,
+      "li_msd_A2": 92.22081042285807,
+      "li_cm2_s": 0.00013250116440065814,
+      "tfsi_N_msd_A2": 9.564790697819706,
+      "tfsi_cm2_s": 1.3742515370430612e-05,
+      "primary_definition_remains_uncorrected_htpmd_endpoint": true
+    },
+    "multi_origin_slope_diagnostic": {
+      "li": {
+        "fit_start_ps": 2.9000000000000004,
+        "fit_end_ps": 8.700000000000001,
+        "slope_A2_per_ps": 6.2962363417206735,
+        "intercept_A2": -10.761079840603108,
+        "r_squared": 0.9671249154942958,
+        "diffusivity_cm2_s": 0.00010493727236201123
+      },
+      "tfsi_N": {
+        "fit_start_ps": 2.9000000000000004,
+        "fit_end_ps": 8.700000000000001,
+        "slope_A2_per_ps": 0.6702276289882204,
+        "intercept_A2": 0.022415606224611157,
+        "r_squared": 0.9988497151067551,
+        "diffusivity_cm2_s": 1.1170460483137008e-05
+      }
+    }
+  },
+  "conductivity": {
+    "cluster_nernst_einstein_S_cm": 0.21638439026553188,
+    "cluster_transference_number": 0.9156067852477645,
+    "nernst_einstein_S_cm": 0.19534335431670752,
+    "nernst_einstein_transference_number": 0.9059538622652703
+  },
+  "proxy_comparison": {
+    "proxy_log10_S_cm": -3.7789737147968334,
+    "pfp_cluster_ne_log10_S_cm": -0.6647740719668565,
+    "residual_pfp_minus_proxy_log10_S_cm": 3.114199642829977
+  },
+  "quality": {
+    "finite_values": true,
+    "population_ion_count_mean": 20.0,
+    "expected_ion_count": 20,
+    "constant_cell": true,
+    "single_replica_short_pilot": true
+  }
+}

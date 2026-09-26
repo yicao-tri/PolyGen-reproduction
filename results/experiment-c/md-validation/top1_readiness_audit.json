@@ -1,0 +1,129 @@
+{
+  "audit_date": "2026-09-24",
+  "decision": "NO_GO",
+  "candidate": {
+    "cohort": "continuous_top20",
+    "rank_within_arm": 1,
+    "arm": "continuous",
+    "seed": 202,
+    "target_log10_S_cm": -3.0,
+    "source_index": 55,
+    "raw_smiles": "O=C([Au])OCCCOCCO[Cu]",
+    "canonical_smiles": "O=C(OCCCOCCO[*:1])[*:2]",
+    "frozen_manifest_sha256": "e1a4b644fe70270dbd6c9c8bf6e5bf05e4a55b894e4ce9ade5d19a4ea3047cf4"
+  },
+  "paper_protocol": {
+    "engine": "LAMMPS",
+    "force_field": "PCFF+",
+    "salt": "LiTFSI",
+    "molality_mol_kg": 1.5,
+    "temperature_K": 353,
+    "timestep_fs": 2.0,
+    "production_ns": 5.0,
+    "replicas_per_structure": 5,
+    "polymerization_rule": "at least 150 non-hydrogen backbone atoms; methyl-terminated",
+    "conductivity_estimator": "cluster Nernst-Einstein"
+  },
+  "smoke_protocol": {
+    "production_ps": 200,
+    "production_steps": 100000,
+    "replicas": 1,
+    "result_label": "NON_CONVERGED_SMOKE_ONLY"
+  },
+  "platform": {
+    "ssh_host": "kozo-dev-yi",
+    "ssh_access": "PASS",
+    "arc_md_health": "PASS",
+    "matlantis_ssh": "PASS",
+    "historical_arc_job": "20260903T050921Z_99f39b64acf3",
+    "historical_arc_job_status": "succeeded",
+    "arc_default_force_field_route": "Matlantis PFP",
+    "paper_force_field_equivalent": false,
+    "arc_platform_blueprint_classical_md_phase": "Phase 4 planned; external MedeA decision required",
+    "standalone_lammps_runtime": {
+      "status": "PASS",
+      "version": "2 Aug 2023",
+      "source_commit": "27d065a682a1bd01d811db77b96abb108db1771e",
+      "packages": [
+        "CLASS2",
+        "KSPACE",
+        "MOLECULE"
+      ],
+      "smoke_styles": [
+        "units real",
+        "atom_style full",
+        "pair_style lj/class2/coul/long",
+        "kspace_style pppm"
+      ],
+      "smoke_run_zero": "PASS",
+      "binary_sha256": "84286e2494f909389e92ea79f8bd161243e6751d8831c4e6e46e7e0737b984f3",
+      "scope": "Temporary serial runtime on kozo-dev; not yet an ARC provider"
+    }
+  },
+  "htpmd_analysis": {
+    "repository": "https://github.com/TRI-AMDD/htp_md",
+    "commit": "4076e9baa8d2da0c9ee250bd2b75daa58d03986a",
+    "remote_test_root": "/tmp/polygen-htpmd-audit-20260924",
+    "core_tests": {
+      "command": "python -m pytest -q tests/shared/test_polymer.py tests/trajectory/test_load.py",
+      "passed": 26,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "expanded_tests": {
+      "passed": 26,
+      "failed": 2,
+      "status": "PARTIAL",
+      "failure_scope": "legacy scikit-learn 0.23.2 random-forest pickle is incompatible with scikit-learn 1.7.2",
+      "physical_trajectory_assertions_affected": false
+    },
+    "reference_artifacts": {
+      "9-0-246295613-0/traj.lammpstrj": "c9103e561c8347bb60522cdfc87d1444be3ba697dd3eae59efd8eabb6746252e",
+      "9-0-246295613-0/population.txt": "1112b21591d80612304683de0ca6d751a4912967cf4308ac832c9a5092e95325",
+      "9-0-413610210-0/traj.lammpstrj": "00f58c96399e051f2ff9e144455ea8118b2aef99305459cf7ec442bcfa9c982a",
+      "9-0-413610210-0/population.txt": "0bc27ef7a826045b58dbdf918ce9b246718635b1fb20c110ae0e28187d7e849a"
+    }
+  },
+  "gates": {
+    "candidate_identity": "PASS",
+    "paper_protocol_recovered": "PASS",
+    "ssh_and_arc_execution": "PASS",
+    "cluster_nernst_einstein_regression": "PASS",
+    "deterministic_top1_polymer_build": "PASS",
+    "top1_pcff_plus_parameter_coverage": "FAIL",
+    "audited_1_5_mol_kg_system_build": "PASS",
+    "standalone_lammps_class2_runtime": "PASS",
+    "arc_pcff_plus_execution_integration": "FAIL"
+  },
+  "top1_polymer_build": {
+    "degree_of_polymerization": 15,
+    "heavy_atoms": 152,
+    "total_atoms": 308,
+    "formula": "C92H156O60",
+    "methyl_terminated": true,
+    "sdf_sha256": "d871b57cc7e0749e1f2249a25f9aef027bb46ee55f90d092670df09477fde523",
+    "pdb_sha256": "adb0ac97feab2e6805a00b82229553ae1a2a95214fc1cc9ac341da5d2338466b",
+    "pcff_plus_parameterized": false
+  },
+  "packed_system_geometry": {
+    "status": "PASS_GEOMETRY_ONLY_FORCE_FIELD_NOT_ASSIGNED",
+    "polymer_chains": 3,
+    "li_ions": 10,
+    "tfsi_ions": 10,
+    "target_molality_mol_kg": 1.5,
+    "calculated_molality_mol_kg": 1.500015000150022,
+    "relative_molality_error": 1.000010001472873e-05,
+    "atom_count": 1084,
+    "box_length_A": 34.049647806413965,
+    "initial_density_g_cm3": 0.4009580078279123,
+    "initial_box_scale_relative_to_1_2_density": 1.4411,
+    "direct_1_2_g_cm3_pack_attempt": "FAIL",
+    "expanded_pack_attempt": "PASS",
+    "extxyz_sha256": "09f4e53c8ec6fefb0ff0c1e6b8b5fe80d36ef2c78fe64a0a4e0a27242ecfb13a",
+    "pcff_plus_parameterized": false
+  },
+  "launch_blockers": [
+    "No complete PCFF+ topology and parameter-coverage report for top-1",
+    "ARC production route uses Matlantis PFP rather than the paper's LAMMPS PCFF+ protocol"
+  ]
+}
