@@ -2,6 +2,8 @@
 """Render a Nature-style Layer 1/2 generation-grid figure from real outputs."""
 from pathlib import Path
 import json
+import html
+import re
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -83,6 +85,37 @@ def panel_c_standalone(top):
     fig.tight_layout(rect=[0,.02,1,.96],w_pad=1.2,h_pad=1.2)
     return fig
 
+def panel_c_vector_svg(top, path):
+    """Write panel C as a true SVG; molecule artwork is RDKit SVG paths, not PNG."""
+    W, H = 1040, 580
+    parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
+             '<rect width="100%" height="100%" fill="white"/>',
+             '<style>text{font-family:Arial,Helvetica,sans-serif} .label{font-size:18px;font-weight:700} .meta{font-size:14px;fill:#444}</style>',
+             '<text x="20" y="30" class="label">Representative candidates from the frozen baseline ranking</text>']
+    cfg='gpt-nano_steps1000_temp1.0'; targets=[-5.0,-4.0,-3.0]
+    colors={'binary':COL['binary'],'continuous':COL['continuous']}
+    for r,arm in enumerate(['binary','continuous']):
+        y0=55+r*255
+        parts.append(f'<rect x="12" y="{y0}" width="1016" height="238" fill="none" stroke="{colors[arm]}" stroke-width="2"/>')
+        parts.append(f'<text x="520" y="{y0+228}" text-anchor="middle" class="label" fill="{colors[arm]}">{arm.capitalize()}</text>')
+        for c,target in enumerate(targets):
+            x0=30+c*335
+            parts.append(f'<text x="{x0+145}" y="{y0+25}" text-anchor="middle" class="label" fill="{colors[arm]}">{arm.capitalize()} | target {target:.1f}</text>')
+            g=top[(top.config_id==cfg)&(top.arm==arm)&(top.target==target)].sort_values(['rank','uncertainty']).head(1)
+            if not len(g): continue
+            mol=Chem.MolFromSmiles(str(g.iloc[0].smiles).replace('[Cu]','[*]').replace('[Au]','[*]'))
+            if mol:
+                drawer=Draw.MolDraw2DSVG(300,170)
+                drawer.DrawMolecule(mol)
+                drawer.FinishDrawing()
+                inner=drawer.GetDrawingText()
+                inner=re.sub(r'^.*?<svg[^>]*>', '', inner, flags=re.S)
+                inner=re.sub(r'</svg>.*$', '', inner, flags=re.S)
+                parts.append(f'<g transform="translate({x0+10},{y0+35})">{inner}</g>')
+            parts.append(f'<text x="{x0+145}" y="{y0+215}" text-anchor="middle" class="meta">primary rank {int(g.iloc[0]["rank"])}</text>')
+    parts.append('</svg>')
+    Path(path).write_text('\n'.join(parts), encoding='utf-8')
+
 def panel_d(ax,raw,train):
     trainlog=np.log10(train.conductivity.astype(float)); ax.hist(trainlog,bins=24,density=True,color='#D9E6A5',alpha=.55,edgecolor='#556B2F',lw=.5,label='Training set')
     for arm in ['binary','continuous']:
@@ -97,7 +130,8 @@ def main():
     # Standalone publication panels. Each panel owns its own axes, legend, and export.
     f=plt.figure(figsize=(5.5,4.6)); a=f.add_subplot(111,projection='3d'); panel_a(a,m); f.subplots_adjust(left=.02,right=.98,bottom=.04,top=.94); f.savefig(OUT/'panel_a_grid_response.pdf',bbox_inches='tight'); f.savefig(OUT/'panel_a_grid_response.svg',bbox_inches='tight'); plt.close(f)
     f, a=plt.subplots(figsize=(5.8,3.9)); panel_b(a,m); f.tight_layout(pad=1.0); f.savefig(OUT/'panel_b_quality_metrics.pdf',bbox_inches='tight'); f.savefig(OUT/'panel_b_quality_metrics.svg',bbox_inches='tight'); plt.close(f)
-    f=panel_c_standalone(top); f.savefig(OUT/'panel_c_representative_structures.pdf',bbox_inches='tight'); f.savefig(OUT/'panel_c_representative_structures.svg',bbox_inches='tight'); plt.close(f)
+    f=panel_c_standalone(top); f.savefig(OUT/'panel_c_representative_structures.pdf',bbox_inches='tight'); plt.close(f)
+    panel_c_vector_svg(top, OUT/'panel_c_representative_structures.svg')
     f, a=plt.subplots(figsize=(5.8,3.9)); panel_d(a,raw,train); f.tight_layout(pad=1.0); f.savefig(OUT/'panel_d_property_distributions.pdf',bbox_inches='tight'); f.savefig(OUT/'panel_d_property_distributions.svg',bbox_inches='tight'); plt.close(f)
     fig=plt.figure(figsize=(11.2,8.2),facecolor='white'); gs=fig.add_gridspec(2,2,wspace=.22,hspace=.28)
     axa=fig.add_subplot(gs[0,0],projection='3d'); panel_a(axa,m)
