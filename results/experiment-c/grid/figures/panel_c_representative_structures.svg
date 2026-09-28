@@ -3,7 +3,6 @@
 <style>text{font-family:Arial,Helvetica,sans-serif} .label{font-size:18px;font-weight:700} .meta{font-size:14px;fill:#444}</style>
 <text x="20" y="30" class="label">Representative candidates from the frozen baseline ranking</text>
 <rect x="12" y="55" width="1016" height="238" fill="none" stroke="#2166AC" stroke-width="2"/>
-<text x="520" y="283" text-anchor="middle" class="label" fill="#2166AC">Binary</text>
 <text x="175" y="80" text-anchor="middle" class="label" fill="#2166AC">Binary | target -5.0</text>
 <g transform="translate(40,90)">
 <!-- END OF HEADER -->
@@ -198,7 +197,7 @@ L 15.3 84.9
 ' fill='#191919'/>
 </g>
 <text x="175" y="254" text-anchor="middle" class="meta">pred -4.102 | unc 0.065</text>
-<text x="175" y="274" text-anchor="middle" class="meta">support 0.897 | rank 12</text>
+<text x="175" y="274" text-anchor="middle" class="meta">support 0.897 | primary</text>
 <text x="510" y="80" text-anchor="middle" class="label" fill="#2166AC">Binary | target -4.0</text>
 <g transform="translate(375,90)">
 <!-- END OF HEADER -->
@@ -381,7 +380,7 @@ L 15.3 74.6
 ' fill='#191919'/>
 </g>
 <text x="510" y="254" text-anchor="middle" class="meta">pred -3.808 | unc 0.154</text>
-<text x="510" y="274" text-anchor="middle" class="meta">support 0.806 | rank 1</text>
+<text x="510" y="274" text-anchor="middle" class="meta">support 0.806 | primary</text>
 <text x="845" y="80" text-anchor="middle" class="label" fill="#2166AC">Binary | target -3.0</text>
 <g transform="translate(710,90)">
 <!-- END OF HEADER -->
@@ -542,9 +541,8 @@ L 15.3 85.7
 ' fill='#191919'/>
 </g>
 <text x="845" y="254" text-anchor="middle" class="meta">pred -3.941 | unc 0.116</text>
-<text x="845" y="274" text-anchor="middle" class="meta">support 0.926 | rank 2</text>
+<text x="845" y="274" text-anchor="middle" class="meta">support 0.926 | primary</text>
 <rect x="12" y="310" width="1016" height="238" fill="none" stroke="#D6604D" stroke-width="2"/>
-<text x="520" y="538" text-anchor="middle" class="label" fill="#D6604D">Continuous</text>
 <text x="175" y="335" text-anchor="middle" class="label" fill="#D6604D">Continuous | target -5.0</text>
 <g transform="translate(40,345)">
 <!-- END OF HEADER -->
@@ -818,7 +816,7 @@ L 15.4 31.8
 ' fill='#191919'/>
 </g>
 <text x="510" y="509" text-anchor="middle" class="meta">pred -3.985 | unc 0.104</text>
-<text x="510" y="529" text-anchor="middle" class="meta">support 1.000 | rank 22</text>
+<text x="510" y="529" text-anchor="middle" class="meta">support 1.000 | primary</text>
 <text x="845" y="335" text-anchor="middle" class="label" fill="#D6604D">Continuous | target -3.0</text>
 <g transform="translate(710,345)">
 <!-- END OF HEADER -->
@@ -990,5 +988,5 @@ L 15.3 74.6
 ' fill='#191919'/>
 </g>
 <text x="845" y="509" text-anchor="middle" class="meta">pred -3.799 | unc 0.136</text>
-<text x="845" y="529" text-anchor="middle" class="meta">support 0.957 | rank 1</text>
+<text x="845" y="529" text-anchor="middle" class="meta">support 0.957 | primary</text>
 </svg>

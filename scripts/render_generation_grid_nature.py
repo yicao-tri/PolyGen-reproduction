@@ -63,8 +63,9 @@ def structure_row(top, raw, cfg, arm, target):
 def structure_meta(row, label):
     """Two compact audit lines for the displayed RF candidate."""
     pred=float(row.predicted_log_sigma); unc=float(row.uncertainty); support=float(row.support)
+    status='primary' if label.startswith('primary') else 'fallback audit'
     return (f'pred {pred:.3f} | unc {unc:.3f}',
-            f'support {support:.3f} | {label.replace("primary ", "")}')
+            f'support {support:.3f} | {status}')
 
 def panel_c(ax,top,raw):
     ax.axis('off'); ax.set_title('Frozen primary-ranked candidates',loc='left',fontweight='bold')
@@ -120,7 +121,6 @@ def panel_c_vector_svg(top, raw, path):
     for r,arm in enumerate(['binary','continuous']):
         y0=55+r*255
         parts.append(f'<rect x="12" y="{y0}" width="1016" height="238" fill="none" stroke="{colors[arm]}" stroke-width="2"/>')
-        parts.append(f'<text x="520" y="{y0+228}" text-anchor="middle" class="label" fill="{colors[arm]}">{arm.capitalize()}</text>')
         for c,target in enumerate(targets):
             x0=30+c*335
             parts.append(f'<text x="{x0+145}" y="{y0+25}" text-anchor="middle" class="label" fill="{colors[arm]}">{arm.capitalize()} | target {target:.1f}</text>')
