@@ -197,7 +197,7 @@ L 15.9 85.3
 L 15.3 84.9
 ' fill='#191919'/>
 </g>
-<text x="175" y="270" text-anchor="middle" class="meta">primary rank 12</text>
+<text x="175" y="270" text-anchor="middle" class="meta">primary rank 12; RF pred -4.102; unc 0.065; support 0.897</text>
 <text x="510" y="80" text-anchor="middle" class="label" fill="#2166AC">Binary | target -4.0</text>
 <g transform="translate(375,90)">
 <!-- END OF HEADER -->
@@ -379,7 +379,7 @@ L 15.8 74.9
 L 15.3 74.6
 ' fill='#191919'/>
 </g>
-<text x="510" y="270" text-anchor="middle" class="meta">primary rank 1</text>
+<text x="510" y="270" text-anchor="middle" class="meta">primary rank 1; RF pred -3.808; unc 0.154; support 0.806</text>
 <text x="845" y="80" text-anchor="middle" class="label" fill="#2166AC">Binary | target -3.0</text>
 <g transform="translate(710,90)">
 <!-- END OF HEADER -->
@@ -539,7 +539,7 @@ L 15.9 86.1
 L 15.3 85.7
 ' fill='#191919'/>
 </g>
-<text x="845" y="270" text-anchor="middle" class="meta">primary rank 2</text>
+<text x="845" y="270" text-anchor="middle" class="meta">primary rank 2; RF pred -3.941; unc 0.116; support 0.926</text>
 <rect x="12" y="310" width="1016" height="238" fill="none" stroke="#D6604D" stroke-width="2"/>
 <text x="520" y="538" text-anchor="middle" class="label" fill="#D6604D">Continuous</text>
 <text x="175" y="335" text-anchor="middle" class="label" fill="#D6604D">Continuous | target -5.0</text>
@@ -665,7 +665,7 @@ L 231.4 12.8
 L 230.6 12.2
 ' fill='#191919'/>
 </g>
-<text x="175" y="525" text-anchor="middle" class="meta">fallback audit</text>
+<text x="175" y="525" text-anchor="middle" class="meta">fallback audit; RF pred -4.506; unc 0.110; support 0.650</text>
 <text x="510" y="335" text-anchor="middle" class="label" fill="#D6604D">Continuous | target -4.0</text>
 <g transform="translate(375,345)">
 <!-- END OF HEADER -->
@@ -813,7 +813,7 @@ L 16.1 32.3
 L 15.4 31.8
 ' fill='#191919'/>
 </g>
-<text x="510" y="525" text-anchor="middle" class="meta">primary rank 22</text>
+<text x="510" y="525" text-anchor="middle" class="meta">primary rank 22; RF pred -3.985; unc 0.104; support 1.000</text>
 <text x="845" y="335" text-anchor="middle" class="label" fill="#D6604D">Continuous | target -3.0</text>
 <g transform="translate(710,345)">
 <!-- END OF HEADER -->
@@ -984,5 +984,5 @@ L 15.8 74.9
 L 15.3 74.6
 ' fill='#191919'/>
 </g>
-<text x="845" y="525" text-anchor="middle" class="meta">primary rank 1</text>
+<text x="845" y="525" text-anchor="middle" class="meta">primary rank 1; RF pred -3.799; unc 0.136; support 0.957</text>
 </svg>
