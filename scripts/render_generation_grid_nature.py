@@ -47,7 +47,20 @@ def panel_b(ax,m):
     for i,arm in enumerate(['binary','continuous']): ax.bar(xx+(i-.5)*w,means.loc[arm].values,w,yerr=sem.loc[arm].values,color=COL[arm],alpha=.9,label=arm.capitalize(),capsize=2,error_kw={'lw':.7})
     ax.set_xticks(xx, [x[1] for x in metrics]); ax.set_ylim(0,1); ax.set_ylabel('Proportion'); ax.set_title('Generation quality',loc='left',fontweight='bold'); ax.legend(frameon=False,ncol=2)
 
-def panel_c(ax,top):
+def structure_row(top, raw, cfg, arm, target):
+    """Return a primary candidate, or an explicit audit fallback when a cell has none."""
+    g=top[(top.config_id==cfg)&(top.arm==arm)&(top.target==target)].sort_values(['rank','uncertainty']).head(1)
+    if len(g):
+        return g.iloc[0], f'primary rank {int(g.iloc[0]["rank"])}'
+    g=raw[(raw.config_id==cfg)&(raw.arm==arm)&(raw.target==target)&(raw.valid==True)&(raw.novel==True)].copy()
+    g=g[np.isfinite(g.predicted_log_sigma)&np.isfinite(g.target_error)]
+    if not len(g):
+        return None, 'no valid/novel fallback'
+    g['distance_to_target']=g.target_error.abs()
+    row=g.sort_values(['distance_to_target','uncertainty'],na_position='last').iloc[0]
+    return row, 'fallback audit'
+
+def panel_c(ax,top,raw):
     ax.axis('off'); ax.set_title('Frozen primary-ranked candidates',loc='left',fontweight='bold')
     # Baseline-only structural audit: three target columns, two paired arms.
     cfg='gpt-nano_steps1000_temp1.0'; targets=[-5.0,-4.0,-3.0]
@@ -55,37 +68,37 @@ def panel_c(ax,top):
     for i,target in enumerate(targets):
         ax.text(xs[i],.94,f'target {target:.1f}',ha='center',va='top',fontsize=8,fontweight='bold')
         for arm in ['binary','continuous']:
-            g=top[(top.config_id==cfg)&(top.arm==arm)&(top.target==target)].sort_values(['rank','uncertainty']).head(1)
-            if len(g):
-                mol=Chem.MolFromSmiles(str(g.iloc[0].smiles).replace('[Cu]','[*]').replace('[Au]','[*]'))
+            row,label=structure_row(top,raw,cfg,arm,target)
+            if row is not None:
+                mol=Chem.MolFromSmiles(str(row.smiles).replace('[Cu]','[*]').replace('[Au]','[*]'))
                 if mol:
                     img=Draw.MolToImage(mol,size=(210,105),transparent=True)
                     ax.imshow(img,extent=(xs[i]-.12,xs[i]+.12,ys[arm]-.09,ys[arm]+.09),aspect='auto')
-                ax.text(xs[i],ys[arm]-.12,f'{arm.capitalize()} | rank {int(g.iloc[0]["rank"])}',ha='center',va='top',fontsize=7,color=COL[arm])
+                ax.text(xs[i],ys[arm]-.12,f'{arm.capitalize()} | {label}',ha='center',va='top',fontsize=7,color=COL[arm])
     ax.add_patch(Rectangle((.02,.48),.96,.40,fill=False,ec=COL['binary'],lw=1.3)); ax.add_patch(Rectangle((.02,.06),.96,.40,fill=False,ec=COL['continuous'],lw=1.3))
     ax.text(.5,.49,'Binary',ha='center',va='bottom',fontsize=9,fontweight='bold',color=COL['binary']); ax.text(.5,.07,'Continuous',ha='center',va='bottom',fontsize=9,fontweight='bold',color=COL['continuous'])
 
-def panel_c_standalone(top):
+def panel_c_standalone(top,raw):
     """Render structures in real subplots; avoids extent/transparent-layer clipping."""
     cfg='gpt-nano_steps1000_temp1.0'; targets=[-5.0,-4.0,-3.0]
     fig,axes=plt.subplots(2,3,figsize=(8.2,4.5),facecolor='white')
     for r,arm in enumerate(['binary','continuous']):
         for c,target in enumerate(targets):
             ax=axes[r,c]; ax.set_facecolor('white'); ax.axis('off')
-            g=top[(top.config_id==cfg)&(top.arm==arm)&(top.target==target)].sort_values(['rank','uncertainty']).head(1)
+            row,label=structure_row(top,raw,cfg,arm,target)
             ax.set_title(f'{arm.capitalize()}  |  target {target:.1f}',fontsize=9,fontweight='bold',color=COL[arm],pad=8)
-            if len(g):
-                mol=Chem.MolFromSmiles(str(g.iloc[0].smiles).replace('[Cu]','[*]').replace('[Au]','[*]'))
+            if row is not None:
+                mol=Chem.MolFromSmiles(str(row.smiles).replace('[Cu]','[*]').replace('[Au]','[*]'))
                 if mol:
                     img=Draw.MolToImage(mol,size=(420,220),transparent=False,bgColor='white')
                     ax.imshow(img,interpolation='nearest')
                     ax.set_xlim(0,img.width); ax.set_ylim(img.height,0); ax.axis('off')
-                ax.text(.5,-.04,f'primary rank {int(g.iloc[0]["rank"])}',transform=ax.transAxes,ha='center',va='top',fontsize=7,color='#444')
+                ax.text(.5,-.04,label,transform=ax.transAxes,ha='center',va='top',fontsize=7,color='#444')
     fig.suptitle('Representative candidates from the frozen baseline ranking',fontsize=11,fontweight='bold',y=.995)
     fig.tight_layout(rect=[0,.02,1,.96],w_pad=1.2,h_pad=1.2)
     return fig
 
-def panel_c_vector_svg(top, path):
+def panel_c_vector_svg(top, raw, path):
     """Write panel C as a true SVG; molecule artwork is RDKit SVG paths, not PNG."""
     W, H = 1040, 580
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
@@ -101,9 +114,9 @@ def panel_c_vector_svg(top, path):
         for c,target in enumerate(targets):
             x0=30+c*335
             parts.append(f'<text x="{x0+145}" y="{y0+25}" text-anchor="middle" class="label" fill="{colors[arm]}">{arm.capitalize()} | target {target:.1f}</text>')
-            g=top[(top.config_id==cfg)&(top.arm==arm)&(top.target==target)].sort_values(['rank','uncertainty']).head(1)
-            if not len(g): continue
-            mol=Chem.MolFromSmiles(str(g.iloc[0].smiles).replace('[Cu]','[*]').replace('[Au]','[*]'))
+            row,label=structure_row(top,raw,cfg,arm,target)
+            if row is None: continue
+            mol=Chem.MolFromSmiles(str(row.smiles).replace('[Cu]','[*]').replace('[Au]','[*]'))
             if mol:
                 drawer=Draw.MolDraw2DSVG(300,170)
                 drawer.DrawMolecule(mol)
@@ -112,7 +125,7 @@ def panel_c_vector_svg(top, path):
                 inner=re.sub(r'^.*?<svg[^>]*>', '', inner, flags=re.S)
                 inner=re.sub(r'</svg>.*$', '', inner, flags=re.S)
                 parts.append(f'<g transform="translate({x0+10},{y0+35})">{inner}</g>')
-            parts.append(f'<text x="{x0+145}" y="{y0+215}" text-anchor="middle" class="meta">primary rank {int(g.iloc[0]["rank"])}</text>')
+            parts.append(f'<text x="{x0+145}" y="{y0+215}" text-anchor="middle" class="meta">{html.escape(label)}</text>')
     parts.append('</svg>')
     Path(path).write_text('\n'.join(parts), encoding='utf-8')
 
@@ -130,13 +143,13 @@ def main():
     # Standalone publication panels. Each panel owns its own axes, legend, and export.
     f=plt.figure(figsize=(5.5,4.6)); a=f.add_subplot(111,projection='3d'); panel_a(a,m); f.subplots_adjust(left=.02,right=.98,bottom=.04,top=.94); f.savefig(OUT/'panel_a_grid_response.pdf',bbox_inches='tight'); f.savefig(OUT/'panel_a_grid_response.svg',bbox_inches='tight'); plt.close(f)
     f, a=plt.subplots(figsize=(5.8,3.9)); panel_b(a,m); f.tight_layout(pad=1.0); f.savefig(OUT/'panel_b_quality_metrics.pdf',bbox_inches='tight'); f.savefig(OUT/'panel_b_quality_metrics.svg',bbox_inches='tight'); plt.close(f)
-    f=panel_c_standalone(top); f.savefig(OUT/'panel_c_representative_structures.pdf',bbox_inches='tight'); plt.close(f)
-    panel_c_vector_svg(top, OUT/'panel_c_representative_structures.svg')
+    f=panel_c_standalone(top,raw); f.savefig(OUT/'panel_c_representative_structures.pdf',bbox_inches='tight'); plt.close(f)
+    panel_c_vector_svg(top,raw, OUT/'panel_c_representative_structures.svg')
     f, a=plt.subplots(figsize=(5.8,3.9)); panel_d(a,raw,train); f.tight_layout(pad=1.0); f.savefig(OUT/'panel_d_property_distributions.pdf',bbox_inches='tight'); f.savefig(OUT/'panel_d_property_distributions.svg',bbox_inches='tight'); plt.close(f)
     fig=plt.figure(figsize=(11.2,8.2),facecolor='white'); gs=fig.add_gridspec(2,2,wspace=.22,hspace=.28)
     axa=fig.add_subplot(gs[0,0],projection='3d'); panel_a(axa,m)
     panel_b(fig.add_subplot(gs[0,1]),m)
-    panel_c(fig.add_subplot(gs[1,0]),top)
+    panel_c(fig.add_subplot(gs[1,0]),top,raw)
     panel_d(fig.add_subplot(gs[1,1]),raw,train)
     for ax,label in zip(fig.axes,['a','b','c','d']):
         if hasattr(ax,'text2D'): ax.text2D(-.08,1.04,label,transform=ax.transAxes,fontsize=13,fontweight='bold',va='top')
