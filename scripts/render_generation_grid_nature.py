@@ -61,9 +61,10 @@ def structure_row(top, raw, cfg, arm, target):
     return row, 'fallback audit'
 
 def structure_meta(row, label):
-    """Compact audit annotation for the displayed RF candidate."""
+    """Two compact audit lines for the displayed RF candidate."""
     pred=float(row.predicted_log_sigma); unc=float(row.uncertainty); support=float(row.support)
-    return f'{label}; RF pred {pred:.3f}; unc {unc:.3f}; support {support:.3f}'
+    return (f'pred {pred:.3f} | unc {unc:.3f}',
+            f'support {support:.3f} | {label.replace("primary ", "")}')
 
 def panel_c(ax,top,raw):
     ax.axis('off'); ax.set_title('Frozen primary-ranked candidates',loc='left',fontweight='bold')
@@ -79,7 +80,9 @@ def panel_c(ax,top,raw):
                 if mol:
                     img=Draw.MolToImage(mol,size=(210,105),transparent=True)
                     ax.imshow(img,extent=(xs[i]-.12,xs[i]+.12,ys[arm]-.09,ys[arm]+.09),aspect='auto')
-                ax.text(xs[i],ys[arm]-.12,structure_meta(row,label),ha='center',va='top',fontsize=6.2,color=COL[arm])
+                meta1,meta2=structure_meta(row,label)
+                ax.text(xs[i],ys[arm]-.12,meta1,ha='center',va='top',fontsize=6.2,color=COL[arm])
+                ax.text(xs[i],ys[arm]-.155,meta2,ha='center',va='top',fontsize=6.2,color='#444')
     ax.add_patch(Rectangle((.02,.48),.96,.40,fill=False,ec=COL['binary'],lw=1.3)); ax.add_patch(Rectangle((.02,.06),.96,.40,fill=False,ec=COL['continuous'],lw=1.3))
     ax.text(.5,.49,'Binary',ha='center',va='bottom',fontsize=9,fontweight='bold',color=COL['binary']); ax.text(.5,.07,'Continuous',ha='center',va='bottom',fontsize=9,fontweight='bold',color=COL['continuous'])
 
@@ -98,7 +101,9 @@ def panel_c_standalone(top,raw):
                     img=Draw.MolToImage(mol,size=(420,220),transparent=False,bgColor='white')
                     ax.imshow(img,interpolation='nearest')
                     ax.set_xlim(0,img.width); ax.set_ylim(img.height,0); ax.axis('off')
-                ax.text(.5,-.04,structure_meta(row,label),transform=ax.transAxes,ha='center',va='top',fontsize=6.2,color='#444')
+                meta1,meta2=structure_meta(row,label)
+                ax.text(.5,-.035,meta1,transform=ax.transAxes,ha='center',va='top',fontsize=6.2,color='#444')
+                ax.text(.5,-.085,meta2,transform=ax.transAxes,ha='center',va='top',fontsize=6.2,color='#444')
     fig.suptitle('Representative candidates from the frozen baseline ranking',fontsize=11,fontweight='bold',y=.995)
     fig.tight_layout(rect=[0,.02,1,.96],w_pad=1.2,h_pad=1.2)
     return fig
@@ -130,8 +135,9 @@ def panel_c_vector_svg(top, raw, path):
                 inner=re.sub(r'^.*?<svg[^>]*>', '', inner, flags=re.S)
                 inner=re.sub(r'</svg>.*$', '', inner, flags=re.S)
                 parts.append(f'<g transform="translate({x0+10},{y0+35})">{inner}</g>')
-            meta=html.escape(structure_meta(row,label))
-            parts.append(f'<text x="{x0+145}" y="{y0+215}" text-anchor="middle" class="meta">{meta}</text>')
+            meta1,meta2=structure_meta(row,label)
+            parts.append(f'<text x="{x0+145}" y="{y0+199}" text-anchor="middle" class="meta">{html.escape(meta1)}</text>')
+            parts.append(f'<text x="{x0+145}" y="{y0+219}" text-anchor="middle" class="meta">{html.escape(meta2)}</text>')
     parts.append('</svg>')
     Path(path).write_text('\n'.join(parts), encoding='utf-8')
 
