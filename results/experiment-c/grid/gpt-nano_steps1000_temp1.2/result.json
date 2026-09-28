@@ -1,0 +1,45 @@
+{
+  "seeds": [
+    907
+  ],
+  "verifier": {
+    "test_rows": 1205,
+    "rmse": 0.1569581940859584,
+    "mae": 0.12429890570766657,
+    "r2": 0.4978420059850899
+  },
+  "mean_paired_delta_hit": 0.0,
+  "paired_deltas": [
+    {
+      "seed": 907,
+      "delta_hit_continuous_minus_binary": 0.0
+    }
+  ],
+  "runs": [
+    {
+      "arm": "binary",
+      "seed": 907,
+      "steps": 1000,
+      "temperature": 1.2,
+      "samples_per_target": 100,
+      "allocation": null,
+      "elapsed_seconds": 45.968263149261475,
+      "first_loss": 6.383538246154785,
+      "last_loss": 0.26952648162841797,
+      "samples": 300
+    },
+    {
+      "arm": "continuous",
+      "seed": 907,
+      "steps": 1000,
+      "temperature": 1.2,
+      "samples_per_target": 100,
+      "allocation": null,
+      "elapsed_seconds": 45.26498055458069,
+      "first_loss": 6.371638774871826,
+      "last_loss": 0.27395233511924744,
+      "samples": 300
+    }
+  ],
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69"
+}

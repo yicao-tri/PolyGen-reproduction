@@ -1,0 +1,513 @@
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+Skipped loading some Tensorflow models, missing a dependency. No module named 'tensorflow'
+Skipped loading modules with pytorch-geometric dependency, missing a dependency. No module named 'torch_geometric'
+Skipped loading modules with pytorch-geometric dependency, missing a dependency. cannot import name 'DMPNN' from 'deepchem.models.torch_models' (/home/yi/PolyGen-reproduction-grid/.venv/lib/python3.8/site-packages/deepchem/models/torch_models/__init__.py)
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+Skipped loading some PyTorch models, missing a dependency. No module named 'tensorflow'
+[00:27:33] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:27:33] Explicit valence for atom # 9 C, 6, is greater than permitted
+[00:27:33] SMILES Parse Error: extra close parentheses while parsing: CC(CSC(C)C(C)OC(=O)[*])C(C))O[*]
+[00:27:33] SMILES Parse Error: Failed parsing SMILES 'CC(CSC(C)C(C)OC(=O)[*])C(C))O[*]' for input: 'CC(CSC(C)C(C)OC(=O)[*])C(C))O[*]'
+[00:27:33] SMILES Parse Error: extra open parentheses for input: 'CCC(C(OC(=O)[*])C(=O)NCC(C)S[*]'
+[00:27:34] Explicit valence for atom # 9 O, 3, is greater than permitted
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'CC(N[*])C(=O)NNCCNC(C(=OC[*])N'
+[00:27:34] SMILES Parse Error: syntax error while parsing: C=(C)OC(=NC)(=O)NCCC(COC(=O)[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'C=(C)OC(=NC)(=O)NCCC(COC(=O)[*]' for input: 'C=(C)OC(=NC)(=O)NCCC(COC(=O)[*]'
+[00:27:34] SMILES Parse Error: extra close parentheses while parsing: O=C([*])NC=O)C(CCCN[*])(C)F
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'O=C([*])NC=O)C(CCCN[*])(C)F' for input: 'O=C([*])NC=O)C(CCCN[*])(C)F'
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'CN(C)C(CC(CO[*])CCCOC(=O)[*]'
+[00:27:34] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:27:34] SMILES Parse Error: extra close parentheses while parsing: CCNN(C)C(C)CNCC(=O)[*])C(C)O[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CCNN(C)C(C)CNCC(=O)[*])C(C)O[*]' for input: 'CCNN(C)C(C)CNCC(=O)[*])C(C)O[*]'
+[00:27:34] SMILES Parse Error: syntax error while parsing: CCNC(CCNC(O[*])CNC(C)OC((=O)[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CCNC(CCNC(O[*])CNC(C)OC((=O)[*]' for input: 'CCNC(CCNC(O[*])CNC(C)OC((=O)[*]'
+[00:27:34] Explicit valence for atom # 1 O, 4, is greater than permitted
+[00:27:34] SMILES Parse Error: syntax error while parsing: )CC(NCC(F)OC(=O)NC(COC(=O)[*])O[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES ')CC(NCC(F)OC(=O)NC(COC(=O)[*])O[*]' for input: ')CC(NCC(F)OC(=O)NC(COC(=O)[*])O[*]'
+[00:27:34] Explicit valence for atom # 1 N, 4, is greater than permitted
+[00:27:34] SMILES Parse Error: extra close parentheses while parsing: CC(N[*])NCC)CS(C)(C)(C)NC(=O)[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CC(N[*])NCC)CS(C)(C)(C)NC(=O)[*]' for input: 'CC(N[*])NCC)CS(C)(C)(C)NC(=O)[*]'
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'CC(C)(COC(C)(CCO[*])OC(=O)[*]'
+[00:27:34] Explicit valence for atom # 3 F, 2, is greater than permitted
+[00:27:34] SMILES Parse Error: extra close parentheses while parsing: CC)NC(=O)C(CCCNC(=O)[*])CO[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CC)NC(=O)C(CCCNC(=O)[*])CO[*]' for input: 'CC)NC(=O)C(CCCNC(=O)[*])CO[*]'
+[00:27:34] SMILES Parse Error: extra close parentheses while parsing: CCCC(C)OCCCOC(=O)[*])C(=O)OCCCCN[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CCCC(C)OCCCOC(=O)[*])C(=O)OCCCCN[*]' for input: 'CCCC(C)OCCCOC(=O)[*])C(=O)OCCCCN[*]'
+[00:27:34] SMILES Parse Error: syntax error while parsing: CCN[unused1]C(=O)NCC(CCO[*])OC(=O)[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CCN[unused1]C(=O)NCC(CCO[*])OC(=O)[*]' for input: 'CCN[unused1]C(=O)NCC(CCO[*])OC(=O)[*]'
+[00:27:34] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:27:34] SMILES Parse Error: syntax error while parsing: CN(CCCCC(C)(C)(C)OC([unused1])O[*])O
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CN(CCCCC(C)(C)(C)OC([unused1])O[*])O' for input: 'CN(CCCCC(C)(C)(C)OC([unused1])O[*])O'
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'CC(C(OCC(=O)[*])C(CN[*])NC(C)O'
+[00:27:34] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'CCC(=O)CC(C(CNC(=O)[*])O[*]'
+[00:27:34] SMILES Parse Error: syntax error while parsing: CC(CSCC(=O)NC((C)C(C)OC(=O)[*])N[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CC(CSCC(=O)NC((C)C(C)OC(=O)[*])N[*]' for input: 'CC(CSCC(=O)NC((C)C(C)OC(=O)[*])N[*]'
+[00:27:34] Explicit valence for atom # 2 O, 4, is greater than permitted
+[00:27:34] SMILES Parse Error: extra close parentheses while parsing: NC(CCF)(C)(=O)OCOC(=O)[*])OCO[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'NC(CCF)(C)(=O)OCOC(=O)[*])OCO[*]' for input: 'NC(CCF)(C)(=O)OCOC(=O)[*])OCO[*]'
+[00:27:34] Explicit valence for atom # 1 N, 4, is greater than permitted
+[00:27:34] SMILES Parse Error: extra close parentheses while parsing: CC(C)N(CCCC)(C)CCOC(=O)[*])O[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CC(C)N(CCCC)(C)CCOC(=O)[*])O[*]' for input: 'CC(C)N(CCCC)(C)CCOC(=O)[*])O[*]'
+[00:27:34] SMILES Parse Error: extra close parentheses while parsing: CC(CC)(C)C#C)(CNC(=O)[*])O[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CC(CC)(C)C#C)(CNC(=O)[*])O[*]' for input: 'CC(CC)(C)C#C)(CNC(=O)[*])O[*]'
+[00:27:34] SMILES Parse Error: extra close parentheses while parsing: CC)OCC(NC(CO[*])OC(=O)[*][*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CC)OCC(NC(CO[*])OC(=O)[*][*]' for input: 'CC)OCC(NC(CO[*])OC(=O)[*][*]'
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'CN(CC(COC(=O)[*])CC(C)O[*]'
+[00:27:34] SMILES Parse Error: extra close parentheses while parsing: CCNCC(CCCOC(=O)[*])CC(C)(C)CC)O[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CCNCC(CCCOC(=O)[*])CC(C)(C)CC)O[*]' for input: 'CCNCC(CCCOC(=O)[*])CC(C)(C)CC)O[*]'
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'CC(CCNC(CNC(=O)[*])CO[*]'
+[00:27:34] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'C=C(=OCC)C(CC(CN(=O)[*])N[*]'
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'CCCC(NC(=O)C(C)C(NC(=O)[*])CO[*]'
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'CC(CC(C)(=O)C(CO[*])CCOC(=O)[*]'
+[00:27:34] Explicit valence for atom # 5 Cl, 2, is greater than permitted
+[00:27:34] SMILES Parse Error: extra close parentheses while parsing: C=CC)C(CNC(=O)C(CNC(=O)[*])O[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'C=CC)C(CNC(=O)C(CNC(=O)[*])O[*]' for input: 'C=CC)C(CNC(=O)C(CNC(=O)[*])O[*]'
+[00:27:34] Explicit valence for atom # 6 C, 5, is greater than permitted
+[00:27:34] Explicit valence for atom # 5 N, 4, is greater than permitted
+[00:27:34] Explicit valence for atom # 6 C, 8, is greater than permitted
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'CC(CC(CNC([*])CCCOC(=O)[*])=O'
+[00:27:34] SMILES Parse Error: syntax error while parsing: CCCCC(CNCO[*])S(=O[unused1])[*]
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'CCCCC(CNCO[*])S(=O[unused1])[*]' for input: 'CCCCC(CNCO[*])S(=O[unused1])[*]'
+[00:27:34] Explicit valence for atom # 5 N, 4, is greater than permitted
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'CC(CCOC(=O)NC(C)C(C)(C)OC(=O)[*]'
+[00:27:34] SMILES Parse Error: extra open parentheses for input: 'CC(CCC(C)(=O)NC(COC(=O)[*])O[*]'
+[00:27:34] SMILES Parse Error: syntax error while parsing: O=C(CCCCCCF[*])(C)NC(=
+[00:27:34] SMILES Parse Error: Failed parsing SMILES 'O=C(CCCCCCF[*])(C)NC(=' for input: 'O=C(CCCCCCF[*])(C)NC(='
+[00:27:35] SMILES Parse Error: extra open parentheses for input: 'O=C([*])CC=CCNCC(OCC(F)O[*]'
+[00:27:35] SMILES Parse Error: extra close parentheses while parsing: COC(=O)CNC(=O)[*])CC(=O)C(O[*]
+[00:27:35] SMILES Parse Error: Failed parsing SMILES 'COC(=O)CNC(=O)[*])CC(=O)C(O[*]' for input: 'COC(=O)CNC(=O)[*])CC(=O)C(O[*]'
+[00:27:35] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:27:35] SMILES Parse Error: extra open parentheses for input: 'CC(CC(C)N(C)CC(COC(=O)[*])N[*]'
+[00:27:35] Explicit valence for atom # 4 N, 4, is greater than permitted
+[00:27:35] SMILES Parse Error: extra close parentheses while parsing: O=[*])C(COC(C)CN[*])NC(=O)C
+[00:27:35] SMILES Parse Error: Failed parsing SMILES 'O=[*])C(COC(C)CN[*])NC(=O)C' for input: 'O=[*])C(COC(C)CN[*])NC(=O)C'
+[00:27:35] Explicit valence for atom # 8 F, 2, is greater than permitted
+[00:27:35] SMILES Parse Error: extra close parentheses while parsing: CCNCNC(=O)C(C)CNC(=O)[*])C(O[*]
+[00:27:35] SMILES Parse Error: Failed parsing SMILES 'CCNCNC(=O)C(C)CNC(=O)[*])C(O[*]' for input: 'CCNCNC(=O)C(C)CNC(=O)[*])C(O[*]'
+[00:27:35] SMILES Parse Error: extra open parentheses for input: 'CC(CNCCCC(CO[*])OC(=O)[*]'
+[00:27:35] SMILES Parse Error: extra close parentheses while parsing: CC(C)(O[*])N[*])(=O)C(C)(C)NC(=O)[*]
+[00:27:35] SMILES Parse Error: Failed parsing SMILES 'CC(C)(O[*])N[*])(=O)C(C)(C)NC(=O)[*]' for input: 'CC(C)(O[*])N[*])(=O)C(C)(C)NC(=O)[*]'
+[00:27:35] SMILES Parse Error: extra open parentheses for input: 'CN(CCCCNC(C)C(CN[*])NC(=O)[*]'
+[00:27:35] SMILES Parse Error: extra close parentheses while parsing: COCCN(C)CO[*])C(#N)OCNC(=O)[*]
+[00:27:35] SMILES Parse Error: Failed parsing SMILES 'COCCN(C)CO[*])C(#N)OCNC(=O)[*]' for input: 'COCCN(C)CO[*])C(#N)OCNC(=O)[*]'
+[00:27:35] SMILES Parse Error: syntax error while parsing: O=C([*])NC(=)CCCCO[*]
+[00:27:35] SMILES Parse Error: Failed parsing SMILES 'O=C([*])NC(=)CCCCO[*]' for input: 'O=C([*])NC(=)CCCCO[*]'
+[00:27:35] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:27:35] SMILES Parse Error: extra open parentheses for input: 'COC(COC(=O)[*])C(=O)NCCC(O[*]'
+[00:27:35] SMILES Parse Error: syntax error while parsing: CN(CCCC(N[*])NCC(C)(C)OC(#=O)[*])C
+[00:27:35] SMILES Parse Error: Failed parsing SMILES 'CN(CCCC(N[*])NCC(C)(C)OC(#=O)[*])C' for input: 'CN(CCCC(N[*])NCC(C)(C)OC(#=O)[*])C'
+[00:27:35] SMILES Parse Error: extra open parentheses for input: 'CFN(CNCCC'
+[00:27:35] SMILES Parse Error: extra open parentheses for input: 'CC(C(C)CC(C)(CNC(=O)[*])O[*]'
+[00:27:35] SMILES Parse Error: extra close parentheses while parsing: C#CCNCOCC(=O)[*])C(CCCC)(C)(CN[*]
+[00:27:35] SMILES Parse Error: Failed parsing SMILES 'C#CCNCOCC(=O)[*])C(CCCC)(C)(CN[*]' for input: 'C#CCNCOCC(=O)[*])C(CCCC)(C)(CN[*]'
+[00:27:35] SMILES Parse Error: extra close parentheses while parsing: CN(CCCOC(=O)[*])C#O)CCC(C)CCN[*]
+[00:27:35] SMILES Parse Error: Failed parsing SMILES 'CN(CCCOC(=O)[*])C#O)CCC(C)CCN[*]' for input: 'CN(CCCOC(=O)[*])C#O)CCC(C)CCN[*]'
+[00:27:35] Explicit valence for atom # 5 N, 4, is greater than permitted
+[00:27:35] SMILES Parse Error: extra close parentheses while parsing: CCC(COC(=O)[*])C(=O)NCN)C(CO[*]
+[00:27:35] SMILES Parse Error: Failed parsing SMILES 'CCC(COC(=O)[*])C(=O)NCN)C(CO[*]' for input: 'CCC(COC(=O)[*])C(=O)NCN)C(CO[*]'
+[00:27:36] SMILES Parse Error: extra open parentheses for input: 'CN(COCC(=O)NCC(C)(C)O[*]'
+[00:27:36] Explicit valence for atom # 4 O, 5, is greater than permitted
+[00:27:36] SMILES Parse Error: extra open parentheses for input: 'C=C(CNCCC(CNC(C)O[*])OC(=O)[*]'
+[00:27:36] Explicit valence for atom # 7 N, 4, is greater than permitted
+[00:27:36] SMILES Parse Error: extra close parentheses while parsing: CC(NC(C#C)CCC#O)CCO[*])NC(=O)[*]
+[00:27:36] SMILES Parse Error: Failed parsing SMILES 'CC(NC(C#C)CCC#O)CCO[*])NC(=O)[*]' for input: 'CC(NC(C#C)CCC#O)CCO[*])NC(=O)[*]'
+[00:27:36] SMILES Parse Error: extra open parentheses for input: 'COCC(CN'
+[00:27:36] SMILES Parse Error: extra open parentheses for input: 'CN(CCCC(N(=O)CCO[*])OC(=O)[*]'
+[00:27:36] SMILES Parse Error: extra close parentheses while parsing: C)C(CC(CO[*])NC(C)CCOC(=O)[*]
+[00:27:36] SMILES Parse Error: Failed parsing SMILES 'C)C(CC(CO[*])NC(C)CCOC(=O)[*]' for input: 'C)C(CC(CO[*])NC(C)CCOC(=O)[*]'
+[00:27:36] Explicit valence for atom # 1 O, 3, is greater than permitted
+[00:27:36] SMILES Parse Error: extra close parentheses while parsing: CCC(CCF)NC(COC(=O)[*])C(=O)O)N[*]
+[00:27:36] SMILES Parse Error: Failed parsing SMILES 'CCC(CCF)NC(COC(=O)[*])C(=O)O)N[*]' for input: 'CCC(CCF)NC(COC(=O)[*])C(=O)O)N[*]'
+[00:27:36] SMILES Parse Error: extra close parentheses while parsing: C=CC(COC=OO)NCCCCCCOC(=O)[*])O[*]
+[00:27:36] SMILES Parse Error: Failed parsing SMILES 'C=CC(COC=OO)NCCCCCCOC(=O)[*])O[*]' for input: 'C=CC(COC=OO)NCCCCCCOC(=O)[*])O[*]'
+[00:27:36] Explicit valence for atom # 14 N, 4, is greater than permitted
+[00:27:36] Explicit valence for atom # 12 N, 4, is greater than permitted
+[00:27:36] SMILES Parse Error: extra open parentheses for input: 'CN(CCCN(CCS[*])COC(=O)[*]'
+[00:27:36] SMILES Parse Error: extra close parentheses while parsing: CC(CN(C)CO=O)[*])O[*]
+[00:27:36] SMILES Parse Error: Failed parsing SMILES 'CC(CN(C)CO=O)[*])O[*]' for input: 'CC(CN(C)CO=O)[*])O[*]'
+[00:27:36] SMILES Parse Error: extra open parentheses for input: 'O=CC(=O)OC(=O)[*]OCC(CC[*]'
+[00:27:36] SMILES Parse Error: extra open parentheses for input: 'CCN(CN(C)CCC(CO[*])COC(=O)[*]'
+[00:27:36] Explicit valence for atom # 6 C, 5, is greater than permitted
+[00:27:36] SMILES Parse Error: extra close parentheses while parsing: CCC(CC#N)CC(CCOC(=O)CO[*])NC)[*]
+[00:27:36] SMILES Parse Error: Failed parsing SMILES 'CCC(CC#N)CC(CCOC(=O)CO[*])NC)[*]' for input: 'CCC(CC#N)CC(CCOC(=O)CO[*])NC)[*]'
+[00:27:36] SMILES Parse Error: syntax error while parsing: CC[unused1]C(O[*])OCC(=O)OC(C)COC(=O)[*]
+[00:27:36] SMILES Parse Error: Failed parsing SMILES 'CC[unused1]C(O[*])OCC(=O)OC(C)COC(=O)[*]' for input: 'CC[unused1]C(O[*])OCC(=O)OC(C)COC(=O)[*]'
+[00:27:36] SMILES Parse Error: extra open parentheses for input: 'CN(CCCC(CO[*])NCC(C)[*]'
+[00:27:36] SMILES Parse Error: extra close parentheses while parsing: OC(=CCO)N(=O)C(CC#O)COC(=O)[*])N[*]
+[00:27:36] SMILES Parse Error: Failed parsing SMILES 'OC(=CCO)N(=O)C(CC#O)COC(=O)[*])N[*]' for input: 'OC(=CCO)N(=O)C(CC#O)COC(=O)[*])N[*]'
+[00:27:36] SMILES Parse Error: extra close parentheses while parsing: COOCCCCO[*])NCOC(COC(=O)[*]
+[00:27:36] SMILES Parse Error: Failed parsing SMILES 'COOCCCCO[*])NCOC(COC(=O)[*]' for input: 'COOCCCCO[*])NCOC(COC(=O)[*]'
+[00:27:36] Explicit valence for atom # 6 N, 4, is greater than permitted
+[00:27:36] SMILES Parse Error: extra open parentheses for input: 'COC(CN[*])NCC(COC(=O)[*]'
+[00:27:36] SMILES Parse Error: extra close parentheses while parsing: CCC)(CNC(=O)CC(CCOC(=O)[*])O[*]
+[00:27:36] SMILES Parse Error: Failed parsing SMILES 'CCC)(CNC(=O)CC(CCOC(=O)[*])O[*]' for input: 'CCC)(CNC(=O)CC(CCOC(=O)[*])O[*]'
+[00:27:36] Explicit valence for atom # 6 O, 3, is greater than permitted
+[00:27:36] SMILES Parse Error: syntax error while parsing: CS(CN(=O[unused1])C(C)(CCCCOC(=O)[*])O[*]
+[00:27:36] SMILES Parse Error: Failed parsing SMILES 'CS(CN(=O[unused1])C(C)(CCCCOC(=O)[*])O[*]' for input: 'CS(CN(=O[unused1])C(C)(CCCCOC(=O)[*])O[*]'
+[00:27:36] SMILES Parse Error: extra open parentheses for input: 'CN(COC(C(=O)[*])C(=O)CC(=O)O[*]'
+[00:27:37] SMILES Parse Error: extra open parentheses for input: 'CO(CCN(=N)CC(CCCN[*])OC(=O)[*]'
+[00:27:37] Explicit valence for atom # 1 N, 4, is greater than permitted
+[00:27:37] SMILES Parse Error: extra close parentheses while parsing: CCC(N[*])CC=O)(CCNC(=O)[*]
+[00:27:37] SMILES Parse Error: Failed parsing SMILES 'CCC(N[*])CC=O)(CCNC(=O)[*]' for input: 'CCC(N[*])CC=O)(CCNC(=O)[*]'
+[00:27:37] SMILES Parse Error: extra open parentheses for input: 'CC(CC(CNCCCC(CN[*])CC)OC(=O)[*]'
+[00:27:37] Explicit valence for atom # 4 N, 4, is greater than permitted
+[00:27:37] SMILES Parse Error: extra open parentheses for input: 'CC(C(C)(CNCCO[*])OC(=O)[*]'
+[00:27:37] Explicit valence for atom # 1 O, 4, is greater than permitted
+[00:27:37] Explicit valence for atom # 5 N, 4, is greater than permitted
+[00:27:37] SMILES Parse Error: extra open parentheses for input: 'CC(CNCC(CCO[*])COC#[*]'
+[00:27:37] SMILES Parse Error: extra open parentheses for input: 'O=C([*])N(=O)C(CNCCCCN[*]'
+[00:27:37] Explicit valence for atom # 1 N, 4, is greater than permitted
+[00:27:37] SMILES Parse Error: extra close parentheses while parsing: O)(CO[*])NC(OCC(=O)CC(=O)[*]
+[00:27:37] SMILES Parse Error: Failed parsing SMILES 'O)(CO[*])NC(OCC(=O)CC(=O)[*]' for input: 'O)(CO[*])NC(OCC(=O)CC(=O)[*]'
+[00:27:38] SMILES Parse Error: extra close parentheses while parsing: CC(=O)CCC(N[*])=O)C(O)CCOC(=O)[*]
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'CC(=O)CCC(N[*])=O)C(O)CCOC(=O)[*]' for input: 'CC(=O)CCC(N[*])=O)C(O)CCOC(=O)[*]'
+[00:27:38] Explicit valence for atom # 3 N, 4, is greater than permitted
+[00:27:38] SMILES Parse Error: extra open parentheses for input: 'CC(N[*])(CC(C)(CNC(=O)[*]'
+[00:27:38] SMILES Parse Error: extra open parentheses for input: 'CC(CC(N[*])(=O)C)NC(NC(=O)[*]'
+[00:27:38] Explicit valence for atom # 10 O, 4, is greater than permitted
+[00:27:38] SMILES Parse Error: extra close parentheses while parsing: COCCCOCCCOCO[*])ON=O
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'COCCCOCCCOCO[*])ON=O' for input: 'COCCCOCCCOCO[*])ON=O'
+[00:27:38] SMILES Parse Error: extra close parentheses while parsing: CC(C#N)CNCCNC(=O)CCNC(=O)[*])N[*]
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'CC(C#N)CNCCNC(=O)CCNC(=O)[*])N[*]' for input: 'CC(C#N)CNCCNC(=O)CCNC(=O)[*])N[*]'
+[00:27:38] SMILES Parse Error: extra close parentheses while parsing: O=C([*])OCC#C(CCN[*])OC(=O)N)CC
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'O=C([*])OCC#C(CCN[*])OC(=O)N)CC' for input: 'O=C([*])OCC#C(CCN[*])OC(=O)N)CC'
+[00:27:38] SMILES Parse Error: extra close parentheses while parsing: CS)C(CCCNC(=O)COC(=O)[*])O[*])CC
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'CS)C(CCCNC(=O)COC(=O)[*])O[*])CC' for input: 'CS)C(CCCNC(=O)COC(=O)[*])O[*])CC'
+[00:27:38] SMILES Parse Error: extra open parentheses for input: 'CC(O[*])C(CCOC(=O)CCCOC(=O)[*]'
+[00:27:38] SMILES Parse Error: extra close parentheses while parsing: C=CCCN(COCCCO[*])C(C)(C)F)OC
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'C=CCCN(COCCCO[*])C(C)(C)F)OC' for input: 'C=CCCN(COCCCO[*])C(C)(C)F)OC'
+[00:27:38] Explicit valence for atom # 10 C, 5, is greater than permitted
+[00:27:38] SMILES Parse Error: syntax error while parsing: C=(CCOC(=O)NCC(=O)CNC(=O)[*])N[*]
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'C=(CCOC(=O)NCC(=O)CNC(=O)[*])N[*]' for input: 'C=(CCOC(=O)NCC(=O)CNC(=O)[*])N[*]'
+[00:27:38] SMILES Parse Error: syntax error while parsing: =OOCCCC(CNCCC#O)CCOC(=O)[*]
+[00:27:38] SMILES Parse Error: Failed parsing SMILES '=OOCCCC(CNCCC#O)CCOC(=O)[*]' for input: '=OOCCCC(CNCCC#O)CCOC(=O)[*]'
+[00:27:38] SMILES Parse Error: extra close parentheses while parsing: CC(COCN(=O)[*])C(CCCC)(C)F)O[*]
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'CC(COCN(=O)[*])C(CCCC)(C)F)O[*]' for input: 'CC(COCN(=O)[*])C(CCCC)(C)F)O[*]'
+[00:27:38] Explicit valence for atom # 1 O, 3, is greater than permitted
+[00:27:38] SMILES Parse Error: extra close parentheses while parsing: COC(=O)NCCCOC(=O)[*])CCCCO[*]
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'COC(=O)NCCCOC(=O)[*])CCCCO[*]' for input: 'COC(=O)NCCCOC(=O)[*])CCCCO[*]'
+[00:27:38] SMILES Parse Error: extra close parentheses while parsing: C=CN[*])C(CCOC(=O)[*]
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'C=CN[*])C(CCOC(=O)[*]' for input: 'C=CN[*])C(CCOC(=O)[*]'
+[00:27:38] SMILES Parse Error: syntax error while parsing: CNC(CCN()CCN[*])COC(=O)[*]
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'CNC(CCN()CCN[*])COC(=O)[*]' for input: 'CNC(CCN()CCN[*])COC(=O)[*]'
+[00:27:38] SMILES Parse Error: extra close parentheses while parsing: COC(=O)OC(CCCC#O)OC(=O)[*])O[*]
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'COC(=O)OC(CCCC#O)OC(=O)[*])O[*]' for input: 'COC(=O)OC(CCCC#O)OC(=O)[*])O[*]'
+[00:27:38] SMILES Parse Error: extra open parentheses for input: 'CC(CN(C)C(CCO[*])OC(=O)[*]'
+[00:27:38] SMILES Parse Error: extra open parentheses for input: 'C=C(OCC(COC(=O)[*])(C)C(C)O[*]'
+[00:27:38] SMILES Parse Error: extra open parentheses for input: 'CN(CCNCCC(C)C(CO[*])NC(=OC)[*]'
+[00:27:38] SMILES Parse Error: extra close parentheses while parsing: COCCF)CO(=O)OCN[*]
+[00:27:38] SMILES Parse Error: Failed parsing SMILES 'COCCF)CO(=O)OCN[*]' for input: 'COCCF)CO(=O)OCN[*]'
+[00:27:38] Explicit valence for atom # 2 N, 4, is greater than permitted
+[00:27:38] SMILES Parse Error: extra open parentheses for input: 'CN(CCC(CNCCCC=O[*])OC(=O)[*]'
+[00:27:38] Explicit valence for atom # 1 O, 3, is greater than permitted
+[00:27:38] Explicit valence for atom # 7 N, 4, is greater than permitted
+[00:27:39] SMILES Parse Error: extra open parentheses for input: 'CCC(=C(N)NCC(CNC(=O)[*])O[*]'
+[00:27:39] SMILES Parse Error: extra close parentheses while parsing: CCCC)OCO(=O)[*]
+[00:27:39] SMILES Parse Error: Failed parsing SMILES 'CCCC)OCO(=O)[*]' for input: 'CCCC)OCO(=O)[*]'
+[00:27:39] SMILES Parse Error: extra open parentheses for input: 'CN(CCCC(N[*])CCC(C)OC(=O)[*]'
+[00:27:39] Explicit valence for atom # 5 N, 4, is greater than permitted
+[00:27:39] SMILES Parse Error: extra open parentheses for input: 'O=C([*])CCCC(C(CC)OCCCO[*]'
+[00:27:39] SMILES Parse Error: extra close parentheses while parsing: ONC(CC(=O)O)[*])C(=O)OCCCCO[*]
+[00:27:39] SMILES Parse Error: Failed parsing SMILES 'ONC(CC(=O)O)[*])C(=O)OCCCCO[*]' for input: 'ONC(CC(=O)O)[*])C(=O)OCCCCO[*]'
+[00:27:39] SMILES Parse Error: extra open parentheses for input: 'CCN(CN[*])C(C(NC)CCCOC(=O)[*]'
+[00:27:39] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:27:39] Explicit valence for atom # 3 F, 2, is greater than permitted
+[00:27:39] Explicit valence for atom # 14 O, 3, is greater than permitted
+[00:27:39] Explicit valence for atom # 6 C, 6, is greater than permitted
+[00:27:39] Explicit valence for atom # 11 C, 7, is greater than permitted
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC(O[*])C(NCC(C)(C)NC(=O)[*]'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'O=C([*])COC(=O)C(O)OCC(CCCO[*]'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CC)(N(OC(=O)CC(OC(=O)[*])NC([*])C
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC)(N(OC(=O)CC(OC(=O)[*])NC([*])C' for input: 'CC)(N(OC(=O)CC(OC(=O)[*])NC([*])C'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CNC(=O)CC(CN[*])=O)N(CC)CCOC(=O)C
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CNC(=O)CC(CN[*])=O)N(CC)CCOC(=O)C' for input: 'CNC(=O)CC(CN[*])=O)N(CC)CCOC(=O)C'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC(N[*])C(=O)NNCCNC(C(=OC[*])N'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CCC(CCCC(C)OC(=O)[*])C(C)C)N[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CCC(CCCC(C)OC(=O)[*])C(C)C)N[*]' for input: 'CCC(CCCC(C)OC(=O)[*])C(C)C)N[*]'
+[00:28:19] Explicit valence for atom # 6 C, 5, is greater than permitted
+[00:28:19] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC(N(C)C(C)(OC(=O)[*])CC(C)O[*]'
+[00:28:19] Explicit valence for atom # 14 O, 4, is greater than permitted
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CC(CCO[*])(C)CCNCCC)(=O)[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC(CCO[*])(C)CCNCCC)(=O)[*]' for input: 'CC(CCO[*])(C)CCNCCC)(=O)[*]'
+[00:28:19] SMILES Parse Error: syntax error while parsing: )CC(NCC(F)OC(=O)NC(COC(=O)[*])O[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES ')CC(NCC(F)OC(=O)NC(COC(=O)[*])O[*]' for input: ')CC(NCC(F)OC(=O)NC(COC(=O)[*])O[*]'
+[00:28:19] Explicit valence for atom # 1 N, 4, is greater than permitted
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CC(N[*])N#C)CS(C(=O)NC(=O)[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC(N[*])N#C)CS(C(=O)NC(=O)[*]' for input: 'CC(N[*])N#C)CS(C(=O)NC(=O)[*]'
+[00:28:19] Explicit valence for atom # 3 F, 2, is greater than permitted
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CC)N(C=O)C(CC(=O)NC)(CCO[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC)N(C=O)C(CC(=O)NC)(CCO[*]' for input: 'CC)N(C=O)C(CC(=O)NC)(CCO[*]'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CCC)C(CNCC(=O)[*])N(CCCN[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CCC)C(CNCC(=O)[*])N(CCCN[*]' for input: 'CCC)C(CNCC(=O)[*])N(CCCN[*]'
+[00:28:19] Explicit valence for atom # 7 C, 5, is greater than permitted
+[00:28:19] SMILES Parse Error: syntax error while parsing: CCN[unused1]C(=(C)CC(CCO[*])OC(=O)[*])O
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CCN[unused1]C(=(C)CC(CCO[*])OC(=O)[*])O' for input: 'CCN[unused1]C(=(C)CC(CCO[*])OC(=O)[*])O'
+[00:28:19] Explicit valence for atom # 14 O, 3, is greater than permitted
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CCC(C(CN(C)C[*])(C)CNC(=O)[*]'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CC(C)(CCOC(=O)[*])N[*])C([*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC(C)(CCOC(=O)[*])N[*])C([*]' for input: 'CC(C)(CCOC(=O)[*])N[*])C([*]'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CCCC(C)(CCO[*])CSC(C)C)OC(=O)[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CCCC(C)(CCO[*])CSC(C)C)OC(=O)[*]' for input: 'CCCC(C)(CCO[*])CSC(C)C)OC(=O)[*]'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC(C)(CC)(CC(C)(COC(=O)[*])O[*]'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC(C(OCC(=O)[*])C(CN[*])NC(C)F'
+[00:28:19] Explicit valence for atom # 8 C, 5, is greater than permitted
+[00:28:19] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CCC(=O)CC(C(CNC(=O)[*])O[*]'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: COC(=O)OC(COC(=O)[*])O[*])CC
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'COC(=O)OC(COC(=O)[*])O[*])CC' for input: 'COC(=O)OC(COC(=O)[*])O[*])CC'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CCC(C)(=O)N(CC(C)C)(C)OC(=O)[*])N[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CCC(C)(=O)N(CC(C)C)(C)OC(=O)[*])N[*]' for input: 'CCC(C)(=O)N(CC(C)C)(C)OC(=O)[*])N[*]'
+[00:28:19] SMILES Parse Error: syntax error while parsing: CC(CSC(=O)C(C((C)(C)(C)C)OC(=O)[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC(CSC(=O)C(C((C)(C)(C)C)OC(=O)[*]' for input: 'CC(CSC(=O)C(C((C)(C)(C)C)OC(=O)[*]'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CCO(=O)CC(NC(C(C)C)OC(=O)[*][*]'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CC(C)F(=O))NCC(CO[*])OC(=O)C(=O)[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC(C)F(=O))NCC(CO[*])OC(=O)C(=O)[*]' for input: 'CC(C)F(=O))NCC(CO[*])OC(=O)C(=O)[*]'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC(C)(C)N(CNC(=O)C(CNC(O)=O)[*]'
+[00:28:19] Explicit valence for atom # 6 C, 6, is greater than permitted
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CC)OCC(NC(=O)C(CNC(=O[*])OC(=O)[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC)OCC(NC(=O)C(CNC(=O[*])OC(=O)[*]' for input: 'CC)OCC(NC(=O)C(CNC(=O[*])OC(=O)[*]'
+[00:28:19] SMILES Parse Error: syntax error while parsing: CC(C#(C)NC(CN(=O)[*])CO[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC(C#(C)NC(CN(=O)[*])CO[*]' for input: 'CC(C#(C)NC(CN(=O)[*])CO[*]'
+[00:28:19] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'C=C(C=C(C)N(CNC(=O)C(C)[*])OCCO[*]'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CC(C)C)C(C(OC(=O)[*])NCCC(F)S
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC(C)C)C(C(OC(=O)[*])NCCC(F)S' for input: 'CC(C)C)C(C(OC(=O)[*])NCCC(F)S'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CCCNC(C)C(CN(=O)C(C(C)OC(=O)[*]'
+[00:28:19] Explicit valence for atom # 2 C, 5, is greater than permitted
+[00:28:19] Explicit valence for atom # 5 N, 4, is greater than permitted
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CC(CCNC(CNC(=O)[*])C(C)C)C(C)(C)C)C)N[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC(CCNC(CNC(=O)[*])C(C)C)C(C)(C)C)C)N[*]' for input: 'CC(CCNC(CNC(=O)[*])C(C)C)C(C)(C)C)C)N[*]'
+[00:28:19] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: C=C)C(CC)C(CC(CN(=O)[*])N[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'C=C)C(CC)C(CC(CN(=O)[*])N[*]' for input: 'C=C)C(CC)C(CC(CN(=O)[*])N[*]'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CCC(COC(=O)[*])NC(C)N(C)C(C)=O)O[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CCC(COC(=O)[*])NC(C)N(C)C(C)=O)O[*]' for input: 'CCC(COC(=O)[*])NC(C)N(C)C(C)=O)O[*]'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CCC(O[*])C(COC(=O)[*])C(C)(C)C)(C
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CCC(O[*])C(COC(=O)[*])C(C)(C)C)(C' for input: 'CCC(O[*])C(COC(=O)[*])C(C)(C)C)(C'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CCCC(CC(N[*])C(C)C(NC)[*]'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC(CC(C)(C)(CNC(=O)[*])C(C)O[*]'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC(CC(C)(=O)C(CO[*])CCOC(=O)[*]'
+[00:28:19] SMILES Parse Error: syntax error while parsing: CC(C)(C(ClCO=O)[*])CC(C)((C)C)O[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC(C)(C(ClCO=O)[*])CC(C)((C)C)O[*]' for input: 'CC(C)(C(ClCO=O)[*])CC(C)((C)C)O[*]'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: C=CC)C(CNC(=O)C(CNC(=O)[*])O[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'C=CC)C(CNC(=O)C(CNC(=O)[*])O[*]' for input: 'C=CC)C(CNC(=O)C(CNC(=O)[*])O[*]'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC(OC(=O)[*])(C(=O)NCCCO[*]'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC(CC(C)(C)(COC(=O)[*])C(C)O[*]'
+[00:28:19] Explicit valence for atom # 5 N, 4, is greater than permitted
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'NC(CNCCN(=O)N(C)CC([*])(C)(C)OC'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC(CO[*])N(=O)C(C)(C)C(F)(CN[*]'
+[00:28:19] SMILES Parse Error: extra close parentheses while parsing: CC(CC(CF)O[*])C(C)(C)C)COC(=O)[*]
+[00:28:19] SMILES Parse Error: Failed parsing SMILES 'CC(CC(CF)O[*])C(C)(C)C)COC(=O)[*]' for input: 'CC(CC(CF)O[*])C(C)(C)C)COC(=O)[*]'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC=CCC(CN(=O)CC(C(C)O[*])OC(=O)[*]'
+[00:28:19] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CC(CCC(C)(COC(=O)[*])NCC(C)O[*]'
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'O=C(CCC(C)(CNC(=O)[*])C(C)O[*]'
+[00:28:19] Explicit valence for atom # 3 C, 5, is greater than permitted
+[00:28:19] SMILES Parse Error: extra open parentheses for input: 'CCC(CC(C)(CO[*])CCNC(=O)[*]'
+[00:28:20] SMILES Parse Error: syntax error while parsing: OCCC(C)N=CCCNC(=(C)N)[*])O[*]
+[00:28:20] SMILES Parse Error: Failed parsing SMILES 'OCCC(C)N=CCCNC(=(C)N)[*])O[*]' for input: 'OCCC(C)N=CCCNC(=(C)N)[*])O[*]'
+[00:28:20] Explicit valence for atom # 5 N, 4, is greater than permitted
+[00:28:20] SMILES Parse Error: extra open parentheses for input: 'CC(C)(CC(CN(C)[*])C(C)N[*]'
+[00:28:20] Explicit valence for atom # 13 C, 5, is greater than permitted
+[00:28:20] SMILES Parse Error: extra close parentheses while parsing: CC(CC(C)(OC(=O)[*])C(=O)NC)C(C)C)C
+[00:28:20] SMILES Parse Error: Failed parsing SMILES 'CC(CC(C)(OC(=O)[*])C(=O)NC)C(C)C)C' for input: 'CC(CC(C)(OC(=O)[*])C(=O)NC)C(C)C)C'
+[00:28:20] SMILES Parse Error: extra close parentheses while parsing: CCC)C(CC(C)NCC(CO)OC(=O)[*])O[*]
+[00:28:20] SMILES Parse Error: Failed parsing SMILES 'CCC)C(CC(C)NCC(CO)OC(=O)[*])O[*]' for input: 'CCC)C(CC(C)NCC(CO)OC(=O)[*])O[*]'
+[00:28:20] SMILES Parse Error: extra close parentheses while parsing: CC=C(O[*])C(F)NC#N)(=O)COC(=O)[*]
+[00:28:20] SMILES Parse Error: Failed parsing SMILES 'CC=C(O[*])C(F)NC#N)(=O)COC(=O)[*]' for input: 'CC=C(O[*])C(F)NC#N)(=O)COC(=O)[*]'
+[00:28:20] Explicit valence for atom # 1 C, 6, is greater than permitted
+[00:28:20] SMILES Parse Error: extra close parentheses while parsing: CC(C)(O[*])N[*])(=O)CCCOC(=O)[*]
+[00:28:20] SMILES Parse Error: Failed parsing SMILES 'CC(C)(O[*])N[*])(=O)CCCOC(=O)[*]' for input: 'CC(C)(O[*])N[*])(=O)CCCOC(=O)[*]'
+[00:28:20] SMILES Parse Error: extra open parentheses for input: 'CN(CCNC(COC(=O)[*])C(C)N[*]'
+[00:28:20] SMILES Parse Error: extra close parentheses while parsing: COCCN(C)CO[*])C(#N)OCNC(=O)[*]
+[00:28:20] SMILES Parse Error: Failed parsing SMILES 'COCCN(C)CO[*])C(#N)OCNC(=O)[*]' for input: 'COCCN(C)CO[*])C(#N)OCNC(=O)[*]'
+[00:28:20] SMILES Parse Error: syntax error while parsing: O=CCC(CN(=)[*])CCC(C)O[*]
+[00:28:20] SMILES Parse Error: Failed parsing SMILES 'O=CCC(CN(=)[*])CCC(C)O[*]' for input: 'O=CCC(CN(=)[*])CCC(C)O[*]'
+[00:28:20] SMILES Parse Error: extra close parentheses while parsing: N=CC(O)C(=O)NNCCCO[*])OC(=O)[*]
+[00:28:20] SMILES Parse Error: Failed parsing SMILES 'N=CC(O)C(=O)NNCCCO[*])OC(=O)[*]' for input: 'N=CC(O)C(=O)NNCCCO[*])OC(=O)[*]'
+[00:28:20] SMILES Parse Error: extra open parentheses for input: 'CC(NC(CNCCC(C)OC(=O)[*])O[*]'
+[00:28:20] SMILES Parse Error: extra close parentheses while parsing: O=C([*])=O)OCOCC(=O)COCO[*]
+[00:28:20] SMILES Parse Error: Failed parsing SMILES 'O=C([*])=O)OCOCC(=O)COCO[*]' for input: 'O=C([*])=O)OCOCC(=O)COCO[*]'
+[00:28:20] SMILES Parse Error: extra open parentheses for input: 'C=CC(NC(CNCC(=O)[*])CC(C)O[*]'
+[00:28:20] Explicit valence for atom # 1 O, 3, is greater than permitted
+[00:28:20] SMILES Parse Error: extra open parentheses for input: 'CC(CN(CCN'
+[00:28:20] SMILES Parse Error: extra close parentheses while parsing: CN(CCCOC(=O)[*])C#O)CCCCCCO[*]
+[00:28:20] SMILES Parse Error: Failed parsing SMILES 'CN(CCCOC(=O)[*])C#O)CCCCCCO[*]' for input: 'CN(CCCOC(=O)[*])C#O)CCCCCCO[*]'
+[00:28:20] Explicit valence for atom # 5 N, 4, is greater than permitted
+[00:28:20] SMILES Parse Error: extra close parentheses while parsing: CCC(CO[*])NC(COC(=O)[*])N)OC
+[00:28:20] SMILES Parse Error: Failed parsing SMILES 'CCC(CO[*])NC(COC(=O)[*])N)OC' for input: 'CCC(CO[*])NC(COC(=O)[*])N)OC'
+[00:28:21] SMILES Parse Error: extra open parentheses for input: 'CN(CCC(NCCC)C(CO[*])OC(=O)[*]'
+[00:28:21] SMILES Parse Error: extra close parentheses while parsing: CC(CNCCO[*])C=O)C(COOC(=O)[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'CC(CNCCO[*])C=O)C(COOC(=O)[*]' for input: 'CC(CNCCO[*])C=O)C(COOC(=O)[*]'
+[00:28:21] SMILES Parse Error: extra close parentheses while parsing: O=[*])NCCC(CCCCO[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'O=[*])NCCC(CCCCO[*]' for input: 'O=[*])NCCC(CCCCO[*]'
+[00:28:21] SMILES Parse Error: extra close parentheses while parsing: CC(COCC(=O)O)CC(C)OC(=N)[*])S
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'CC(COCC(=O)O)CC(C)OC(=N)[*])S' for input: 'CC(COCC(=O)O)CC(C)OC(=N)[*])S'
+[00:28:21] Explicit valence for atom # 5 N, 4, is greater than permitted
+[00:28:21] Explicit valence for atom # 1 N, 4, is greater than permitted
+[00:28:21] SMILES Parse Error: extra close parentheses while parsing: C)C(O[*])N(NCC=O)CCCOC(=O)[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'C)C(O[*])N(NCC=O)CCCOC(=O)[*]' for input: 'C)C(O[*])N(NCC=O)CCCOC(=O)[*]'
+[00:28:21] SMILES Parse Error: extra close parentheses while parsing: CCC(F)F)N(=O)CC(C(C)CO[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'CCC(F)F)N(=O)CC(C(C)CO[*]' for input: 'CCC(F)F)N(=O)CC(C(C)CO[*]'
+[00:28:21] SMILES Parse Error: extra close parentheses while parsing: NC(=O)CCNC(=O)CNC(=O)[*])CO[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'NC(=O)CCNC(=O)CNC(=O)[*])CO[*]' for input: 'NC(=O)CCNC(=O)CNC(=O)[*])CO[*]'
+[00:28:21] SMILES Parse Error: extra open parentheses for input: 'C=C(CNCCCC(CO[*])NC(=O)[*](=O)O'
+[00:28:21] SMILES Parse Error: extra close parentheses while parsing: CCC(CCNOC(=O)CO[*])NC)S
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'CCC(CCNOC(=O)CO[*])NC)S' for input: 'CCC(CCNOC(=O)CO[*])NC)S'
+[00:28:21] SMILES Parse Error: syntax error while parsing: CCC(CN[*])C(=O)C#C(COC(=)[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'CCC(CN[*])C(=O)C#C(COC(=)[*]' for input: 'CCC(CN[*])C(=O)C#C(COC(=)[*]'
+[00:28:21] SMILES Parse Error: extra close parentheses while parsing: CC(CN(C)CO=O)[*])O[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'CC(CN(C)CO=O)[*])O[*]' for input: 'CC(CN(C)CO=O)[*])O[*]'
+[00:28:21] SMILES Parse Error: extra open parentheses for input: 'O=CC(=O)NC(COC(OC(=O)[*])O[*]'
+[00:28:21] Explicit valence for atom # 6 O, 4, is greater than permitted
+[00:28:21] SMILES Parse Error: extra close parentheses while parsing: CCC(CC#N)CC(CCOC(=O)CO[*])NC)[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'CCC(CC#N)CC(CCOC(=O)CO[*])NC)[*]' for input: 'CCC(CC#N)CC(CCOC(=O)CO[*])NC)[*]'
+[00:28:21] SMILES Parse Error: syntax error while parsing: CC[unused1]C(O[*])N(CC(=O)COC(=O)[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'CC[unused1]C(O[*])N(CC(=O)COC(=O)[*]' for input: 'CC[unused1]C(O[*])N(CC(=O)COC(=O)[*]'
+[00:28:21] Explicit valence for atom # 4 C, 5, is greater than permitted
+[00:28:21] SMILES Parse Error: extra open parentheses for input: 'CC(CNCC(CC)(COC(=O)[*])O[*]'
+[00:28:21] SMILES Parse Error: extra close parentheses while parsing: COOCCCCO[*])NCOC(=O)[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'COOCCCCO[*])NCOC(=O)[*]' for input: 'COOCCCCO[*])NCOC(=O)[*]'
+[00:28:21] Explicit valence for atom # 6 N, 4, is greater than permitted
+[00:28:21] Explicit valence for atom # 15 C, 5, is greater than permitted
+[00:28:21] SMILES Parse Error: extra close parentheses while parsing: CCC)(CNC(=O)CCOCCOC(=O)[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'CCC)(CNC(=O)CCOCCOC(=O)[*]' for input: 'CCC)(CNC(=O)CCOCCOC(=O)[*]'
+[00:28:21] SMILES Parse Error: extra open parentheses for input: 'CN(NCC(C#N)CCC(CN[*])OC(=O)[*]'
+[00:28:21] SMILES Parse Error: syntax error while parsing: CC(CN(=)C)C(COCCCOC(=O)[*])O[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'CC(CN(=)C)C(COCCCOC(=O)[*])O[*]' for input: 'CC(CN(=)C)C(COCCCOC(=O)[*])O[*]'
+[00:28:21] SMILES Parse Error: extra close parentheses while parsing: CC(CNCC(=O)O)[*])CCCC(C)CN[*]
+[00:28:21] SMILES Parse Error: Failed parsing SMILES 'CC(CNCC(=O)O)[*])CCCC(C)CN[*]' for input: 'CC(CNCC(=O)O)[*])CCCC(C)CN[*]'
+[00:28:21] SMILES Parse Error: extra open parentheses for input: 'CO(CCN(=N)CC(CCCN[*])OC(=O)[*]'
+[00:28:21] SMILES Parse Error: extra open parentheses for input: 'CC(NCC(C)(CNC(=O)[*])CCO[*]'
+[00:28:22] SMILES Parse Error: extra close parentheses while parsing: CCCCO[*])COCCNCC(=O)[*]
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'CCCCO[*])COCCNCC(=O)[*]' for input: 'CCCCO[*])COCCNCC(=O)[*]'
+[00:28:22] Explicit valence for atom # 1 N, 4, is greater than permitted
+[00:28:22] SMILES Parse Error: extra open parentheses for input: 'C=CC(OC(=O)[*])C(C(=O)NCCCO[*]'
+[00:28:22] SMILES Parse Error: extra close parentheses while parsing: CCC(N[*])CC=O)(CCNC(=O)[*]
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'CCC(N[*])CC=O)(CCNC(=O)[*]' for input: 'CCC(N[*])CC=O)(CCNC(=O)[*]'
+[00:28:22] Explicit valence for atom # 4 N, 4, is greater than permitted
+[00:28:22] SMILES Parse Error: extra close parentheses while parsing: NN(CCO=O)C(=O)[*])NCCCCCO[*]
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'NN(CCO=O)C(=O)[*])NCCCCCO[*]' for input: 'NN(CCO=O)C(=O)[*])NCCCCCO[*]'
+[00:28:22] SMILES Parse Error: extra close parentheses while parsing: OO([*])COCO[*])OCCCOCOCOC
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'OO([*])COCO[*])OCCCOCOCOC' for input: 'OO([*])COCO[*])OCCCOCOCOC'
+[00:28:22] Explicit valence for atom # 9 O, 3, is greater than permitted
+[00:28:22] Explicit valence for atom # 3 N, 4, is greater than permitted
+[00:28:22] SMILES Parse Error: syntax error while parsing: O=O[unused1][unused1]CCNCOCO(CNC(C)[*])NCO[*]
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'O=O[unused1][unused1]CCNCOCO(CNC(C)[*])NCO[*]' for input: 'O=O[unused1][unused1]CCNCOCO(CNC(C)[*])NCO[*]'
+[00:28:22] SMILES Parse Error: extra open parentheses for input: '[*]NNC(CCNCO[*]CNCCCCCNC(=O)[*]'
+[00:28:22] SMILES Parse Error: extra close parentheses while parsing: OCO)CCOCC(CO[*])NCOC(=O)[*]
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'OCO)CCOCC(CO[*])NCOC(=O)[*]' for input: 'OCO)CCOCC(CO[*])NCOC(=O)[*]'
+[00:28:22] SMILES Parse Error: syntax error while parsing: O=CN[*][CLS]CCCNCCCCN[*]
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'O=CN[*][CLS]CCCNCCCCN[*]' for input: 'O=CN[*][CLS]CCCNCCCCN[*]'
+[00:28:22] Explicit valence for atom # 1 O, 4, is greater than permitted
+[00:28:22] SMILES Parse Error: extra close parentheses while parsing: O=O)[*]OCCCCNCO#CO)CCO[*]
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'O=O)[*]OCCCCNCO#CO)CCO[*]' for input: 'O=O)[*]OCCCCNCO#CO)CCO[*]'
+[00:28:22] SMILES Parse Error: extra close parentheses while parsing: OP(CO[*])O[*])CCOCO[*]
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'OP(CO[*])O[*])CCOCO[*]' for input: 'OP(CO[*])O[*])CCOCO[*]'
+[00:28:22] SMILES Parse Error: extra close parentheses while parsing: N=C([*])CCCOO[*])NCOCC#CO)CO
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'N=C([*])CCCOO[*])NCOCC#CO)CO' for input: 'N=C([*])CCCOO[*])NCOCC#CO)CO'
+[00:28:22] SMILES Parse Error: extra close parentheses while parsing: O=CC[*]O)CCNNCCOCCN[*]
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'O=CC[*]O)CCNNCCOCCN[*]' for input: 'O=CC[*]O)CCNNCCOCCN[*]'
+[00:28:22] Explicit valence for atom # 3 O, 4, is greater than permitted
+[00:28:22] SMILES Parse Error: syntax error while parsing: O=CCNNCCOCOCCNCO[*][unused1]OC(=O)[*]
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'O=CCNNCCOCOCCNCO[*][unused1]OC(=O)[*]' for input: 'O=CCNNCCOCOCCNCO[*][unused1]OC(=O)[*]'
+[00:28:22] SMILES Parse Error: syntax error while parsing: [*][CLS](O)CCClOCOOCOCOCCCO[*]
+[00:28:22] SMILES Parse Error: Failed parsing SMILES '[*][CLS](O)CCClOCOOCOCOCCCO[*]' for input: '[*][CLS](O)CCClOCOOCOCOCCCO[*]'
+[00:28:22] SMILES Parse Error: syntax error while parsing: O=[CLS]C[*]OSOCCCCO[*]
+[00:28:22] SMILES Parse Error: Failed parsing SMILES 'O=[CLS]C[*]OSOCCCCO[*]' for input: 'O=[CLS]C[*]OSOCCCCO[*]'
+[00:28:23] SMILES Parse Error: syntax error while parsing: O=O[unused1][*]COOOCCCCCCO[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'O=O[unused1][*]COOOCCCCCCO[*]' for input: 'O=O[unused1][*]COOOCCCCCCO[*]'
+[00:28:23] SMILES Parse Error: syntax error while parsing: O=O[unused1][*][CLS]COOOCO[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'O=O[unused1][*][CLS]COOOCO[*]' for input: 'O=O[unused1][*][CLS]COOOCO[*]'
+[00:28:23] Explicit valence for atom # 2 O, 3, is greater than permitted
+[00:28:23] SMILES Parse Error: syntax error while parsing: [*][CLS](CO)N(CCCO(CCCO[*])NC(=O)[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES '[*][CLS](CO)N(CCCO(CCCO[*])NC(=O)[*]' for input: '[*][CLS](CO)N(CCCO(CCCO[*])NC(=O)[*]'
+[00:28:23] SMILES Parse Error: syntax error while parsing: [*][CLS]#[*])CCCCNCNOCCCOCOCOCC
+[00:28:23] SMILES Parse Error: Failed parsing SMILES '[*][CLS]#[*])CCCCNCNOCCCOCOCOCC' for input: '[*][CLS]#[*])CCCCNCNOCCCOCOCOCC'
+[00:28:23] SMILES Parse Error: extra close parentheses while parsing: O=O)NCCCCCN(CO[*])OC(=O)[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'O=O)NCCCCCN(CO[*])OC(=O)[*]' for input: 'O=O)NCCCCCN(CO[*])OC(=O)[*]'
+[00:28:23] SMILES Parse Error: syntax error while parsing: [*]=CCOCN()CCN[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES '[*]=CCOCN()CCN[*]' for input: '[*]=CCOCN()CCN[*]'
+[00:28:23] Explicit valence for atom # 9 O, 3, is greater than permitted
+[00:28:23] SMILES Parse Error: syntax error while parsing: O=O[unused1]O[*][CLS]OCOCCO[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'O=O[unused1]O[*][CLS]OCOCCO[*]' for input: 'O=O[unused1]O[*][CLS]OCOCCO[*]'
+[00:28:23] SMILES Parse Error: syntax error while parsing: CCN(=O)[*][CLS]CNCCCO[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'CCN(=O)[*][CLS]CNCCCO[*]' for input: 'CCN(=O)[*][CLS]CNCCCO[*]'
+[00:28:23] SMILES Parse Error: extra close parentheses while parsing: O=O)COCOCCOCNCCOC(=S)[*][CLS]O[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'O=O)COCOCCOCNCCOC(=S)[*][CLS]O[*]' for input: 'O=O)COCOCCOCNCCOC(=S)[*][CLS]O[*]'
+[00:28:23] SMILES Parse Error: syntax error while parsing: O=O[unused1][*]N[*]CCCCOO[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'O=O[unused1][*]N[*]CCCCOO[*]' for input: 'O=O[unused1][*]N[*]CCCCOO[*]'
+[00:28:23] SMILES Parse Error: extra close parentheses while parsing: O=CCNCCOCNCCCN[*])C(CN)[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'O=CCNCCOCNCCCN[*])C(CN)[*]' for input: 'O=CCNCCOCNCCCN[*])C(CN)[*]'
+[00:28:23] SMILES Parse Error: syntax error while parsing: O=O([*][CLS]OCCCCNCCO[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'O=O([*][CLS]OCCCCNCCO[*]' for input: 'O=O([*][CLS]OCCCCNCCO[*]'
+[00:28:23] Explicit valence for atom # 8 N, 4, is greater than permitted
+[00:28:23] SMILES Parse Error: extra close parentheses while parsing: ONCCCCN(CNCN[*])=O)OCCOC(=O)[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'ONCCCCN(CNCN[*])=O)OCCOC(=O)[*]' for input: 'ONCCCCN(CNCN[*])=O)OCCOC(=O)[*]'
+[00:28:23] SMILES Parse Error: syntax error while parsing: [*][CLS]N(CO)CC=OO)CCCNOCCO[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES '[*][CLS]N(CO)CC=OO)CCCNOCCO[*]' for input: '[*][CLS]N(CO)CC=OO)CCCNOCCO[*]'
+[00:28:23] SMILES Parse Error: extra close parentheses while parsing: O=O)[*][CLS]CCCCCC(CCO[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'O=O)[*][CLS]CCCCCC(CCO[*]' for input: 'O=O)[*][CLS]CCCCCC(CCO[*]'
+[00:28:23] SMILES Parse Error: extra close parentheses while parsing: O=CCNSOCCO[*]C[*])OC(=O)[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'O=CCNSOCCO[*]C[*])OC(=O)[*]' for input: 'O=CCNSOCCO[*]C[*])OC(=O)[*]'
+[00:28:23] SMILES Parse Error: extra close parentheses while parsing: NOCCCCCCOCCCOCOCCNO=O)[*][CLS]O[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'NOCCCCCCOCCCOCOCCNO=O)[*][CLS]O[*]' for input: 'NOCCCCCCOCCCOCOCCNO=O)[*][CLS]O[*]'
+[00:28:23] Explicit valence for atom # 1 C, 5, is greater than permitted
+[00:28:23] SMILES Parse Error: extra close parentheses while parsing: O=C(CO[*])NCCCO=O)[*]OCCCOCNCP
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'O=C(CO[*])NCCCO=O)[*]OCCCOCNCP' for input: 'O=C(CO[*])NCCCO=O)[*]OCCCOCNCP'
+[00:28:23] SMILES Parse Error: syntax error while parsing: O=CC[*][CLS]OCOCOCNN[*]
+[00:28:23] SMILES Parse Error: Failed parsing SMILES 'O=CC[*][CLS]OCOCOCNN[*]' for input: 'O=CC[*][CLS]OCOCOCNN[*]'
+/home/yi/PolyGen-reproduction-grid/.venv/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+number of parameters: 0.12M
+number of parameters: 0.12M
+{
+  "seeds": [
+    202
+  ],
+  "verifier": {
+    "test_rows": 1205,
+    "rmse": 0.1569581940859584,
+    "mae": 0.12429890570766655,
+    "r2": 0.49784200598509
+  },
+  "mean_paired_delta_hit": -0.013333333333333364,
+  "paired_deltas": [
+    {
+      "seed": 202,
+      "delta_hit_continuous_minus_binary": -0.013333333333333364
+    }
+  ],
+  "runs": [
+    {
+      "arm": "binary",
+      "seed": 202,
+      "steps": 1000,
+      "temperature": 1.2,
+      "samples_per_target": 100,
+      "allocation": null,
+      "elapsed_seconds": 44.5973916053772,
+      "first_loss": 6.283036231994629,
+      "last_loss": 0.25619322061538696,
+      "samples": 300
+    },
+    {
+      "arm": "continuous",
+      "seed": 202,
+      "steps": 1000,
+      "temperature": 1.2,
+      "samples_per_target": 100,
+      "allocation": null,
+      "elapsed_seconds": 43.66182804107666,
+      "first_loss": 6.282576084136963,
+      "last_loss": 0.25007200241088867,
+      "samples": 300
+    }
+  ],
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69"
+}

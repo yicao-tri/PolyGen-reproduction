@@ -1,0 +1,12 @@
+{
+  "arm": "binary",
+  "seed": 202,
+  "steps": 3000,
+  "temperature": 1.0,
+  "samples_per_target": 100,
+  "allocation": null,
+  "elapsed_seconds": 129.856751203537,
+  "first_loss": 6.283036231994629,
+  "last_loss": 0.2482527494430542,
+  "samples": 300
+}

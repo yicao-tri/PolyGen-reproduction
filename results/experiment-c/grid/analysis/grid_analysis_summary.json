@@ -6,9 +6,10 @@
     "gpt-nano_steps1000_temp1.2",
     "gpt-nano_steps2000_temp0.8",
     "gpt-nano_steps2000_temp1.0",
-    "gpt-nano_steps2000_temp1.2"
+    "gpt-nano_steps2000_temp1.2",
+    "gpt-nano_steps3000_temp1.0"
   ],
-  "raw_total": 18000,
+  "raw_total": 21000,
   "raw_by_config_arm": {
     "gpt-nano_steps1000_temp0.8__binary": 1500,
     "gpt-nano_steps1000_temp0.8__continuous": 1500,
@@ -21,9 +22,11 @@
     "gpt-nano_steps2000_temp1.0__binary": 1500,
     "gpt-nano_steps2000_temp1.0__continuous": 1500,
     "gpt-nano_steps2000_temp1.2__binary": 1500,
-    "gpt-nano_steps2000_temp1.2__continuous": 1500
+    "gpt-nano_steps2000_temp1.2__continuous": 1500,
+    "gpt-nano_steps3000_temp1.0__binary": 1500,
+    "gpt-nano_steps3000_temp1.0__continuous": 1500
   },
-  "top50_rows": 600,
+  "top50_rows": 700,
   "ranking": "valid + novel + support>=0.35 + uncertainty<0.35; descending predicted_log_sigma - 1.96*uncertainty",
   "pareto_note": "novelty available; diversity/synthesizability/buildable yield unavailable from current verifier output",
   "stage_3_pfp_md": "not started; explicit user sign-off required"

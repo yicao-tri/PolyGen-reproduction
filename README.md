@@ -4,6 +4,19 @@ This is a self-contained, actual-data-only reproduction workspace for the public
 PolyGen release associated with *De novo design of polymer electrolytes using
 GPT-based and diffusion-based generative models*.
 
+## Canonical project location
+
+The canonical local project root is:
+
+`/Users/yicao/Documents/ARC/PolyGen-reproduction`
+
+All new scripts, configs, analysis outputs and figures must be written under
+this root. The SSH checkout `kozo-dev-yi:/home/yi/PolyGen-reproduction-grid` is
+execution-only; it is not a second project root. See
+[`PROJECT_PATHS.json`](PROJECT_PATHS.json) for the authoritative path and
+artifact map. PFP/MD remains outside the current generation stage and requires
+explicit user sign-off.
+
 The scientific numbers in this folder are not copied from the paper. They are
 generated from the machine-readable inputs under `inputs/` or from real execution
 artifacts under `results/dev/`. See `DATA_POLICY.md` for the enforceable rule.
