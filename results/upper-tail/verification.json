@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "checks": {
+    "source_hash_matches_manifest": true,
+    "all_arm_seed_cells_present": true,
+    "all_arm_seed_cells_n100": true,
+    "all_candidate_rows_present": true,
+    "locked_tail_is_q80_q95": true,
+    "no_md_started": true,
+    "no_md_started_in_selection": true,
+    "unconditional_pool_budget_matched": true,
+    "continuous_binary_matched_cell_budget": true,
+    "unsupported_cells_explicit": true,
+    "pr4_pr6_paths_unmodified_by_this_run": true
+  },
+  "counts": {
+    "runs": 15,
+    "candidate_rows": 6000,
+    "tail_rows": 903,
+    "selected_md_rows": 183
+  },
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69"
+}

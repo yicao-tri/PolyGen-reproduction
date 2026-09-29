@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="540" viewBox="0 0 1500 540">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#111} .tick{font-size:18px} .label{font-size:22px;font-weight:bold} .title{font-size:25px;font-weight:bold} .axis{stroke:#111;stroke-width:3} .line{fill:none;stroke-width:5} </style>
+<text x="35" y="42" class="title">Upper-tail benchmark with full-source RF (post-hoc surrogate audit)</text>
+<text x="70" y="82" class="label">RF prediction</text>
+<line x1="70" y1="105" x2="70" y2="430" class="axis"/>
+<line x1="70" y1="430" x2="450" y2="430" class="axis"/>
+<text x="56" y="396.0" text-anchor="end" class="tick">-4.40</text>
+<line x1="64" y1="390.0" x2="70" y2="390.0" stroke="#111" stroke-width="2"/>
+<text x="56" y="324.7" text-anchor="end" class="tick">-4.25</text>
+<line x1="64" y1="318.7" x2="70" y2="318.7" stroke="#111" stroke-width="2"/>
+<text x="56" y="253.5" text-anchor="end" class="tick">-4.11</text>
+<line x1="64" y1="247.5" x2="70" y2="247.5" stroke="#111" stroke-width="2"/>
+<text x="56" y="182.2" text-anchor="end" class="tick">-3.96</text>
+<line x1="64" y1="176.2" x2="70" y2="176.2" stroke="#111" stroke-width="2"/>
+<text x="56" y="111.0" text-anchor="end" class="tick">-3.82</text>
+<line x1="64" y1="105.0" x2="70" y2="105.0" stroke="#111" stroke-width="2"/>
+<text x="105" y="465" text-anchor="middle" class="tick">Boundary</text>
+<text x="210" y="465" text-anchor="middle" class="tick">Q85</text>
+<text x="315" y="465" text-anchor="middle" class="tick">Q90</text>
+<text x="420" y="465" text-anchor="middle" class="tick">Q95</text>
+<polyline points="105.0,317.9 210.0,320.4 315.0,313.3 420.0,309.0" class="line" stroke="#007C83"/>
+<circle cx="105.0" cy="317.9" r="8" fill="#007C83"/>
+<circle cx="210.0" cy="320.4" r="8" fill="#007C83"/>
+<circle cx="315.0" cy="313.3" r="8" fill="#007C83"/>
+<circle cx="420.0" cy="309.0" r="8" fill="#007C83"/>
+<polyline points="105.0,341.4 210.0,342.4" class="line" stroke="#D95F02"/>
+<circle cx="105.0" cy="341.4" r="8" fill="#D95F02"/>
+<circle cx="210.0" cy="342.4" r="8" fill="#D95F02"/>
+<circle cx="105.0" cy="333.0" r="8" fill="#6B6B6B"/>
+<text x="535" y="82" class="label">Target MAE</text>
+<line x1="535" y1="105" x2="535" y2="430" class="axis"/>
+<line x1="535" y1="430" x2="915" y2="430" class="axis"/>
+<text x="521" y="396.0" text-anchor="end" class="tick">0.00</text>
+<line x1="529" y1="390.0" x2="535" y2="390.0" stroke="#111" stroke-width="2"/>
+<text x="521" y="324.8" text-anchor="end" class="tick">0.14</text>
+<line x1="529" y1="318.8" x2="535" y2="318.8" stroke="#111" stroke-width="2"/>
+<text x="521" y="253.5" text-anchor="end" class="tick">0.28</text>
+<line x1="529" y1="247.5" x2="535" y2="247.5" stroke="#111" stroke-width="2"/>
+<text x="521" y="182.2" text-anchor="end" class="tick">0.41</text>
+<line x1="529" y1="176.2" x2="535" y2="176.2" stroke="#111" stroke-width="2"/>
+<text x="521" y="111.0" text-anchor="end" class="tick">0.55</text>
+<line x1="529" y1="105.0" x2="535" y2="105.0" stroke="#111" stroke-width="2"/>
+<text x="570" y="465" text-anchor="middle" class="tick">Boundary</text>
+<text x="675" y="465" text-anchor="middle" class="tick">Q85</text>
+<text x="780" y="465" text-anchor="middle" class="tick">Q90</text>
+<text x="885" y="465" text-anchor="middle" class="tick">Q95</text>
+<polyline points="570.0,301.5 675.0,276.8 780.0,257.0 885.0,217.4" class="line" stroke="#007C83"/>
+<circle cx="570.0" cy="301.5" r="8" fill="#007C83"/>
+<circle cx="675.0" cy="276.8" r="8" fill="#007C83"/>
+<circle cx="780.0" cy="257.0" r="8" fill="#007C83"/>
+<circle cx="885.0" cy="217.4" r="8" fill="#007C83"/>
+<polyline points="570.0,277.3 675.0,253.6" class="line" stroke="#D95F02"/>
+<circle cx="570.0" cy="277.3" r="8" fill="#D95F02"/>
+<circle cx="675.0" cy="253.6" r="8" fill="#D95F02"/>
+<circle cx="570.0" cy="286.7" r="8" fill="#6B6B6B"/>
+<text x="1000" y="82" class="label">Validity</text>
+<line x1="1000" y1="105" x2="1000" y2="430" class="axis"/>
+<line x1="1000" y1="430" x2="1380" y2="430" class="axis"/>
+<text x="986" y="396.0" text-anchor="end" class="tick">0.00</text>
+<line x1="994" y1="390.0" x2="1000" y2="390.0" stroke="#111" stroke-width="2"/>
+<text x="986" y="324.8" text-anchor="end" class="tick">0.17</text>
+<line x1="994" y1="318.8" x2="1000" y2="318.8" stroke="#111" stroke-width="2"/>
+<text x="986" y="253.5" text-anchor="end" class="tick">0.35</text>
+<line x1="994" y1="247.5" x2="1000" y2="247.5" stroke="#111" stroke-width="2"/>
+<text x="986" y="182.3" text-anchor="end" class="tick">0.52</text>
+<line x1="994" y1="176.3" x2="1000" y2="176.3" stroke="#111" stroke-width="2"/>
+<text x="986" y="111.0" text-anchor="end" class="tick">0.70</text>
+<line x1="994" y1="105.0" x2="1000" y2="105.0" stroke="#111" stroke-width="2"/>
+<text x="1035" y="465" text-anchor="middle" class="tick">Boundary</text>
+<text x="1140" y="465" text-anchor="middle" class="tick">Q85</text>
+<text x="1245" y="465" text-anchor="middle" class="tick">Q90</text>
+<text x="1350" y="465" text-anchor="middle" class="tick">Q95</text>
+<polyline points="1035.0,155.5 1140.0,152.2 1245.0,154.7 1350.0,162.0" class="line" stroke="#007C83"/>
+<circle cx="1035.0" cy="155.5" r="8" fill="#007C83"/>
+<circle cx="1140.0" cy="152.2" r="8" fill="#007C83"/>
+<circle cx="1245.0" cy="154.7" r="8" fill="#007C83"/>
+<circle cx="1350.0" cy="162.0" r="8" fill="#007C83"/>
+<polyline points="1035.0,201.1 1140.0,204.3 1245.0,390.0 1350.0,390.0" class="line" stroke="#D95F02"/>
+<circle cx="1035.0" cy="201.1" r="8" fill="#D95F02"/>
+<circle cx="1140.0" cy="204.3" r="8" fill="#D95F02"/>
+<circle cx="1245.0" cy="390.0" r="8" fill="#D95F02"/>
+<circle cx="1350.0" cy="390.0" r="8" fill="#D95F02"/>
+<polyline points="1035.0,387.6 1140.0,390.0 1245.0,390.0 1350.0,390.0" class="line" stroke="#6B6B6B"/>
+<circle cx="1035.0" cy="387.6" r="8" fill="#6B6B6B"/>
+<circle cx="1140.0" cy="390.0" r="8" fill="#6B6B6B"/>
+<circle cx="1245.0" cy="390.0" r="8" fill="#6B6B6B"/>
+<circle cx="1350.0" cy="390.0" r="8" fill="#6B6B6B"/>
+<line x1="1120" y1="500" x2="1148" y2="500" stroke="#007C83" stroke-width="5"/>
+<text x="1158" y="506" class="tick">Continuous</text>
+<line x1="1300" y1="500" x2="1328" y2="500" stroke="#D95F02" stroke-width="5"/>
+<text x="1338" y="506" class="tick">Binary</text>
+<line x1="1120" y1="525" x2="1148" y2="525" stroke="#6B6B6B" stroke-width="5"/>
+<text x="1158" y="531" class="tick">Unconditional + reranking</text>
+<text x="35" y="525" class="tick">Full-source RF has seen the locked-tail labels; these panels are post-hoc audit figures, not leakage-free extrapolation evidence.</text>
+</svg>

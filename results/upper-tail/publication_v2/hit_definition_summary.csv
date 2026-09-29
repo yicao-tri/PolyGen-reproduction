@@ -1,0 +1,9 @@
+rf_layer,arm,n,target_hit_0_50,target_hit_0_50_n,target_hit_0_25,target_hit_0_25_n,target_hit_0_10,target_hit_0_10_n,frontier_crossing_hit,frontier_crossing_hit_n,validated_frontier_crossing_hit
+blind,continuous,2000,0.551,1102,0.143,286,0.0,0,0.0,0,NA_MD_not_run
+blind,binary,2000,0.215,430,0.0635,127,0.0,0,0.0,0,NA_MD_not_run
+blind,unconditional_reranking,2000,0.0015,3,0.001,2,0.0,0,0.0,0,NA_MD_not_run
+blind,ALL_ARMS,6000,0.25583333333333336,1535,0.06916666666666667,415,0.0,0,0.0,0,NA_MD_not_run
+fullrf,continuous,2000,0.555,1110,0.296,592,0.0415,83,0.0155,31,NA_MD_not_run
+fullrf,binary,2000,0.2155,431,0.1155,231,0.0135,27,0.0015,3,NA_MD_not_run
+fullrf,unconditional_reranking,2000,0.0015,3,0.001,2,0.0005,1,0.0,0,NA_MD_not_run
+fullrf,ALL_ARMS,6000,0.25733333333333336,1544,0.1375,825,0.0185,111,0.005666666666666667,34,NA_MD_not_run

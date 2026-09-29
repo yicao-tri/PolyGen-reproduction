@@ -1,0 +1,219 @@
+{
+  "benchmark": "continuous-vs-binary Structural-OOD prediction phase",
+  "region": "structural_ood",
+  "status": "blocked_for_matched_prediction",
+  "source_data": "/Users/yicao/Documents/ARC/PolyGen-reproduction/inputs/release-data/htpmd-trainset.csv",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "split_source": "/Users/yicao/Documents/ARC/PolyGen-reproduction/vendor/PolyGen-1.0.0/minGPT/htp_md.csv",
+  "split_source_sha256": "fac9c1a260ac8b6d3bafb3f6d47d6287d86e9e513bfb90f43be08368af55a7c4",
+  "split": {
+    "policy": "structure-disjoint",
+    "seed": 42,
+    "test_size": 0.2,
+    "balance_stage": "training_partition_only",
+    "released_source": {
+      "rows": 11408,
+      "unique_structures": 6024,
+      "by_label": {
+        "0": {
+          "rows": 5704,
+          "unique_structures": 5704
+        },
+        "1": {
+          "rows": 5704,
+          "unique_structures": 320
+        }
+      }
+    },
+    "unique_source": {
+      "rows": 6024,
+      "unique_structures": 6024,
+      "by_label": {
+        "0": {
+          "rows": 5704,
+          "unique_structures": 5704
+        },
+        "1": {
+          "rows": 320,
+          "unique_structures": 320
+        }
+      }
+    },
+    "train": {
+      "rows": 9126,
+      "unique_structures": 4819,
+      "by_label": {
+        "0": {
+          "rows": 4563,
+          "unique_structures": 4563
+        },
+        "1": {
+          "rows": 4563,
+          "unique_structures": 256
+        }
+      }
+    },
+    "validation": {
+      "rows": 1205,
+      "unique_structures": 1205,
+      "by_label": {
+        "0": {
+          "rows": 1141,
+          "unique_structures": 1141
+        },
+        "1": {
+          "rows": 64,
+          "unique_structures": 64
+        }
+      }
+    },
+    "overlap_by_label": {
+      "0": {
+        "overlap_unique_structures": 0,
+        "validation_unique_structures": 1141,
+        "overlap_validation_rows": 0,
+        "validation_rows": 1141
+      },
+      "1": {
+        "overlap_unique_structures": 0,
+        "validation_unique_structures": 64,
+        "overlap_validation_rows": 0,
+        "validation_rows": 64
+      }
+    }
+  },
+  "grouping": {
+    "primary": "exact p-SMILES / mol_smiles",
+    "family_grouping": "not available in released table; exact structure grouping is conservative proxy",
+    "close_analogue_crossing": "not assessed without repeat-unit family annotations"
+  },
+  "target_grid": {
+    "policy": "reuse compatible interpolation grid; unsupported cells must remain explicit",
+    "cells": [
+      1.0
+    ],
+    "note": "conductivity column is binary in this released minGPT table; continuous target grid is unsupported here"
+  },
+  "arms": [
+    "continuous",
+    "binary",
+    "unconditional_reranking"
+  ],
+  "matched_settings": {
+    "seeds": [
+      17,
+      42,
+      202,
+      303,
+      907
+    ],
+    "samples_per_cell": 100,
+    "md": false
+  },
+  "checkpoint_inventory": {
+    "all_final_checkpoints": [
+      "results/experiment-a/released-random-seed42-10000/checkpoints/final.pt",
+      "results/experiment-a/structure-disjoint-seed42-10000/checkpoints/final.pt",
+      "results/experiment-c/c1/binary-seed17/final.pt",
+      "results/experiment-c/c1/binary-seed42/final.pt",
+      "results/experiment-c/c1/binary-seed907/final.pt",
+      "results/experiment-c/c1/continuous-seed17/final.pt",
+      "results/experiment-c/c1/continuous-seed42/final.pt",
+      "results/experiment-c/c1/continuous-seed907/final.pt",
+      "results/experiment-c/extra-seeds/seeds202-303/binary-seed202/final.pt",
+      "results/experiment-c/extra-seeds/seeds202-303/binary-seed303/final.pt",
+      "results/experiment-c/extra-seeds/seeds202-303/continuous-seed202/final.pt",
+      "results/experiment-c/extra-seeds/seeds202-303/continuous-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp0.8/binary-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp0.8/binary-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp0.8/binary-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp0.8/binary-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp0.8/binary-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp0.8/continuous-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp0.8/continuous-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp0.8/continuous-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp0.8/continuous-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp0.8/continuous-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.0/binary-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.0/binary-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.0/binary-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.0/binary-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.0/binary-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.0/continuous-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.0/continuous-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.0/continuous-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.0/continuous-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.0/continuous-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.2/binary-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.2/binary-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.2/binary-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.2/binary-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.2/binary-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.2/continuous-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.2/continuous-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.2/continuous-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.2/continuous-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps1000_temp1.2/continuous-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp0.8/binary-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp0.8/binary-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp0.8/binary-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp0.8/binary-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp0.8/binary-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp0.8/continuous-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp0.8/continuous-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp0.8/continuous-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp0.8/continuous-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp0.8/continuous-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.0/binary-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.0/binary-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.0/binary-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.0/binary-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.0/binary-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.0/continuous-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.0/continuous-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.0/continuous-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.0/continuous-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.0/continuous-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.2/binary-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.2/binary-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.2/binary-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.2/binary-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.2/binary-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.2/continuous-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.2/continuous-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.2/continuous-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.2/continuous-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps2000_temp1.2/continuous-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp0.8/binary-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp0.8/binary-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp0.8/binary-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp0.8/binary-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp0.8/binary-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp0.8/continuous-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp0.8/continuous-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp0.8/continuous-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp0.8/continuous-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp0.8/continuous-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp1.0/binary-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp1.0/binary-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp1.0/binary-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp1.0/binary-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp1.0/binary-seed907/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp1.0/continuous-seed17/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp1.0/continuous-seed202/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp1.0/continuous-seed303/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp1.0/continuous-seed42/final.pt",
+      "results/experiment-c/grid/gpt-nano_steps3000_temp1.0/continuous-seed907/final.pt"
+    ],
+    "matched_structural_checkpoints": [
+      "results/experiment-a/structure-disjoint-seed42-10000/checkpoints/final.pt"
+    ]
+  },
+  "blocking_reasons": [
+    "No continuous and binary checkpoints trained on the frozen structure-disjoint split.",
+    "Released structure-disjoint training run is unconditional only and cannot support the requested arm comparison.",
+    "Released table lacks polymer scaffold/family annotations; exact structure grouping is not equivalent to family grouping.",
+    "No MD launched; no MD-confirmed claims are made."
+  ],
+  "candidate_pool": "empty_until_matched_structural_checkpoints_and_family_annotations_exist"
+}

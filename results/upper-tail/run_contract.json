@@ -1,0 +1,48 @@
+{
+  "script": "/Users/yicao/Documents/ARC/PolyGen-reproduction/scripts/run_upper_tail_benchmark.py",
+  "script_sha256": "0bf2fd80c1de584730a8821df42413020fbd2fdf03252c526e29dc7dec2335d5",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6",
+  "torch": "2.0.1",
+  "steps": 1000,
+  "seeds": [
+    17,
+    42,
+    202,
+    303,
+    907
+  ],
+  "arms": [
+    "continuous",
+    "binary",
+    "unconditional_reranking"
+  ],
+  "targets": [
+    {
+      "label": "Q80_boundary_actual_train_max",
+      "quantile": 0.8,
+      "value": -4.084499110675755,
+      "note": "actual inclusive training maximum; nominal Q80 is recorded separately"
+    },
+    {
+      "label": "Q85",
+      "quantile": 0.85,
+      "value": -4.040428977560488,
+      "note": "full-source target grid only; locked rows never used for fitting"
+    },
+    {
+      "label": "Q90",
+      "quantile": 0.9,
+      "value": -3.987531610782325,
+      "note": "full-source target grid only; locked rows never used for fitting"
+    },
+    {
+      "label": "Q95",
+      "quantile": 0.95,
+      "value": -3.902091615809661,
+      "note": "full-source target grid only; locked rows never used for fitting"
+    }
+  ],
+  "binary_cutoff": -4.0
+}

@@ -1,0 +1,82 @@
+{
+  "source": "/Users/yicao/Documents/ARC/PolyGen-reproduction/inputs/release-data/htpmd-trainset.csv",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "source_rows": 6024,
+  "source_unique_smiles": 6024,
+  "full_source_quantiles": {
+    "0.8": -4.084468800285627,
+    "0.85": -4.040428977560488,
+    "0.9": -3.987531610782325,
+    "0.95": -3.902091615809661
+  },
+  "training_rule": "log10(conductivity) <= full-source Q80, inclusive",
+  "training_rows": 4819,
+  "training_unique_smiles": 4819,
+  "training_max_log10_sigma": -4.084499110675755,
+  "locked_tail_q80_q95_rows": 903,
+  "locked_tail_unique_smiles": 903,
+  "train_tail_exact_smiles_overlap": 0,
+  "binary_cutoff_log10_sigma": -4.0,
+  "binary_training_class_counts": {
+    "0": 4819
+  },
+  "binary_status": "degenerate_single_class",
+  "alternative_binary_cutoff": -4.3146323543921214,
+  "nominal_q80": -4.084468800285627,
+  "actual_train_boundary_minus_nominal_q80": -3.031039012757475e-05,
+  "target_grid": [
+    {
+      "label": "Q80_boundary_actual_train_max",
+      "quantile": 0.8,
+      "value": -4.084499110675755,
+      "note": "actual inclusive training maximum; nominal Q80 is recorded separately"
+    },
+    {
+      "label": "Q85",
+      "quantile": 0.85,
+      "value": -4.040428977560488,
+      "note": "full-source target grid only; locked rows never used for fitting"
+    },
+    {
+      "label": "Q90",
+      "quantile": 0.9,
+      "value": -3.987531610782325,
+      "note": "full-source target grid only; locked rows never used for fitting"
+    },
+    {
+      "label": "Q95",
+      "quantile": 0.95,
+      "value": -3.902091615809661,
+      "note": "full-source target grid only; locked rows never used for fitting"
+    }
+  ],
+  "protocol": {
+    "train_only_rule": "all generator and RF fitting rows satisfy log10 conductivity <= nominal Q80",
+    "locked_holdout_rule": "rows above nominal Q80 are excluded from fitting, tuning, filtering and selection until post-run audit",
+    "matched_seeds": [
+      17,
+      42,
+      202,
+      303,
+      907
+    ],
+    "arms": [
+      "continuous",
+      "binary",
+      "unconditional_reranking"
+    ],
+    "steps": 1000,
+    "temperature": 1.0,
+    "samples_per_target_cell": 100,
+    "unconditional_raw_pool_per_seed": 400,
+    "strict_hit_definition": "valid, exact-training-novel, nearest-train Tanimoto >= 0.35, RF tree SD < 0.35, abs RF target error < 0.5",
+    "upper_tail_hit_definition": "valid, exact-training-novel, support/uncertainty gated, RF prediction > actual training maximum",
+    "md": "not run by contract"
+  },
+  "unconditional_reranking_status": "executed_with_matched_400_candidate_pool_and_disjoint_100-per-target_assignment",
+  "alternative_binary_sensitivity": {
+    "cutoff": -4.3146323543921214,
+    "definition": "training-median binary cutoff, balanced only within the truncated training distribution",
+    "status": "not_executed; would be a different binary estimand and is retained as the prespecified fallback"
+  }
+}

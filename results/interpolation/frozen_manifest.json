@@ -1,0 +1,46 @@
+{
+  "benchmark": "continuous-vs-binary interpolation",
+  "region": "interpolation",
+  "source_data": "/Users/yicao/Documents/ARC/PolyGen-reproduction/inputs/release-data/htpmd-trainset.csv",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "split": {
+    "method": "train_test_split stratified deciles",
+    "random_state": 20260923,
+    "train_rows": 4819,
+    "test_rows": 1205
+  },
+  "targets": [
+    {
+      "quantile": 0.5,
+      "target_log10_sigma": -4.265342455699469
+    },
+    {
+      "quantile": 0.65,
+      "target_log10_sigma": -4.187384510157767
+    },
+    {
+      "quantile": 0.8,
+      "target_log10_sigma": -4.0845183227718564
+    }
+  ],
+  "arms": [
+    "continuous",
+    "binary",
+    "unconditional_reranking"
+  ],
+  "seeds": [
+    17,
+    42,
+    202,
+    303,
+    907
+  ],
+  "samples_per_cell": 100,
+  "matched_settings": {
+    "checkpoint": "existing results/experiment-c/c1/{arm}-seed{seed}/final.pt",
+    "temperature": 1.0,
+    "top_k": 40,
+    "block_size": 64
+  },
+  "unconditional_reranking_status": "blocked: no released unconditional generator checkpoint in this repository; no surrogate-ranked proxy is reported as generation evidence."
+}

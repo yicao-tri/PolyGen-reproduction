@@ -1,0 +1,14 @@
+{
+  "status": "complete_pre_md_benchmark",
+  "boundary": -4.084499110675755,
+  "candidate_rows": 6000,
+  "fullrf_valid_novel_candidates": 1568,
+  "continuous_fullrf_predicted_upper_tail_candidates": 31,
+  "continuous_fullrf_predicted_upper_tail_fraction": 0.0155,
+  "max_fullrf_prediction_selected": -3.942401914144754,
+  "max_fullrf_prediction_all_continuous": -3.942401914144754,
+  "max_screening_score_selected": -4.065900647632107,
+  "benchmark_warning": "locked_tail nearest-neighbor values are posthoc descriptive only and were not used for selection",
+  "primary_analog_reference": "Q80 training rows only",
+  "md_comparison_unit": "generated candidate paired with its train-top5 analog set and later MD measurement"
+}
