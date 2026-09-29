@@ -40,7 +40,7 @@ history or modifying `sources/`.
 
 ## Figure 1 — upper-tail response and valid yield
 
-![Figure 1: upper-tail response](results/upper-tail/publication/Figure_1_upper_tail_response.png)
+![Figure 1: upper-tail response](https://raw.githubusercontent.com/yicao-tri/PolyGen-reproduction/experiment/extrapolation-interpolation-results/results/upper-tail/publication/Figure_1_upper_tail_response.png)
 
 Continuous conditioning is the only arm with valid output in every target cell.
 Its target MAE increases from 0.231 at the actual training boundary to 0.406 at
@@ -51,7 +51,7 @@ the generated candidates cross the frontier.
 
 ## Figure 2 — strict-hit, validity, and unsupported cells
 
-![Figure 2: cell-level quality](results/upper-tail/publication/Figure_2_upper_tail_quality_heatmap.png)
+![Figure 2: cell-level quality](https://raw.githubusercontent.com/yicao-tri/PolyGen-reproduction/experiment/extrapolation-interpolation-results/results/upper-tail/publication/Figure_2_upper_tail_quality_heatmap.png)
 
 The heatmap keeps unsupported cells visible. Continuous maintains strict-hit
 rates of 0.554, 0.570, 0.558, and 0.522 from Boundary through Q95. Binary is
@@ -62,7 +62,7 @@ the cell-level CSV records the distinction explicitly.
 
 ## Figure 3 — verifier calibration in the locked tail
 
-![Figure 3: locked-tail RF calibration](results/upper-tail/publication/Figure_3_locked_tail_rf_calibration.png)
+![Figure 3: locked-tail RF calibration](https://raw.githubusercontent.com/yicao-tri/PolyGen-reproduction/experiment/extrapolation-interpolation-results/results/upper-tail/publication/Figure_3_locked_tail_rf_calibration.png)
 
 The frozen RF underpredicts the 903-row Q80–Q95 audit tail: MAE 0.262,
 RMSE 0.269, and mean observed-minus-predicted residual +0.262 log units.
