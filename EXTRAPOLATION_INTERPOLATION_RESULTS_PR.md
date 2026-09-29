@@ -1,5 +1,24 @@
 # PolyGen Work — extrapolation and new interpolation results
 
+## Program map and current status
+
+The overall interpolation-to-extrapolation framework is documented in
+[`EXTRAPOLATION_PROGRAM_FRAMEWORK.md`](EXTRAPOLATION_PROGRAM_FRAMEWORK.md).
+The four workstreams are:
+
+| Workstream | Status | Evidence / next action |
+|---|---|---|
+| Interpolation | Complete | [`results/interpolation/`](results/interpolation/) |
+| Upper-tail | Complete | [`results/upper-tail/`](results/upper-tail/) |
+| Structural-OOD | Blocked for matched prediction | [`results/structural-ood/summary.json`](results/structural-ood/summary.json) |
+| True extrapolation (`train_max + 0.25/+0.50`, Q90/Q100) | Not run | Next child PR; no benchmark script yet |
+
+PR topology: this PR remains the umbrella evidence package for the completed
+interpolation, upper-tail, and structural-OOD audit. The true extrapolation
+implementation should be opened as a child PR based on this PR's head. A
+duplicate interpolation PR is intentionally not created because its complete
+evidence package is already included here.
+
 ## TL;DR
 
 This PR creates a single, reviewable evidence package for the new interpolation,
