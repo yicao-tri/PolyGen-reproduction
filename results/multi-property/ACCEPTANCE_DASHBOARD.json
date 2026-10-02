@@ -1,0 +1,157 @@
+{
+  "status": "prediction_complete_md_gate_open",
+  "common_acceptance": {
+    "source_hash_split_target_scaler_frozen": true,
+    "six_transforms_explicit": true,
+    "matched_arms_seeds_budget_generation_decoder_filter_schema": true,
+    "surrogate_md_separated": true,
+    "rf_top1_only": false,
+    "md_confirmed_frontier_crossing": false,
+    "residual_md_minus_rf": false
+  },
+  "regions": {
+    "interpolation": {
+      "verification": {
+        "status": "PASS",
+        "checks": {
+          "file:design_contract.json": true,
+          "file:source_audit.json": true,
+          "file:frozen_manifest.json": true,
+          "file:transform_scaler_manifest.json": true,
+          "file:target_cells.csv": true,
+          "file:target_support_audit.json": true,
+          "file:candidate_predictions.csv": true,
+          "file:metrics_by_cell.csv": true,
+          "file:paired_contrasts.csv": true,
+          "file:unsupported_cells.csv": true,
+          "file:pairing_leakage_audit.json": true,
+          "file:run_manifest.json": true,
+          "file:run_exit_codes.csv": true,
+          "file:REPORT.md": true,
+          "source_hash_matches": true,
+          "split_counts": true,
+          "six_properties": true,
+          "target_grid_21": true,
+          "target_grid_non_cartesian": true,
+          "coherent_joint_targets_3": true,
+          "candidate_rows_42000": true,
+          "metrics_rows_420": true,
+          "all_cells_n100": true,
+          "all_arms": true,
+          "all_seeds": true,
+          "binary_policy_explicit": true,
+          "no_md": true,
+          "no_force_field": true,
+          "historical_audit_pass": true,
+          "pairing_audit_pass": true,
+          "unsupported_file_schema": true,
+          "checkpoint_origin:multi_continuous|seed17": true,
+          "checkpoint_file:multi_continuous|seed17": true,
+          "checkpoint_origin:multi_continuous|seed42": true,
+          "checkpoint_file:multi_continuous|seed42": true,
+          "checkpoint_origin:multi_continuous|seed202": true,
+          "checkpoint_file:multi_continuous|seed202": true,
+          "checkpoint_origin:multi_continuous|seed303": true,
+          "checkpoint_file:multi_continuous|seed303": true,
+          "checkpoint_origin:multi_continuous|seed907": true,
+          "checkpoint_file:multi_continuous|seed907": true,
+          "checkpoint_origin:scalar_continuous|seed17": true,
+          "checkpoint_file:scalar_continuous|seed17": true,
+          "checkpoint_origin:scalar_continuous|seed42": true,
+          "checkpoint_file:scalar_continuous|seed42": true,
+          "checkpoint_origin:scalar_continuous|seed202": true,
+          "checkpoint_file:scalar_continuous|seed202": true,
+          "checkpoint_origin:scalar_continuous|seed303": true,
+          "checkpoint_file:scalar_continuous|seed303": true,
+          "checkpoint_origin:scalar_continuous|seed907": true,
+          "checkpoint_file:scalar_continuous|seed907": true,
+          "checkpoint_origin:binary_conductivity|seed17": true,
+          "checkpoint_file:binary_conductivity|seed17": true,
+          "checkpoint_origin:binary_conductivity|seed42": true,
+          "checkpoint_file:binary_conductivity|seed42": true,
+          "checkpoint_origin:binary_conductivity|seed202": true,
+          "checkpoint_file:binary_conductivity|seed202": true,
+          "checkpoint_origin:binary_conductivity|seed303": true,
+          "checkpoint_file:binary_conductivity|seed303": true,
+          "checkpoint_origin:binary_conductivity|seed907": true,
+          "checkpoint_file:binary_conductivity|seed907": true,
+          "checkpoint_origin:unconditional_reranking|seed17": true,
+          "checkpoint_file:unconditional_reranking|seed17": true,
+          "checkpoint_origin:unconditional_reranking|seed42": true,
+          "checkpoint_file:unconditional_reranking|seed42": true,
+          "checkpoint_origin:unconditional_reranking|seed202": true,
+          "checkpoint_file:unconditional_reranking|seed202": true,
+          "checkpoint_origin:unconditional_reranking|seed303": true,
+          "checkpoint_file:unconditional_reranking|seed303": true,
+          "checkpoint_origin:unconditional_reranking|seed907": true,
+          "checkpoint_file:unconditional_reranking|seed907": true
+        },
+        "counts": {
+          "cells": 21,
+          "candidate_rows": 42000,
+          "metrics_rows": 420,
+          "unsupported_rows": 0
+        }
+      },
+      "md_status": "unavailable_prediction_only",
+      "md_residual_status": "unavailable_no_md"
+    },
+    "upper-tail": {
+      "verification": {
+        "source_hash_split_target_scaler_frozen": true,
+        "six_transforms_explicit": true,
+        "matched_arms_seeds_budget_generation_decoder_filter_schema": true,
+        "candidate_provenance_complete": true,
+        "unsupported_invalid_low_support_high_uncertainty_failures_reported": true,
+        "surrogate_md_separated": true,
+        "rf_top1_only": false,
+        "paired_identity_leakage_audit_pass": true,
+        "joint_strict_hit_available": true,
+        "property_mae_available": true,
+        "candidate_wise_monotonicity_available": true,
+        "locked_calibration_available": true,
+        "md_confirmed_frontier_crossing": false,
+        "residual_md_minus_rf": false
+      },
+      "md_status": "unavailable_prediction_only",
+      "md_residual_status": "unavailable_no_md"
+    },
+    "extrapolation": {
+      "verification": {
+        "status": "pass",
+        "checks": {
+          "source_hash_matches": true,
+          "joint_training_rows": true,
+          "all_cells": true,
+          "all_cells_n100": true,
+          "candidate_rows": true,
+          "unconditional_pools": true,
+          "no_md": true,
+          "locked_rows_used_for_fit": false,
+          "all_exit_codes_zero": true
+        },
+        "arms": [
+          "multi_continuous",
+          "scalar_continuous",
+          "binary_conductivity",
+          "unconditional_reranking"
+        ],
+        "seeds": [
+          17,
+          42,
+          202,
+          303,
+          907
+        ],
+        "target_labels": [
+          "Q90",
+          "Q100",
+          "train_max_plus_0.25",
+          "train_max_plus_0.50"
+        ]
+      },
+      "md_status": "unavailable_pcff_plus_and_provider_gate",
+      "md_residual_status": "unavailable_no_md"
+    }
+  }
+}

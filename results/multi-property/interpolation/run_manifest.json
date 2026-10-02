@@ -1,0 +1,232 @@
+{
+  "candidate_rows": 42000,
+  "cells": 21,
+  "md": "not_run",
+  "python": "3.9.6",
+  "runs": [
+    {
+      "arm": "multi_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "8ac5b1b6cdbc24f9fbf02d6e60bee3d78190d8c14b069d440d0a13cf9e14349d",
+      "elapsed_seconds": 53.75216102600098,
+      "exit_code": 0,
+      "seed": 17,
+      "steps": 1000
+    },
+    {
+      "arm": "scalar_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "c8b030743ceea47bceb3f22b58d5ee92a2a796b398c038bc453f1f917d67d8ff",
+      "elapsed_seconds": 52.62444019317627,
+      "exit_code": 0,
+      "seed": 17,
+      "steps": 1000
+    },
+    {
+      "arm": "binary_conductivity",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed17/final.pt",
+      "checkpoint_sha256": "28dc9162e7561fa3d92ef1501f3c594736809fb99b91e07e55240d9c4db1911a",
+      "elapsed_seconds": 0.008878946304321289,
+      "exit_code": 0,
+      "seed": 17,
+      "steps": 0
+    },
+    {
+      "arm": "unconditional_reranking",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "bb273fe10c6cb8c576475fe00bcc48b01604fd3bbcfd23da0c5d533d16f4b7b8",
+      "elapsed_seconds": 50.87960982322693,
+      "exit_code": 0,
+      "seed": 17,
+      "steps": 1000
+    },
+    {
+      "arm": "multi_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "dc76be61cfd3849c3f7f023a4625fbf2abb1ff9ba01717e40bb3ebc6090d2e57",
+      "elapsed_seconds": 52.30555295944214,
+      "exit_code": 0,
+      "seed": 42,
+      "steps": 1000
+    },
+    {
+      "arm": "scalar_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "4b2d614e206dcb807d6de804e69e3665f7cea8f4a843ab5fefc29058c75833e1",
+      "elapsed_seconds": 51.3459370136261,
+      "exit_code": 0,
+      "seed": 42,
+      "steps": 1000
+    },
+    {
+      "arm": "binary_conductivity",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed42/final.pt",
+      "checkpoint_sha256": "272792a82847ecd859f136a0f13f18c876ee58bbec75c6124714bc9195db7bda",
+      "elapsed_seconds": 0.007639884948730469,
+      "exit_code": 0,
+      "seed": 42,
+      "steps": 0
+    },
+    {
+      "arm": "unconditional_reranking",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "de7102cad0d4ee4ec054e7320b0674f9dea5294fb06a63f1bbf944465ecd1168",
+      "elapsed_seconds": 53.11715602874756,
+      "exit_code": 0,
+      "seed": 42,
+      "steps": 1000
+    },
+    {
+      "arm": "multi_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "53b20acddd7984ba174e447f6861f52c456b2cf2e49ab4316fa3a4bdb1ed555f",
+      "elapsed_seconds": 68.61152696609497,
+      "exit_code": 0,
+      "seed": 202,
+      "steps": 1000
+    },
+    {
+      "arm": "scalar_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "649e37b7d064f2da0d8bcfc58136f6e1ef07a0fafd42fdfac1e891503b995ec5",
+      "elapsed_seconds": 72.93230509757996,
+      "exit_code": 0,
+      "seed": 202,
+      "steps": 1000
+    },
+    {
+      "arm": "binary_conductivity",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/extra-seeds/seeds202-303/binary-seed202/final.pt",
+      "checkpoint_sha256": "fb0b6b6ed4a77ad4707975b4424b895fcc91c3d87fd0fd3fc440bd2319498259",
+      "elapsed_seconds": 0.008893013000488281,
+      "exit_code": 0,
+      "seed": 202,
+      "steps": 0
+    },
+    {
+      "arm": "unconditional_reranking",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "1cb8c024ada593222328350adfeea8d1c8f7aa1bf3fb045fd10a9f0f7f2a0c0a",
+      "elapsed_seconds": 84.03560400009155,
+      "exit_code": 0,
+      "seed": 202,
+      "steps": 1000
+    },
+    {
+      "arm": "multi_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "a4c96b2138199fa8883edc917780f002f9a666aa598d68d6d9e9ce6b90863d4a",
+      "elapsed_seconds": 59.5300133228302,
+      "exit_code": 0,
+      "seed": 303,
+      "steps": 1000
+    },
+    {
+      "arm": "scalar_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "3df31053657ea437f872a7e5e06f780ccb53b47d43edf77b3291100c3bef4831",
+      "elapsed_seconds": 55.552631855010986,
+      "exit_code": 0,
+      "seed": 303,
+      "steps": 1000
+    },
+    {
+      "arm": "binary_conductivity",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/extra-seeds/seeds202-303/binary-seed303/final.pt",
+      "checkpoint_sha256": "0309bffe7d31c42253bd2680788042b4f5856684c76f2aebc38f246159c625c0",
+      "elapsed_seconds": 0.008175134658813477,
+      "exit_code": 0,
+      "seed": 303,
+      "steps": 0
+    },
+    {
+      "arm": "unconditional_reranking",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "9d6a8a4c2e2588f730b39e1c005d0e6e98592abb26fd78f411ede0950d0cf80d",
+      "elapsed_seconds": 55.587568044662476,
+      "exit_code": 0,
+      "seed": 303,
+      "steps": 1000
+    },
+    {
+      "arm": "multi_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "376a92e15407923d3bac21489331944bacc6a1d67f41bbbf250d1e6bd62cf34d",
+      "elapsed_seconds": 54.83463978767395,
+      "exit_code": 0,
+      "seed": 907,
+      "steps": 1000
+    },
+    {
+      "arm": "scalar_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "fef79ddb79ea0545578ffdc9ce34a2e67275d21c2becb7d6ac307743abe22132",
+      "elapsed_seconds": 53.03638410568237,
+      "exit_code": 0,
+      "seed": 907,
+      "steps": 1000
+    },
+    {
+      "arm": "binary_conductivity",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed907/final.pt",
+      "checkpoint_sha256": "b310643702610d89ce0d5550f050cfe06f51ff321af3817a277065cc10ab91a3",
+      "elapsed_seconds": 0.008392095565795898,
+      "exit_code": 0,
+      "seed": 907,
+      "steps": 0
+    },
+    {
+      "arm": "unconditional_reranking",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "1be2817562b187d04a86ad10c716512b3d8b7c63c1333d056c03a1029139579e",
+      "elapsed_seconds": 55.378910779953,
+      "exit_code": 0,
+      "seed": 907,
+      "steps": 1000
+    }
+  ],
+  "script": "/Users/yicao/Documents/ARC/PolyGen-reproduction/scripts/multi_property_interpolation.py",
+  "script_sha256": "6ff9d7a0ba416b386349447194cce8a69002e26bd2e933fa16ebfd24f578d810",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "torch": "2.0.1"
+}

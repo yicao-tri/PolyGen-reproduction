@@ -1,0 +1,50 @@
+{
+  "log10_conductivity": {
+    "estimators": 300,
+    "mae": 0.12427464729106281,
+    "random_state": 20260923,
+    "rmse": 0.15694132332055197,
+    "test_rows": 1205,
+    "train_std": 0.22227087848592791
+  },
+  "log10_li_diffusivity": {
+    "estimators": 300,
+    "mae": 0.12059313989537898,
+    "random_state": 20260923,
+    "rmse": 0.15284897301559588,
+    "test_rows": 1205,
+    "train_std": 0.2053721409985638
+  },
+  "log10_poly_diffusivity": {
+    "estimators": 300,
+    "mae": 0.09962755659180614,
+    "random_state": 20260923,
+    "rmse": 0.1260134310176636,
+    "test_rows": 1205,
+    "train_std": 0.2582703165428797
+  },
+  "log10_tfsi_diffusivity": {
+    "estimators": 300,
+    "mae": 0.11030891891879575,
+    "random_state": 20260923,
+    "rmse": 0.1366370615139455,
+    "test_rows": 1205,
+    "train_std": 0.21843358036967356
+  },
+  "molality": {
+    "estimators": 300,
+    "mae": 0.046331149858082565,
+    "random_state": 20260923,
+    "rmse": 0.054419531987704675,
+    "test_rows": 1205,
+    "train_std": 0.058244482630112546
+  },
+  "transference_number": {
+    "estimators": 300,
+    "mae": 0.1652572649731254,
+    "random_state": 20260923,
+    "rmse": 0.21973778826332,
+    "test_rows": 1205,
+    "train_std": 0.28844979337635845
+  }
+}

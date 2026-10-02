@@ -1,0 +1,190 @@
+{
+  "package": "multi-property-true-extrapolation",
+  "files": [
+    {
+      "path": "Multi-property True Extrapolation \u2014 prediction milestone.md",
+      "bytes": 7413,
+      "sha256": "dc179e13341786aa21462a3f3389abfcd8dd282245d4cd608a3f3745d80d074f"
+    },
+    {
+      "path": "OVERLEAF_HANDOFF.md",
+      "bytes": 1448,
+      "sha256": "106c797af22b21d132c6dcc20ac988b70481455575ca322e356169f53d940a4c"
+    },
+    {
+      "path": "PCFF_PLUS_HANDOFF.md",
+      "bytes": 2464,
+      "sha256": "e1d0b0807fdf712f7513bf8bac873b1bbd004276d158bc487300b049a75e9035"
+    },
+    {
+      "path": "PROVENANCE.csv",
+      "bytes": 3367,
+      "sha256": "ec48473b349d449a617c019e1e5c445edc8162025ace01c211418e3ced2c15b4"
+    },
+    {
+      "path": "assets/figures/fig01_response.png",
+      "bytes": 214087,
+      "sha256": "eae052f4faa610c5596d3237cf11c3cc1991518eb3faed7a820e21ad36e632c4"
+    },
+    {
+      "path": "assets/figures/fig01_response.svg",
+      "bytes": 28161,
+      "sha256": "6ad986423b04ab28cc53df3873e2e0904d1dcbb7fe967cab581bda2d70ac7b6d"
+    },
+    {
+      "path": "assets/figures/fig02_quality.png",
+      "bytes": 81150,
+      "sha256": "d6fc85af446a13cd62c7ff686dc647bb113f4c9b6b63a01f1ae749f9f9726108"
+    },
+    {
+      "path": "assets/figures/fig02_quality.svg",
+      "bytes": 25531,
+      "sha256": "0cb122523c8fd8c3f1ba93ad4bdffd5601dd4443827c2d53b1fdd478962588eb"
+    },
+    {
+      "path": "assets/figures/fig03_locked_audit.png",
+      "bytes": 557411,
+      "sha256": "378f6fac1ddd121948141e81b237292f76761ea7d0b7047ac977bcab594fad68"
+    },
+    {
+      "path": "assets/figures/fig03_locked_audit.svg",
+      "bytes": 2092763,
+      "sha256": "d7cfb284e1fbc28fec28f26cc94cd999911acbe8e49528e7bd9add7e247899f2"
+    },
+    {
+      "path": "assets/tables/candidate_selection_for_md.csv",
+      "bytes": 1433,
+      "sha256": "f3a98c88e1869c8fa4eea33ef54ff4f51718d3bc804c2369f06ab8787974351d"
+    },
+    {
+      "path": "assets/tables/failure_reasons.csv",
+      "bytes": 16737,
+      "sha256": "c15f53c1fd3d61a1aa8bd9d4cfba8210f4cbe951e621184fad2dc4371a799f0a"
+    },
+    {
+      "path": "assets/tables/locked_tail_verifier_audit.csv",
+      "bytes": 1472960,
+      "sha256": "6be84503375919d1375d637ede4ac89077a002e3c7aa155e720cc78d0c69d336"
+    },
+    {
+      "path": "assets/tables/md_validation_plan.csv",
+      "bytes": 17272,
+      "sha256": "633718c5318589dd23b3dd1c6726a0ddff856fc7d6df961fdfa78de1f9fd554a"
+    },
+    {
+      "path": "assets/tables/md_validation_plan_summary.csv",
+      "bytes": 242,
+      "sha256": "0d428ee249c66e767ae289450288a2c87f758a9936e634679dcbf72f22477d93"
+    },
+    {
+      "path": "assets/tables/metrics_by_cell.csv",
+      "bytes": 40097,
+      "sha256": "1058084d636d6002a4bd692499fa5ed6c6150de0030352cb8bb23cb4c92995bb"
+    },
+    {
+      "path": "assets/tables/monotonicity.csv",
+      "bytes": 17749,
+      "sha256": "3024149e2c10690b8b572a8a02ddf67c2f19bfd397d5a5bca6644ee7a203b8e7"
+    },
+    {
+      "path": "assets/tables/paired_contrasts.csv",
+      "bytes": 4094,
+      "sha256": "accff31e81ab77223c84a8c794eca4e1a601f98f0221a6a785d28ecf62616f68"
+    },
+    {
+      "path": "assets/tables/unsupported_cells.csv",
+      "bytes": 7001,
+      "sha256": "8c6bd1ece4c48f170d64eb00f6dfc50ad68fd01cc2bd483c0a24d3da13b3d7e1"
+    },
+    {
+      "path": "evidence/data/ACCEPTANCE_DASHBOARD.json",
+      "bytes": 6363,
+      "sha256": "b04c79dcb2cd57655ce24100bd513c79a77c9f02775f31f72fe457fd3de9fa5f"
+    },
+    {
+      "path": "evidence/data/ACCEPTANCE_DASHBOARD.md",
+      "bytes": 861,
+      "sha256": "f507703e7e99f081952e34763ffc2af1ba39cf1a90625b08fadaf07aef2b408f"
+    },
+    {
+      "path": "evidence/data/frozen_manifest.json",
+      "bytes": 5580,
+      "sha256": "453e37041d2e9f1a93bbb2a9aa2f46e7a6d51626b7aaf6d359c0538875dc4b68"
+    },
+    {
+      "path": "evidence/data/locked_surrogate_calibration.csv",
+      "bytes": 2751,
+      "sha256": "2d581903c15949bb5b60195da7e230c43b5ca619c4f85d6e096999dc96d92090"
+    },
+    {
+      "path": "evidence/data/locked_surrogate_calibration.json",
+      "bytes": 337,
+      "sha256": "1b2dfe5bebfdfeab82db89a8200a7d99dae026840312bdecaa7541868a4f16a7"
+    },
+    {
+      "path": "evidence/data/md_gate_audit.json",
+      "bytes": 1787,
+      "sha256": "19e82f74b3c06938340b3aaad6c1c77888f9b610f17f0b9150507034895c7674"
+    },
+    {
+      "path": "evidence/data/pairing_acceptance_audit.json",
+      "bytes": 595,
+      "sha256": "21d402c265e72dab7c5b74b704eaf9cabfeb1a7205dc79c91cea6d19559f93dc"
+    },
+    {
+      "path": "evidence/data/region_summary.json",
+      "bytes": 584,
+      "sha256": "dd01a2e5762bae96b4f405aa451c7118836532a4496bbf2f320f9f911e33f820"
+    },
+    {
+      "path": "evidence/data/scaler_manifest.json",
+      "bytes": 848,
+      "sha256": "9ea9ef8afee716986a0499f725bc2deb00a10f525a15299b2a8c003f49ad2bee"
+    },
+    {
+      "path": "evidence/data/source_audit.json",
+      "bytes": 2251,
+      "sha256": "7ca3cdaadff8773fe7c931e2c186d3456c40845435f39b01a3513735f4d52f55"
+    },
+    {
+      "path": "evidence/data/verifier_manifest.json",
+      "bytes": 382,
+      "sha256": "1e4bf3436d40788fe8b93a59cd67c9a2ad68c8dcf5f28d9cd0238160839acb5b"
+    },
+    {
+      "path": "evidence/scripts/analyze_multi_property_calibration.py",
+      "bytes": 1842,
+      "sha256": "0fb74857f38982223eeb8ab765f78d34476cea30a7f95eeb147349deb0da1c07"
+    },
+    {
+      "path": "evidence/scripts/build_multi_property_acceptance_dashboard.py",
+      "bytes": 2552,
+      "sha256": "aebd7fcf3302383196f9da926f9f6cc5d665cc79af394de3627061d966ead113"
+    },
+    {
+      "path": "evidence/scripts/build_multi_property_md_plan.py",
+      "bytes": 2552,
+      "sha256": "5566267f1a020333d3ec74fd49e102e8db66a94aa07fd9376233613c2ec5a159"
+    },
+    {
+      "path": "evidence/scripts/finalize_multi_property_extrapolation.py",
+      "bytes": 6786,
+      "sha256": "bd254c738b85e62c43204eec5079340fd35ea236823381bd7811baa6a1d4440b"
+    },
+    {
+      "path": "evidence/scripts/multi_property_core.py",
+      "bytes": 3795,
+      "sha256": "8b107f19d12a05362dd8d3ef550419531286aed047dc50fda11f5e435c8de0fb"
+    },
+    {
+      "path": "evidence/scripts/multi_property_upper-tail.py",
+      "bytes": 51741,
+      "sha256": "7adfc202c4b5f2da3895bb9a432de96b983917b477227eafb3413d996e2062b4"
+    },
+    {
+      "path": "evidence/scripts/run_multi_property_extrapolation.py",
+      "bytes": 3006,
+      "sha256": "c5489ae3d0d7311004c53465fdc8d9e6c9e8c5a4858c8c5849a540d3994bdde1"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "benchmark": "multi-property implicit-conditioning true extrapolation",
+  "region": "extrapolation",
+  "status": "definitive_prediction_phase_complete_md_not_run",
+  "source": "/Users/yicao/Documents/ARC/PolyGen-reproduction/inputs/release-data/htpmd-trainset.csv",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "properties": [
+    {
+      "name": "conductivity",
+      "transform": "log10"
+    },
+    {
+      "name": "li_diffusivity",
+      "transform": "log10"
+    },
+    {
+      "name": "tfsi_diffusivity",
+      "transform": "log10"
+    },
+    {
+      "name": "poly_diffusivity",
+      "transform": "log10"
+    },
+    {
+      "name": "transference_number",
+      "transform": "raw"
+    },
+    {
+      "name": "molality",
+      "transform": "raw"
+    }
+  ],
+  "training_rule": "all six transformed properties <= full-source Q80",
+  "joint_training_rows": 2494,
+  "joint_training_unique_smiles": 2494,
+  "locked_query_policy": "full-source Q90/Q100 and train_max offsets are post-run queries only; no locked row enters generator, RF, thresholds, filters or selection",
+  "target_vectors": [
+    {
+      "label": "Q90",
+      "quantile": 0.9,
+      "definition": "full-source query; locked post-run only",
+      "values_transformed": {
+        "conductivity": -3.987531610782325,
+        "li_diffusivity": -7.545010229020908,
+        "tfsi_diffusivity": -7.310033444065601,
+        "poly_diffusivity": -7.486025895545691,
+        "transference_number": 0.35652640319590695,
+        "molality": 1.48543096734384
+      },
+      "values_raw": {
+        "conductivity": 0.00010291256179998473,
+        "li_diffusivity": 2.8509511177167448e-08,
+        "tfsi_diffusivity": 4.897411040279061e-08,
+        "poly_diffusivity": 3.2656835939901987e-08,
+        "transference_number": 0.35652640319590695,
+        "molality": 1.48543096734384
+      }
+    },
+    {
+      "label": "Q100",
+      "quantile": 1.0,
+      "definition": "full-source query; locked post-run only",
+      "values_transformed": {
+        "conductivity": -3.295367776501,
+        "li_diffusivity": -7.094446351771386,
+        "tfsi_diffusivity": -6.897721544963969,
+        "poly_diffusivity": -7.023364451105615,
+        "transference_number": 0.821687902605073,
+        "molality": 1.49934995682622
+      },
+      "values_raw": {
+        "conductivity": 0.0005065615516805002,
+        "li_diffusivity": 8.045511283021239e-08,
+        "tfsi_diffusivity": 1.265547513959589e-07,
+        "poly_diffusivity": 9.476229036510292e-08,
+        "transference_number": 0.821687902605073,
+        "molality": 1.49934995682622
+      }
+    },
+    {
+      "label": "train_max_plus_0.25",
+      "quantile": null,
+      "definition": "full-source query; locked post-run only",
+      "values_transformed": {
+        "conductivity": -3.834499110675755,
+        "li_diffusivity": -7.39000239019801,
+        "tfsi_diffusivity": -7.161000105748084,
+        "poly_diffusivity": -7.352971588558652,
+        "transference_number": 0.532288143901113,
+        "molality": 1.71786582368992
+      },
+      "values_raw": {
+        "conductivity": 0.00014638645351684645,
+        "li_diffusivity": 4.0737803573820965e-08,
+        "tfsi_diffusivity": 6.902396357710386e-08,
+        "poly_diffusivity": 4.436376656523242e-08,
+        "transference_number": 0.532288143901113,
+        "molality": 1.71786582368992
+      }
+    },
+    {
+      "label": "train_max_plus_0.50",
+      "quantile": null,
+      "definition": "full-source query; locked post-run only",
+      "values_transformed": {
+        "conductivity": -3.584499110675755,
+        "li_diffusivity": -7.14000239019801,
+        "tfsi_diffusivity": -6.911000105748084,
+        "poly_diffusivity": -7.102971588558652,
+        "transference_number": 0.782288143901113,
+        "molality": 1.96786582368992
+      },
+      "values_raw": {
+        "conductivity": 0.00026031601619762795,
+        "li_diffusivity": 7.244319730553587e-08,
+        "tfsi_diffusivity": 1.2274389322844033e-07,
+        "poly_diffusivity": 7.8891172634726e-08,
+        "transference_number": 0.782288143901113,
+        "molality": 1.96786582368992
+      }
+    }
+  ],
+  "arms": {
+    "multi_continuous": "six-dimensional normalized condition vector through one learned prefix embedding",
+    "scalar_continuous": "conductivity-only normalized continuous prefix using the same joint training rows",
+    "binary_conductivity": "fixed original -4.0 log10 conductivity high/low label; expected single-class degeneracy",
+    "unconditional_reranking": "constant-zero generator; disjoint raw pool reranked by frozen six-property RF distance and uncertainty"
+  },
+  "matched_settings": {
+    "model": "PolyGen-1.0.0 minGPT gpt-nano adapter",
+    "steps": 1000,
+    "batch_size": 64,
+    "learning_rate": 0.0005,
+    "temperature": 1.0,
+    "top_k": 40,
+    "block_size": 64,
+    "prefix_length": 5,
+    "samples_per_target_cell": 100,
+    "unconditional_raw_pool_per_seed": 400,
+    "seeds": [
+      17,
+      42,
+      202,
+      303,
+      907
+    ],
+    "rf_estimators": 300,
+    "rf_random_state": 20260923,
+    "support_gate_tanimoto": 0.35,
+    "uncertainty_gate_normalized_tree_sd": 0.35,
+    "joint_target_rmse_gate_normalized": 0.5
+  },
+  "primary_estimand": "paired seed-level difference in joint strict-hit and joint frontier-crossing rates for multi_continuous minus scalar_continuous; controls are descriptive",
+  "no_md": true,
+  "historical_results_preserved": true,
+  "source_audit_file": "source_audit.json",
+  "unsupported_cells_file": "unsupported_cells.csv"
+}
