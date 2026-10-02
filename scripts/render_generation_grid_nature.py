@@ -4,6 +4,7 @@ from pathlib import Path
 import json
 import html
 import re
+from io import BytesIO
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -20,7 +21,7 @@ OUT=ROOT/'results/experiment-c/grid/figures'
 OUT.mkdir(parents=True,exist_ok=True)
 plt.rcParams.update({'font.family':'Arial','font.size':8.5,'axes.linewidth':0.8,'xtick.major.width':0.8,'ytick.major.width':0.8,'pdf.fonttype':42,'ps.fonttype':42})
 COL={'binary':'#2166AC','continuous':'#D6604D'}
-CFG_ORDER=['gpt-nano_steps1000_temp0.8','gpt-nano_steps1000_temp1.0','gpt-nano_steps1000_temp1.2','gpt-nano_steps2000_temp0.8','gpt-nano_steps2000_temp1.0','gpt-nano_steps2000_temp1.2']
+CFG_ORDER=[f'gpt-nano_steps{steps}_temp{temp:.1f}' for steps in [1000,2000,3000] for temp in [0.8,1.0,1.2]]
 LABEL={c:c.replace('gpt-nano_steps','').replace('_temp','; T=') for c in CFG_ORDER}
 
 def panel_a(ax,m):
@@ -33,7 +34,7 @@ def panel_a(ax,m):
             x.append(temp); y.append(steps/1000); z.append(g.strict_hit_rate.mean()); c.append(COL[arm])
     ax.scatter(x,y,z,c=c,s=42,depthshade=False,edgecolors='white',linewidths=.35)
     ax.set_xlabel('Sampling temperature'); ax.set_ylabel('Training steps (×1000)'); ax.set_zlabel('Strict-hit rate')
-    ax.set_xticks([.8,1.0,1.2]); ax.set_yticks([1,2]); ax.set_zlim(0,1)
+    ax.set_xticks([.8,1.0,1.2]); ax.set_yticks([1,2,3]); ax.set_zlim(0,1)
     ax.view_init(elev=23,azim=-58); ax.set_title('Grid response',loc='left',fontweight='bold',pad=2)
     ax.legend(handles=[Line2D([0],[0],marker='o',color='w',label='Binary',markerfacecolor=COL['binary'],markersize=6),Line2D([0],[0],marker='o',color='w',label='Continuous',markerfacecolor=COL['continuous'],markersize=6)],frameon=False,loc='upper left',bbox_to_anchor=(0.02,.96))
 
@@ -42,7 +43,7 @@ def panel_b(ax,m):
     metrics=[('strict_hit_rate','Strict hit'),('validity','Validity'),('novelty','Novelty'),('uniqueness','Uniqueness')]
     cfg=m.groupby(['config_id','arm'],as_index=False)[[x[0] for x in metrics]].mean()
     means=cfg.groupby('arm')[[x[0] for x in metrics]].mean().reindex(['binary','continuous'])
-    sem=cfg.groupby('arm')[[x[0] for x in metrics]].std(ddof=1).reindex(['binary','continuous'])/np.sqrt(len(CFG_ORDER))
+    sem=cfg.groupby('arm')[[x[0] for x in metrics]].std(ddof=1).reindex(['binary','continuous'])/np.sqrt(cfg.config_id.nunique())
     xx=np.arange(len(metrics)); w=.34
     for i,arm in enumerate(['binary','continuous']): ax.bar(xx+(i-.5)*w,means.loc[arm].values,w,yerr=sem.loc[arm].values,color=COL[arm],alpha=.9,label=arm.capitalize(),capsize=2,error_kw={'lw':.7})
     ax.set_xticks(xx, [x[1] for x in metrics]); ax.set_ylim(0,1); ax.set_ylabel('Proportion'); ax.set_title('Generation quality',loc='left',fontweight='bold'); ax.legend(frameon=False,ncol=2)
@@ -141,6 +142,28 @@ def panel_c_vector_svg(top, raw, path):
     parts.append('</svg>')
     Path(path).write_text('\n'.join(parts), encoding='utf-8')
 
+def compose_vector_at_a_glance(paths, out):
+    """Compose the four standalone SVG panels without rasterizing panel C."""
+    def inner(path):
+        s=Path(path).read_text(encoding='utf-8')
+        head=re.search(r'<svg\s+([^>]*)>',s).group(1)
+        view=re.search(r'viewBox="([^"]+)"',head).group(1)
+        body=re.sub(r'^.*?<svg[^>]*>', '', s, flags=re.S)
+        body=re.sub(r'</svg>\s*$', '', body, flags=re.S)
+        return view,body
+    W,H=1140,800
+    placements=[('a',55,55,480,390),('b',585,55,500,390),('c',55,455,480,300),('d',585,455,500,300)]
+    parts=[f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
+           '<rect width="100%" height="100%" fill="white"/>',
+           '<style>text{font-family:Arial,Helvetica,sans-serif}</style>',
+           '<text x="570" y="28" text-anchor="middle" font-size="16" font-weight="700">PolyGen generation-grid response and candidate audit</text>']
+    for label,x,y,w,h in placements:
+        view,body=inner(paths[label])
+        parts.append(f'<text x="{x-28}" y="{y+4}" font-size="15" font-weight="700">{label}</text>')
+        parts.append(f'<svg x="{x}" y="{y+12}" width="{w}" height="{h-12}" viewBox="{view}" preserveAspectRatio="xMidYMid meet">{body}</svg>')
+    parts.append('</svg>')
+    Path(out).write_text('\n'.join(parts),encoding='utf-8')
+
 def panel_d(ax,raw,train):
     trainlog=np.log10(train.conductivity.astype(float)); ax.hist(trainlog,bins=24,density=True,color='#D9E6A5',alpha=.55,edgecolor='#556B2F',lw=.5,label='Training set')
     for arm in ['binary','continuous']:
@@ -158,14 +181,35 @@ def main():
     f=panel_c_standalone(top,raw); f.savefig(OUT/'panel_c_representative_structures.pdf',bbox_inches='tight'); plt.close(f)
     panel_c_vector_svg(top,raw, OUT/'panel_c_representative_structures.svg')
     f, a=plt.subplots(figsize=(5.8,3.9)); panel_d(a,raw,train); f.tight_layout(pad=1.0); f.savefig(OUT/'panel_d_property_distributions.pdf',bbox_inches='tight'); f.savefig(OUT/'panel_d_property_distributions.svg',bbox_inches='tight'); plt.close(f)
-    fig=plt.figure(figsize=(11.2,8.2),facecolor='white'); gs=fig.add_gridspec(2,2,wspace=.22,hspace=.28)
-    axa=fig.add_subplot(gs[0,0],projection='3d'); panel_a(axa,m)
-    panel_b(fig.add_subplot(gs[0,1]),m)
-    panel_c(fig.add_subplot(gs[1,0]),top,raw)
-    panel_d(fig.add_subplot(gs[1,1]),raw,train)
-    for ax,label in zip(fig.axes,['a','b','c','d']):
-        if hasattr(ax,'text2D'): ax.text2D(-.08,1.04,label,transform=ax.transAxes,fontsize=13,fontweight='bold',va='top')
-        else: ax.text(-.08,1.04,label,transform=ax.transAxes,fontsize=13,fontweight='bold',va='top')
-    fig.savefig(OUT/'polygen_generation_grid_main.png',dpi=600,bbox_inches='tight'); fig.savefig(OUT/'polygen_generation_grid_main.pdf',bbox_inches='tight'); fig.savefig(OUT/'polygen_generation_grid_main.svg',bbox_inches='tight'); plt.close(fig)
-    print(OUT/'polygen_generation_grid_main.png')
+    # Clean Nature-style at-a-glance composition: no enclosing panel frames,
+    # no grey separator boxes, and compact panel headers outside the axes.
+    fig=plt.figure(figsize=(11.4,8.0),facecolor='white')
+    gs=fig.add_gridspec(2,2,left=.055,right=.985,bottom=.045,top=.925,wspace=.18,hspace=.24)
+    axes=[]
+    axa=fig.add_subplot(gs[0,0],projection='3d'); panel_a(axa,m); axes.append(axa)
+    axb=fig.add_subplot(gs[0,1]); panel_b(axb,m); axes.append(axb)
+    axc=fig.add_subplot(gs[1,0])
+    # Use the standalone panel-C compositor as an inset image so its molecule
+    # artwork keeps a stable 2×3 layout inside the publication figure.
+    fc=panel_c_standalone(top,raw); buf=BytesIO(); fc.savefig(buf,format='png',dpi=260,facecolor='white'); plt.close(fc); buf.seek(0)
+    axc.imshow(plt.imread(buf)); axc.axis('off'); axes.append(axc)
+    axd=fig.add_subplot(gs[1,1]); panel_d(axd,raw,train); axes.append(axd)
+    for ax in axes:
+        ax.set_facecolor('white')
+    fig.text(.055,.965,'a',fontsize=14,fontweight='bold',va='top')
+    fig.text(.535,.965,'b',fontsize=14,fontweight='bold',va='top')
+    fig.text(.055,.505,'c',fontsize=14,fontweight='bold',va='top')
+    fig.text(.535,.505,'d',fontsize=14,fontweight='bold',va='top')
+    fig.text(.5,.99,'PolyGen generation-grid response and candidate audit',ha='center',va='top',fontsize=13,fontweight='bold')
+    fig.savefig(OUT/'polygen_generation_grid_at_a_glance.png',dpi=600,bbox_inches='tight',facecolor='white')
+    fig.savefig(OUT/'polygen_generation_grid_at_a_glance.pdf',bbox_inches='tight',facecolor='white')
+    fig.savefig(OUT/'polygen_generation_grid_at_a_glance.svg',bbox_inches='tight',facecolor='white')
+    plt.close(fig)
+    compose_vector_at_a_glance({
+        'a': OUT/'panel_a_grid_response.svg',
+        'b': OUT/'panel_b_quality_metrics.svg',
+        'c': OUT/'panel_c_representative_structures.svg',
+        'd': OUT/'panel_d_property_distributions.svg',
+    }, OUT/'polygen_generation_grid_at_a_glance.svg')
+    print(OUT/'polygen_generation_grid_at_a_glance.png')
 if __name__=='__main__': main()

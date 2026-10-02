@@ -8,7 +8,8 @@
     ],
     "steps": [
       1000,
-      2000
+      2000,
+      3000
     ],
     "temperatures": [
       0.8,
@@ -32,9 +33,9 @@
       -3.0
     ]
   },
-  "cells_total": 120,
-  "planned_executable_cells": 60,
-  "blocked_cells": 60,
+  "cells_total": 180,
+  "planned_executable_cells": 90,
+  "blocked_cells": 90,
   "raw_samples_per_arm_config": 1500,
   "raw_samples_per_seed_arm": 300,
   "target_allocation_per_seed_arm": {
@@ -43,7 +44,7 @@
     "-3.0": 100
   },
   "planned_raw_samples_gpt_nano": 90000,
-  "estimated_gpu_hours_gpt_nano": 67.5,
+  "estimated_gpu_hours_gpt_nano": 135.0,
   "pairing_rule": "same seed, target allocation, split, steps, temperature, and sample budget for binary/continuous",
   "identity_key": "model x steps x temperature x seed x arm",
   "primary_ranking": "valid + novel + in-support + uncertainty gate, then predicted_log_sigma - 1.96 * uncertainty descending",

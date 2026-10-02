@@ -114,6 +114,19 @@
       "comparability": "primary existing paired generation evidence"
     },
     {
+      "config_id": "grid_gptnano_steps1000_2000_3000_temps012_raw300_seedtarget100",
+      "status": "completed grid evidence",
+      "family": "minGPT",
+      "model": "gpt-nano soft-prefix binary/continuous",
+      "steps": [1000, 2000, 3000],
+      "temperature": [0.8, 1.0, 1.2],
+      "seeds": [17, 42, 202, 303, 907],
+      "sample_budget": 300,
+      "data_split": "fixed C1 split seed 20260923",
+      "paths": ["results/experiment-c/grid/", "results/experiment-c/grid/analysis/"],
+      "comparability": "paired within config_id; do not pool across configurations as independent replicates"
+    },
+    {
       "config_id": "grid_new_runs_placeholder",
       "status": "new grid run",
       "family": "minGPT and diffusion families, if separately authorized",

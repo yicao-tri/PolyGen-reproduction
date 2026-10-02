@@ -35,16 +35,16 @@ The executable primary grid is:
 | dimension | values |
 |---|---|
 | model | `gpt-nano` |
-| training steps | `1000`, `2000` |
+| training steps | `1000`, `2000`, `3000` |
 | temperature | `0.8`, `1.0`, `1.2` |
 | seeds | `17`, `42`, `202`, `303`, `907` |
 | arms | `binary`, `continuous` |
 | targets | `-5.0`, `-4.0`, `-3.0` log10 S/cm |
 
-This yields 60 executable cells and 30 binary/continuous paired config-seed
+This yields 90 executable cells and 45 binary/continuous paired config-seed
 comparisons. Each cell-seed-arm has 300 raw samples, allocated as `100/100/100`
 across targets, giving 1,500 raw samples per arm/config. The planned gpt-nano
-grid therefore contains 90,000 raw samples and an estimated 67.5 GPU-hours,
+grid therefore contains 135,000 raw samples and an estimated 135.0 GPU-hours,
 subject to a smoke-run timing check.
 
 The model-size extension is represented explicitly but blocked:

@@ -9,7 +9,7 @@ import csv, json
 ROOT = Path(__file__).resolve().parents[1]
 SEEDS = [17, 42, 202, 303, 907]
 ARMS = ["binary", "continuous"]
-STEPS = [1000, 2000]
+STEPS = [1000, 2000, 3000]
 TEMPS = [0.8, 1.0, 1.2]
 TARGETS = [-5.0, -4.0, -3.0]
 MODELS = [("gpt-nano", "planned"), ("gpt-small", "blocked_missing_checkpoint")]
@@ -39,7 +39,7 @@ def main():
                             "output_root": f"results/experiment-c/grid/{config}/{arm}-seed{seed}",
                             "status": "planned" if model_status == "planned" else "blocked",
                             "blocker": "" if model_status == "planned" else "real gpt-small checkpoint and training entry point required",
-                            "estimated_gpu_hours": 0.5 if steps == 1000 else 1.0
+                            "estimated_gpu_hours": {1000: 0.5, 2000: 1.0, 3000: 1.5}[steps]
                         })
     out = ROOT / "GRID_CELLS.csv"
     with out.open("w", newline="") as f:
@@ -56,7 +56,7 @@ def main():
         "raw_samples_per_seed_arm": 300,
         "target_allocation_per_seed_arm": {"-5.0": 100, "-4.0": 100, "-3.0": 100},
         "planned_raw_samples_gpt_nano": 90000,
-        "estimated_gpu_hours_gpt_nano": 67.5,
+        "estimated_gpu_hours_gpt_nano": 135.0,
         "pairing_rule": "same seed, target allocation, split, steps, temperature, and sample budget for binary/continuous",
         "identity_key": "model x steps x temperature x seed x arm",
         "primary_ranking": "valid + novel + in-support + uncertainty gate, then predicted_log_sigma - 1.96 * uncertainty descending",
