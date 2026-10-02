@@ -1,0 +1,201 @@
+{
+  "columns": [
+    "source_row_index",
+    "Unnamed: 0.1",
+    "Unnamed: 0",
+    "trajectory_names",
+    "trajectory_id",
+    "htpmd_version",
+    "s3_bucket",
+    "s3_prefix",
+    "conductivity",
+    "li_diffusivity",
+    "tfsi_diffusivity",
+    "poly_diffusivity",
+    "mol_smiles",
+    "poly_smiles",
+    "transference_number",
+    "molality",
+    "structure",
+    "trajectory_reference",
+    "traj_size",
+    "num_atoms",
+    "num_li",
+    "trace_id_mass",
+    "sim_time",
+    "force_field",
+    "material_group",
+    "temperature",
+    "time_step",
+    "cation_raw_type",
+    "anion_raw_type",
+    "polymer_raw_type_range",
+    "polymer_solvate_types",
+    "salt_cation",
+    "salt_anion",
+    "folder",
+    "trajectory_reference.1",
+    "num_of_steps",
+    "mol_smiles_cleaned"
+  ],
+  "discordant_duplicate_groups_across_six_properties": 0,
+  "duplicate_smiles_groups": 0,
+  "duplicate_smiles_rows": 0,
+  "finite_and_domain_audit": {
+    "conductivity": {
+      "nonfinite": 0,
+      "nonpositive_for_log": 0,
+      "unique": 6024
+    },
+    "li_diffusivity": {
+      "nonfinite": 0,
+      "nonpositive_for_log": 0,
+      "unique": 6024
+    },
+    "molality": {
+      "nonfinite": 0,
+      "nonpositive_for_log": 0,
+      "unique": 1415
+    },
+    "poly_diffusivity": {
+      "nonfinite": 0,
+      "nonpositive_for_log": 0,
+      "unique": 6024
+    },
+    "tfsi_diffusivity": {
+      "nonfinite": 0,
+      "nonpositive_for_log": 0,
+      "unique": 6024
+    },
+    "transference_number": {
+      "nonfinite": 0,
+      "nonpositive_for_log": 0,
+      "unique": 6024
+    }
+  },
+  "required_source_fields": [
+    "conductivity",
+    "li_diffusivity",
+    "tfsi_diffusivity",
+    "poly_diffusivity",
+    "transference_number",
+    "molality"
+  ],
+  "rows": 6024,
+  "source": "/Users/yicao/Documents/ARC/PolyGen-reproduction/inputs/release-data/htpmd-trainset.csv",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "split": {
+    "method": "train_test_split stratified conductivity deciles",
+    "random_state": 20260923,
+    "test_rows": 1205,
+    "train_rows": 4819,
+    "train_test_source_row_overlap": 0
+  },
+  "train_only_property_summary": {
+    "log10_conductivity": {
+      "25%": -4.407278019093853,
+      "50%": -4.265342455699469,
+      "75%": -4.126013631840957,
+      "count": 4819.0,
+      "max": -3.295367776501,
+      "mean": -4.264425891666005,
+      "min": -5.160081677586512,
+      "std": 0.22227087848592791
+    },
+    "log10_li_diffusivity": {
+      "25%": -7.954725682192434,
+      "50%": -7.8139823318753105,
+      "75%": -7.675272258143177,
+      "count": 4819.0,
+      "max": -7.094446351771386,
+      "mean": -7.81351907354665,
+      "min": -8.471981862297648,
+      "std": 0.2053721409985638
+    },
+    "log10_poly_diffusivity": {
+      "25%": -8.040500542521809,
+      "50%": -7.8724811417622,
+      "75%": -7.65148888852885,
+      "count": 4819.0,
+      "max": -7.023364451105615,
+      "mean": -7.841397352547014,
+      "min": -8.552109831995198,
+      "std": 0.2582703165428797
+    },
+    "log10_tfsi_diffusivity": {
+      "25%": -7.768173304631502,
+      "50%": -7.619086363773874,
+      "75%": -7.450946238927026,
+      "count": 4819.0,
+      "max": -6.897721544963969,
+      "mean": -7.6066841985859535,
+      "min": -8.244747034981541,
+      "std": 0.21843358036967356
+    },
+    "molality": {
+      "25%": 1.3614425845626,
+      "50%": 1.42271800087406,
+      "75%": 1.46310574040759,
+      "count": 4819.0,
+      "max": 1.49934995682622,
+      "mean": 1.4127194163540582,
+      "min": 1.25452544965454,
+      "std": 0.058244482630112546
+    },
+    "transference_number": {
+      "25%": -0.09087539078716406,
+      "50%": 0.104787669147077,
+      "75%": 0.2507302336974535,
+      "count": 4819.0,
+      "max": 0.821687902605073,
+      "mean": 0.052511109071726104,
+      "min": -1.64186423613927,
+      "std": 0.28844979337635845
+    }
+  },
+  "train_only_quantiles": {
+    "log10_conductivity": {
+      "0.5": -4.265342455699469,
+      "0.65": -4.187384510157767,
+      "0.8": -4.0845183227718564,
+      "0.9": -3.987596508989849,
+      "0.95": -3.9051970933472324
+    },
+    "log10_li_diffusivity": {
+      "0.5": -7.8139823318753105,
+      "0.65": -7.7335917846974445,
+      "0.8": -7.636560540390871,
+      "0.9": -7.5418410043082975,
+      "0.95": -7.471377208901344
+    },
+    "log10_poly_diffusivity": {
+      "0.5": -7.8724811417622,
+      "0.65": -7.750600636380779,
+      "0.8": -7.600584691032773,
+      "0.9": -7.484114222744368,
+      "0.95": -7.400317160675647
+    },
+    "log10_tfsi_diffusivity": {
+      "0.5": -7.619086363773874,
+      "0.65": -7.522293635212653,
+      "0.8": -7.410629542127414,
+      "0.9": -7.3084372155361494,
+      "0.95": -7.23472857600954
+    },
+    "molality": {
+      "0.5": 1.42271800087406,
+      "0.65": 1.4486069037128402,
+      "0.8": 1.47031103841893,
+      "0.9": 1.4854370513862118,
+      "0.95": 1.4922948489294698
+    },
+    "transference_number": {
+      "0.5": 0.104787669147077,
+      "0.65": 0.19380685137677733,
+      "0.8": 0.2816215224181084,
+      "0.9": 0.35672826779760597,
+      "0.95": 0.4173650053129258
+    }
+  },
+  "unique_smiles": 6024
+}

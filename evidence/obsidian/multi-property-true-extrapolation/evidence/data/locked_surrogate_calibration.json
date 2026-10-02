@@ -1,0 +1,14 @@
+{
+  "status": "surrogate_only",
+  "rows": 3135,
+  "properties": [
+    "conductivity",
+    "li_diffusivity",
+    "tfsi_diffusivity",
+    "poly_diffusivity",
+    "transference_number",
+    "molality"
+  ],
+  "md_calibration": "unavailable_no_md",
+  "residual_definition": "log_sigma_MD - log_sigma_RF; unavailable because MD was not run"
+}

@@ -1,0 +1,12 @@
+{
+  "arm": "scalar_continuous",
+  "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/continuous-seed17/final.pt",
+  "elapsed_seconds": 0.007643222808837891,
+  "first_loss": null,
+  "last_loss": null,
+  "samples_per_cell": 100,
+  "seed": 17,
+  "steps": 0,
+  "temperature": 1.0,
+  "top_k": 40
+}

@@ -1,0 +1,6 @@
+metric,status,reason
+property_wise_frontier_crossing_rate,not_applicable_for_interpolation,All requested targets are constructed inside the train-support interpolation design; frontier crossing belongs to the separate extrapolation benchmark.
+joint_frontier_crossing_rate,not_applicable_for_interpolation,No extrapolation target is evaluated here.
+surrogate_calibration_on_locked_holdout,unavailable_in_current_candidate_package,This package freezes generation-time RF screening outputs; a separate locked-holdout calibration artifact is required before making calibration claims.
+md_confirmed_frontier_crossing,unavailable,Prediction-only contract; md_status is not_run for every candidate.
+residual_log_sigma_md_minus_log_sigma_rf,unavailable,No MD outcomes exist in this package.

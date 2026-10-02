@@ -1,0 +1,304 @@
+{
+  "status": "feasibility_audit_only",
+  "source": "/Users/yicao/Documents/ARC/PolyGen-reproduction/inputs/release-data/htpmd-trainset.csv",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "rows": 6024,
+  "columns": [
+    "Unnamed: 0.1",
+    "Unnamed: 0",
+    "trajectory_names",
+    "trajectory_id",
+    "htpmd_version",
+    "s3_bucket",
+    "s3_prefix",
+    "conductivity",
+    "li_diffusivity",
+    "tfsi_diffusivity",
+    "poly_diffusivity",
+    "mol_smiles",
+    "poly_smiles",
+    "transference_number",
+    "molality",
+    "structure",
+    "trajectory_reference",
+    "traj_size",
+    "num_atoms",
+    "num_li",
+    "trace_id_mass",
+    "sim_time",
+    "force_field",
+    "material_group",
+    "temperature",
+    "time_step",
+    "cation_raw_type",
+    "anion_raw_type",
+    "polymer_raw_type_range",
+    "polymer_solvate_types",
+    "salt_cation",
+    "salt_anion",
+    "folder",
+    "trajectory_reference.1",
+    "num_of_steps",
+    "mol_smiles_cleaned"
+  ],
+  "properties": {
+    "conductivity": {
+      "nonmissing": 6024,
+      "finite": 6024,
+      "unique": 6024,
+      "min": 6.9170087078404095e-06,
+      "max": 0.0005065615516805,
+      "quantiles_raw": {
+        "0.5": 5.42846879185799e-05,
+        "0.8": 8.232489800088225e-05,
+        "0.9": 0.00010291256276514,
+        "0.95": 0.000125287685124355,
+        "1.0": 0.0005065615516805
+      },
+      "transform": "log10_train_only",
+      "quantiles_transformed": {
+        "0.5": -4.265322655029296,
+        "0.8": -4.084468800285627,
+        "0.9": -3.987531610782325,
+        "0.95": -3.902091615809661,
+        "1.0": -3.295367776501
+      }
+    },
+    "li_diffusivity": {
+      "nonmissing": 6024,
+      "finite": 6024,
+      "unique": 6024,
+      "min": 3.37301395286296e-09,
+      "max": 8.04551128302124e-08,
+      "quantiles_raw": {
+        "0.5": 1.534653383351095e-08,
+        "0.8": 2.304420718592285e-08,
+        "0.9": 2.8509511466426258e-08,
+        "0.95": 3.3336245996715644e-08,
+        "1.0": 8.04551128302124e-08
+      },
+      "transform": "log10_train_only",
+      "quantiles_transformed": {
+        "0.5": -7.8139896988788795,
+        "0.8": -7.637438263520038,
+        "0.9": -7.545010229020908,
+        "0.95": -7.477083310169735,
+        "1.0": -7.094446351771386
+      }
+    },
+    "tfsi_diffusivity": {
+      "nonmissing": 6024,
+      "finite": 6024,
+      "unique": 6024,
+      "min": 5.691843691080221e-09,
+      "max": 1.26554751395959e-07,
+      "quantiles_raw": {
+        "0.5": 2.4058453799044903e-08,
+        "0.8": 3.883200890275641e-08,
+        "0.9": 4.897411052707784e-08,
+        "0.95": 5.7388153919398204e-08,
+        "1.0": 1.26554751395959e-07
+      },
+      "transform": "log10_train_only",
+      "quantiles_transformed": {
+        "0.5": -7.618732287582006,
+        "0.8": -7.410810144101791,
+        "0.9": -7.310033444065601,
+        "0.95": -7.241177745801784,
+        "1.0": -6.897721544963969
+      }
+    },
+    "poly_diffusivity": {
+      "nonmissing": 6024,
+      "finite": 6024,
+      "unique": 6024,
+      "min": 2.80472424046274e-09,
+      "max": 9.476229036510301e-08,
+      "quantiles_raw": {
+        "0.5": 1.339368461745305e-08,
+        "0.8": 2.4987243122585962e-08,
+        "0.9": 3.265684232076234e-08,
+        "0.95": 3.9869891120060555e-08,
+        "1.0": 9.476229036510301e-08
+      },
+      "transform": "log10_train_only",
+      "quantiles_transformed": {
+        "0.5": -7.8730999480399415,
+        "0.8": -7.60228165766007,
+        "0.9": -7.486025895545691,
+        "0.95": -7.399354953112582,
+        "1.0": -7.023364451105615
+      }
+    },
+    "transference_number": {
+      "nonmissing": 6024,
+      "finite": 6024,
+      "unique": 6024,
+      "min": -1.64186423613927,
+      "max": 0.821687902605073,
+      "quantiles_raw": {
+        "0.5": 0.10569125908079549,
+        "0.8": 0.28229567834567143,
+        "0.9": 0.35652640319590695,
+        "0.95": 0.41914107655460164,
+        "1.0": 0.821687902605073
+      },
+      "transform": "raw_train_only",
+      "quantiles_transformed": {
+        "0.5": 0.10569125908079549,
+        "0.8": 0.28229567834567143,
+        "0.9": 0.35652640319590695,
+        "0.95": 0.41914107655460164,
+        "1.0": 0.821687902605073
+      }
+    },
+    "molality": {
+      "nonmissing": 6024,
+      "finite": 6024,
+      "unique": 1415,
+      "min": 1.25452544965454,
+      "max": 1.49934995682622,
+      "quantiles_raw": {
+        "0.5": 1.42238498858124,
+        "0.8": 1.4679180030115961,
+        "0.9": 1.48543096734384,
+        "0.95": 1.4922948489294698,
+        "1.0": 1.49934995682622
+      },
+      "transform": "raw_train_only",
+      "quantiles_transformed": {
+        "0.5": 1.42238498858124,
+        "0.8": 1.4679180030115961,
+        "0.9": 1.48543096734384,
+        "0.95": 1.4922948489294698,
+        "1.0": 1.49934995682622
+      }
+    }
+  },
+  "metadata": {
+    "force_field": {
+      "unique": 1,
+      "missing": 0
+    },
+    "temperature": {
+      "unique": 1,
+      "missing": 0
+    },
+    "sim_time": {
+      "unique": 1,
+      "missing": 0
+    },
+    "material_group": {
+      "unique": 1,
+      "missing": 0
+    },
+    "salt_cation": {
+      "unique": 1,
+      "missing": 0
+    },
+    "salt_anion": {
+      "unique": 1,
+      "missing": 0
+    },
+    "trajectory_id": {
+      "unique": 6024,
+      "missing": 0
+    },
+    "structure": {
+      "unique": 6024,
+      "missing": 0
+    },
+    "mol_smiles": {
+      "unique": 6024,
+      "missing": 0
+    }
+  },
+  "existing_multi_property_model": false,
+  "definitive_generation_status": "not_run",
+  "joint_q80_intersection": {
+    "rule": "all six transformed properties <= full-source Q80",
+    "rows": 2494,
+    "fraction": 0.41401062416998674,
+    "property_q80_transformed": {
+      "conductivity": -4.084468800285627,
+      "li_diffusivity": -7.637438263520038,
+      "tfsi_diffusivity": -7.410810144101791,
+      "poly_diffusivity": -7.60228165766007,
+      "transference_number": 0.28229567834567143,
+      "molality": 1.4679180030115961
+    }
+  },
+  "asset_constraints": [
+    "Existing PolyGen conditioning implementation is scalar conductivity-only.",
+    "No released six-dimensional checkpoint exists.",
+    "No released joint surrogate/GNN pipeline exists.",
+    "The definitive multi-property generation experiment therefore remains unrun; this file does not substitute for it."
+  ],
+  "environment": {
+    "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "1.26.4",
+    "pandas": "2.0.3"
+  },
+  "git_status": [
+    " M GRID_CELLS.csv",
+    " M GRID_DESIGN.md",
+    " M GRID_MANIFEST.json",
+    " M GRID_PLAN.json",
+    " M results/experiment-c/grid/GRID_RESULTS_AND_DISCUSSION.md",
+    " M results/experiment-c/grid/analysis/grid_analysis_summary.json",
+    " M results/experiment-c/grid/analysis/grid_arm_seed_metrics.csv",
+    " M results/experiment-c/grid/analysis/grid_arm_seed_target_metrics.csv",
+    " M results/experiment-c/grid/analysis/grid_file_audit.csv",
+    " M results/experiment-c/grid/analysis/grid_paired_contrasts.csv",
+    " M results/experiment-c/grid/analysis/grid_pareto_availability.csv",
+    " M results/experiment-c/grid/analysis/grid_raw_with_identity.csv",
+    " M results/experiment-c/grid/analysis/grid_steps_summary.csv",
+    " M results/experiment-c/grid/analysis/grid_top50_primary.csv",
+    " M results/experiment-c/grid/analysis/paired_hit_effect_steps_temp1.0.png",
+    " M results/experiment-c/grid/analysis/steps_1000_2000_3000_temp1.0.png",
+    " M results/experiment-c/grid/figures/panel_a_grid_response.pdf",
+    " M results/experiment-c/grid/figures/panel_a_grid_response.svg",
+    " M results/experiment-c/grid/figures/panel_b_quality_metrics.pdf",
+    " M results/experiment-c/grid/figures/panel_b_quality_metrics.svg",
+    " M results/experiment-c/grid/figures/panel_c_representative_structures.pdf",
+    " M results/experiment-c/grid/figures/panel_d_property_distributions.pdf",
+    " M results/experiment-c/grid/figures/panel_d_property_distributions.svg",
+    " M scripts/build_grid_plan.py",
+    " M scripts/render_generation_grid_nature.py",
+    "?? MULTI_PROPERTY_BENCHMARK_CONTRACT.md",
+    "?? results/experiment-c/grid/figures/polygen_generation_grid_at_a_glance.pdf",
+    "?? results/experiment-c/grid/figures/polygen_generation_grid_at_a_glance.png",
+    "?? results/experiment-c/grid/figures/polygen_generation_grid_at_a_glance.svg",
+    "?? results/experiment-c/grid/gpt-nano_steps3000_temp0.8.log",
+    "?? results/experiment-c/grid/gpt-nano_steps3000_temp0.8.pid",
+    "?? results/experiment-c/grid/gpt-nano_steps3000_temp0.8/",
+    "?? results/experiment-c/grid/gpt-nano_steps3000_temp1.2/",
+    "?? results/extrapolation/",
+    "?? results/interpolation_run.log",
+    "?? results/upper-tail/run.log",
+    "?? results/upper-tail/runs/binary-seed17/final.pt",
+    "?? results/upper-tail/runs/binary-seed202/final.pt",
+    "?? results/upper-tail/runs/binary-seed303/final.pt",
+    "?? results/upper-tail/runs/binary-seed42/final.pt",
+    "?? results/upper-tail/runs/binary-seed907/final.pt",
+    "?? results/upper-tail/runs/continuous-seed17/final.pt",
+    "?? results/upper-tail/runs/continuous-seed202/final.pt",
+    "?? results/upper-tail/runs/continuous-seed303/final.pt",
+    "?? results/upper-tail/runs/continuous-seed42/final.pt",
+    "?? results/upper-tail/runs/continuous-seed907/final.pt",
+    "?? results/upper-tail/runs/unconditional_reranking-seed17/final.pt",
+    "?? results/upper-tail/runs/unconditional_reranking-seed202/final.pt",
+    "?? results/upper-tail/runs/unconditional_reranking-seed303/final.pt",
+    "?? results/upper-tail/runs/unconditional_reranking-seed42/final.pt",
+    "?? results/upper-tail/runs/unconditional_reranking-seed907/final.pt",
+    "?? scripts/audit_multi_property_assets.py",
+    "?? scripts/render_atlas_composite_simple.py",
+    "?? scripts/render_extrapolation_publication.py",
+    "?? scripts/render_full_rf_svg.py",
+    "?? scripts/render_hit_definition_png.py",
+    "?? scripts/render_hit_definition_svg.py",
+    "?? scripts/run_extrapolation_benchmark.py",
+    "?? scripts/verify_extrapolation.py"
+  ]
+}

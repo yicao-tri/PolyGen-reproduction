@@ -1,0 +1,63 @@
+{
+  "status": "complete_prediction_phase_md_not_run",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "train_rows": 2494,
+  "source_rows": 6024,
+  "candidate_rows": 8000,
+  "metrics_rows": 80,
+  "selected_review_rows": 0,
+  "binary_status": "degenerate_single_class",
+  "pairing_audit": {
+    "source_hash_matches_frozen": true,
+    "joint_training_rows_match_frozen": true,
+    "all_locked_rows_excluded_from_train": true,
+    "all_arm_seed_target_cells_present": true,
+    "all_cells_n100": true,
+    "candidate_rows_expected": true,
+    "unconditional_raw_pools_expected": true,
+    "no_md_started": true,
+    "binary_training_single_class": true,
+    "locked_audit_not_fit": true,
+    "all_run_exit_codes_zero": true,
+    "locked_and_train_row_sets_disjoint": true
+  },
+  "unsupported_joint_cells": [
+    {
+      "target_label": "Q80_boundary",
+      "arm": "all_arms",
+      "property": "__joint__",
+      "target_value_transformed": NaN,
+      "joint_train_max_transformed": NaN,
+      "status": "unsupported_joint_cell",
+      "reason": "no claim of joint support without a source row at the vector; Q80-Q95 vectors are locked post-run queries"
+    },
+    {
+      "target_label": "Q85",
+      "arm": "all_arms",
+      "property": "__joint__",
+      "target_value_transformed": NaN,
+      "joint_train_max_transformed": NaN,
+      "status": "unsupported_joint_cell",
+      "reason": "no claim of joint support without a source row at the vector; Q80-Q95 vectors are locked post-run queries"
+    },
+    {
+      "target_label": "Q90",
+      "arm": "all_arms",
+      "property": "__joint__",
+      "target_value_transformed": NaN,
+      "joint_train_max_transformed": NaN,
+      "status": "unsupported_joint_cell",
+      "reason": "no claim of joint support without a source row at the vector; Q80-Q95 vectors are locked post-run queries"
+    },
+    {
+      "target_label": "Q95",
+      "arm": "all_arms",
+      "property": "__joint__",
+      "target_value_transformed": NaN,
+      "joint_train_max_transformed": NaN,
+      "status": "unsupported_joint_cell",
+      "reason": "no claim of joint support without a source row at the vector; Q80-Q95 vectors are locked post-run queries"
+    }
+  ],
+  "md_status": "not_run"
+}

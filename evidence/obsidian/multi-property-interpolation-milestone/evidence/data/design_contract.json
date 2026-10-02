@@ -1,0 +1,48 @@
+{
+  "benchmark": "multi-property implicit-conditioning interpolation",
+  "region": "interpolation",
+  "frozen_before_definitive_run": true,
+  "primary_question": "Does a jointly normalized six-property condition improve support-aware controllability over scalar conductivity conditioning, binary conductivity control, and unconditional generation plus frozen-surrogate reranking on matched interpolation targets?",
+  "primary_estimand": "paired seed-by-target-cell difference in joint strict-hit rate for multi_continuous versus scalar_continuous, with binary_conductivity and unconditional_reranking as prespecified controls",
+  "interpretation_boundary": "Prediction-only evidence under the released HTP-MD representation, frozen train-only transforms/scalers, Morgan-fingerprint RF verifiers, and PolyGen gpt-nano sampling; no MD or experimental claim.",
+  "source": {
+    "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/inputs/release-data/htpmd-trainset.csv",
+    "row_identity_preserved": true,
+    "split": "same stratified conductivity-decile train/test split as the historical interpolation benchmark",
+    "hash_policy": "sha256 recorded in source_audit.json and frozen_manifest.json"
+  },
+  "properties": {
+    "log10_conductivity": {"source_field": "conductivity", "transform": "log10"},
+    "log10_li_diffusivity": {"source_field": "li_diffusivity", "transform": "log10"},
+    "log10_tfsi_diffusivity": {"source_field": "tfsi_diffusivity", "transform": "log10"},
+    "log10_poly_diffusivity": {"source_field": "poly_diffusivity", "transform": "log10"},
+    "transference_number": {"source_field": "transference_number", "transform": "raw"},
+    "molality": {"source_field": "molality", "transform": "raw"}
+  },
+  "target_construction": {
+    "marginal_probes": "For each property and Q50/Q65/Q80, replace only that property's train empirical quantile and retain the other five coordinates at their train medians; each vector is audited in the fitted train-only joint support model.",
+    "coherent_joint_targets": "Three deterministic vectors selected from train-only empirical-copula rows at Q50/Q65/Q80 of the row-wise mean marginal percentile score. This preserves observed cross-property dependence and is not an independent quantile Cartesian product.",
+    "forbidden": "Independent Cartesian products of six marginal quantiles are not generated or treated as joint targets."
+  },
+  "arms": {
+    "multi_continuous": "six-dimensional train-only normalized condition vector through one learned prefix embedding",
+    "scalar_continuous": "historical scalar conductivity continuous prefix; only the target log10 conductivity is passed",
+    "binary_conductivity": "historical fixed high/low conductivity interface; only the binary label is passed and the target vector is never passed",
+    "unconditional_reranking": "constant-zero condition generator with a frozen, separate six-property RF reranking step; target information enters only after generation"
+  },
+  "pairing": {
+    "seeds": [17, 42, 202, 303, 907],
+    "samples_per_cell": 100,
+    "unit": "seed x arm x target cell",
+    "primary_sign": "multi_continuous minus scalar_continuous",
+    "matched_settings": {"optimizer_steps": 1000, "batch_size": 64, "learning_rate": 0.0005, "temperature": 1.0, "top_k": 40, "block_size": 64, "prefix_length": 5, "rf_estimators": 300, "rf_random_state": 20260923},
+    "no_result_dependent_reruns": true
+  },
+  "metrics": {
+    "primary": ["joint_strict_hit_rate", "joint_target_rmse"],
+    "secondary": ["validity", "novelty", "uniqueness", "structural_support", "joint_target_support", "per_property_target_error", "per_property_rf_uncertainty", "failure_rate", "candidate_wise_monotonicity"]
+  },
+  "md_policy": "MD is explicitly not run in this prediction phase. Any candidate table is a proposed review table only.",
+  "historical_results_policy": "Do not modify sources/ or results/interpolation, results/upper-tail, or results/extrapolation. All outputs belong under results/multi-property/interpolation/.",
+  "expected_outputs": ["source_audit.json", "frozen_manifest.json", "train_rows.csv", "test_rows.csv", "transform_scaler_manifest.json", "target_cells.csv", "candidate_predictions.csv", "metrics_by_cell.csv", "paired_contrasts.csv", "unsupported_cells.csv", "pairing_leakage_audit.json", "run_manifest.json", "run_exit_codes.csv", "REPORT.md", "publication/*.png", "publication/*.svg", "publication/FIGURE_CAPTIONS.md"]
+}

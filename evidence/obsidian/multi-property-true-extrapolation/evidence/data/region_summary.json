@@ -1,0 +1,21 @@
+{
+  "status": "complete_prediction_phase_md_not_run",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "train_rows": 2494,
+  "source_rows": 6024,
+  "candidate_rows": 8000,
+  "metrics_rows": 80,
+  "selected_review_rows": 0,
+  "pairing_audit": {
+    "source_hash_matches": true,
+    "joint_training_rows": true,
+    "all_cells": true,
+    "all_cells_n100": true,
+    "candidate_rows": true,
+    "unconditional_pools": true,
+    "no_md": true,
+    "locked_rows_used_for_fit": false,
+    "all_exit_codes_zero": true
+  },
+  "md_status": "not_run"
+}

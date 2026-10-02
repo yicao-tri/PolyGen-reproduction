@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "checks": {
+    "source_hash_matches": true,
+    "joint_training_rows": true,
+    "all_cells": true,
+    "all_cells_n100": true,
+    "candidate_rows": true,
+    "unconditional_pools": true,
+    "no_md": true,
+    "locked_rows_used_for_fit": false,
+    "all_exit_codes_zero": true
+  },
+  "arms": [
+    "multi_continuous",
+    "scalar_continuous",
+    "binary_conductivity",
+    "unconditional_reranking"
+  ],
+  "seeds": [
+    17,
+    42,
+    202,
+    303,
+    907
+  ],
+  "target_labels": [
+    "Q90",
+    "Q100",
+    "train_max_plus_0.25",
+    "train_max_plus_0.50"
+  ]
+}
