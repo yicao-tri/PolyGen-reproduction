@@ -1,0 +1,16 @@
+{
+  "arm_internal": "unconditional",
+  "seed": 907,
+  "steps": 1000,
+  "temperature": 1.0,
+  "training_rows": 4819,
+  "checkpoint_origin": "reused_existing_extrapolation_checkpoint",
+  "first_loss": 6.372209548950195,
+  "last_loss": 0.2826341390609741,
+  "elapsed_seconds": 52.245665073394775,
+  "checkpoint_sha256": "57e28ce88bde3d5e74813814ef55c5c32bd4c35024c262b522049fb95ea5a68c",
+  "arm": "unconditional_reranking",
+  "reported_candidates": 400,
+  "raw_generation_budget": 400,
+  "run_exit_code": 0
+}
