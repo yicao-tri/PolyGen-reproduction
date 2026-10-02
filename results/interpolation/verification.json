@@ -1,0 +1,33 @@
+{
+  "source_hash_matches_manifest": true,
+  "source_hash": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "split_train_rows_match": true,
+  "split_test_rows_match": true,
+  "split_row_overlap_absent": true,
+  "targets_are_q50_q65_q80": true,
+  "matched_seed_manifest": true,
+  "matched_budget_manifest": true,
+  "candidate_schema_complete": true,
+  "active_candidate_rows": true,
+  "all_active_cells_present": true,
+  "unconditional_blocked_explicit": true,
+  "unconditional_not_fabricated": true,
+  "overall_pass": true,
+  "required_checks": [
+    "source_hash_matches_manifest",
+    "split_train_rows_match",
+    "split_test_rows_match",
+    "split_row_overlap_absent",
+    "targets_are_q50_q65_q80",
+    "matched_seed_manifest",
+    "matched_budget_manifest",
+    "candidate_schema_complete",
+    "active_candidate_rows",
+    "all_active_cells_present",
+    "unconditional_blocked_explicit",
+    "unconditional_not_fabricated"
+  ],
+  "unsupported_cells": [],
+  "md_started": false,
+  "claim_boundary": "surrogate-only interpolation evidence; no MD or experimental conductivity claim"
+}

@@ -2,6 +2,8 @@
 
 Status: prediction phase complete for continuous and binary arms; MD not run.
 
+Acceptance audit: [`ACCEPTANCE_AUDIT.md`](ACCEPTANCE_AUDIT.md), with machine-readable checks in [`verification.json`](verification.json). The audit passes all required interpolation gates. The unconditional+rerranking arm remains explicitly blocked and is not represented by proxy candidates.
+
 The frozen targets are Q50 = -4.26534, Q65 = -4.18738, and Q80 = -4.08452 in log10 conductivity. Five matched seeds (17, 42, 202, 303, 907), 100 candidates per arm/seed/target, identical decoding settings, and the existing frozen RF verifier were used.
 
 Machine-readable artifacts:
@@ -10,6 +12,8 @@ Machine-readable artifacts:
 - `candidate_predictions.csv`: one row per candidate with prediction, uncertainty, support, novelty, filter decision, and strict-hit flag.
 - `metrics_by_cell.csv`: validity, novelty, uniqueness, support, uncertainty, target error, strict-hit, and failure metrics.
 - `summary.json`: verifier metrics and monotonicity summaries.
+- `metrics_complete.csv`: audit-complete metrics including valid uniqueness, diversity, failure, unsupported-cell flag, and acquisition status.
+- `paired_seed_contrasts.csv`: paired continuous-minus-binary seed-level contrasts.
 
 Across the five seeds, continuous strict-hit rates by target were approximately 0.50, 0.53, and 0.55 for Q50/Q65/Q80; binary rates were approximately 0.48, 0.51, and 0.52. Continuous target MAE was approximately 0.070, 0.109, and 0.166; binary was approximately 0.109, 0.114, and 0.201. These are surrogate-screening results only and are not MD or experimental conductivity evidence.
 

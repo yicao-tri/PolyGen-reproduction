@@ -1,0 +1,8 @@
+{
+  "arm": "unconditional_reranking",
+  "status": "blocked",
+  "reason": "blocked: no released unconditional generator checkpoint in this repository; no surrogate-ranked proxy is reported as generation evidence.",
+  "rows": 0,
+  "reported_as_generation_evidence": false,
+  "required_followup": "supply a released unconditional generator checkpoint or rerun a matched unconditional arm"
+}

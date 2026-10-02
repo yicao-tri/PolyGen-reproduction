@@ -32,6 +32,9 @@ def main():
     selected = pd.read_csv(OUT / "candidate_selection_for_md.csv")
     train = pd.read_csv(OUT / "train_rows.csv")
     locked = pd.read_csv(OUT / "locked_tail_rows.csv")
+    residual = pd.read_csv(OUT / "residual_calibration_by_cell.csv")
+    paired_seed = pd.read_csv(OUT / "paired_seed_summary.csv")
+    manager = json.loads((OUT / "manager_acceptance_summary.json").read_text())
     required = {
         "candidate_id", "structure", "arm", "seed", "target_label", "target", "validity", "novelty",
         "uniqueness", "support", "rf_prediction", "rf_uncertainty", "gnn_prediction", "gnn_uncertainty",
@@ -49,6 +52,9 @@ def main():
         "locked_rows_excluded_from_train": bool((locked.log_sigma > manifest["nominal_q80"]).all()),
         "locked_train_smiles_disjoint": len(set(train.mol_smiles) & set(locked.mol_smiles)) == 0,
         "all_required_candidate_columns": required.issubset(candidates.columns),
+        "metrics_have_explicit_residual_calibration_status": {"residual_mean", "residual_sd", "residual_n", "residual_status", "calibration_reference", "calibration_status"}.issubset(metrics.columns),
+        "residual_calibration_has_all_cells": len(residual) == len(ARMS) * len(SEEDS) * len(TARGETS) and bool((residual.residual_status == "not_estimable_md_not_run").all()),
+        "paired_seed_summary_has_all_seeds": len(paired_seed) == len(SEEDS) and set(paired_seed.seed) == set(SEEDS),
         "candidate_ids_unique": bool(candidates.candidate_id.is_unique),
         "candidate_structures_present": bool((candidates.structure.fillna("").astype(str) == candidates.smiles.fillna("").astype(str)).all()),
         "all_arm_seed_target_cells": set(map(tuple, metrics[["arm", "seed", "target_label"]].drop_duplicates().to_numpy())) == {(a, s, t) for a in ARMS for s in SEEDS for t in TARGETS},
@@ -67,10 +73,12 @@ def main():
         "proposed_md_is_not_md_evidence": bool((selected.md_status == "not_run_proposed_only").all()) if len(selected) else True,
         "all_png_and_svg_figures_present": all((OUT / "publication" / f"{stem}.{ext}").exists() and (OUT / "publication" / f"{stem}.{ext}").stat().st_size > 0 for stem in figure_stems for ext in ("png", "svg")),
         "figure_caption_present": (OUT / "publication/FIGURE_CAPTIONS.md").exists(),
+        "manager_summary_prediction_phase_pass": manager["manager_acceptance_status"] == "PASS_PREDICTION_PHASE_ONLY",
+        "manager_summary_md_separated": manager["physical_extrapolation_claim_status"] == "NOT_ASSESSED_MD_NOT_RUN",
         "historical_manifests_not_overwritten_by_run": True,
     }
     artifacts = {}
-    for path in [OUT / "design_contract.json", OUT / "frozen_manifest.json", OUT / "candidate_predictions.csv", OUT / "metrics_by_cell.csv", OUT / "paired_contrasts.csv", OUT / "region_summary.json", OUT / "pairing_acceptance_audit.json"]:
+    for path in [OUT / "design_contract.json", OUT / "frozen_manifest.json", OUT / "candidate_predictions.csv", OUT / "metrics_by_cell.csv", OUT / "residual_calibration_by_cell.csv", OUT / "paired_contrasts.csv", OUT / "paired_seed_summary.csv", OUT / "region_summary.json", OUT / "pairing_acceptance_audit.json", OUT / "manager_acceptance_summary.json"]:
         artifacts[str(path.relative_to(ROOT))] = sha256(path)
     for stem in figure_stems:
         for ext in ("png", "svg"):

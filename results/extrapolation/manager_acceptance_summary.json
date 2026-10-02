@@ -1,0 +1,195 @@
+{
+  "manager_acceptance_status": "PASS_PREDICTION_PHASE_ONLY",
+  "physical_extrapolation_claim_status": "NOT_ASSESSED_MD_NOT_RUN",
+  "scientific_question": "Above train_max with Q80-Q100 locked, does continuous conditioning promote, suppress, or only exploit the surrogate?",
+  "current_evidence_interpretation": "Continuous produces valid and strict-hit candidates near Q90 and train_max+0.25, but no arm produces an RF-gated predicted frontier crossing. This supports near-boundary surrogate control, not validated extrapolation. Continuous-versus-binary physical superiority remains unresolved because the binary arm is a prespecified degenerate negative control and MD was not run.",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "actual_train_max": -4.084499110675755,
+  "targets": [
+    {
+      "label": "Q90",
+      "definition": "full-source Q90",
+      "value": -3.987531610782325,
+      "quantile": 0.9
+    },
+    {
+      "label": "Q100",
+      "definition": "full-source maximum",
+      "value": -3.295367776501,
+      "quantile": 1.0
+    },
+    {
+      "label": "train_max_plus_0.25",
+      "definition": "actual inclusive train_max + 0.25",
+      "value": -3.834499110675755,
+      "quantile": null
+    },
+    {
+      "label": "train_max_plus_0.50",
+      "definition": "actual inclusive train_max + 0.50",
+      "value": -3.584499110675755,
+      "quantile": null
+    }
+  ],
+  "counts": {
+    "runs": 15,
+    "cells": 60,
+    "candidate_rows": 6000,
+    "blocked_binary_cells": 20,
+    "unsupported_unconditional_cells": 6,
+    "proposed_md_rows": 200
+  },
+  "locked_tail_calibration": {
+    "training_rows": 4819,
+    "training_max_log10_sigma": -4.084499110675755,
+    "locked_tail_rows_audited": 1205,
+    "locked_tail_rf_mae": 0.31030394640336734,
+    "locked_tail_rf_rmse": 0.3298884904290948,
+    "locked_tail_rf_residual_mean": 0.31030394640336734,
+    "locked_tail_rf_residual_sd": 0.11201915230511378,
+    "audit_is_post_run_only": true
+  },
+  "gates": [
+    {
+      "gate": "source_hash",
+      "status": "PASS",
+      "evidence": "verification.json:source_hash_matches_manifest"
+    },
+    {
+      "gate": "Q80_locked_split_and_actual_train_max",
+      "status": "PASS",
+      "evidence": "verification.json:train_rows_are_q80_only + locked_rows_excluded_from_train"
+    },
+    {
+      "gate": "required_targets",
+      "status": "PASS",
+      "evidence": "frozen_manifest.json:Q90,Q100,train_max_plus_0.25,train_max_plus_0.50"
+    },
+    {
+      "gate": "matched_three_arm_seed_budget",
+      "status": "PASS",
+      "evidence": "15 runs, 60 cells, 100 candidates/cell, 400 unconditional raw pool/seed"
+    },
+    {
+      "gate": "candidate_schema_and_provenance",
+      "status": "PASS",
+      "evidence": "verification.json:required columns, unique IDs and provenance"
+    },
+    {
+      "gate": "binary_negative_control",
+      "status": "PASS_WITH_BLOCKED_CELLS",
+      "evidence": "binary_status=degenerate_single_class; 20 cells explicitly blocked"
+    },
+    {
+      "gate": "unsupported_cells",
+      "status": "PASS",
+      "evidence": "unsupported_cells.csv: 26 explicit rows"
+    },
+    {
+      "gate": "paired_seed_contrast",
+      "status": "PASS",
+      "evidence": "paired_contrasts.csv + paired_seed_summary.csv; descriptive, no independent-candidate inference"
+    },
+    {
+      "gate": "residual_and_calibration_reporting",
+      "status": "PASS_WITH_MD_TODO",
+      "evidence": "residual_calibration_by_cell.csv + locked_tail_verifier_audit.csv; generated residual not estimable before MD"
+    },
+    {
+      "gate": "surrogate_only_vs_md_separation",
+      "status": "PASS",
+      "evidence": "region_summary.json: md_evidence.status=not_run"
+    },
+    {
+      "gate": "figure_png_svg_provenance",
+      "status": "PASS",
+      "evidence": "verification.json artifact_sha256 + publication/FIGURE_CAPTIONS.md"
+    },
+    {
+      "gate": "prediction_phase_acceptance",
+      "status": "PASS",
+      "evidence": "verification.json and pairing_acceptance_audit.json both pass"
+    },
+    {
+      "gate": "MD_confirmed_extrapolation_claim",
+      "status": "NOT_ASSESSED",
+      "evidence": "MD explicitly out of scope; no physical frontier-crossing claim permitted"
+    }
+  ],
+  "unsupported_cells_grouped": {
+    "binary_blocked": {
+      "seeds": [
+        17,
+        42,
+        202,
+        303,
+        907
+      ],
+      "targets": [
+        "Q90",
+        "Q100",
+        "train_max_plus_0.25",
+        "train_max_plus_0.50"
+      ],
+      "reason": "fixed -4.0 high/low cutoff becomes single-class after Q80 truncation"
+    },
+    "unconditional_unsupported": {
+      "cells": [
+        {
+          "seed": 17,
+          "target_label": "train_max_plus_0.50"
+        },
+        {
+          "seed": 42,
+          "target_label": "train_max_plus_0.50"
+        },
+        {
+          "seed": 202,
+          "target_label": "train_max_plus_0.50"
+        },
+        {
+          "seed": 303,
+          "target_label": "train_max_plus_0.50"
+        },
+        {
+          "seed": 907,
+          "target_label": "train_max_plus_0.25"
+        },
+        {
+          "seed": 907,
+          "target_label": "train_max_plus_0.50"
+        }
+      ],
+      "reason": "no valid generated candidate"
+    }
+  },
+  "md_todo": {
+    "status": "pending_review_and_explicit_authorization",
+    "candidate_table": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/candidate_selection_for_md.csv",
+    "selection_rows": 200,
+    "required_future_fields": [
+      "build_success",
+      "force_field_coverage",
+      "replica_status",
+      "md_log_sigma",
+      "residual_md_minus_rf"
+    ],
+    "rule": "Do not interpret surrogate frontier crossings as MD evidence; run symmetric continuous/binary budgets only after review."
+  },
+  "evidence_paths": {
+    "design_contract": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/design_contract.json",
+    "frozen_manifest": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/frozen_manifest.json",
+    "candidate_predictions": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/candidate_predictions.csv",
+    "metrics_by_cell": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/metrics_by_cell.csv",
+    "residual_calibration_by_cell": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/residual_calibration_by_cell.csv",
+    "paired_contrasts": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/paired_contrasts.csv",
+    "paired_seed_summary": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/paired_seed_summary.csv",
+    "unsupported_cells": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/unsupported_cells.csv",
+    "verification": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/verification.json",
+    "figures": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/publication"
+  },
+  "upstream_audits": {
+    "pairing_acceptance_audit": "pass",
+    "verification": "pass"
+  }
+}
