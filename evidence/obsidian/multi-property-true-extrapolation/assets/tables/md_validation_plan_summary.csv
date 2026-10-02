@@ -1,0 +1,7 @@
+arm,status,slots
+binary_conductivity,planned_not_run,6
+binary_conductivity,unsupported,6
+multi_continuous,planned_not_run,12
+scalar_continuous,planned_not_run,12
+unconditional_reranking,planned_not_run,9
+unconditional_reranking,unsupported,3

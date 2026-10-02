@@ -1,0 +1,193 @@
+{
+  "benchmark": "multi-property implicit-conditioning upper-tail",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "script": "/Users/yicao/Documents/ARC/PolyGen-reproduction/scripts/multi_property_upper-tail.py",
+  "script_sha256": "7adfc202c4b5f2da3895bb9a432de96b983917b477227eafb3413d996e2062b4",
+  "repository_commit": "3e2e707d4db1da26e395c595e6860803f690561c",
+  "repository_dirty_tree_at_run": true,
+  "dirty_tree_entries_count": 70,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "torch": "2.0.1",
+  "seeds": [
+    17,
+    42,
+    202,
+    303,
+    907
+  ],
+  "arms": [
+    "multi_continuous",
+    "scalar_continuous",
+    "binary_conductivity",
+    "unconditional_reranking"
+  ],
+  "steps": 1000,
+  "samples_per_target_cell": 100,
+  "output_root": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail",
+  "md_status": "not_run",
+  "run_exit_codes": [
+    {
+      "arm": "multi_continuous",
+      "seed": 17,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/multi_continuous-seed17/final.pt"
+    },
+    {
+      "arm": "scalar_continuous",
+      "seed": 17,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/scalar_continuous-seed17/final.pt"
+    },
+    {
+      "arm": "binary_conductivity",
+      "seed": 17,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/binary_conductivity-seed17/final.pt"
+    },
+    {
+      "arm": "unconditional_reranking",
+      "seed": 17,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/unconditional_reranking-seed17/final.pt"
+    },
+    {
+      "arm": "multi_continuous",
+      "seed": 42,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/multi_continuous-seed42/final.pt"
+    },
+    {
+      "arm": "scalar_continuous",
+      "seed": 42,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/scalar_continuous-seed42/final.pt"
+    },
+    {
+      "arm": "binary_conductivity",
+      "seed": 42,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/binary_conductivity-seed42/final.pt"
+    },
+    {
+      "arm": "unconditional_reranking",
+      "seed": 42,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/unconditional_reranking-seed42/final.pt"
+    },
+    {
+      "arm": "multi_continuous",
+      "seed": 202,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/multi_continuous-seed202/final.pt"
+    },
+    {
+      "arm": "scalar_continuous",
+      "seed": 202,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/scalar_continuous-seed202/final.pt"
+    },
+    {
+      "arm": "binary_conductivity",
+      "seed": 202,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/binary_conductivity-seed202/final.pt"
+    },
+    {
+      "arm": "unconditional_reranking",
+      "seed": 202,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/unconditional_reranking-seed202/final.pt"
+    },
+    {
+      "arm": "multi_continuous",
+      "seed": 303,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/multi_continuous-seed303/final.pt"
+    },
+    {
+      "arm": "scalar_continuous",
+      "seed": 303,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/scalar_continuous-seed303/final.pt"
+    },
+    {
+      "arm": "binary_conductivity",
+      "seed": 303,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/binary_conductivity-seed303/final.pt"
+    },
+    {
+      "arm": "unconditional_reranking",
+      "seed": 303,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/unconditional_reranking-seed303/final.pt"
+    },
+    {
+      "arm": "multi_continuous",
+      "seed": 907,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/multi_continuous-seed907/final.pt"
+    },
+    {
+      "arm": "scalar_continuous",
+      "seed": 907,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/scalar_continuous-seed907/final.pt"
+    },
+    {
+      "arm": "binary_conductivity",
+      "seed": 907,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/binary_conductivity-seed907/final.pt"
+    },
+    {
+      "arm": "unconditional_reranking",
+      "seed": 907,
+      "exit_code": 0,
+      "reported_candidates": 400,
+      "raw_pool_rows": 400,
+      "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/upper-tail/runs/unconditional_reranking-seed907/final.pt"
+    }
+  ],
+  "historical_results_preserved": true,
+  "locked_rows_used_for_fit_or_selection": 0
+}

@@ -1,0 +1,105 @@
+{
+  "source": "/Users/yicao/Documents/ARC/PolyGen-reproduction/inputs/release-data/htpmd-trainset.csv",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "source_rows": 6024,
+  "source_unique_structure_rows": 6024,
+  "properties": [
+    {
+      "name": "conductivity",
+      "transform": "log10",
+      "finite_rows": 6024,
+      "nunique": 6024,
+      "full_source_q80": -4.084468800285627,
+      "full_source_q95": -3.902091615809661,
+      "full_source_min": -5.160081677586512,
+      "full_source_max": -3.295367776501
+    },
+    {
+      "name": "li_diffusivity",
+      "transform": "log10",
+      "finite_rows": 6024,
+      "nunique": 6024,
+      "full_source_q80": -7.637438263520038,
+      "full_source_q95": -7.477083310169735,
+      "full_source_min": -8.471981862297648,
+      "full_source_max": -7.094446351771386
+    },
+    {
+      "name": "tfsi_diffusivity",
+      "transform": "log10",
+      "finite_rows": 6024,
+      "nunique": 6024,
+      "full_source_q80": -7.410810144101791,
+      "full_source_q95": -7.241177745801784,
+      "full_source_min": -8.244747034981541,
+      "full_source_max": -6.897721544963969
+    },
+    {
+      "name": "poly_diffusivity",
+      "transform": "log10",
+      "finite_rows": 6024,
+      "nunique": 6024,
+      "full_source_q80": -7.60228165766007,
+      "full_source_q95": -7.399354953112582,
+      "full_source_min": -8.552109831995198,
+      "full_source_max": -7.023364451105615
+    },
+    {
+      "name": "transference_number",
+      "transform": "raw",
+      "finite_rows": 6024,
+      "nunique": 6024,
+      "full_source_q80": 0.28229567834567143,
+      "full_source_q95": 0.41914107655460164,
+      "full_source_min": -1.64186423613927,
+      "full_source_max": 0.821687902605073
+    },
+    {
+      "name": "molality",
+      "transform": "raw",
+      "finite_rows": 6024,
+      "nunique": 1415,
+      "full_source_q80": 1.4679180030115961,
+      "full_source_q95": 1.4922948489294698,
+      "full_source_min": 1.25452544965454,
+      "full_source_max": 1.49934995682622
+    }
+  ],
+  "joint_training_rule": "all six transformed properties <= their full-source Q80, inclusive",
+  "joint_training_rows": 2494,
+  "joint_training_fraction": 0.41401062416998674,
+  "joint_training_unique_smiles": 2494,
+  "joint_training_maxima": {
+    "conductivity": -4.084499110675755,
+    "li_diffusivity": -7.64000239019801,
+    "tfsi_diffusivity": -7.411000105748084,
+    "poly_diffusivity": -7.602971588558652,
+    "transference_number": 0.282288143901113,
+    "molality": 1.46786582368992
+  },
+  "nonfinite_rows": 0,
+  "locked_nontraining_rows": 3530,
+  "locked_q80_q95_any_property_rows": 3135,
+  "propertywise_q80_pass_counts": {
+    "conductivity": 4819,
+    "li_diffusivity": 4819,
+    "tfsi_diffusivity": 4819,
+    "poly_diffusivity": 4819,
+    "transference_number": 4819,
+    "molality": 4819
+  },
+  "joint_pass_count_distribution": {
+    "0": 14,
+    "1": 168,
+    "2": 417,
+    "3": 496,
+    "4": 715,
+    "5": 1720,
+    "6": 2494
+  },
+  "binary_cutoff_log10_conductivity": -4.0,
+  "binary_joint_training_class_counts": {
+    "0": 2494
+  },
+  "locked_rows_never_used_for_fit_or_selection": true
+}

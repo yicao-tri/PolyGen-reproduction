@@ -1,0 +1,16 @@
+{
+  "rows_fit": 2494,
+  "properties": [
+    "conductivity",
+    "li_diffusivity",
+    "tfsi_diffusivity",
+    "poly_diffusivity",
+    "transference_number",
+    "molality"
+  ],
+  "rf_estimators": 300,
+  "rf_random_state": 20260923,
+  "locked_audit_rows": 3135,
+  "locked_rows_used_for_fit": 0,
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69"
+}

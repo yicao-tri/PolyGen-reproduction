@@ -1,0 +1,7 @@
+# Multi-property interpolation publication figures
+
+**Figure 1 | Property-probe joint error.** Each panel is one of the six conditioned properties. The x-axis is the Q50/Q65/Q80 probe level for that property, with the other five target coordinates fixed at their train-only medians. Lines and error bars are means ± SEM across five matched seeds; the unit is the arm × seed × target cell. The plotted RF errors are normalized by the train-only property standard deviations and summarize all six predicted properties jointly. This figure does not establish physical controllability or MD performance.
+
+**Figure 2 | Coherent joint targets.** The three target vectors are train-only empirical-copula rows selected at Q50/Q65/Q80 of the mean marginal percentile score. No independent Cartesian product of marginal quantiles is used. Points and error bars are means ± SEM across five seeds. Strict-hit status additionally requires validity, exact-training novelty, structural support, normalized RF uncertainty, joint target error, and a supported target cell.
+
+**Figure 3 | Cell-level support-aware quality audit.** Heatmaps show descriptive means across seeds for strict-hit rate and validity across all 21 target cells. The row unit is arm; the column unit is target cell. Empty or unsupported cells would be shown as missing rather than zero; the delivered audit retains them in `unsupported_cells.csv`. All metrics are surrogate-screening evidence only, with MD status fixed to `not_run`.

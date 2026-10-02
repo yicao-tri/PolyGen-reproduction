@@ -1,0 +1,36 @@
+{
+  "fields": [
+    "conductivity",
+    "li_diffusivity",
+    "tfsi_diffusivity",
+    "poly_diffusivity",
+    "transference_number",
+    "molality"
+  ],
+  "transforms": {
+    "conductivity": "log10",
+    "li_diffusivity": "log10",
+    "tfsi_diffusivity": "log10",
+    "poly_diffusivity": "log10",
+    "transference_number": "raw",
+    "molality": "raw"
+  },
+  "mean_transformed_train_only": [
+    -4.3768864622340535,
+    -7.9355327612713955,
+    -7.699343086269207,
+    -7.9658025599291005,
+    -0.0011272979472329054,
+    1.3918946429545802
+  ],
+  "scale_transformed_train_only": [
+    0.16938171549759395,
+    0.15603555396413119,
+    0.14872630101827797,
+    0.17756605808362508,
+    0.24040067008759913,
+    0.05113395438034452
+  ],
+  "train_rows": 2494,
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69"
+}

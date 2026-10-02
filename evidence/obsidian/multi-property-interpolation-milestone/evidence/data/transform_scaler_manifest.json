@@ -1,0 +1,55 @@
+{
+  "fit_source_row_count": 4819,
+  "fit_split": "train_only",
+  "invalid_policy": "reject nonfinite values and nonpositive values for log transforms; no clipping",
+  "properties": {
+    "log10_conductivity": {
+      "max": -3.295367776501,
+      "mean": -4.264425891666005,
+      "min": -5.160081677586512,
+      "source_field": "conductivity",
+      "std": 0.22227087848592791,
+      "transform": "log10"
+    },
+    "log10_li_diffusivity": {
+      "max": -7.094446351771386,
+      "mean": -7.81351907354665,
+      "min": -8.471981862297648,
+      "source_field": "li_diffusivity",
+      "std": 0.2053721409985638,
+      "transform": "log10"
+    },
+    "log10_poly_diffusivity": {
+      "max": -7.023364451105615,
+      "mean": -7.841397352547014,
+      "min": -8.552109831995198,
+      "source_field": "poly_diffusivity",
+      "std": 0.2582703165428797,
+      "transform": "log10"
+    },
+    "log10_tfsi_diffusivity": {
+      "max": -6.897721544963969,
+      "mean": -7.6066841985859535,
+      "min": -8.244747034981541,
+      "source_field": "tfsi_diffusivity",
+      "std": 0.21843358036967356,
+      "transform": "log10"
+    },
+    "molality": {
+      "max": 1.49934995682622,
+      "mean": 1.4127194163540582,
+      "min": 1.25452544965454,
+      "source_field": "molality",
+      "std": 0.058244482630112546,
+      "transform": "raw"
+    },
+    "transference_number": {
+      "max": 0.821687902605073,
+      "mean": 0.052511109071726104,
+      "min": -1.64186423613927,
+      "source_field": "transference_number",
+      "std": 0.28844979337635845,
+      "transform": "raw"
+    }
+  }
+}

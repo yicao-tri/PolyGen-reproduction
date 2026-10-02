@@ -1,0 +1,45 @@
+target_label,arm,property,target_value_transformed,joint_train_max_transformed,status,reason
+Q90,all_arms,conductivity,-3.987531610782325,-4.084499110675755,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+Q90,all_arms,li_diffusivity,-7.545010229020908,-7.64000239019801,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+Q90,all_arms,tfsi_diffusivity,-7.310033444065601,-7.411000105748084,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+Q90,all_arms,poly_diffusivity,-7.486025895545691,-7.602971588558652,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+Q90,all_arms,transference_number,0.35652640319590695,0.282288143901113,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+Q90,all_arms,molality,1.48543096734384,1.46786582368992,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+Q90,all_arms,__joint__,,,unsupported_joint_cell,no claim of joint support without a source row at the vector; Q80-Q95 vectors are locked post-run queries
+Q100,all_arms,conductivity,-3.295367776501,-4.084499110675755,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+Q100,all_arms,li_diffusivity,-7.094446351771386,-7.64000239019801,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+Q100,all_arms,tfsi_diffusivity,-6.897721544963969,-7.411000105748084,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+Q100,all_arms,poly_diffusivity,-7.023364451105615,-7.602971588558652,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+Q100,all_arms,transference_number,0.821687902605073,0.282288143901113,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+Q100,all_arms,molality,1.49934995682622,1.46786582368992,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+Q100,all_arms,__joint__,,,unsupported_joint_cell,no claim of joint support without a source row at the vector; Q80-Q95 vectors are locked post-run queries
+train_max_plus_0.25,all_arms,conductivity,-3.834499110675755,-4.084499110675755,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+train_max_plus_0.25,all_arms,li_diffusivity,-7.39000239019801,-7.64000239019801,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+train_max_plus_0.25,all_arms,tfsi_diffusivity,-7.161000105748084,-7.411000105748084,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+train_max_plus_0.25,all_arms,poly_diffusivity,-7.352971588558652,-7.602971588558652,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+train_max_plus_0.25,all_arms,transference_number,0.532288143901113,0.282288143901113,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+train_max_plus_0.25,all_arms,molality,1.71786582368992,1.46786582368992,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+train_max_plus_0.25,all_arms,__joint__,,,unsupported_joint_cell,no claim of joint support without a source row at the vector; Q80-Q95 vectors are locked post-run queries
+train_max_plus_0.50,all_arms,conductivity,-3.584499110675755,-4.084499110675755,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+train_max_plus_0.50,all_arms,li_diffusivity,-7.14000239019801,-7.64000239019801,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+train_max_plus_0.50,all_arms,tfsi_diffusivity,-6.911000105748084,-7.411000105748084,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+train_max_plus_0.50,all_arms,poly_diffusivity,-7.102971588558652,-7.602971588558652,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+train_max_plus_0.50,all_arms,transference_number,0.782288143901113,0.282288143901113,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+train_max_plus_0.50,all_arms,molality,1.96786582368992,1.46786582368992,unsupported_beyond_joint_train_max,target coordinate exceeds the Q80-intersection training maximum
+train_max_plus_0.50,all_arms,__joint__,,,unsupported_joint_cell,no claim of joint support without a source row at the vector; Q80-Q95 vectors are locked post-run queries
+Q90,multi_continuous,__arm__,,,audit_only_if_joint_cell_unsupported,see coordinate and joint support rows
+Q90,scalar_continuous,__arm__,,,audit_only_if_joint_cell_unsupported,see coordinate and joint support rows
+Q90,binary_conductivity,__arm__,,,unsupported_binary_target_interface,binary arm receives only the fixed high/low label and cannot represent a six-dimensional target vector
+Q90,unconditional_reranking,__arm__,,,audit_only_if_joint_cell_unsupported,see coordinate and joint support rows
+Q100,multi_continuous,__arm__,,,audit_only_if_joint_cell_unsupported,see coordinate and joint support rows
+Q100,scalar_continuous,__arm__,,,audit_only_if_joint_cell_unsupported,see coordinate and joint support rows
+Q100,binary_conductivity,__arm__,,,unsupported_binary_target_interface,binary arm receives only the fixed high/low label and cannot represent a six-dimensional target vector
+Q100,unconditional_reranking,__arm__,,,audit_only_if_joint_cell_unsupported,see coordinate and joint support rows
+train_max_plus_0.25,multi_continuous,__arm__,,,audit_only_if_joint_cell_unsupported,see coordinate and joint support rows
+train_max_plus_0.25,scalar_continuous,__arm__,,,audit_only_if_joint_cell_unsupported,see coordinate and joint support rows
+train_max_plus_0.25,binary_conductivity,__arm__,,,unsupported_binary_target_interface,binary arm receives only the fixed high/low label and cannot represent a six-dimensional target vector
+train_max_plus_0.25,unconditional_reranking,__arm__,,,audit_only_if_joint_cell_unsupported,see coordinate and joint support rows
+train_max_plus_0.50,multi_continuous,__arm__,,,audit_only_if_joint_cell_unsupported,see coordinate and joint support rows
+train_max_plus_0.50,scalar_continuous,__arm__,,,audit_only_if_joint_cell_unsupported,see coordinate and joint support rows
+train_max_plus_0.50,binary_conductivity,__arm__,,,unsupported_binary_target_interface,binary arm receives only the fixed high/low label and cannot represent a six-dimensional target vector
+train_max_plus_0.50,unconditional_reranking,__arm__,,,audit_only_if_joint_cell_unsupported,see coordinate and joint support rows

@@ -1,0 +1,12 @@
+{
+  "arm": "binary_conductivity",
+  "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed907/final.pt",
+  "elapsed_seconds": 0.007464170455932617,
+  "first_loss": null,
+  "last_loss": null,
+  "samples_per_cell": 100,
+  "seed": 907,
+  "steps": 0,
+  "temperature": 1.0,
+  "top_k": 40
+}

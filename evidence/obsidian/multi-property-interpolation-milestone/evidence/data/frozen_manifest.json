@@ -1,0 +1,694 @@
+{
+  "arms": [
+    "multi_continuous",
+    "scalar_continuous",
+    "binary_conductivity",
+    "unconditional_reranking"
+  ],
+  "benchmark": "multi-property implicit-conditioning interpolation",
+  "cell_count": 21,
+  "checkpoint_origins": {
+    "binary_conductivity|seed17": {
+      "arm": "binary_conductivity",
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed17/final.pt",
+      "checkpoint_sha256": "06b7af0dbef3b73fd126b3864223e4388affa980f43747691b2a3dadeba0952c",
+      "elapsed_seconds": 0.007845163345336914,
+      "seed": 17,
+      "steps": 0
+    },
+    "binary_conductivity|seed202": {
+      "arm": "binary_conductivity",
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/extra-seeds/seeds202-303/binary-seed202/final.pt",
+      "checkpoint_sha256": "0eb08c2dae81120412dc2badd5dc6f796cdacd3743e29c92117109b27c14231b",
+      "elapsed_seconds": 0.0071108341217041016,
+      "seed": 202,
+      "steps": 0
+    },
+    "binary_conductivity|seed303": {
+      "arm": "binary_conductivity",
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/extra-seeds/seeds202-303/binary-seed303/final.pt",
+      "checkpoint_sha256": "0309bffe7d31c42253bd2680788042b4f5856684c76f2aebc38f246159c625c0",
+      "elapsed_seconds": 0.007462263107299805,
+      "seed": 303,
+      "steps": 0
+    },
+    "binary_conductivity|seed42": {
+      "arm": "binary_conductivity",
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed42/final.pt",
+      "checkpoint_sha256": "1df889bcd79845ac682fbdacd6bb9cb0856252f7eb3466125dc1be73f17c29d1",
+      "elapsed_seconds": 0.0062999725341796875,
+      "seed": 42,
+      "steps": 0
+    },
+    "binary_conductivity|seed907": {
+      "arm": "binary_conductivity",
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed907/final.pt",
+      "checkpoint_sha256": "b310643702610d89ce0d5550f050cfe06f51ff321af3817a277065cc10ab91a3",
+      "elapsed_seconds": 0.007464170455932617,
+      "seed": 907,
+      "steps": 0
+    },
+    "multi_continuous|seed17": {
+      "arm": "multi_continuous",
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "df55402f9c1c60c55e2475ea98c55b3f724c566856157ba205a07d7ed810d670",
+      "elapsed_seconds": 53.32161736488342,
+      "seed": 17,
+      "steps": 1000
+    },
+    "multi_continuous|seed202": {
+      "arm": "multi_continuous",
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "53b20acddd7984ba174e447f6861f52c456b2cf2e49ab4316fa3a4bdb1ed555f",
+      "elapsed_seconds": 54.36900591850281,
+      "seed": 202,
+      "steps": 1000
+    },
+    "multi_continuous|seed303": {
+      "arm": "multi_continuous",
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "a4c96b2138199fa8883edc917780f002f9a666aa598d68d6d9e9ce6b90863d4a",
+      "elapsed_seconds": 59.5288782119751,
+      "seed": 303,
+      "steps": 1000
+    },
+    "multi_continuous|seed42": {
+      "arm": "multi_continuous",
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "dc76be61cfd3849c3f7f023a4625fbf2abb1ff9ba01717e40bb3ebc6090d2e57",
+      "elapsed_seconds": 54.23771524429321,
+      "seed": 42,
+      "steps": 1000
+    },
+    "multi_continuous|seed907": {
+      "arm": "multi_continuous",
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "376a92e15407923d3bac21489331944bacc6a1d67f41bbbf250d1e6bd62cf34d",
+      "elapsed_seconds": 54.833725929260254,
+      "seed": 907,
+      "steps": 1000
+    },
+    "scalar_continuous|seed17": {
+      "arm": "scalar_continuous",
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/continuous-seed17/final.pt",
+      "checkpoint_sha256": "bf1981dc3742f7211ee0c868dddedcc4b1b88f7c526c014c8d0f9a78f252b82f",
+      "elapsed_seconds": 0.007643222808837891,
+      "seed": 17,
+      "steps": 0
+    },
+    "scalar_continuous|seed202": {
+      "arm": "scalar_continuous",
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/extra-seeds/seeds202-303/continuous-seed202/final.pt",
+      "checkpoint_sha256": "19aa9d641fc3ce2833a5a5a33ef2093f21440ea286c0f23efb10a41bf1454fa0",
+      "elapsed_seconds": 0.007694244384765625,
+      "seed": 202,
+      "steps": 0
+    },
+    "scalar_continuous|seed303": {
+      "arm": "scalar_continuous",
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "3df31053657ea437f872a7e5e06f780ccb53b47d43edf77b3291100c3bef4831",
+      "elapsed_seconds": 55.55203294754028,
+      "seed": 303,
+      "steps": 1000
+    },
+    "scalar_continuous|seed42": {
+      "arm": "scalar_continuous",
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/continuous-seed42/final.pt",
+      "checkpoint_sha256": "8a8ef68774d0d1591682b511ffb9699ed162b8905ae4f32835d201ec25d1675e",
+      "elapsed_seconds": 0.006450176239013672,
+      "seed": 42,
+      "steps": 0
+    },
+    "scalar_continuous|seed907": {
+      "arm": "scalar_continuous",
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "fef79ddb79ea0545578ffdc9ce34a2e67275d21c2becb7d6ac307743abe22132",
+      "elapsed_seconds": 53.0357460975647,
+      "seed": 907,
+      "steps": 1000
+    },
+    "unconditional_reranking|seed17": {
+      "arm": "unconditional_reranking",
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "310db538ede86969208c5d0c656630a19a992022874ea882884d566d777933c4",
+      "elapsed_seconds": 53.254210233688354,
+      "seed": 17,
+      "steps": 1000
+    },
+    "unconditional_reranking|seed202": {
+      "arm": "unconditional_reranking",
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "17c5bcfac5aed9f05bdfeeaa0288e5d65f597008bc7776504726bf4e15c1d1b8",
+      "elapsed_seconds": 76.49248886108398,
+      "seed": 202,
+      "steps": 1000
+    },
+    "unconditional_reranking|seed303": {
+      "arm": "unconditional_reranking",
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "9d6a8a4c2e2588f730b39e1c005d0e6e98592abb26fd78f411ede0950d0cf80d",
+      "elapsed_seconds": 55.58665895462036,
+      "seed": 303,
+      "steps": 1000
+    },
+    "unconditional_reranking|seed42": {
+      "arm": "unconditional_reranking",
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "f0ea6ae8ded5e36590a19aade352c0a164d499f956c7ad35d1dec85d9ad02c5a",
+      "elapsed_seconds": 53.14270067214966,
+      "seed": 42,
+      "steps": 1000
+    },
+    "unconditional_reranking|seed907": {
+      "arm": "unconditional_reranking",
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "1be2817562b187d04a86ad10c716512b3d8b7c63c1333d056c03a1029139579e",
+      "elapsed_seconds": 55.377975940704346,
+      "seed": 907,
+      "steps": 1000
+    }
+  },
+  "checkpoint_policy": "Per-seed provenance is authoritative: historical scalar/binary checkpoints are reused when present; otherwise the same frozen arm is retrained with the matched seed, token, decoder, optimizer and RF schema.",
+  "historical_reference_hashes_before": {
+    "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/frozen_manifest.json": "a611d167354a8b7b29074e6f022eaa82641b63ddeb5fdcef4ae6fa329252bcc7",
+    "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/interpolation/frozen_manifest.json": "3460ddfd3c5c14b29db2bd9b1201f0cbb60b9c33865d3c820424eea8a321dd41",
+    "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/upper-tail/frozen_manifest.json": "5e3dfa0bc3be9bf386d46e651dcbae620019cffd3c48aaab75cb42573401fadd"
+  },
+  "joint_target_cartesian_product_used": false,
+  "matched_settings": {
+    "batch_size": 64,
+    "block_size": 64,
+    "joint_error_gate_normalized_rmse": 0.5,
+    "learning_rate": 0.0005,
+    "optimizer_steps": 1000,
+    "prefix_length": 5,
+    "rf_estimators": 300,
+    "rf_random_state": 20260923,
+    "structural_support_gate": 0.35,
+    "temperature": 1.0,
+    "top_k": 40,
+    "uncertainty_gate_normalized": 0.35
+  },
+  "md_status": "not_run",
+  "properties": [
+    "log10_conductivity",
+    "log10_li_diffusivity",
+    "log10_tfsi_diffusivity",
+    "log10_poly_diffusivity",
+    "transference_number",
+    "molality"
+  ],
+  "region": "interpolation",
+  "runs": [
+    {
+      "arm": "binary_conductivity",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed17/final.pt",
+      "checkpoint_sha256": "06b7af0dbef3b73fd126b3864223e4388affa980f43747691b2a3dadeba0952c",
+      "exit_code": 0,
+      "seed": 17,
+      "steps": 0
+    },
+    {
+      "arm": "binary_conductivity",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/extra-seeds/seeds202-303/binary-seed202/final.pt",
+      "checkpoint_sha256": "0eb08c2dae81120412dc2badd5dc6f796cdacd3743e29c92117109b27c14231b",
+      "exit_code": 0,
+      "seed": 202,
+      "steps": 0
+    },
+    {
+      "arm": "binary_conductivity",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/extra-seeds/seeds202-303/binary-seed303/final.pt",
+      "checkpoint_sha256": "0309bffe7d31c42253bd2680788042b4f5856684c76f2aebc38f246159c625c0",
+      "exit_code": 0,
+      "seed": 303,
+      "steps": 0
+    },
+    {
+      "arm": "binary_conductivity",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed42/final.pt",
+      "checkpoint_sha256": "1df889bcd79845ac682fbdacd6bb9cb0856252f7eb3466125dc1be73f17c29d1",
+      "exit_code": 0,
+      "seed": 42,
+      "steps": 0
+    },
+    {
+      "arm": "binary_conductivity",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed907/final.pt",
+      "checkpoint_sha256": "b310643702610d89ce0d5550f050cfe06f51ff321af3817a277065cc10ab91a3",
+      "exit_code": 0,
+      "seed": 907,
+      "steps": 0
+    },
+    {
+      "arm": "multi_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "df55402f9c1c60c55e2475ea98c55b3f724c566856157ba205a07d7ed810d670",
+      "exit_code": 0,
+      "seed": 17,
+      "steps": 1000
+    },
+    {
+      "arm": "multi_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "53b20acddd7984ba174e447f6861f52c456b2cf2e49ab4316fa3a4bdb1ed555f",
+      "exit_code": 0,
+      "seed": 202,
+      "steps": 1000
+    },
+    {
+      "arm": "multi_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "a4c96b2138199fa8883edc917780f002f9a666aa598d68d6d9e9ce6b90863d4a",
+      "exit_code": 0,
+      "seed": 303,
+      "steps": 1000
+    },
+    {
+      "arm": "multi_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "dc76be61cfd3849c3f7f023a4625fbf2abb1ff9ba01717e40bb3ebc6090d2e57",
+      "exit_code": 0,
+      "seed": 42,
+      "steps": 1000
+    },
+    {
+      "arm": "multi_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "376a92e15407923d3bac21489331944bacc6a1d67f41bbbf250d1e6bd62cf34d",
+      "exit_code": 0,
+      "seed": 907,
+      "steps": 1000
+    },
+    {
+      "arm": "scalar_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/continuous-seed17/final.pt",
+      "checkpoint_sha256": "bf1981dc3742f7211ee0c868dddedcc4b1b88f7c526c014c8d0f9a78f252b82f",
+      "exit_code": 0,
+      "seed": 17,
+      "steps": 0
+    },
+    {
+      "arm": "scalar_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/extra-seeds/seeds202-303/continuous-seed202/final.pt",
+      "checkpoint_sha256": "19aa9d641fc3ce2833a5a5a33ef2093f21440ea286c0f23efb10a41bf1454fa0",
+      "exit_code": 0,
+      "seed": 202,
+      "steps": 0
+    },
+    {
+      "arm": "scalar_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "3df31053657ea437f872a7e5e06f780ccb53b47d43edf77b3291100c3bef4831",
+      "exit_code": 0,
+      "seed": 303,
+      "steps": 1000
+    },
+    {
+      "arm": "scalar_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/continuous-seed42/final.pt",
+      "checkpoint_sha256": "8a8ef68774d0d1591682b511ffb9699ed162b8905ae4f32835d201ec25d1675e",
+      "exit_code": 0,
+      "seed": 42,
+      "steps": 0
+    },
+    {
+      "arm": "scalar_continuous",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "fef79ddb79ea0545578ffdc9ce34a2e67275d21c2becb7d6ac307743abe22132",
+      "exit_code": 0,
+      "seed": 907,
+      "steps": 1000
+    },
+    {
+      "arm": "unconditional_reranking",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "310db538ede86969208c5d0c656630a19a992022874ea882884d566d777933c4",
+      "exit_code": 0,
+      "seed": 17,
+      "steps": 1000
+    },
+    {
+      "arm": "unconditional_reranking",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "17c5bcfac5aed9f05bdfeeaa0288e5d65f597008bc7776504726bf4e15c1d1b8",
+      "exit_code": 0,
+      "seed": 202,
+      "steps": 1000
+    },
+    {
+      "arm": "unconditional_reranking",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "9d6a8a4c2e2588f730b39e1c005d0e6e98592abb26fd78f411ede0950d0cf80d",
+      "exit_code": 0,
+      "seed": 303,
+      "steps": 1000
+    },
+    {
+      "arm": "unconditional_reranking",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "f0ea6ae8ded5e36590a19aade352c0a164d499f956c7ad35d1dec85d9ad02c5a",
+      "exit_code": 0,
+      "seed": 42,
+      "steps": 1000
+    },
+    {
+      "arm": "unconditional_reranking",
+      "candidate_rows": 2100,
+      "cells": 21,
+      "checkpoint_origin": "trained_in_multi_property_interpolation",
+      "checkpoint_sha256": "1be2817562b187d04a86ad10c716512b3d8b7c63c1333d056c03a1029139579e",
+      "exit_code": 0,
+      "seed": 907,
+      "steps": 1000
+    }
+  ],
+  "samples_per_cell": 100,
+  "seeds": [
+    17,
+    42,
+    202,
+    303,
+    907
+  ],
+  "source": "/Users/yicao/Documents/ARC/PolyGen-reproduction/inputs/release-data/htpmd-trainset.csv",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "split": {
+    "method": "train_test_split stratified conductivity deciles",
+    "random_state": 20260923,
+    "test_rows": 1205,
+    "train_rows": 4819,
+    "train_test_source_row_overlap": 0
+  },
+  "target_audit": {
+    "coherent_joint_target_count": 3,
+    "covariance": [
+      [
+        0.04940435342290612,
+        0.026442112686306,
+        0.02650668115283779,
+        0.029496331862702334,
+        0.0214003539379286,
+        0.001684915375982683
+      ],
+      [
+        0.026442112686306,
+        0.04217772629833397,
+        0.036395326205192896,
+        0.04286280139192828,
+        -0.003662550238208808,
+        0.0008366977401425231
+      ],
+      [
+        0.02650668115283779,
+        0.036395326205192896,
+        0.04771323903311464,
+        0.04820872391548091,
+        -0.022131787781471995,
+        0.0004070821227328521
+      ],
+      [
+        0.029496331862702334,
+        0.04286280139192828,
+        0.04820872391548091,
+        0.06670356640715928,
+        -0.012870662873111342,
+        0.001443131295037628
+      ],
+      [
+        0.0214003539379286,
+        -0.003662550238208808,
+        -0.022131787781471995,
+        -0.012870662873111342,
+        0.0832032932988639,
+        0.0009935650511531278
+      ],
+      [
+        0.001684915375982683,
+        0.0008366977401425231,
+        0.0004070821227328521,
+        0.001443131295037628,
+        0.0009935650511531278,
+        0.003392429756849481
+      ]
+    ],
+    "joint_target_cartesian_product_used": false,
+    "marginal_probe_count": 18,
+    "support_audit": [
+      {
+        "joint_mahalanobis_sq": 0.13204960582294872,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "log10_conductivity_Q50",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 0.2784334818712003,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "log10_conductivity_Q65",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 1.4705816155832356,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "log10_conductivity_Q80",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 0.13204960582294872,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "log10_li_diffusivity_Q50",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 0.8351611364233066,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "log10_li_diffusivity_Q65",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 3.2685055802467704,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "log10_li_diffusivity_Q80",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 0.13204960582294872,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "log10_tfsi_diffusivity_Q50",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 2.1137113458353096,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "log10_tfsi_diffusivity_Q65",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 8.178924861626815,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "log10_tfsi_diffusivity_Q80",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 0.13204960582294872,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "log10_poly_diffusivity_Q50",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 0.6618138543000089,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "log10_poly_diffusivity_Q65",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 4.069550187731767,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "log10_poly_diffusivity_Q80",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 0.13204960582294872,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "transference_number_Q50",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 0.5783462965734746,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "transference_number_Q65",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 1.4588229859412143,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "transference_number_Q80",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 0.13204960582294872,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "molality_Q50",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 0.5198221277127436,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "molality_Q65",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 1.1607336993391786,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "molality_Q80",
+        "target_family": "property_probe",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 6.423410086420415,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "joint_empirical_copula_Q50",
+        "target_family": "coherent_joint",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 10.268966650997529,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "joint_empirical_copula_Q65",
+        "target_family": "coherent_joint",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      },
+      {
+        "joint_mahalanobis_sq": 5.1132255983638055,
+        "near_degenerate_property": false,
+        "outside_train_marginal_range": false,
+        "target_cell": "joint_empirical_copula_Q80",
+        "target_family": "coherent_joint",
+        "target_support_status": "supported",
+        "train_q99_mahalanobis_sq": 22.08821943868519,
+        "unsupported_reason": ""
+      }
+    ],
+    "target_count": 21,
+    "train_mahalanobis_sq_max": 62.495248046379984,
+    "train_mahalanobis_sq_q99": 22.08821943868519
+  },
+  "target_manifest": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/interpolation/target_cells.csv",
+  "transform_scaler_manifest": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/multi-property/interpolation/transform_scaler_manifest.json"
+}

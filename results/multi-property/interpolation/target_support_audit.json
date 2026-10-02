@@ -1,0 +1,270 @@
+{
+  "coherent_joint_target_count": 3,
+  "covariance": [
+    [
+      0.04940435342290612,
+      0.026442112686306,
+      0.02650668115283779,
+      0.029496331862702334,
+      0.0214003539379286,
+      0.001684915375982683
+    ],
+    [
+      0.026442112686306,
+      0.04217772629833397,
+      0.036395326205192896,
+      0.04286280139192828,
+      -0.003662550238208808,
+      0.0008366977401425231
+    ],
+    [
+      0.02650668115283779,
+      0.036395326205192896,
+      0.04771323903311464,
+      0.04820872391548091,
+      -0.022131787781471995,
+      0.0004070821227328521
+    ],
+    [
+      0.029496331862702334,
+      0.04286280139192828,
+      0.04820872391548091,
+      0.06670356640715928,
+      -0.012870662873111342,
+      0.001443131295037628
+    ],
+    [
+      0.0214003539379286,
+      -0.003662550238208808,
+      -0.022131787781471995,
+      -0.012870662873111342,
+      0.0832032932988639,
+      0.0009935650511531278
+    ],
+    [
+      0.001684915375982683,
+      0.0008366977401425231,
+      0.0004070821227328521,
+      0.001443131295037628,
+      0.0009935650511531278,
+      0.003392429756849481
+    ]
+  ],
+  "joint_target_cartesian_product_used": false,
+  "marginal_probe_count": 18,
+  "support_audit": [
+    {
+      "joint_mahalanobis_sq": 0.13204960582294872,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "log10_conductivity_Q50",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 0.2784334818712003,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "log10_conductivity_Q65",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 1.4705816155832356,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "log10_conductivity_Q80",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 0.13204960582294872,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "log10_li_diffusivity_Q50",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 0.8351611364233066,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "log10_li_diffusivity_Q65",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 3.2685055802467704,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "log10_li_diffusivity_Q80",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 0.13204960582294872,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "log10_tfsi_diffusivity_Q50",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 2.1137113458353096,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "log10_tfsi_diffusivity_Q65",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 8.178924861626815,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "log10_tfsi_diffusivity_Q80",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 0.13204960582294872,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "log10_poly_diffusivity_Q50",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 0.6618138543000089,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "log10_poly_diffusivity_Q65",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 4.069550187731767,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "log10_poly_diffusivity_Q80",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 0.13204960582294872,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "transference_number_Q50",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 0.5783462965734746,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "transference_number_Q65",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 1.4588229859412143,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "transference_number_Q80",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 0.13204960582294872,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "molality_Q50",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 0.5198221277127436,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "molality_Q65",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 1.1607336993391786,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "molality_Q80",
+      "target_family": "property_probe",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 6.423410086420415,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "joint_empirical_copula_Q50",
+      "target_family": "coherent_joint",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 10.268966650997529,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "joint_empirical_copula_Q65",
+      "target_family": "coherent_joint",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    },
+    {
+      "joint_mahalanobis_sq": 5.1132255983638055,
+      "near_degenerate_property": false,
+      "outside_train_marginal_range": false,
+      "target_cell": "joint_empirical_copula_Q80",
+      "target_family": "coherent_joint",
+      "target_support_status": "supported",
+      "train_q99_mahalanobis_sq": 22.08821943868519,
+      "unsupported_reason": ""
+    }
+  ],
+  "target_count": 21,
+  "train_mahalanobis_sq_max": 62.495248046379984,
+  "train_mahalanobis_sq_q99": 22.08821943868519
+}

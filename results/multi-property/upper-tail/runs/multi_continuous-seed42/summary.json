@@ -1,0 +1,16 @@
+{
+  "arm": "multi_continuous",
+  "seed": 42,
+  "steps": 1000,
+  "batch_size": 64,
+  "training_rows": 2494,
+  "training_source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "checkpoint_origin": "new_multi_property_upper_tail_run",
+  "first_loss": 6.405252456665039,
+  "last_loss": 0.2620480954647064,
+  "elapsed_seconds": 78.24911284446716,
+  "checkpoint_sha256": "63be0f4bbc14e84b0d0f21ee6e02cff0c11d317e1339432d4da2cb6a4ba0761e",
+  "reported_candidates": 400,
+  "raw_pool_rows": 400,
+  "candidate_schema_version": "multi-property-upper-tail-v1"
+}
