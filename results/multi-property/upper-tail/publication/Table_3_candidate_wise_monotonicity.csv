@@ -1,0 +1,121 @@
+arm,arm_label,seed,response,property,n_complete_rank_pairs,monotone_fraction,pairing_note
+multi_continuous,Multi-property,17,candidate_wise,conductivity,4,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,17,candidate_wise,li_diffusivity,4,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,17,candidate_wise,tfsi_diffusivity,4,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,17,candidate_wise,poly_diffusivity,4,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,17,candidate_wise,transference_number,4,0.25,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,17,candidate_wise,molality,4,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,17,candidate_wise,conductivity,9,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,17,candidate_wise,li_diffusivity,9,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,17,candidate_wise,tfsi_diffusivity,9,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,17,candidate_wise,poly_diffusivity,9,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,17,candidate_wise,transference_number,9,0.1111111111111111,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,17,candidate_wise,molality,9,0.0,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,17,candidate_wise,conductivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,17,candidate_wise,li_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,17,candidate_wise,tfsi_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,17,candidate_wise,poly_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,17,candidate_wise,transference_number,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,17,candidate_wise,molality,0,,same candidate rank across target cells; descriptive only
+unconditional_reranking,Unconditional + reranking,17,candidate_wise,conductivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,17,candidate_wise,li_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,17,candidate_wise,tfsi_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,17,candidate_wise,poly_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,17,candidate_wise,transference_number,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,17,candidate_wise,molality,0,,selected_rank paired; descriptive only
+multi_continuous,Multi-property,42,candidate_wise,conductivity,14,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,42,candidate_wise,li_diffusivity,14,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,42,candidate_wise,tfsi_diffusivity,14,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,42,candidate_wise,poly_diffusivity,14,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,42,candidate_wise,transference_number,14,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,42,candidate_wise,molality,14,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,42,candidate_wise,conductivity,11,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,42,candidate_wise,li_diffusivity,11,0.09090909090909091,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,42,candidate_wise,tfsi_diffusivity,11,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,42,candidate_wise,poly_diffusivity,11,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,42,candidate_wise,transference_number,11,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,42,candidate_wise,molality,11,0.0,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,42,candidate_wise,conductivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,42,candidate_wise,li_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,42,candidate_wise,tfsi_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,42,candidate_wise,poly_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,42,candidate_wise,transference_number,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,42,candidate_wise,molality,0,,same candidate rank across target cells; descriptive only
+unconditional_reranking,Unconditional + reranking,42,candidate_wise,conductivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,42,candidate_wise,li_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,42,candidate_wise,tfsi_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,42,candidate_wise,poly_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,42,candidate_wise,transference_number,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,42,candidate_wise,molality,0,,selected_rank paired; descriptive only
+multi_continuous,Multi-property,202,candidate_wise,conductivity,12,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,202,candidate_wise,li_diffusivity,12,0.08333333333333333,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,202,candidate_wise,tfsi_diffusivity,12,0.08333333333333333,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,202,candidate_wise,poly_diffusivity,12,0.08333333333333333,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,202,candidate_wise,transference_number,12,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,202,candidate_wise,molality,12,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,202,candidate_wise,conductivity,3,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,202,candidate_wise,li_diffusivity,3,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,202,candidate_wise,tfsi_diffusivity,3,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,202,candidate_wise,poly_diffusivity,3,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,202,candidate_wise,transference_number,3,0.3333333333333333,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,202,candidate_wise,molality,3,0.0,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,202,candidate_wise,conductivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,202,candidate_wise,li_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,202,candidate_wise,tfsi_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,202,candidate_wise,poly_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,202,candidate_wise,transference_number,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,202,candidate_wise,molality,0,,same candidate rank across target cells; descriptive only
+unconditional_reranking,Unconditional + reranking,202,candidate_wise,conductivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,202,candidate_wise,li_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,202,candidate_wise,tfsi_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,202,candidate_wise,poly_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,202,candidate_wise,transference_number,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,202,candidate_wise,molality,0,,selected_rank paired; descriptive only
+multi_continuous,Multi-property,303,candidate_wise,conductivity,15,0.06666666666666667,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,303,candidate_wise,li_diffusivity,15,0.06666666666666667,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,303,candidate_wise,tfsi_diffusivity,15,0.06666666666666667,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,303,candidate_wise,poly_diffusivity,15,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,303,candidate_wise,transference_number,15,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,303,candidate_wise,molality,15,0.13333333333333333,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,303,candidate_wise,conductivity,9,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,303,candidate_wise,li_diffusivity,9,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,303,candidate_wise,tfsi_diffusivity,9,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,303,candidate_wise,poly_diffusivity,9,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,303,candidate_wise,transference_number,9,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,303,candidate_wise,molality,9,0.0,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,303,candidate_wise,conductivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,303,candidate_wise,li_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,303,candidate_wise,tfsi_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,303,candidate_wise,poly_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,303,candidate_wise,transference_number,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,303,candidate_wise,molality,0,,same candidate rank across target cells; descriptive only
+unconditional_reranking,Unconditional + reranking,303,candidate_wise,conductivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,303,candidate_wise,li_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,303,candidate_wise,tfsi_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,303,candidate_wise,poly_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,303,candidate_wise,transference_number,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,303,candidate_wise,molality,0,,selected_rank paired; descriptive only
+multi_continuous,Multi-property,907,candidate_wise,conductivity,11,0.18181818181818182,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,907,candidate_wise,li_diffusivity,11,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,907,candidate_wise,tfsi_diffusivity,11,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,907,candidate_wise,poly_diffusivity,11,0.0,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,907,candidate_wise,transference_number,11,0.18181818181818182,same candidate rank across target cells; descriptive only
+multi_continuous,Multi-property,907,candidate_wise,molality,11,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,907,candidate_wise,conductivity,6,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,907,candidate_wise,li_diffusivity,6,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,907,candidate_wise,tfsi_diffusivity,6,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,907,candidate_wise,poly_diffusivity,6,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,907,candidate_wise,transference_number,6,0.0,same candidate rank across target cells; descriptive only
+scalar_continuous,Scalar conductivity,907,candidate_wise,molality,6,0.0,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,907,candidate_wise,conductivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,907,candidate_wise,li_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,907,candidate_wise,tfsi_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,907,candidate_wise,poly_diffusivity,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,907,candidate_wise,transference_number,0,,same candidate rank across target cells; descriptive only
+binary_conductivity,Binary,907,candidate_wise,molality,0,,same candidate rank across target cells; descriptive only
+unconditional_reranking,Unconditional + reranking,907,candidate_wise,conductivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,907,candidate_wise,li_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,907,candidate_wise,tfsi_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,907,candidate_wise,poly_diffusivity,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,907,candidate_wise,transference_number,0,,selected_rank paired; descriptive only
+unconditional_reranking,Unconditional + reranking,907,candidate_wise,molality,0,,selected_rank paired; descriptive only

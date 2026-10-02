@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "checks": {
+    "source_hash_matches_frozen": true,
+    "joint_training_rows_match_frozen": true,
+    "all_locked_rows_excluded_from_train": true,
+    "all_arm_seed_target_cells_present": true,
+    "all_cells_n100": true,
+    "candidate_rows_expected": true,
+    "unconditional_raw_pools_expected": true,
+    "no_md_started": true,
+    "binary_training_single_class": true,
+    "locked_audit_not_fit": true,
+    "all_run_exit_codes_zero": true,
+    "locked_and_train_row_sets_disjoint": true
+  },
+  "arms": [
+    "multi_continuous",
+    "scalar_continuous",
+    "binary_conductivity",
+    "unconditional_reranking"
+  ],
+  "seeds": [
+    17,
+    42,
+    202,
+    303,
+    907
+  ],
+  "target_labels": [
+    "Q80_boundary",
+    "Q85",
+    "Q90",
+    "Q95"
+  ]
+}

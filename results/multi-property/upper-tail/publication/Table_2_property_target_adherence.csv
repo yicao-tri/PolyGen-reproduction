@@ -1,0 +1,97 @@
+arm,arm_label,target_label,property,target_mae_mean,target_mae_sem,frontier_crossing_rate_mean
+multi_continuous,Multi-property,Q80_boundary,conductivity,0.29577855670084097,0.0034292623199745527,0.0
+multi_continuous,Multi-property,Q80_boundary,li_diffusivity,0.25189282907229915,0.0044012698883451615,0.0
+multi_continuous,Multi-property,Q80_boundary,tfsi_diffusivity,0.23713952087362222,0.005699920620463848,0.0
+multi_continuous,Multi-property,Q80_boundary,poly_diffusivity,0.2762588352140034,0.007011907875646103,0.0
+multi_continuous,Multi-property,Q80_boundary,transference_number,0.31014220094525535,0.007193912534746274,0.0
+multi_continuous,Multi-property,Q80_boundary,molality,0.06953134092825397,0.0008302039835350521,0.0
+multi_continuous,Multi-property,Q85,conductivity,0.33736204372493556,0.0037324958857977266,0.0
+multi_continuous,Multi-property,Q85,li_diffusivity,0.29307084489454727,0.002230334787199721,0.0
+multi_continuous,Multi-property,Q85,tfsi_diffusivity,0.28442790387790984,0.002812177345552763,0.0
+multi_continuous,Multi-property,Q85,poly_diffusivity,0.3373771000649038,0.004670336659822218,0.0
+multi_continuous,Multi-property,Q85,transference_number,0.3405321664476932,0.005017700575710095,0.0
+multi_continuous,Multi-property,Q85,molality,0.08047727780813754,0.0011530592224866805,0.0
+multi_continuous,Multi-property,Q90,conductivity,0.38781575247445915,0.003706736824573834,0.0
+multi_continuous,Multi-property,Q90,li_diffusivity,0.3436278939689505,0.00252345189207629,0.0
+multi_continuous,Multi-property,Q90,tfsi_diffusivity,0.33684004384468924,0.002811415689897031,0.0
+multi_continuous,Multi-property,Q90,poly_diffusivity,0.38819831033229085,0.0030414509826057457,0.0
+multi_continuous,Multi-property,Q90,transference_number,0.3789068117882478,0.006900619917911805,0.0
+multi_continuous,Multi-property,Q90,molality,0.08596400290155717,0.0009300961547775544,0.0
+multi_continuous,Multi-property,Q95,conductivity,0.46838118619257,0.0021963550853757096,0.0
+multi_continuous,Multi-property,Q95,li_diffusivity,0.40836909875989863,0.0043639653661005015,0.0
+multi_continuous,Multi-property,Q95,tfsi_diffusivity,0.4045216658616403,0.004311865710139318,0.0
+multi_continuous,Multi-property,Q95,poly_diffusivity,0.4773742973045797,0.006837016898358247,0.0
+multi_continuous,Multi-property,Q95,transference_number,0.43181762363066883,0.0061849946762711485,0.0
+multi_continuous,Multi-property,Q95,molality,0.09447012231710603,0.001215112601905049,0.0
+scalar_continuous,Scalar conductivity,Q80_boundary,conductivity,0.27507065612607134,0.0044811665162814525,0.0
+scalar_continuous,Scalar conductivity,Q80_boundary,li_diffusivity,0.29800758316116666,0.004018814008814491,0.0
+scalar_continuous,Scalar conductivity,Q80_boundary,tfsi_diffusivity,0.2885383836410488,0.004537388931572166,0.0
+scalar_continuous,Scalar conductivity,Q80_boundary,poly_diffusivity,0.3566858875371453,0.005347900079908816,0.0
+scalar_continuous,Scalar conductivity,Q80_boundary,transference_number,0.26018653189456264,0.008465985216759214,0.0
+scalar_continuous,Scalar conductivity,Q80_boundary,molality,0.07022461025732489,0.0009292533882715025,0.0
+scalar_continuous,Scalar conductivity,Q85,conductivity,0.3178009407344569,0.007887439392738725,0.0
+scalar_continuous,Scalar conductivity,Q85,li_diffusivity,0.34446251826583224,0.0034223832523715835,0.0
+scalar_continuous,Scalar conductivity,Q85,tfsi_diffusivity,0.3404374182215545,0.00459673224695778,0.0
+scalar_continuous,Scalar conductivity,Q85,poly_diffusivity,0.43148873174602914,0.006746837844528193,0.0
+scalar_continuous,Scalar conductivity,Q85,transference_number,0.2895567943371337,0.007384831525738271,0.0
+scalar_continuous,Scalar conductivity,Q85,molality,0.0816803110631766,0.000620470220234977,0.0
+scalar_continuous,Scalar conductivity,Q90,conductivity,0.36019432018413633,0.0024816450455886264,0.0
+scalar_continuous,Scalar conductivity,Q90,li_diffusivity,0.3913817922743221,0.0033518787093237247,0.0
+scalar_continuous,Scalar conductivity,Q90,tfsi_diffusivity,0.3919396136588526,0.0038025249370418285,0.0
+scalar_continuous,Scalar conductivity,Q90,poly_diffusivity,0.4759892003266956,0.007475295309500628,0.0
+scalar_continuous,Scalar conductivity,Q90,transference_number,0.32408991336751963,0.0021137818453320846,0.0
+scalar_continuous,Scalar conductivity,Q90,molality,0.088002126989108,0.0008331195005813618,0.0
+scalar_continuous,Scalar conductivity,Q95,conductivity,0.4455684468808531,0.001488226752175479,0.0
+scalar_continuous,Scalar conductivity,Q95,li_diffusivity,0.4637560048053799,0.006621024674470744,0.0
+scalar_continuous,Scalar conductivity,Q95,tfsi_diffusivity,0.4654661798102335,0.0068254506217632575,0.0
+scalar_continuous,Scalar conductivity,Q95,poly_diffusivity,0.5689935762895146,0.010120948226204005,0.0
+scalar_continuous,Scalar conductivity,Q95,transference_number,0.3785381955368894,0.006398661629988525,0.0
+scalar_continuous,Scalar conductivity,Q95,molality,0.09539464782450213,0.0008470243122441492,0.0
+binary_conductivity,Binary,Q80_boundary,conductivity,0.30573820542100555,0.005309610640897494,0.0
+binary_conductivity,Binary,Q80_boundary,li_diffusivity,0.28506560490077976,0.003865240204841658,0.0
+binary_conductivity,Binary,Q80_boundary,tfsi_diffusivity,0.2738308982381556,0.003868622474556877,0.0
+binary_conductivity,Binary,Q80_boundary,poly_diffusivity,0.34415867705556247,0.004815388762003916,0.0
+binary_conductivity,Binary,Q80_boundary,transference_number,0.3018340340364792,0.008055433197042397,0.0
+binary_conductivity,Binary,Q80_boundary,molality,0.07309619178612564,0.000844075589588835,0.0
+binary_conductivity,Binary,Q85,conductivity,0.35084435215992105,0.005274842500460341,0.0
+binary_conductivity,Binary,Q85,li_diffusivity,0.3337830988078573,0.0015839361805364733,0.0
+binary_conductivity,Binary,Q85,tfsi_diffusivity,0.33057522332054806,0.0020616745555489904,0.0
+binary_conductivity,Binary,Q85,poly_diffusivity,0.4168222480044145,0.003818943826383884,0.0
+binary_conductivity,Binary,Q85,transference_number,0.32741716454842607,0.003640147586216821,0.0
+binary_conductivity,Binary,Q85,molality,0.08237638503342078,0.0008062360106079504,0.0
+binary_conductivity,Binary,Q90,conductivity,0.3181077769371097,,0.0
+binary_conductivity,Binary,Q90,li_diffusivity,0.3372809289035885,,0.0
+binary_conductivity,Binary,Q90,tfsi_diffusivity,0.3217533252135807,,0.0
+binary_conductivity,Binary,Q90,poly_diffusivity,0.3451783235074641,,0.0
+binary_conductivity,Binary,Q90,transference_number,0.3245027554828761,,0.0
+binary_conductivity,Binary,Q90,molality,0.0950498928456982,,0.0
+binary_conductivity,Binary,Q95,conductivity,0.4104832298510152,,0.0
+binary_conductivity,Binary,Q95,li_diffusivity,0.4989470899508079,,0.0
+binary_conductivity,Binary,Q95,tfsi_diffusivity,0.5226253464280619,,0.0
+binary_conductivity,Binary,Q95,poly_diffusivity,0.6263125283267366,,0.0
+binary_conductivity,Binary,Q95,transference_number,0.3078117415514682,,0.0
+binary_conductivity,Binary,Q95,molality,0.0994727876012608,,0.0
+unconditional_reranking,Unconditional + reranking,Q80_boundary,conductivity,0.2758869282045878,0.0027448626591626045,0.0
+unconditional_reranking,Unconditional + reranking,Q80_boundary,li_diffusivity,0.2805839250964122,0.002279181580280816,0.0
+unconditional_reranking,Unconditional + reranking,Q80_boundary,tfsi_diffusivity,0.2657476951358401,0.0025629072673088653,0.0
+unconditional_reranking,Unconditional + reranking,Q80_boundary,poly_diffusivity,0.3241649877137142,0.0037302307254872265,0.0
+unconditional_reranking,Unconditional + reranking,Q80_boundary,transference_number,0.2666324873563703,0.00414117010578953,0.0
+unconditional_reranking,Unconditional + reranking,Q80_boundary,molality,0.07067980066635562,0.0005386631191988975,0.0
+unconditional_reranking,Unconditional + reranking,Q85,conductivity,0.3673095312428889,0.007657886502012791,0.0
+unconditional_reranking,Unconditional + reranking,Q85,li_diffusivity,0.3495722695985174,0.0033026597864706186,0.0
+unconditional_reranking,Unconditional + reranking,Q85,tfsi_diffusivity,0.34714498276346906,0.003983245771274912,0.0
+unconditional_reranking,Unconditional + reranking,Q85,poly_diffusivity,0.4531119156316182,0.005283377682355445,0.0
+unconditional_reranking,Unconditional + reranking,Q85,transference_number,0.34234279037693416,0.01004465505523054,0.0
+unconditional_reranking,Unconditional + reranking,Q85,molality,0.08427484212642773,0.0005713612483054025,0.0
+unconditional_reranking,Unconditional + reranking,Q90,conductivity,0.45807769214161637,0.015098138614588889,0.0
+unconditional_reranking,Unconditional + reranking,Q90,li_diffusivity,0.4100432075833986,0.012263400240608738,0.0
+unconditional_reranking,Unconditional + reranking,Q90,tfsi_diffusivity,0.41080263610706086,0.011849224798286656,0.0
+unconditional_reranking,Unconditional + reranking,Q90,poly_diffusivity,0.5290620415124772,0.01893721834016259,0.0
+unconditional_reranking,Unconditional + reranking,Q90,transference_number,0.4261209074263654,0.027589060637588644,0.0
+unconditional_reranking,Unconditional + reranking,Q90,molality,0.09375432578732494,0.001383680681634171,0.0
+unconditional_reranking,Unconditional + reranking,Q95,conductivity,,,0.0
+unconditional_reranking,Unconditional + reranking,Q95,li_diffusivity,,,0.0
+unconditional_reranking,Unconditional + reranking,Q95,tfsi_diffusivity,,,0.0
+unconditional_reranking,Unconditional + reranking,Q95,poly_diffusivity,,,0.0
+unconditional_reranking,Unconditional + reranking,Q95,transference_number,,,0.0
+unconditional_reranking,Unconditional + reranking,Q95,molality,,,0.0
