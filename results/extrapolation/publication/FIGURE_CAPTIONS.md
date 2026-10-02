@@ -1,0 +1,9 @@
+# Extrapolation publication figures
+
+**Figure 1 | Surrogate-only response beyond a locked Q80 boundary.** (A) Mean frozen-RF prediction versus four prespecified extrapolation targets for continuous, fixed-threshold binary, and unconditional+rerranking arms; points and error bars are means ± SEM across five matched seeds. Crosses show requested targets and the horizontal dashed line marks the actual Q80 training maximum. (B) Target MAE is shown only where at least one valid candidate exists; missing values are unsupported, not zero. (C) Fraction of candidates that cross the training maximum according to the frozen RF after validity, novelty, support, and uncertainty gates. These are screening signals only, not MD-confirmed crossings.
+
+**Figure 2 | Paired RF-only contrast.** (D) Thin traces show each matched seed's predicted frontier-crossing fraction for continuous and binary arms. (E) The dark summary is the continuous-minus-binary contrast, mean ± SEM across the five paired seeds. The unit is the arm × seed × target cell; no independent-candidate inferential test is implied.
+
+**Figure 3 | Support, uncertainty, and failure coverage.** Heatmaps show cell means for (F) nearest-training Morgan-fingerprint support, (G) RF tree uncertainty, and (H) failure fraction. A dash denotes no valid generated candidate. Binary cells are structurally blocked for target control because the fixed -4.0 label is single-class after Q80 truncation.
+
+**Figure 4 | Locked-tail verifier audit, separate from generated-candidate evidence.** Each point is one source row held above full-source Q80, colored by locked-tail interval. The diagonal is ideal calibration and teal dotted lines mark the actual training maximum. This post-run audit demonstrates why RF-only frontier crossings cannot be treated as physical extrapolation evidence; MD was not run in this phase.

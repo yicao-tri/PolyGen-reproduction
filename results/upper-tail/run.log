@@ -1,0 +1,82 @@
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Skipped loading some Tensorflow models, missing a dependency. No module named 'tensorflow'
+Skipped loading modules with pytorch-geometric dependency, missing a dependency. No module named 'torch_geometric'
+Skipped loading modules with pytorch-geometric dependency, missing a dependency. cannot import name 'DMPNN' from 'deepchem.models.torch_models' (/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/deepchem/models/torch_models/__init__.py)
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+Skipped loading some PyTorch models, missing a dependency. No module named 'tensorflow'
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/numpy/lib/nanfunctions.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+number of parameters: 0.12M
+number of parameters: 0.12M
+number of parameters: 0.12M
+number of parameters: 0.12M
+number of parameters: 0.12M
+number of parameters: 0.12M
+number of parameters: 0.12M
+{
+  "output": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/upper-tail",
+  "train_rows": 4819,
+  "tail_rows": 903,
+  "runs": 15,
+  "candidate_rows": 6000,
+  "selected_md_rows": 183,
+  "binary_status": "degenerate_single_class"
+}

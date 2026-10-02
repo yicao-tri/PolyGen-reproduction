@@ -1,0 +1,16 @@
+{
+  "arm_internal": "continuous",
+  "seed": 202,
+  "steps": 1000,
+  "temperature": 1.0,
+  "training_rows": 4819,
+  "checkpoint_origin": "reused_existing_upper_tail_checkpoint",
+  "first_loss": 6.281553268432617,
+  "last_loss": 0.2785298526287079,
+  "elapsed_seconds": 53.42993402481079,
+  "checkpoint_sha256": "d7743ea19e1590ba5dcd38561169afc9192d7f940b38b28dadcfe61c7fdf4794",
+  "arm": "continuous",
+  "reported_candidates": 400,
+  "raw_generation_budget": 400,
+  "run_exit_code": 0
+}
