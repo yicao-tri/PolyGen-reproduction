@@ -1,0 +1,9 @@
+\subsection*{Conditioning is a controllability mechanism, not an extrapolation mechanism}
+
+The experiments support a simple but consequential conclusion. Continuous conditioning is useful: it improves target adherence and preserves usable generation closer to the observed boundary than the fixed-threshold binary baseline. But the same mechanism does not create reliable candidates beyond the boundary. The zero frontier-crossing result at Q90, Q100 and both train-max offsets is unchanged by moving from one property to six.
+
+This observation also clarifies how to compare the present benchmark with fragment-based or multi-property molecular generators such as MolMiner. In-support enrichment, target ordering and Pareto reweighting are valuable capabilities, but none is by itself evidence of numerical OOD extrapolation. A fair comparison must freeze the training support, define the frontier before generation and audit candidate predictions against that boundary.
+
+The practical implication is that the next gain is unlikely to come from conditioning design alone. The most promising directions are: (i) adding genuinely labelled conductivity data from harmonized experimental sources, rather than using an unlabelled DFT database as if it supplied conductivity; (ii) testing fragment-based or otherwise richer representations; and (iii) coupling generation to active-learning or MD validation so that new frontier regions become labelled and feed back into the model.
+
+\placeholder{Add literature citations and a quantitative comparison to the final MolMiner manuscript once the bibliography and exact comparator protocol are frozen.}
