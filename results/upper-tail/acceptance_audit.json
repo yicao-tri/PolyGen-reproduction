@@ -1,0 +1,76 @@
+{
+  "status": "PASS_PREDICTION_PHASE_ONLY",
+  "scientific_question": "After training through Q80, does continuous target conditioning preserve near-boundary target control, monotonicity and support/calibration without presuming true extrapolation?",
+  "checks": {
+    "source_hash_matches_manifest": true,
+    "q80_split_and_locked_tail": true,
+    "target_manifest_complete": true,
+    "matched_arms_seeds_budgets_decoder": true,
+    "candidate_schema_and_provenance_complete": true,
+    "all_required_cell_metrics": true,
+    "monotonicity_explicit": true,
+    "unsupported_cells_explicit": true,
+    "binary_single_class_negative_control": true,
+    "rf_calibration_and_md_separated": true,
+    "paired_summaries_present": true,
+    "candidate_selection_provenance": true,
+    "posthoc_fullrf_separated": true,
+    "historical_results_preserved": true
+  },
+  "gates": [
+    {
+      "gate": "source_hash_and_locked_split",
+      "status": "PASS"
+    },
+    {
+      "gate": "matched_three_arm_protocol",
+      "status": "PASS"
+    },
+    {
+      "gate": "candidate_schema_provenance",
+      "status": "PASS"
+    },
+    {
+      "gate": "required_metrics_and_unsupported_cells",
+      "status": "PASS"
+    },
+    {
+      "gate": "binary_negative_control",
+      "status": "PASS_WITH_DEGENERACY"
+    },
+    {
+      "gate": "paired_summary_compatibility",
+      "status": "PASS"
+    },
+    {
+      "gate": "rf_calibration_vs_md_separation",
+      "status": "PASS_WITH_MD_TODO"
+    },
+    {
+      "gate": "posthoc_fullrf_separation",
+      "status": "PASS"
+    },
+    {
+      "gate": "prediction_phase_acceptance",
+      "status": "PASS_PREDICTION_PHASE_ONLY"
+    }
+  ],
+  "counts": {
+    "runs": 15,
+    "cells": 60,
+    "candidate_rows": 6000,
+    "unsupported_cells": 28,
+    "paired_contrast_rows": 20,
+    "paired_seed_rows": 5,
+    "candidate_selection_rows": 183
+  },
+  "md_status": "not_run; residual_md_minus_rf unavailable",
+  "full_source_rf_status": "posthoc_only; excluded from primary blind claims",
+  "artifacts": {
+    "candidate_predictions_complete": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/upper-tail/candidate_predictions_complete.csv",
+    "paired_contrasts": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/upper-tail/paired_contrasts.csv",
+    "paired_seed_summary": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/upper-tail/paired_seed_summary.csv",
+    "monotonicity_detail": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/upper-tail/monotonicity_detail.csv",
+    "residual_calibration_by_cell": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/upper-tail/residual_calibration_by_cell.csv"
+  }
+}

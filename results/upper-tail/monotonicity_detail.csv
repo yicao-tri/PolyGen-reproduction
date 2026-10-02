@@ -1,0 +1,16 @@
+arm,seed,target_labels,predicted_values,n_defined_targets,cell_mean_monotonic_non_decreasing,spearman_target_prediction,candidate_wise_status
+continuous,17,Q80_boundary_actual_train_max;Q85;Q90;Q95,-4.314662;-4.3135789;-4.312727;-4.3089549,4,True,1.0,not_identifiable_without_shared_structure_identity
+binary,17,Q80_boundary_actual_train_max;Q85;Q90;Q95,-4.3409625;-4.3418773;NA;NA,2,False,-0.9999999999999999,not_identifiable_without_shared_structure_identity
+unconditional_reranking,17,Q80_boundary_actual_train_max;Q85;Q90;Q95,-4.3041418;NA;NA;NA,1,False,,selection_induced_not_inferential
+continuous,42,Q80_boundary_actual_train_max;Q85;Q90;Q95,-4.312651;-4.3182441;-4.3107609;-4.3086616,4,False,0.7999999999999999,not_identifiable_without_shared_structure_identity
+binary,42,Q80_boundary_actual_train_max;Q85;Q90;Q95,-4.3457129;-4.3546886;NA;NA,2,False,-0.9999999999999999,not_identifiable_without_shared_structure_identity
+unconditional_reranking,42,Q80_boundary_actual_train_max;Q85;Q90;Q95,NA;NA;NA;NA,0,False,,selection_induced_not_inferential
+continuous,202,Q80_boundary_actual_train_max;Q85;Q90;Q95,-4.3036388;-4.3072031;-4.3098791;-4.2935894,4,False,0.19999999999999998,not_identifiable_without_shared_structure_identity
+binary,202,Q80_boundary_actual_train_max;Q85;Q90;Q95,-4.3506974;-4.3444829;NA;NA,2,False,0.9999999999999999,not_identifiable_without_shared_structure_identity
+unconditional_reranking,202,Q80_boundary_actual_train_max;Q85;Q90;Q95,-4.3801289;NA;NA;NA,1,False,,selection_induced_not_inferential
+continuous,303,Q80_boundary_actual_train_max;Q85;Q90;Q95,-4.3334532;-4.3369758;-4.3101436;-4.3267167,4,False,0.6000000000000001,not_identifiable_without_shared_structure_identity
+binary,303,Q80_boundary_actual_train_max;Q85;Q90;Q95,-4.3512989;-4.3436659;NA;NA,2,False,0.9999999999999999,not_identifiable_without_shared_structure_identity
+unconditional_reranking,303,Q80_boundary_actual_train_max;Q85;Q90;Q95,NA;NA;NA;NA,0,False,,selection_induced_not_inferential
+continuous,907,Q80_boundary_actual_train_max;Q85;Q90;Q95,-4.311364;-4.3233077;-4.3048748;-4.3014241,4,False,0.7999999999999999,not_identifiable_without_shared_structure_identity
+binary,907,Q80_boundary_actual_train_max;Q85;Q90;Q95,-4.3535253;-4.3432232;NA;NA,2,False,0.9999999999999999,not_identifiable_without_shared_structure_identity
+unconditional_reranking,907,Q80_boundary_actual_train_max;Q85;Q90;Q95,NA;NA;NA;NA,0,False,,selection_induced_not_inferential

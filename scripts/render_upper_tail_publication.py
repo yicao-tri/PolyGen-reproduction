@@ -66,6 +66,7 @@ def main():
     agg = aggregate(metrics)
     agg.to_csv(OUT / "upper_tail_aggregate_metrics.csv", index=False)
     unsupported.groupby(["arm", "target_label"], as_index=False).size().rename(columns={"size": "unsupported_seed_cells"}).to_csv(OUT / "upper_tail_unsupported_summary.csv", index=False)
+    paired = pd.read_csv(IN / "paired_contrasts.csv")
 
     # Figure 1: response, target adherence, and valid yield.
     fig, axes = plt.subplots(1, 3, figsize=(7.5, 2.9), gridspec_kw={"wspace": 0.55})
@@ -142,11 +143,42 @@ def main():
     ax.set_xlim(lo, hi); ax.set_ylim(lo, hi)
     ax.set_xlabel(r"RF prediction, log$_{10}$ S cm$^{-1}$")
     ax.set_ylabel(r"Observed locked-tail value, log$_{10}$ S cm$^{-1}$")
-    ax.set_title("F  Frozen RF underpredicts the locked tail", loc="left", fontweight="bold")
-    ax.legend(frameon=False, fontsize=7.2, loc="upper left")
+    ax.set_title("F  Frozen RF underpredicts the locked tail", loc="left", fontweight="bold", pad=42)
+    # Keep the calibration legend outside the data region so it cannot mask
+    # dense tail points or the identity line.
+    ax.legend(frameon=False, fontsize=7.0, ncol=2, loc="lower center", bbox_to_anchor=(0.5, 1.30), borderaxespad=0.0)
     ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
     ax.text(0.98, 0.04, "MAE = 0.262\nmean residual = +0.262", transform=ax.transAxes, ha="right", va="bottom", fontsize=7.5, bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.8})
     save(fig, "Figure_3_locked_tail_rf_calibration")
+
+    # Figure 4: interpolation-compatible matched-seed contrast layer.
+    fig, axes = plt.subplots(1, 2, figsize=(6.4, 2.55), sharex=True, gridspec_kw={"wspace": 0.32})
+    target_colors = {"Q80_boundary_actual_train_max": "#007C83", "Q85": "#4C78A8", "Q90": "#F58518", "Q95": "#E45756"}
+    xseed = np.arange(len(sorted(paired.seed.unique())))
+    seed_order = sorted(paired.seed.unique())
+    for ax, metric, title, ylabel in [
+        (axes[0], "strict_hit_rate", "G  Paired strict-hit contrast", "Continuous − binary"),
+        (axes[1], "validity", "H  Paired validity contrast", "Continuous − binary"),
+    ]:
+        col = f"continuous_minus_binary__{metric}"
+        for target in TARGET_ORDER:
+            g = paired[paired.target_label == target].set_index("seed").reindex(seed_order)
+            ax.plot(xseed, g[col], marker="o", ms=3.8, lw=1.25, color=target_colors[target], label=TARGET_SHORT[target])
+        ax.axhline(0, color="#222222", lw=0.9, ls=(0, (3, 2)))
+        ax.set_title(title, loc="left", fontweight="bold")
+        ax.set_ylabel(ylabel, labelpad=14)
+        ax.spines["top"].set_visible(False); ax.spines["right"].set_visible(False)
+        ax.set_xticks(xseed, [str(s) for s in seed_order])
+        ax.set_xlabel("Matched seed")
+    # Put the target legend in a dedicated bottom band, away from both panel
+    # y-axis labels and the plotted curves.
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, frameon=False, fontsize=7.0, ncol=4,
+               loc="lower center", bbox_to_anchor=(0.5, 0.035),
+               handlelength=2.0, columnspacing=1.2, borderaxespad=0.0)
+    fig.suptitle("Matched-seed contrasts; descriptive, not candidate-level inference", x=0.02, y=0.98, ha="left", fontsize=10.2, fontweight="bold")
+    fig.subplots_adjust(top=0.72, bottom=0.30, left=0.10, right=0.99)
+    save(fig, "Figure_4_upper_tail_paired_contrasts")
 
     captions = """# Upper-tail publication figures
 
@@ -156,6 +188,7 @@ def main():
 
 **Figure 3 | Calibration of the frozen verifier on locked Q80–Q95 rows.** Each point is one held-out source row, colored by tail interval. The diagonal is ideal calibration; teal dotted lines mark the actual Q80 training maximum. The RF underpredicts the locked tail by a mean residual of +0.262 log units (MAE 0.262), demonstrating surrogate bias in the very region where generated extrapolation would be claimed. This audit does not validate generated candidates.
 """
+    captions += "\n**Figure 4 | Matched-seed contrasts compatible with the interpolation analysis.** (G,H) Continuous-minus-binary differences are shown for each matched seed at each target level for strict-hit rate and validity. The unit is the training/generation seed; individual candidates are not treated as independent replicates. Binary Q90/Q95 cells are unsupported under the frozen single-class threshold, so those contrasts are shown only where both arms have defined cell means.\n"
     (OUT / "FIGURE_CAPTIONS.md").write_text(captions)
 
 
