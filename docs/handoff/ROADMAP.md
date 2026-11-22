@@ -5,7 +5,7 @@
 ```mermaid
 flowchart LR
  V[Vision: trustworthy conditional polymer discovery] --> E[Done: paired prediction benchmark and gap evidence]
- E --> C[In progress: integration PR and reproducible evidence index]
+ E --> C[Done: integrated main and reproducible evidence index]
  C --> D{Decision: park or resource continuation?}
  D -->|Park| P[Preserve refs, inputs, checkpoints and restart gates]
  D -->|Continue| F[Todo: PCFF+ coverage and approved protocol]
@@ -19,7 +19,7 @@ flowchart LR
  classDef decision fill:#fef3c7,stroke:#a16207
  classDef todo fill:#f3f4f6,stroke:#6b7280
  class E done
- class C progress
+ class C done
  class D,R decision
  class V,P,F,M,A,W,S todo
 ```
@@ -29,7 +29,7 @@ Legend: green = done with evidence; blue = in progress; yellow = human decision;
 | Step / owner | Dependency and acceptance | Entry point / relative effort |
 |---|---|---|
 | Done — Yi's existing prediction evidence, checked by agent | Frozen Q80, paired seeds, interpolation/upper-tail/extrapolation artifacts; no physical extrapolation claim | `results/extrapolation/verification.json`, `results/upper-tail/ACCEPTANCE_AUDIT.md`, `evidence/gap-analysis-20261016/PROVENANCE.csv`; already available |
-| In progress — Yi handoff integration / reviewer Hisa | Review consolidation PR, evidence-tier boundaries and unresolved branch differences; merge only through ordinary repo review | `HANDOFF.md`, `docs/handoff/INTEGRATION.md`; small review |
+| Done — Yi handoff integration / agent verification | PR #14 normally merged; old branch tips archived under verified tags; legacy PRs closed as superseded. Scientific sign-off remains separate | `HANDOFF.md`, `docs/handoff/branch_retirement_receipt.json`; completed |
 | Decision — Hisa / project lead | Park by default. To continue, assign compute/parameterization owners and agree minimum paper scope. Data sharing/licensing and journal choice need humans | `docs/handoff/SPEC.md`; small coordination, outcome unresolved |
 | Todo — assigned parameterization owner; Yi evidence handoff | Candidate-specific topology, typing, charges and all bonded/nonbonded coefficients; PEO+LiTFSI positive and phosphorus negative controls; run-0 acceptance; PCFF+ currently NO_GO | `evidence/gap-analysis-20261016/evidence/scripts/audit_pcff_plus_bundle.py`; large, external tooling dependent |
 | Todo — Hisa/project owner approves; assigned simulation owner executes | Freeze thresholds and analysis before new data; primary PCFF+, PFP secondary; candidate strata, 5 replicas/structure, convergence and failures retained | `evidence/gap-analysis-20261016/assets/tables/T6_freeze_card.csv`, `TOP1_MD_VALIDATION_DESIGN_ZH.md`; large |
@@ -43,7 +43,7 @@ Legend: green = done with evidence; blue = in progress; yellow = human decision;
 
 ## Minimal restart
 
-1. Open `HANDOFF.md`, inspect registry gates, and review the integration PR. Do not resume from old Hub/grid notes.
+1. Open canonical `main` and `HANDOFF.md`, inspect registry gates and the merged integration receipt. Do not resume from old Hub/grid notes.
 2. Run `python3 registry/build_registry.py`, then `python3 scripts/validate_research_blueprint.py` and the checks in `docs/handoff/VALIDATION.md`.
 3. Inspect the candidate PCFF+ audit and T6 freeze card. Assign an owner and obtain actual scientific approval before any new MD.
 4. Use the isolated kozo handoff checkout recorded in the external receipt; the historical `/home/yi/PolyGen-reproduction-grid` path is absent. No legacy directory was overwritten.

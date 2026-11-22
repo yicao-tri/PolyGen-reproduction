@@ -1,0 +1,7 @@
+Removing worktrees/polygen-grid-pr-clean: gitdir file points to non-existent location
+Removing worktrees/polygen-pr7-update: gitdir file points to non-existent location
+Removing worktrees/polygen-upper-tail-pr.ZvA5yX: gitdir file points to non-existent location
+Removing worktrees/polygen-acceptance-pr: gitdir file points to non-existent location
+Removing worktrees/polygen-pi1m-pr: gitdir file points to non-existent location
+Removing worktrees/polygen-multi-property-pr: gitdir file points to non-existent location
+Removing worktrees/polygen-manuscript-pr: gitdir file points to non-existent location

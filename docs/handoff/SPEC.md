@@ -2,7 +2,7 @@
 
 Scope: PolyGen reproduction, optional polymer generation and the 2026-10-16 gap package. No MIT liquid-electrolyte or RSI changes. No separate polyGenius repository was verified; use PolyGen-reproduction as the identified name and retain the alias as unverified.
 
-Canonical development line proposed by this handoff: `codex/internship-handoff-20261121`, targeting GitHub `main`. Main becomes canonical only after the PR is reviewed and merged. Existing `PROJECT_PATHS.json` referred to `codex-migration-review`; the handoff branch supersedes that path policy for new work after review.
+Canonical development line: GitHub `main`, integrated through ordinary PR #14 merge. `PROJECT_PATHS.json` points to the clean local main worktree and isolated kozo handoff checkout; the original dirty workspace is preserved. No rule required a new human review for this authorized documentary/evidence consolidation. Scientific production approvals remain separate and do not block pure handoff integration.
 
 Primary question: under frozen support and paired seed budgets, how does continuous conditioning change target control, and when does the verifier prevent interpretation of frontier queries? Prediction-only evidence is separate from physical conductivity and closed-loop discovery.
 

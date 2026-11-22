@@ -1,3 +1,13 @@
+# Current integration status
+
+PR #14 was normally merged on 21 November 2026. The GitHub branch endpoint reports main protection disabled; no required checks/reviews were configured. Merge used exact-head matching without bypass. Scientific HOLD states remain intact and are not personal approval.
+
+The 10 pre-existing open PRs (#2, #5–#13) were closed as superseded after all relevant old tips were preserved in 25 verified GitHub archive tags, plus original and integration all-ref bundles. They were not claimed individually merged. Twelve historical remote branches were retired after confirming their tips had not moved and their archive tags matched. Eleven unattached local branch refs were retired after preservation; the original dirty workspace branch remains attached and preserved. Seven registrations for absent temporary worktrees were pruned after dry-run. See the exact machine-readable receipt rather than relying on these prose counts.
+
+Clean canonical local checkout and kozo path are in PROJECT_PATHS.json. Original dirty workspace, runtime, raw outputs, synthetic/pilot/HOLD evidence and old versions remain recoverable; no scientific data was deleted.
+
+## Historical integration record before merge
+
 # Integration and preservation record
 
 This branch starts at local `a8214ae`, which already integrates the grid, multi-property, manuscript, PI1M and scalar acceptance work. Fresh fetch found an additional real commit `f1f4f54` on PR #5; it was cherry-picked as a publication-figure/provenance asset without promoting the PFP smoke evidence.

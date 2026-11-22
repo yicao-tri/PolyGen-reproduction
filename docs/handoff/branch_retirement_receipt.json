@@ -1,0 +1,213 @@
+{
+  "actions": [
+    {
+      "action": "close_superseded_pr",
+      "number": 13,
+      "result": "closed, not merged",
+      "head": "codex/interpolation-extrapolation-acceptance-pr-20261001"
+    },
+    {
+      "action": "close_superseded_pr",
+      "number": 12,
+      "result": "closed, not merged",
+      "head": "codex/pi1m-overlap-provenance-pr-20261001"
+    },
+    {
+      "action": "close_superseded_pr",
+      "number": 11,
+      "result": "closed, not merged",
+      "head": "codex/manuscript-review-draft-pr-20261001"
+    },
+    {
+      "action": "close_superseded_pr",
+      "number": 10,
+      "result": "closed, not merged",
+      "head": "codex/grid-evidence-pr-20261001"
+    },
+    {
+      "action": "close_superseded_pr",
+      "number": 9,
+      "result": "closed, not merged",
+      "head": "codex/multi-property-results-pr"
+    },
+    {
+      "action": "close_superseded_pr",
+      "number": 8,
+      "result": "closed, not merged",
+      "head": "experiment/multi-property-upper-tail-evidence"
+    },
+    {
+      "action": "close_superseded_pr",
+      "number": 7,
+      "result": "closed, not merged",
+      "head": "experiment/extrapolation-interpolation-results"
+    },
+    {
+      "action": "close_superseded_pr",
+      "number": 6,
+      "result": "closed, not merged",
+      "head": "codex-migration-review"
+    },
+    {
+      "action": "close_superseded_pr",
+      "number": 5,
+      "result": "closed, not merged",
+      "head": "experiment/pfp-top1-pilot"
+    },
+    {
+      "action": "close_superseded_pr",
+      "number": 2,
+      "result": "closed, not merged",
+      "head": "experiment/polygen-continuous-seed101"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "codex-migration-review",
+      "old_sha": "addd73e715eabeaddc75150a3c549eb1ceba92fa",
+      "archive_tag": "archive/20261121/remote/codex-migration-review"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "codex/grid-evidence-pr-20261001",
+      "old_sha": "9ba489d8ff6f035d826bf9f96a58e9fb0ec0eab8",
+      "archive_tag": "archive/20261121/remote/codex/grid-evidence-pr-20261001"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "codex/internship-handoff-20261121",
+      "old_sha": "b4cc2d32237605c06b6a23c460bd923458350080",
+      "archive_tag": "archive/20261121/remote/codex/internship-handoff-20261121"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "codex/interpolation-extrapolation-acceptance-pr-20261001",
+      "old_sha": "2f21fc175d921680967ca23878fb3fa584bf4a06",
+      "archive_tag": "archive/20261121/remote/codex/interpolation-extrapolation-acceptance-pr-20261001"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "codex/manuscript-review-draft-pr-20261001",
+      "old_sha": "52fce70138d2a186d4322cb249a7844c96fc555e",
+      "archive_tag": "archive/20261121/remote/codex/manuscript-review-draft-pr-20261001"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "codex/multi-property-results-nature-evidence",
+      "old_sha": "785faf8f2eb758fb641f03af4ccca5fcf38699f9",
+      "archive_tag": "archive/20261121/remote/codex/multi-property-results-nature-evidence"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "codex/multi-property-results-pr",
+      "old_sha": "a9358f0224cebf9845dfd98e54017c7c705d6295",
+      "archive_tag": "archive/20261121/remote/codex/multi-property-results-pr"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "codex/pi1m-overlap-provenance-pr-20261001",
+      "old_sha": "0ba50468efabe10458d8b9afa50d754a75c64517",
+      "archive_tag": "archive/20261121/remote/codex/pi1m-overlap-provenance-pr-20261001"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "experiment/complete-system-e2e",
+      "old_sha": "1e228ff8b274627644d6ec2163948888b0ebc42c",
+      "archive_tag": "archive/20261121/remote/experiment/complete-system-e2e"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "experiment/extrapolation-interpolation-results",
+      "old_sha": "513d3f8855b3c30bef74a670158c83dc0dc78f6f",
+      "archive_tag": "archive/20261121/remote/experiment/extrapolation-interpolation-results"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "experiment/multi-property-upper-tail-evidence",
+      "old_sha": "20a10c80deddea44516a75556af7fc01f10a730f",
+      "archive_tag": "archive/20261121/remote/experiment/multi-property-upper-tail-evidence"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "experiment/pfp-top1-pilot",
+      "old_sha": "f1f4f5418e0818fdc6c30b5b0eec40dbbc93326a",
+      "archive_tag": "archive/20261121/remote/experiment/pfp-top1-pilot"
+    },
+    {
+      "action": "delete_archived_remote_branch",
+      "branch": "experiment/polygen-continuous-seed101",
+      "old_sha": "42552dac4941bcfbe2d8c492441f3e41ab7d8faf",
+      "archive_tag": "archive/20261121/remote/experiment/polygen-continuous-seed101"
+    },
+    {
+      "action": "retire_archived_local_ref",
+      "ref": "refs/heads/codex-migration-review",
+      "old_sha": "addd73e715eabeaddc75150a3c549eb1ceba92fa",
+      "archive_tag": "archive/20261121/local/codex-migration-review"
+    },
+    {
+      "action": "retire_archived_local_ref",
+      "ref": "refs/heads/codex/grid-evidence-pr-20261001",
+      "old_sha": "9ba489d8ff6f035d826bf9f96a58e9fb0ec0eab8",
+      "archive_tag": "archive/20261121/local/codex/grid-evidence-pr-20261001"
+    },
+    {
+      "action": "retire_archived_local_ref",
+      "ref": "refs/heads/codex/internship-handoff-20261121",
+      "old_sha": "b4cc2d32237605c06b6a23c460bd923458350080",
+      "archive_tag": "archive/20261121/local/codex/internship-handoff-20261121"
+    },
+    {
+      "action": "retire_archived_local_ref",
+      "ref": "refs/heads/codex/interpolation-extrapolation-acceptance-pr-20261001",
+      "old_sha": "2f21fc175d921680967ca23878fb3fa584bf4a06",
+      "archive_tag": "archive/20261121/local/codex/interpolation-extrapolation-acceptance-pr-20261001"
+    },
+    {
+      "action": "retire_archived_local_ref",
+      "ref": "refs/heads/codex/manuscript-review-draft-pr-20261001",
+      "old_sha": "52fce70138d2a186d4322cb249a7844c96fc555e",
+      "archive_tag": "archive/20261121/local/codex/manuscript-review-draft-pr-20261001"
+    },
+    {
+      "action": "retire_archived_local_ref",
+      "ref": "refs/heads/codex/multi-property-results-nature-evidence",
+      "old_sha": "8e1d2f8b7bd922c49d80669372c41419f2318cd3",
+      "archive_tag": "archive/20261121/local/codex/multi-property-results-nature-evidence"
+    },
+    {
+      "action": "retire_archived_local_ref",
+      "ref": "refs/heads/codex/multi-property-results-pr",
+      "old_sha": "a9358f0224cebf9845dfd98e54017c7c705d6295",
+      "archive_tag": "archive/20261121/local/codex/multi-property-results-pr"
+    },
+    {
+      "action": "retire_archived_local_ref",
+      "ref": "refs/heads/codex/pi1m-overlap-provenance-pr-20261001",
+      "old_sha": "0ba50468efabe10458d8b9afa50d754a75c64517",
+      "archive_tag": "archive/20261121/local/codex/pi1m-overlap-provenance-pr-20261001"
+    },
+    {
+      "action": "retire_archived_local_ref",
+      "ref": "refs/heads/experiment/complete-system-e2e",
+      "old_sha": "1e228ff8b274627644d6ec2163948888b0ebc42c",
+      "archive_tag": "archive/20261121/local/experiment/complete-system-e2e"
+    },
+    {
+      "action": "retire_archived_local_ref",
+      "ref": "refs/heads/experiment/extrapolation-interpolation-results",
+      "old_sha": "513d3f8855b3c30bef74a670158c83dc0dc78f6f",
+      "archive_tag": "archive/20261121/local/experiment/extrapolation-interpolation-results"
+    },
+    {
+      "action": "retire_archived_local_ref",
+      "ref": "refs/heads/experiment/multi-property-upper-tail-evidence",
+      "old_sha": "20a10c80deddea44516a75556af7fc01f10a730f",
+      "archive_tag": "archive/20261121/local/experiment/multi-property-upper-tail-evidence"
+    }
+  ],
+  "retained_local_attached": [
+    "refs/heads/codex/grid-evidence-20261001",
+    "refs/heads/main"
+  ],
+  "reason": "Historical versions preserved under verified GitHub archive tags and full bundles; superseded PRs closed rather than claimed merged"
+}
