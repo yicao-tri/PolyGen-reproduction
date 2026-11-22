@@ -1,0 +1,155 @@
+{
+  "tags_verified": 25,
+  "rows": [
+    {
+      "ref": "refs/heads/codex-migration-review",
+      "sha": "addd73e715eabeaddc75150a3c549eb1ceba92fa",
+      "archive_tag": "archive/20261121/local/codex-migration-review",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/heads/codex/grid-evidence-20261001",
+      "sha": "a8214ae6aa108d1dfb482519fa7e1a920e305ab6",
+      "archive_tag": "archive/20261121/local/codex/grid-evidence-20261001",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/heads/codex/grid-evidence-pr-20261001",
+      "sha": "9ba489d8ff6f035d826bf9f96a58e9fb0ec0eab8",
+      "archive_tag": "archive/20261121/local/codex/grid-evidence-pr-20261001",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/heads/codex/internship-handoff-20261121",
+      "sha": "b4cc2d32237605c06b6a23c460bd923458350080",
+      "archive_tag": "archive/20261121/local/codex/internship-handoff-20261121",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/heads/codex/interpolation-extrapolation-acceptance-pr-20261001",
+      "sha": "2f21fc175d921680967ca23878fb3fa584bf4a06",
+      "archive_tag": "archive/20261121/local/codex/interpolation-extrapolation-acceptance-pr-20261001",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/heads/codex/manuscript-review-draft-pr-20261001",
+      "sha": "52fce70138d2a186d4322cb249a7844c96fc555e",
+      "archive_tag": "archive/20261121/local/codex/manuscript-review-draft-pr-20261001",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/heads/codex/multi-property-results-nature-evidence",
+      "sha": "8e1d2f8b7bd922c49d80669372c41419f2318cd3",
+      "archive_tag": "archive/20261121/local/codex/multi-property-results-nature-evidence",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/heads/codex/multi-property-results-pr",
+      "sha": "a9358f0224cebf9845dfd98e54017c7c705d6295",
+      "archive_tag": "archive/20261121/local/codex/multi-property-results-pr",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/heads/codex/pi1m-overlap-provenance-pr-20261001",
+      "sha": "0ba50468efabe10458d8b9afa50d754a75c64517",
+      "archive_tag": "archive/20261121/local/codex/pi1m-overlap-provenance-pr-20261001",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/heads/experiment/complete-system-e2e",
+      "sha": "1e228ff8b274627644d6ec2163948888b0ebc42c",
+      "archive_tag": "archive/20261121/local/experiment/complete-system-e2e",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/heads/experiment/extrapolation-interpolation-results",
+      "sha": "513d3f8855b3c30bef74a670158c83dc0dc78f6f",
+      "archive_tag": "archive/20261121/local/experiment/extrapolation-interpolation-results",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/heads/experiment/multi-property-upper-tail-evidence",
+      "sha": "20a10c80deddea44516a75556af7fc01f10a730f",
+      "archive_tag": "archive/20261121/local/experiment/multi-property-upper-tail-evidence",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/codex-migration-review",
+      "sha": "addd73e715eabeaddc75150a3c549eb1ceba92fa",
+      "archive_tag": "archive/20261121/remote/codex-migration-review",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/grid-evidence-pr-20261001",
+      "sha": "9ba489d8ff6f035d826bf9f96a58e9fb0ec0eab8",
+      "archive_tag": "archive/20261121/remote/codex/grid-evidence-pr-20261001",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/internship-handoff-20261121",
+      "sha": "b4cc2d32237605c06b6a23c460bd923458350080",
+      "archive_tag": "archive/20261121/remote/codex/internship-handoff-20261121",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/interpolation-extrapolation-acceptance-pr-20261001",
+      "sha": "2f21fc175d921680967ca23878fb3fa584bf4a06",
+      "archive_tag": "archive/20261121/remote/codex/interpolation-extrapolation-acceptance-pr-20261001",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/manuscript-review-draft-pr-20261001",
+      "sha": "52fce70138d2a186d4322cb249a7844c96fc555e",
+      "archive_tag": "archive/20261121/remote/codex/manuscript-review-draft-pr-20261001",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/multi-property-results-nature-evidence",
+      "sha": "785faf8f2eb758fb641f03af4ccca5fcf38699f9",
+      "archive_tag": "archive/20261121/remote/codex/multi-property-results-nature-evidence",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/multi-property-results-pr",
+      "sha": "a9358f0224cebf9845dfd98e54017c7c705d6295",
+      "archive_tag": "archive/20261121/remote/codex/multi-property-results-pr",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/codex/pi1m-overlap-provenance-pr-20261001",
+      "sha": "0ba50468efabe10458d8b9afa50d754a75c64517",
+      "archive_tag": "archive/20261121/remote/codex/pi1m-overlap-provenance-pr-20261001",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/experiment/complete-system-e2e",
+      "sha": "1e228ff8b274627644d6ec2163948888b0ebc42c",
+      "archive_tag": "archive/20261121/remote/experiment/complete-system-e2e",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/experiment/extrapolation-interpolation-results",
+      "sha": "513d3f8855b3c30bef74a670158c83dc0dc78f6f",
+      "archive_tag": "archive/20261121/remote/experiment/extrapolation-interpolation-results",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/experiment/multi-property-upper-tail-evidence",
+      "sha": "20a10c80deddea44516a75556af7fc01f10a730f",
+      "archive_tag": "archive/20261121/remote/experiment/multi-property-upper-tail-evidence",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/experiment/pfp-top1-pilot",
+      "sha": "f1f4f5418e0818fdc6c30b5b0eec40dbbc93326a",
+      "archive_tag": "archive/20261121/remote/experiment/pfp-top1-pilot",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    },
+    {
+      "ref": "refs/remotes/origin/experiment/polygen-continuous-seed101",
+      "sha": "42552dac4941bcfbe2d8c492441f3e41ab7d8faf",
+      "archive_tag": "archive/20261121/remote/experiment/polygen-continuous-seed101",
+      "reason": "superseded development line, exact original tip preserved before retirement"
+    }
+  ]
+}
