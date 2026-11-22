@@ -19,7 +19,7 @@
   ],
   "stage_3_policy": "PFP/MD remains out of scope and requires explicit user sign-off",
   "path_policy": "All new code, configs, analysis and figures must be written under canonical_local_root; remote checkout is execution-only and must not be treated as a second local project.",
-  "canonical_branch_status": "PR14 merged normally; follow-up canonical path reconciliation",
+  "canonical_branch_status": "canonical main; integration merged and branch retirement receipts committed",
   "handoff": "HANDOFF.md",
   "evidence_registry": "registry/output/polygen_evidence.sqlite",
   "registry_role": "evidence_index_not_scientific_results_master",
