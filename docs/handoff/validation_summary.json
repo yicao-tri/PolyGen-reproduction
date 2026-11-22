@@ -1,0 +1,28 @@
+{
+  "python3 scripts/validate_research_blueprint.py": {
+    "exit_code": 0,
+    "log": "evidence/validation_0.log"
+  },
+  "/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/bin/python scripts/verify_extrapolation.py": {
+    "exit_code": 0,
+    "log": "evidence/validation_1.log"
+  },
+  "/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/bin/python scripts/verify_upper_tail.py": {
+    "exit_code": 0,
+    "log": "evidence/validation_2.log"
+  },
+  "/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/bin/python -m unittest discover -s tests -v": {
+    "exit_code": 0,
+    "log": "evidence/validation_3.log"
+  },
+  "registry integrity, queries, deterministic rebuild": {
+    "exit_code": 0,
+    "database_sha256": "f405dd4508580c0738bc53a4acb2ffea112bf18f481527336a7dac48c874d7f4"
+  },
+  "isolated-dependency pytest -q tests": {
+    "exit_code": 0,
+    "tests_passed": 17,
+    "log": "pytest.log",
+    "dependency_scope": "external handoff test-deps; original venv unchanged"
+  }
+}

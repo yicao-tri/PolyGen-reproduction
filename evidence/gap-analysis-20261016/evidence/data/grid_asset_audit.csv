@@ -1,0 +1,10 @@
+config_id,expected_arm_seed_pairs,observed_arm_seed_pairs,complete,raw_samples_expected,raw_samples_observed,analysis_in_summary,status
+gpt-nano_steps1000_temp0.8,10,10,True,3000,3000,True,observed_complete
+gpt-nano_steps1000_temp1.0,10,10,True,3000,3000,True,observed_complete
+gpt-nano_steps1000_temp1.2,10,10,True,3000,3000,True,observed_complete
+gpt-nano_steps2000_temp0.8,10,10,True,3000,3000,True,observed_complete
+gpt-nano_steps2000_temp1.0,10,10,True,3000,3000,True,observed_complete
+gpt-nano_steps2000_temp1.2,10,10,True,3000,3000,True,observed_complete
+gpt-nano_steps3000_temp0.8,10,10,True,3000,3000,True,observed_complete
+gpt-nano_steps3000_temp1.0,10,10,True,3000,3000,True,observed_complete
+gpt-nano_steps3000_temp1.2,10,10,True,3000,3000,True,observed_complete

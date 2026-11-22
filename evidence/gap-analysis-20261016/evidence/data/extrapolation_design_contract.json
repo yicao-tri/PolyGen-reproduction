@@ -1,0 +1,75 @@
+{
+  "benchmark": "continuous-vs-binary true conductivity extrapolation",
+  "region": "extrapolation",
+  "frozen_before_definitive_run": true,
+  "primary_question": "Under a locked Q80 property-tail split, does continuous conductivity conditioning produce more surrogate-supported candidates beyond the actual training maximum than binary high/low conditioning or unconditional generation plus frozen-surrogate reranking?",
+  "primary_estimand": "paired seed-level difference in surrogate-gated frontier-crossing rate, continuous minus binary, with unconditional+rerranking reported as a prespecified control",
+  "interpretation_boundary": "Prediction-only evidence under the released HTP-MD representation, PCFF+ source protocol, frozen RF verifier and PolyGen gpt-nano sampling; no MD or experimental conductivity claim.",
+  "source": {
+    "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/inputs/release-data/htpmd-trainset.csv",
+    "hash_policy": "sha256 recorded in frozen_manifest.json",
+    "locked_source_rule": "Rows with log10(conductivity) > full-source Q80 are locked away from generator fitting, RF fitting, tuning, thresholding, filtering and candidate selection. Full-source Q90/Q100 are used only to define the frozen query targets."
+  },
+  "split": {
+    "training_rule": "log10(conductivity) <= full-source Q80, inclusive",
+    "actual_train_max_required": true,
+    "locked_holdout": "Q80-Q100",
+    "row_identity_preserved": true,
+    "duplicate_policy": "exact mol_smiles duplicates are retained as source rows and exact-training novelty is evaluated against the locked training set"
+  },
+  "targets": [
+    {"label": "Q90", "definition": "full-source log10(conductivity) Q90"},
+    {"label": "Q100", "definition": "full-source maximum log10(conductivity)"},
+    {"label": "train_max_plus_0.25", "definition": "actual inclusive train_max + 0.25 log10 units"},
+    {"label": "train_max_plus_0.50", "definition": "actual inclusive train_max + 0.50 log10 units"}
+  ],
+  "arms": {
+    "continuous": "scalar target conditioning; target value is passed to the continuous prefix embedding",
+    "binary": "only the fixed high/low label from the original -4.0 log10(S/cm) cutoff; no continuous target is passed; expected Q80-truncated degeneracy is a required negative control",
+    "unconditional_reranking": "constant-zero unconditional gpt-nano generation followed by disjoint assignment of a matched 400-candidate raw pool to the four targets using only the frozen RF prediction, uncertainty and target distance"
+  },
+  "matched_settings": {
+    "model": "PolyGen-1.0.0 minGPT gpt-nano",
+    "block_size": 64,
+    "prefix_length": 5,
+    "optimizer_steps": 1000,
+    "batch_size": 64,
+    "learning_rate": 0.0005,
+    "temperature": 1.0,
+    "top_k": 40,
+    "samples_per_target_cell": 100,
+    "unconditional_raw_pool_per_seed": 400,
+    "seeds": [17, 42, 202, 303, 907],
+    "rf_estimators": 300,
+    "rf_random_state": 20260923,
+    "support_gate_tanimoto": 0.35,
+    "uncertainty_gate_tree_sd": 0.35,
+    "strict_target_error_gate": 0.5
+  },
+  "pairing": {
+    "unit": "seed x arm x target cell; seed is shared across arms and target order is fixed",
+    "primary_sign": "continuous minus binary",
+    "no_result_dependent_reruns": true,
+    "unconditional_assignment": "disjoint 100-candidate slices per target within each seed raw pool"
+  },
+  "required_candidate_fields": [
+    "candidate_id", "structure", "arm", "seed", "target_label", "target",
+    "validity", "novelty", "uniqueness", "support", "rf_prediction",
+    "rf_uncertainty", "gnn_prediction", "gnn_uncertainty", "target_error",
+    "residual", "filter_decisions", "failure_reason", "force_field_coverage",
+    "acquisition_provenance", "md_status"
+  ],
+  "md_policy": "MD is explicitly not run in this phase. Candidate selection is a proposed review table only; MD-confirmed frontier crossing remains unsupported.",
+  "historical_compatibility": {
+    "reference_roots": ["results/interpolation", "results/upper-tail"],
+    "schema_adapter": "The historical upper-tail unconditional label is not reused as a true unconditional checkpoint; this run trains a constant-zero unconditional adapter while retaining the same output schema and budgets.",
+    "historical_results_preserved": true
+  },
+  "expected_outputs": [
+    "frozen_manifest.json", "train_rows.csv", "locked_tail_rows.csv", "locked_tail_verifier_audit.csv",
+    "candidate_predictions.csv", "metrics_by_cell.csv", "region_summary.json", "paired_contrasts.csv",
+    "unsupported_cells.csv", "failure_reasons.csv", "candidate_selection_for_md.csv",
+    "run_manifest.json", "run_exit_codes.csv", "pairing_acceptance_audit.json", "REPORT.md",
+    "publication/*.png", "publication/*.svg", "publication/FIGURE_CAPTIONS.md"
+  ]
+}

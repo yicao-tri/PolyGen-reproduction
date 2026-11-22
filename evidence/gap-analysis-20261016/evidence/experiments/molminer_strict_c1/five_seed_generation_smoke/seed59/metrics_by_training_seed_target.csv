@@ -1,0 +1,4 @@
+training_seed,target,raw_n,generation_success,repeat_unit_validity,exactly_two_star_rate,strict_corpus_novelty,common_verifier_validity,common_verifier_novelty,in_support_rate,uncertainty_gate_rate,strict_hit_rate,target_mae_valid
+59,-5.0,10,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.0,0.6358454987748807
+59,-4.0,10,0.5,0.5,0.5,0.5,0.5,0.5,0.1,0.5,0.1,0.377384974901099
+59,-3.0,10,0.6,0.3,0.3,0.2,0.6,0.6,0.0,0.6,0.0,1.2770480809871223

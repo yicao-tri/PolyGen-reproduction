@@ -1,0 +1,6 @@
+Vocabulary processing of 35046 samples completed.
+	 - 35046 (100.00%) Success
+	 - 0 (0.00%) Fails
+
+Files that failed processing (filepath, exception):
+	(showing at most 500 examples; counts above are exact)

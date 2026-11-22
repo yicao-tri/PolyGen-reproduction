@@ -1,0 +1,8 @@
+item,value,freeze_status,sha_or_source
+candidate_set,continuous/binary/unconditional_reranking × Q90/Q100/train_max+0.25/train_max+0.50; proposed candidates from candidate_selection_for_md.csv,frozen_prediction_phase,a611d167354a8b7b29074e6f022eaa82641b63ddeb5fdcef4ae6fa329252bcc7
+generator_and_verifier,PolyGen gpt-nano; blind Q80-only RF; 300 trees; support ≥0.35; uncertainty <0.35,frozen,e7ca9138ed2f18302cd02b83b912f702732be0e365fcea625531aeacc371a978
+md_primary_force_field,PCFF+ primary; PFP secondary sensitivity only,proposed_before_MD,strategy/A2-A5
+replication,5 independent replicas per structure; structure is inferential unit,proposed_before_MD,MD_VALIDATION_PROTOCOL.md
+md_confirmed_frontier_hit,structure-level mean log10(sigma) above frozen training boundary and lower 95% replicate CI above boundary; all replicas must pass convergence gate,proposed_not_yet_TRI_approved,strategy/A5
+convergence,"5 ns production, block/replicate stability, no NaN/explosion, force-field/build gates pass; non-converged replicas excluded from confirmatory claim",proposed_not_yet_TRI_approved,strategy/A2/A5
+stop_rule,do not escalate to long MD or active learning until PCFF+ coverage and short-MD gates pass,frozen_policy,MD_VALIDATION_PROTOCOL.md

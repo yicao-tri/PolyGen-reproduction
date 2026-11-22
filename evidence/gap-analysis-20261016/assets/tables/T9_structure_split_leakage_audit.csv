@@ -1,0 +1,3 @@
+policy,parse_failures,train_unique_canonical_structures,validation_unique_canonical_structures,train_validation_canonical_overlap,interpretation
+released-random,0,4864,1472,312,row-level canonical leakage remains
+structure-disjoint,0,4819,1205,0,exact canonical disjointness only; not scaffold/family OOD

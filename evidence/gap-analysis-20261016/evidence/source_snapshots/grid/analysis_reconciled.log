@@ -1,0 +1,15 @@
+PolyGen generation-grid reconciled package snapshot
+Date: 2026-10-16
+Source: results/experiment-c/grid/analysis/grid_analysis_summary.json
+
+status=analysis_complete
+configs=9
+raw_total=27000
+observed_arm_seed_pairs=90
+top50_rows=900
+stage_3_pfp_md=not_started_explicit_user_signoff_required
+
+The older canonical analysis.log snapshot listed 7 configurations and 21,000
+raw rows. The current machine-readable grid summary and asset audit contain all
+9 configurations and 27,000 rows. This reconciled log is package-local and does
+not modify the canonical repository.

@@ -1,0 +1,52 @@
+{
+  "columns": [
+    "claim_id",
+    "status",
+    "evidence_path",
+    "interpretation_boundary"
+  ],
+  "rows": [
+    [
+      "a4",
+      "isolated_patch_pending_canonical_review",
+      "evidence/gap-analysis-20261016/HISA_REVIEW_ACTIONS.md",
+      "Agent regression is not human sign-off"
+    ],
+    [
+      "f7f8",
+      "synthetic_planning",
+      "evidence/gap-analysis-20261016/CLAIM_MAP.csv",
+      "Replace or remove before publication"
+    ],
+    [
+      "molminer",
+      "engineering_only",
+      "evidence/gap-analysis-20261016/STRICT_MOLMINER_SMOKE.md",
+      "Final same-support budget/checkpoint/Wee comparison incomplete"
+    ],
+    [
+      "ood",
+      "incomplete",
+      "evidence/gap-analysis-20261016/TODO_AND_ACCEPTANCE.md",
+      "Sampled near-overlap and row-disjointness are insufficient"
+    ],
+    [
+      "pfp",
+      "NON_CONVERGED_SMOKE_ONLY",
+      "evidence/gap-analysis-20261016/FINAL_READINESS_AUDIT.md",
+      "Missing trajectories; not physical confirmation"
+    ],
+    [
+      "physical",
+      "NO_GO_PLANNED_NOT_RUN",
+      "evidence/gap-analysis-20261016/evidence/data/pcff_plus_bundle_audit/pcff_plus_bundle_audit.json",
+      "No candidate-specific parameter bundle; no new MD"
+    ],
+    [
+      "prediction",
+      "observed_prediction_only",
+      "evidence/gap-analysis-20261016/assets/tables/T3_locked_tail_verifier_bins.csv",
+      "Supports verifier-limit diagnosis, not physical failure"
+    ]
+  ]
+}

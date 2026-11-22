@@ -1,0 +1,5 @@
+generator,target,generation_success_or_connected_yield,validity,support_hit_rate,corpus_contains_HTP_MD,held_out,status
+PolyGen continuous,-4.0,1.0,0.4546666666666666,0.178,True,True,observed
+PolyGen binary,-4.0,1.0,0.522,0.1586666666666666,True,True,observed
+MolMiner,-4.0,1.0,0.99,0.754,True,False,observed_descriptive
+Wee,-4.0,,,,,,unavailable_task_mismatch

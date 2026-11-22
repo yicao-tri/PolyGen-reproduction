@@ -1,0 +1,11 @@
+evidence_layer,arm,seed,config_id,source_file,raw_samples,valid_count,eligible_count,strict_hit_count,targets,status
+existing C1 evidence,binary,17,c1_gptnano_steps1000_temp1.0_raw300_seedtarget100,results/experiment-c/c1/binary-seed17/samples.csv,300,146,139,45,"[-5.0, -4.0, -3.0]",audited
+existing C1 evidence,continuous,17,c1_gptnano_steps1000_temp1.0_raw300_seedtarget100,results/experiment-c/c1/continuous-seed17/samples.csv,300,136,127,55,"[-5.0, -4.0, -3.0]",audited
+existing C1 evidence,binary,42,c1_gptnano_steps1000_temp1.0_raw300_seedtarget100,results/experiment-c/c1/binary-seed42/samples.csv,300,150,142,51,"[-5.0, -4.0, -3.0]",audited
+existing C1 evidence,continuous,42,c1_gptnano_steps1000_temp1.0_raw300_seedtarget100,results/experiment-c/c1/continuous-seed42/samples.csv,300,142,128,54,"[-5.0, -4.0, -3.0]",audited
+existing C1 evidence,binary,202,c1_gptnano_steps1000_temp1.0_raw300_seedtarget100,results/experiment-c/extra-seeds/seeds202-303/binary-seed202/samples.csv,300,164,154,50,"[-5.0, -4.0, -3.0]",audited
+existing C1 evidence,continuous,202,c1_gptnano_steps1000_temp1.0_raw300_seedtarget100,results/experiment-c/extra-seeds/seeds202-303/continuous-seed202/samples.csv,300,145,137,53,"[-5.0, -4.0, -3.0]",audited
+existing C1 evidence,binary,303,c1_gptnano_steps1000_temp1.0_raw300_seedtarget100,results/experiment-c/extra-seeds/seeds202-303/binary-seed303/samples.csv,300,154,150,45,"[-5.0, -4.0, -3.0]",audited
+existing C1 evidence,continuous,303,c1_gptnano_steps1000_temp1.0_raw300_seedtarget100,results/experiment-c/extra-seeds/seeds202-303/continuous-seed303/samples.csv,300,136,131,53,"[-5.0, -4.0, -3.0]",audited
+existing C1 evidence,binary,907,c1_gptnano_steps1000_temp1.0_raw300_seedtarget100,results/experiment-c/c1/binary-seed907/samples.csv,300,169,164,47,"[-5.0, -4.0, -3.0]",audited
+existing C1 evidence,continuous,907,c1_gptnano_steps1000_temp1.0_raw300_seedtarget100,results/experiment-c/c1/continuous-seed907/samples.csv,300,123,110,52,"[-5.0, -4.0, -3.0]",audited

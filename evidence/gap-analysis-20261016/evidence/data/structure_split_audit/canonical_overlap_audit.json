@@ -1,0 +1,18 @@
+{
+  "runs": [
+    {
+      "policy": "released-random",
+      "parse_failures": 0,
+      "train_unique_canonical_structures": 4864,
+      "validation_unique_canonical_structures": 1472,
+      "train_validation_canonical_overlap": 312
+    },
+    {
+      "policy": "structure-disjoint",
+      "parse_failures": 0,
+      "train_unique_canonical_structures": 4819,
+      "validation_unique_canonical_structures": 1205,
+      "train_validation_canonical_overlap": 0
+    }
+  ]
+}

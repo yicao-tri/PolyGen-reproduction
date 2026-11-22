@@ -1,0 +1,20 @@
+{
+  "status": "engineering_smoke_only",
+  "raw_rows": 30,
+  "valid_repeat_units": 10,
+  "exactly_two_star_units": 10,
+  "strict_hits": 3,
+  "valid_rate": 0.3333333333333333,
+  "exactly_two_star_rate": 0.3333333333333333,
+  "strict_hit_rate": 0.1,
+  "target_mae_valid": 0.6667950579319865,
+  "by_training_seed": [
+    {
+      "training_seed": 17,
+      "valid_rate": 0.3333333333333333,
+      "exactly_two_star_rate": 0.3333333333333333,
+      "strict_hit_rate": 0.09999999999999999
+    }
+  ],
+  "publication_boundary": "five-seed five-epoch smoke only; not the final matched-budget comparison"
+}

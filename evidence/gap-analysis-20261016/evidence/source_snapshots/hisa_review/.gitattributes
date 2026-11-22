@@ -1,0 +1,5 @@
+# Fixed-column molecular-coordinate files intentionally preserve trailing
+# spaces. The CSV files are exported evidence records; retain their source
+# formatting so recorded SHA-256 provenance remains valid.
+results/experiment-c/md-validation/**/*.pdb whitespace=-trailing-space
+results/experiment-c/pfp-pilot/**/*.csv whitespace=-trailing-space

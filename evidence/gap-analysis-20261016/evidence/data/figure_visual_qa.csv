@@ -1,0 +1,17 @@
+figure,raster_dimensions_px,vector_counterparts,high_detail_review,layout_status,notes
+F1,2429x984,PDF|SVG,reviewed,pass,rounded workflow cards and arrows readable; no clipping
+F2,2195x963,PDF|SVG,reviewed,pass,labels and observed stamp readable; no clipping
+F3,2400x963,PDF|SVG,reviewed,pass,unsupported hatching and annotation readable; no clipping
+F4,2463x993,PDF|SVG,reviewed,pass,RF range and surrogate-only stamp readable; no clipping
+F5,2509x1138,PDF|SVG,reviewed,pass,blind/post-hoc legend and nominal diagnostic caveat readable; no clipping
+F6,2455x993,PDF|SVG,reviewed,pass,planned/synthetic labels and smoke-only caveat readable; no clipping
+F7,2172x989,PDF|SVG,reviewed,pass,synthetic placeholder banner and replacement instruction readable; no clipping
+F8,2283x1022,PDF|SVG,reviewed,pass,synthetic/planned labels and MD dependency readable; no clipping
+F9,6530x4879,PDF|SVG,reviewed,conditional_source_asset,legacy source figure preserved; one axis glyph renders as a tofu box in the inherited verifier-property label and should be repaired before journal submission
+F9_repaired,3013x2080,PDF|SVG,reviewed,pass,real grid summary redrawn with ASCII-safe labels; no clipping or glyph substitution; verifier-prediction-only caveat in footer
+P1,2500x1838,PDF|SVG,reviewed,pass,paired-seed and unsupported status panels readable; no clipping
+P2,2509x1138,PDF|SVG,reviewed,pass,locked-tail scatter and diagnostic bars readable; no clipping
+P3,2455x993,PDF|SVG,reviewed,pass,physical smoke label and pending ladder readable; no clipping
+F10_molminer_existing,2254x1895,PNG|SVG,reviewed,pass,existing descriptive MolMiner comparison; support-mismatch caveat in footer readable
+S1_molminer_extended20_vs_smoke,1950x1140,PDF|SVG,reviewed,pass,real five-seed engineering comparison; legend, SEM bars, seed-level points, and footer readable with no clipping
+S2_molminer_extended50_vs_smoke,1950x1140,PDF|SVG,reviewed,pass,real five-seed 50-epoch engineering comparison; legend, SEM bars, seed-level points, and footer readable with no clipping

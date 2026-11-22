@@ -1,0 +1,11 @@
+{
+  "dataset": "/Users/yicao/.codex/.chatgpt-projects/g-p-6aac94e5fbf48191a04f8a6e7af92676/polygen_gap_analysis_20261016/evidence/experiments/molminer_strict_c1/train.csv",
+  "molecules": 35046,
+  "success": 35046,
+  "failed": 0,
+  "failure_rate_pct": 0.0,
+  "exception_types": {},
+  "exception_pct": {},
+  "fragments": 27,
+  "failure_examples": []
+}

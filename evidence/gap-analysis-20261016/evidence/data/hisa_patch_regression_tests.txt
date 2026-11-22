@@ -1,0 +1,11 @@
+command: /Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/bin/python evidence/hisa_patch/test_hisa_regressions.py
+PASS test_dynamic_cluster_population_and_square_guard
+PASS test_nullable_summary_and_renderer_formatting
+PASS test_full_orthorhombic_lattice_validation
+PASS test_grid_plan_totals_are_derived
+
+command: /Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/bin/python - <<'PY' ... test_pfp_htpmd_analysis.py
+PASS test_unwrap_crossing_orthorhombic_boundary
+PASS test_htpmd_endpoint_diffusivity_units
+PASS test_connected_components
+PASS test_ne_conductivity_matches_closed_form

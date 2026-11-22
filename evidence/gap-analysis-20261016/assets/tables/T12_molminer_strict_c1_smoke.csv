@@ -1,0 +1,4 @@
+arm,target,training_seed_count,raw_n,validity_mean,validity_sem,exactly_two_star_mean,strict_hit_mean,target_mae_valid_mean,evidence_status,notes
+MolMiner strict C1 five-seed smoke,-5.0,5,50,0.24,0.06,0.24,0.0,0.6384749682606303,engineering_smoke_only,"five training seeds, five epochs, 10 samples per target; not final matched-budget result"
+MolMiner strict C1 five-seed smoke,-4.0,5,50,0.42000000000000004,0.03741657386773941,0.42000000000000004,0.16,0.3307607849508701,engineering_smoke_only,"five training seeds, five epochs, 10 samples per target; not final matched-budget result"
+MolMiner strict C1 five-seed smoke,-3.0,5,50,0.27999999999999997,0.03741657386773942,0.27999999999999997,0.0,1.3221764455173481,engineering_smoke_only,"five training seeds, five epochs, 10 samples per target; not final matched-budget result"

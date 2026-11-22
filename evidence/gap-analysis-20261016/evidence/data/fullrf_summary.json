@@ -1,0 +1,12 @@
+{
+  "status": "complete_posthoc_full_source_rf_audit",
+  "warning": "Full-source RF sees locked-tail labels and is not valid for leakage-free extrapolation claims.",
+  "source_rows": 6024,
+  "training_rows_q80": 4819,
+  "locked_tail_rows": 903,
+  "training_boundary": -4.084499110675755,
+  "locked_tail_rf_mae": 0.13146405398907873,
+  "locked_tail_rf_rmse": 0.1500915929839176,
+  "locked_tail_residual_mean": 0.12579671037820317,
+  "locked_tail_residual_sd": 0.08191522962702175
+}

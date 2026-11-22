@@ -1,0 +1,11 @@
+WeeMiner local smoke/regression audit
+date: 2026-10-16
+source: /Users/yicao/Documents/ARC/resourses/WeeRollMiner-internal
+command: PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /Users/yicao/Documents/ARC/PolyGen-reproduction/results/molminer-comparison/.venv/bin/python -m unittest discover -s tests -v
+result: PASS
+tests: 4
+elapsed_seconds: 19.536
+smoke_logP_MAE: 1.355
+smoke_logP_R2_raw: -1.297
+smoke_logP_R2_grouped: -0.920
+interpretation: software smoke evidence only; not a PolyGen C1 conductivity result

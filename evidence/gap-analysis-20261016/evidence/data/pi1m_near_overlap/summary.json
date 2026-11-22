@@ -1,0 +1,32 @@
+{
+  "status": "exploratory_near_overlap_complete",
+  "htp_rows": 6024,
+  "htp_parse_failures": 0,
+  "pi1m_rows": 995799,
+  "pi1m_sampled_rows": 99580,
+  "pi1m_sampling_rule": "systematic row_id % 10 == 0",
+  "pi1m_parse_failures": 0,
+  "pi1m_sha256": "8b8d3ce5720d43a3c241385083aa34acfb8bf009b314cd4dc588f2d00ce9e77e",
+  "fingerprint": {
+    "family": "Morgan",
+    "radius": 2,
+    "n_bits": 2048
+  },
+  "candidate_index": {
+    "anchor_count": 16,
+    "min_shared": 4,
+    "mean_candidates_per_htp": 1128.5217463479416,
+    "max_candidates_per_htp": 72117
+  },
+  "threshold": 0.85,
+  "sampled_near_overlap_rows_at_or_above_threshold": 21,
+  "sampled_nonexact_near_overlap_rows_at_or_above_threshold": 14,
+  "similarity_quantiles": {
+    "0.5": 0.4375,
+    "0.9": 0.5675675675675675,
+    "0.95": 0.6216216216216216,
+    "0.99": 0.7352941176470589
+  },
+  "interpretation": "Systematic PI1M sample plus heuristic candidate retrieval; no absence claim is valid for HTP rows whose nearest candidate was not retrieved or whose near match fell outside the sample. Exact PI1M overlap remains separately reported in the canonical audit.",
+  "source_is_external_not_redistributed": true
+}

@@ -1,0 +1,28 @@
+{
+  "pi1m_file": "PI1M_v2.csv",
+  "pi1m_source_status": "external_not_committed",
+  "pi1m_observed_path": "/tmp/pi1m/PI1M_v2.csv",
+  "pi1m_sha256": "8b8d3ce5720d43a3c241385083aa34acfb8bf009b314cd4dc588f2d00ce9e77e",
+  "pi1m_rows": 995799,
+  "pi1m_unparseable": 0,
+  "pi1m_unique_canonical": 995799,
+  "htp_rows": 6024,
+  "htp_unparseable": 0,
+  "htp_unique_canonical": 6024,
+  "htp_exact_overlap_rows": 59,
+  "by_split": {
+    "above_Q95_or_unassigned": {
+      "rows": 302,
+      "in_pi1m": 2
+    },
+    "locked_Q80_to_Q95": {
+      "rows": 903,
+      "in_pi1m": 11
+    },
+    "train_leq_Q80": {
+      "rows": 4819,
+      "in_pi1m": 46
+    }
+  },
+  "overlap_in_top20pct_conductivity": 8
+}

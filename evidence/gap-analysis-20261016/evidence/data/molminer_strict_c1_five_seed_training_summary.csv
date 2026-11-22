@@ -1,0 +1,6 @@
+training_seed,epochs_completed,best_val_loss,best_val_epoch,final_train_loss,final_val_loss,final_nonterm_top1,all_losses_finite
+17,5,1.2988,5,1.4614,1.2988,0.4834,True
+23,5,1.308,5,1.474,1.308,0.4693,True
+31,5,1.2903,5,1.4563,1.2903,0.4761,True
+47,5,1.2866,5,1.451,1.2866,0.4795,True
+59,5,1.3025,5,1.4639,1.3025,0.4828,True

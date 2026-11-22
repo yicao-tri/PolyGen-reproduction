@@ -1,0 +1,38 @@
+{
+  "schema_version": "polygen-strict-c1-molminer-five-seed-extended20-comparison-v1",
+  "status": "extended_training_engineering_comparison",
+  "created_at_utc": "2026-10-16T21:58:27Z",
+  "training_seeds": [
+    17,
+    23,
+    31,
+    47,
+    59
+  ],
+  "evaluation_seeds": [
+    17
+  ],
+  "targets": [
+    -5.0,
+    -4.0,
+    -3.0
+  ],
+  "samples_per_target_per_evaluation_seed": 10,
+  "total_requested_samples": 150,
+  "strict_data_dir": "/Users/yicao/.codex/.chatgpt-projects/g-p-6aac94e5fbf48191a04f8a6e7af92676/polygen_gap_analysis_20261016/evidence/experiments/molminer_strict_c1",
+  "strict_train_rows": 4819,
+  "checkpoint_sha256": {
+    "17": "2e1e5143a150eb490152e9e828f8a99bbd656fc7575965790739043dc7d3b3e3",
+    "23": "de33a9e59d79ed4896eba77ede7ad1c2f3358ae4572d7a0593ba4e97ba530f2b",
+    "31": "5acd5da2fe1b4f9ca06c262197868be7a48721c9aa3edfbbdd66c2089d8dd901",
+    "47": "e423f46e1acba50a73c28bbdce3afdcfd8e61b2f2ef02aedfecbe6d51fe25faa",
+    "59": "60fdc1b0360e5dab707d11440485551911b2004946542e8836c4b25ff009ebf5"
+  },
+  "verifier": {
+    "train_rows": 4819,
+    "test_rows": 1205,
+    "train_max_log_sigma": -3.295367776501
+  },
+  "verifier_policy": "same frozen PolyGen C1 RF policy: support >= 0.35, tree SD < 0.35, target error < 0.5, novel",
+  "publication_boundary": "five-seed twenty-epoch strict-C1 engineering comparison; same 150-row generation budget as the five-epoch smoke; not a final publication leaderboard"
+}

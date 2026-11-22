@@ -1,0 +1,20 @@
+- 1 conditioning properties from stats.json: log_conductivity
+- Using device: cpu
+- Using seed: 17
+- factored head: 40 anchor environments, d_env 64
+- Total model parameters: 502,296
+- weight decay 0.01 on 491,408 params; 10,888 exempt (norms, biases, embeddings)
+- 1 training rollout(s) under /Users/yicao/.codex/.chatgpt-projects/g-p-6aac94e5fbf48191a04f8a6e7af92676/polygen_gap_analysis_20261016/evidence/experiments/molminer_strict_c1/packed; epoch index wraps modulo 1, re-checked at the start of every epoch
+	 - Loading PACKED validation rollouts from /Users/yicao/.codex/.chatgpt-projects/g-p-6aac94e5fbf48191a04f8a6e7af92676/polygen_gap_analysis_20261016/evidence/experiments/molminer_strict_c1/packed/valid
+Traceback (most recent call last):
+  File "/Users/yicao/Documents/ARC/resourses/molminer-polymer/scripts/train_molminer.py", line 794, in <module>
+    main()
+  File "/Users/yicao/Documents/ARC/resourses/molminer-polymer/scripts/train_molminer.py", line 436, in main
+    load_packed(val_packed),
+  File "/Users/yicao/Documents/ARC/resourses/molminer-polymer/molminer/packed.py", line 568, in load_packed
+    store[k] = torch.load(f, map_location="cpu", mmap=mmap)
+  File "/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/torch/serialization.py", line 809, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/Users/yicao/Documents/ARC/PolyGen-reproduction/.venv/lib/python3.9/site-packages/torch/serialization.py", line 1170, in _load
+    unpickler = UnpicklerWrapper(data_file, **pickle_load_args)
+TypeError: 'mmap' is an invalid keyword argument for Unpickler()

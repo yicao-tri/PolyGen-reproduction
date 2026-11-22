@@ -1,0 +1,6 @@
+scope,rows,exact_overlap_rows,overlap_rate,source_status,interpretation
+HTP_total,6024,59,0.00979482071746348,external_PI1M_not_committed,exact canonical overlap only; near overlap not audited
+train_leq_Q80,4819,46,0.009545549906204607,external_PI1M_not_committed,exact overlap retained as a leakage/data-provenance flag
+locked_Q80_to_Q95,903,11,0.012181616832779624,external_PI1M_not_committed,exact overlap in locked-tail audit source
+above_Q95_or_unassigned,302,2,0.006622516556291391,external_PI1M_not_committed,exact overlap in rows outside the locked Q80-Q95 subset
+top20pct_conductivity,1205,8,0.006639004149377593,external_PI1M_not_committed,exact overlap count among highest conductivity quintile

@@ -1,0 +1,28 @@
+/Users/yicao/Documents/ARC/resourses/molminer-polymer/molminer/utils.py:327: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(checkpoint_path, map_location=device)
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:06<00:55,  6.18s/it] 30%|███       | 3/10 [00:12<00:28,  4.07s/it] 40%|████      | 4/10 [00:19<00:30,  5.06s/it] 50%|█████     | 5/10 [00:25<00:26,  5.29s/it] 60%|██████    | 6/10 [00:31<00:22,  5.55s/it] 70%|███████   | 7/10 [00:38<00:17,  5.85s/it] 80%|████████  | 8/10 [00:44<00:11,  5.99s/it] 90%|█████████ | 9/10 [00:51<00:06,  6.31s/it]100%|██████████| 10/10 [00:57<00:00,  6.33s/it]100%|██████████| 10/10 [00:57<00:00,  5.79s/it]
+completed training_seed=47 evaluation_seed=17 target=-5
+  0%|          | 0/10 [00:00<?, ?it/s] 20%|██        | 2/10 [00:02<00:09,  1.17s/it] 30%|███       | 3/10 [00:08<00:23,  3.33s/it] 40%|████      | 4/10 [00:15<00:27,  4.56s/it] 50%|█████     | 5/10 [00:22<00:26,  5.38s/it] 60%|██████    | 6/10 [00:28<00:22,  5.63s/it] 70%|███████   | 7/10 [00:28<00:11,  3.92s/it] 80%|████████  | 8/10 [00:30<00:06,  3.13s/it] 90%|█████████ | 9/10 [00:36<00:04,  4.09s/it]100%|██████████| 10/10 [00:36<00:00,  2.87s/it]100%|██████████| 10/10 [00:36<00:00,  3.65s/it]
+completed training_seed=47 evaluation_seed=17 target=-4
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:00<00:05,  1.70it/s] 20%|██        | 2/10 [00:06<00:32,  4.01s/it] 30%|███       | 3/10 [00:13<00:36,  5.27s/it] 40%|████      | 4/10 [00:20<00:34,  5.74s/it] 50%|█████     | 5/10 [00:20<00:18,  3.76s/it] 60%|██████    | 6/10 [00:26<00:17,  4.45s/it] 70%|███████   | 7/10 [00:33<00:15,  5.22s/it] 80%|████████  | 8/10 [00:33<00:07,  3.67s/it] 90%|█████████ | 9/10 [00:39<00:04,  4.39s/it]100%|██████████| 10/10 [00:39<00:00,  3.07s/it]100%|██████████| 10/10 [00:39<00:00,  3.95s/it]
+completed training_seed=47 evaluation_seed=17 target=-3
+{
+  "status": "engineering_smoke_only",
+  "raw_rows": 30,
+  "valid_repeat_units": 9,
+  "exactly_two_star_units": 9,
+  "strict_hits": 1,
+  "valid_rate": 0.3,
+  "exactly_two_star_rate": 0.3,
+  "strict_hit_rate": 0.03333333333333333,
+  "target_mae_valid": 0.7953117121001771,
+  "by_training_seed": [
+    {
+      "training_seed": 47,
+      "valid_rate": 0.3,
+      "exactly_two_star_rate": 0.3,
+      "strict_hit_rate": 0.03333333333333333
+    }
+  ],
+  "publication_boundary": "five-seed five-epoch smoke only; not the final matched-budget comparison"
+}

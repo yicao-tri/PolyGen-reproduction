@@ -1,0 +1,31 @@
+training_seed,evaluation_seed,target,sample_index,batch_seed,smiles,canonical,generation_failed,failure_message,validation_reasons,valid_repeat_unit,exactly_two_stars,strict_corpus_novel,fragment_steps,heavy_atoms,verifier_valid,predicted_log_sigma,uncertainty,support,novel,target_error,strict_hit
+59,17,-5.0,0,5900170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,113,,False,,,,False,,False
+59,17,-5.0,1,5900170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,101,,False,,,,False,,False
+59,17,-5.0,2,5900170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,107,,False,,,,False,,False
+59,17,-5.0,3,5900170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,104,,False,,,,False,,False
+59,17,-5.0,4,5900170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,106,,False,,,,False,,False
+59,17,-5.0,5,5900170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,99,,False,,,,False,,False
+59,17,-5.0,6,5900170,*C(=O)OC(C#N)C(=O)N(*)C(C)C,*C(=O)C(C#N)OC(=O)N(*)C(C)C,False,,,True,True,True,17,12.0,True,-4.364154501225119,0.10855558184219691,0.3829787234042553,True,0.6358454987748807,False
+59,17,-5.0,7,5900170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,103,,False,,,,False,,False
+59,17,-5.0,8,5900170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,105,,False,,,,False,,False
+59,17,-5.0,9,5900170,,,True,Incomplete generation or fewer than two fragments,Incomplete generation or fewer than two fragments,False,False,False,3,,False,,,,False,,False
+59,17,-4.0,0,5900171,*OC(NCC)(OC(=O)CC)C(*)O,*C(O)OC(*)(NCC)OC(=O)CC,False,,,True,True,True,20,12.0,True,-4.412297622831499,0.12498822647559861,0.30434782608695654,True,0.41229762283149896,False
+59,17,-4.0,1,5900171,*OC(C)C(*)C,*C(C)OC(*)C,False,,,True,True,True,10,5.0,True,-4.395263546320078,0.08723782631627894,0.391304347826087,True,0.395263546320078,True
+59,17,-4.0,2,5900171,,,True,"Exception in docking, can_dock didnt catch it","Exception in docking, can_dock didnt catch it",False,False,False,49,,False,,,,False,,False
+59,17,-4.0,3,5900171,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,110,,False,,,,False,,False
+59,17,-4.0,4,5900171,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,101,,False,,,,False,,False
+59,17,-4.0,5,5900171,*CC(*)(N)COC,*CC(*)(N)COC,False,,,True,True,True,11,6.0,True,-4.337643368711038,0.1449857102062943,0.2571428571428571,True,0.3376433687110376,False
+59,17,-4.0,6,5900171,*C(=O)OC(=O)OC(*)(C)OC(=C)C,*C(=O)OC(=O)OC(*)(C)OC(=C)C,False,,,True,True,True,16,12.0,True,-4.416857991646861,0.14460399006294614,0.3333333333333333,True,0.4168579916468609,False
+59,17,-4.0,7,5900171,*CNC(=O)OC(=O)C(*)C,*C(=O)OC(=O)NCC(*)C,False,,,True,True,True,14,9.0,True,-4.32486234499602,0.11743131668155654,0.3181818181818182,True,0.32486234499601974,False
+59,17,-4.0,8,5900171,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,115,,False,,,,False,,False
+59,17,-4.0,9,5900171,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,105,,False,,,,False,,False
+59,17,-3.0,0,5900172,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,101,,False,,,,False,,False
+59,17,-3.0,1,5900172,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,121,,False,,,,False,,False
+59,17,-3.0,2,5900172,CCC#CNC(C)(C)N,,False,,star_count=0,False,False,False,14,9.0,True,-4.3610093521005036,0.12164629201107872,0.18181818181818182,True,1.3610093521005036,False
+59,17,-3.0,3,5900172,*COC(=O)OC(*)C,*CC(C)OC(=O)O*,False,,,True,True,False,11,7.0,True,-4.300023229839618,0.11339706853002952,0.3142857142857143,True,1.300023229839618,False
+59,17,-3.0,4,5900172,*C(=O)C(C)OC(C=C)NC(*)(OCCN(C)CCOC(=O)OC(=O)OCC)C(=O)OCC,*C(=O)C(C)OC(C=C)NC(*)(OCCN(C)CCOC(=O)OC(=O)OCC)C(=O)OCC,False,,,True,True,True,47,31.0,True,-4.242816835440929,0.20016896165426418,0.3230769230769231,True,1.2428168354409292,False
+59,17,-3.0,5,5900172,CC(=O)NC(=O)OC(C)(N)N(C)C,,False,,star_count=0,False,False,False,18,13.0,True,-4.373648929443498,0.1393354305861178,0.24489795918367346,True,1.3736489294434984,False
+59,17,-3.0,6,5900172,*OCC,,False,,star_count=1,False,False,False,5,3.0,True,-4.3324929159918,0.10780611236004059,0.2857142857142857,True,1.3324929159918,False
+59,17,-3.0,7,5900172,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,103,,False,,,,False,,False
+59,17,-3.0,8,5900172,*OC(*)(COC(C)(CF)OC)C(C)(NC)C(N)(N)CCOC,*OC(*)(COC(C)(CF)OC)C(C)(NC)C(N)(N)CCOC,False,,,True,True,True,34,21.0,True,-4.2883041776808195,0.14156320481285492,0.25,True,1.2883041776808195,False
+59,17,-3.0,9,5900172,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,105,,False,,,,False,,False

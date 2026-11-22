@@ -1,0 +1,23 @@
+{
+  "build_command": "python3 registry/build_registry.py",
+  "database_sha256": "f405dd4508580c0738bc53a4acb2ffea112bf18f481527336a7dac48c874d7f4",
+  "input_manifest_sha256": "9f81c2e3cc8a172b9ce6e9edfcd3545b789a6f36d8239805903cb3f157e6fdb9",
+  "large_assets_manifest": "evidence/gap-analysis-20261016/HANDOFF_COPY_MANIFEST.json",
+  "query_results": {
+    "gates": {
+      "rows": 7,
+      "sha256": "321f47ad788c06bda953b60c1ec634f9911b309368fc113c7dc934361dd08ae4"
+    },
+    "sources": {
+      "rows": 316,
+      "sha256": "c027f69d3520fd6f6fcc1607d207cb669104e70b97e32013e201ede63edec3a5"
+    },
+    "tables": {
+      "rows": 14,
+      "sha256": "83f63e6637d1d1932e21e0ed4ad5899fdc1c814aba2399347ea5074260f4c002"
+    }
+  },
+  "role": "evidence_index_not_scientific_results_master",
+  "schema_version": 1,
+  "source_files": 316
+}

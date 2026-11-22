@@ -1,3 +1,5 @@
+> Current handoff: [HANDOFF.md](HANDOFF.md) and [Hisa roadmap](docs/handoff/ROADMAP.md). New compute is parked; physical evidence remains incomplete. Historical milestone text below retains its original context.
+
 # PolyGen actual-data reproduction
 
 This is a self-contained, actual-data-only reproduction workspace for the public
