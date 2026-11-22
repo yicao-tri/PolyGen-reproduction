@@ -1,0 +1,12 @@
+{
+  "arm": "multi_continuous",
+  "checkpoint_origin": "trained_in_multi_property_interpolation",
+  "elapsed_seconds": 54.833725929260254,
+  "first_loss": 6.413169860839844,
+  "last_loss": 0.26157277822494507,
+  "samples_per_cell": 100,
+  "seed": 907,
+  "steps": 1000,
+  "temperature": 1.0,
+  "top_k": 40
+}

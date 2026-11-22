@@ -1,0 +1,13 @@
+stage,arm,n_seeds,validity_mean,frontier_or_strict_hit_mean,status,source,notes
+interpolation,Continuous,5,0.5453333333333333,0.5286666666666667,complete,results/interpolation/publication/interpolation_aggregate_metrics.csv,in-support controllability
+interpolation,Binary,5,0.5106666666666667,0.48933333333333323,complete,results/interpolation/publication/interpolation_aggregate_metrics.csv,in-support controllability
+interpolation,Unconditional + reranking,5,,,complete,results/interpolation/publication/interpolation_aggregate_metrics.csv,in-support controllability
+upper-tail,Continuous,5,0.5745,0.551,complete_prediction_only,results/upper-tail/publication/upper_tail_aggregate_metrics.csv,boundary approach; no physical claim
+upper-tail,Binary,5,0.22999999999999998,0.215,complete_prediction_only,results/upper-tail/publication/upper_tail_aggregate_metrics.csv,boundary approach; no physical claim
+upper-tail,Unconditional + reranking,5,0.0015,0.0015,complete_prediction_only,results/upper-tail/publication/upper_tail_aggregate_metrics.csv,boundary approach; no physical claim
+extrapolation,Continuous,5,0.4445,0.0,complete_prediction_only_MD_blocked,results/extrapolation/publication/extrapolation_aggregate_metrics.csv,all RF frontier-crossing rates 0; MD not run
+extrapolation,Binary,5,0.0,0.0,complete_prediction_only_MD_blocked,results/extrapolation/publication/extrapolation_aggregate_metrics.csv,all RF frontier-crossing rates 0; MD not run
+extrapolation,Unconditional + reranking,5,0.5279999999999999,0.0,complete_prediction_only_MD_blocked,results/extrapolation/publication/extrapolation_aggregate_metrics.csv,all RF frontier-crossing rates 0; MD not run
+structural-OOD,Continuous,0,,,blocked,results/structural-ood/frozen_manifest.json,missing scaffold/family labels and matched checkpoints
+structural-OOD,Binary,0,,,blocked,results/structural-ood/frozen_manifest.json,missing scaffold/family labels and matched checkpoints
+structural-OOD,Unconditional + reranking,0,,,blocked,results/structural-ood/frozen_manifest.json,missing scaffold/family labels and matched checkpoints

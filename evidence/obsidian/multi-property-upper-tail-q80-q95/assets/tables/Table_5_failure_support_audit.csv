@@ -1,0 +1,97 @@
+arm,arm_label,target_label,failure_class,n,fraction_of_candidates,denominator
+multi_continuous,Multi-property,Q80_boundary,invalid,206,0.412,500
+multi_continuous,Multi-property,Q80_boundary,exact_training_duplicate,2,0.004,500
+multi_continuous,Multi-property,Q80_boundary,within_cell_duplicate,2,0.004,500
+multi_continuous,Multi-property,Q80_boundary,low_support,4,0.008,500
+multi_continuous,Multi-property,Q80_boundary,high_uncertainty,294,0.588,500
+multi_continuous,Multi-property,Q80_boundary,joint_target_error,294,0.588,500
+multi_continuous,Multi-property,Q85,invalid,235,0.47,500
+multi_continuous,Multi-property,Q85,exact_training_duplicate,9,0.018,500
+multi_continuous,Multi-property,Q85,within_cell_duplicate,0,0.0,500
+multi_continuous,Multi-property,Q85,low_support,4,0.008,500
+multi_continuous,Multi-property,Q85,high_uncertainty,265,0.53,500
+multi_continuous,Multi-property,Q85,joint_target_error,265,0.53,500
+multi_continuous,Multi-property,Q90,invalid,215,0.43,500
+multi_continuous,Multi-property,Q90,exact_training_duplicate,7,0.014,500
+multi_continuous,Multi-property,Q90,within_cell_duplicate,2,0.004,500
+multi_continuous,Multi-property,Q90,low_support,2,0.004,500
+multi_continuous,Multi-property,Q90,high_uncertainty,285,0.57,500
+multi_continuous,Multi-property,Q90,joint_target_error,285,0.57,500
+multi_continuous,Multi-property,Q95,invalid,223,0.446,500
+multi_continuous,Multi-property,Q95,exact_training_duplicate,9,0.018,500
+multi_continuous,Multi-property,Q95,within_cell_duplicate,2,0.004,500
+multi_continuous,Multi-property,Q95,low_support,5,0.01,500
+multi_continuous,Multi-property,Q95,high_uncertainty,277,0.554,500
+multi_continuous,Multi-property,Q95,joint_target_error,277,0.554,500
+scalar_continuous,Scalar conductivity,Q80_boundary,invalid,227,0.454,500
+scalar_continuous,Scalar conductivity,Q80_boundary,exact_training_duplicate,0,0.0,500
+scalar_continuous,Scalar conductivity,Q80_boundary,within_cell_duplicate,0,0.0,500
+scalar_continuous,Scalar conductivity,Q80_boundary,low_support,5,0.01,500
+scalar_continuous,Scalar conductivity,Q80_boundary,high_uncertainty,273,0.546,500
+scalar_continuous,Scalar conductivity,Q80_boundary,joint_target_error,273,0.546,500
+scalar_continuous,Scalar conductivity,Q85,invalid,253,0.506,500
+scalar_continuous,Scalar conductivity,Q85,exact_training_duplicate,11,0.022,500
+scalar_continuous,Scalar conductivity,Q85,within_cell_duplicate,0,0.0,500
+scalar_continuous,Scalar conductivity,Q85,low_support,3,0.006,500
+scalar_continuous,Scalar conductivity,Q85,high_uncertainty,247,0.494,500
+scalar_continuous,Scalar conductivity,Q85,joint_target_error,247,0.494,500
+scalar_continuous,Scalar conductivity,Q90,invalid,227,0.454,500
+scalar_continuous,Scalar conductivity,Q90,exact_training_duplicate,2,0.004,500
+scalar_continuous,Scalar conductivity,Q90,within_cell_duplicate,2,0.004,500
+scalar_continuous,Scalar conductivity,Q90,low_support,5,0.01,500
+scalar_continuous,Scalar conductivity,Q90,high_uncertainty,273,0.546,500
+scalar_continuous,Scalar conductivity,Q90,joint_target_error,273,0.546,500
+scalar_continuous,Scalar conductivity,Q95,invalid,255,0.51,500
+scalar_continuous,Scalar conductivity,Q95,exact_training_duplicate,5,0.01,500
+scalar_continuous,Scalar conductivity,Q95,within_cell_duplicate,0,0.0,500
+scalar_continuous,Scalar conductivity,Q95,low_support,3,0.006,500
+scalar_continuous,Scalar conductivity,Q95,high_uncertainty,245,0.49,500
+scalar_continuous,Scalar conductivity,Q95,joint_target_error,245,0.49,500
+binary_conductivity,Binary,Q80_boundary,invalid,258,0.516,500
+binary_conductivity,Binary,Q80_boundary,exact_training_duplicate,7,0.014,500
+binary_conductivity,Binary,Q80_boundary,within_cell_duplicate,0,0.0,500
+binary_conductivity,Binary,Q80_boundary,low_support,3,0.006,500
+binary_conductivity,Binary,Q80_boundary,high_uncertainty,242,0.484,500
+binary_conductivity,Binary,Q80_boundary,joint_target_error,242,0.484,500
+binary_conductivity,Binary,Q85,invalid,244,0.488,500
+binary_conductivity,Binary,Q85,exact_training_duplicate,5,0.01,500
+binary_conductivity,Binary,Q85,within_cell_duplicate,0,0.0,500
+binary_conductivity,Binary,Q85,low_support,1,0.002,500
+binary_conductivity,Binary,Q85,high_uncertainty,256,0.512,500
+binary_conductivity,Binary,Q85,joint_target_error,256,0.512,500
+binary_conductivity,Binary,Q90,invalid,499,0.998,500
+binary_conductivity,Binary,Q90,exact_training_duplicate,0,0.0,500
+binary_conductivity,Binary,Q90,within_cell_duplicate,0,0.0,500
+binary_conductivity,Binary,Q90,low_support,0,0.0,500
+binary_conductivity,Binary,Q90,high_uncertainty,1,0.002,500
+binary_conductivity,Binary,Q90,joint_target_error,1,0.002,500
+binary_conductivity,Binary,Q95,invalid,499,0.998,500
+binary_conductivity,Binary,Q95,exact_training_duplicate,0,0.0,500
+binary_conductivity,Binary,Q95,within_cell_duplicate,0,0.0,500
+binary_conductivity,Binary,Q95,low_support,0,0.0,500
+binary_conductivity,Binary,Q95,high_uncertainty,1,0.002,500
+binary_conductivity,Binary,Q95,joint_target_error,1,0.002,500
+unconditional_reranking,Unconditional + reranking,Q80_boundary,invalid,0,0.0,500
+unconditional_reranking,Unconditional + reranking,Q80_boundary,exact_training_duplicate,18,0.036,500
+unconditional_reranking,Unconditional + reranking,Q80_boundary,within_cell_duplicate,0,0.0,500
+unconditional_reranking,Unconditional + reranking,Q80_boundary,low_support,1,0.002,500
+unconditional_reranking,Unconditional + reranking,Q80_boundary,high_uncertainty,500,1.0,500
+unconditional_reranking,Unconditional + reranking,Q80_boundary,joint_target_error,500,1.0,500
+unconditional_reranking,Unconditional + reranking,Q85,invalid,16,0.032,500
+unconditional_reranking,Unconditional + reranking,Q85,exact_training_duplicate,5,0.01,500
+unconditional_reranking,Unconditional + reranking,Q85,within_cell_duplicate,4,0.008,500
+unconditional_reranking,Unconditional + reranking,Q85,low_support,5,0.01,500
+unconditional_reranking,Unconditional + reranking,Q85,high_uncertainty,484,0.968,500
+unconditional_reranking,Unconditional + reranking,Q85,joint_target_error,484,0.968,500
+unconditional_reranking,Unconditional + reranking,Q90,invalid,437,0.874,500
+unconditional_reranking,Unconditional + reranking,Q90,exact_training_duplicate,3,0.006,500
+unconditional_reranking,Unconditional + reranking,Q90,within_cell_duplicate,0,0.0,500
+unconditional_reranking,Unconditional + reranking,Q90,low_support,0,0.0,500
+unconditional_reranking,Unconditional + reranking,Q90,high_uncertainty,63,0.126,500
+unconditional_reranking,Unconditional + reranking,Q90,joint_target_error,63,0.126,500
+unconditional_reranking,Unconditional + reranking,Q95,invalid,500,1.0,500
+unconditional_reranking,Unconditional + reranking,Q95,exact_training_duplicate,0,0.0,500
+unconditional_reranking,Unconditional + reranking,Q95,within_cell_duplicate,0,0.0,500
+unconditional_reranking,Unconditional + reranking,Q95,low_support,0,0.0,500
+unconditional_reranking,Unconditional + reranking,Q95,high_uncertainty,0,0.0,500
+unconditional_reranking,Unconditional + reranking,Q95,joint_target_error,0,0.0,500

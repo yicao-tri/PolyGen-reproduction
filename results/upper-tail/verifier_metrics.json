@@ -1,0 +1,9 @@
+{
+  "training_rows": 4819,
+  "training_max_log_sigma": -4.084499110675755,
+  "locked_tail_rows_audited": 903,
+  "locked_tail_rf_mae": 0.26177581260308425,
+  "locked_tail_rf_rmse": 0.2686245654668233,
+  "locked_tail_rf_residual_mean": 0.26177581260308425,
+  "locked_tail_rf_residual_sd": 0.060304298022757136
+}

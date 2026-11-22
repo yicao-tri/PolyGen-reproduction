@@ -1,0 +1,25 @@
+{
+  "benchmark": "multi-property implicit-conditioning upper-tail",
+  "question": "Does a six-property normalized implicit condition improve controllable, support-aware upper-tail generation relative to conductivity-only, binary, and unconditional controls when all arms train on the same six-property Q80 intersection?",
+  "estimands": "paired seed-level difference in joint strict-hit and joint frontier-crossing rates for multi_continuous minus scalar_continuous; controls are descriptive",
+  "confounds": [
+    "joint support shrinks the training set to 2494 rows",
+    "all RF evidence is structure-fingerprint surrogate evidence",
+    "binary interface is degenerate at the fixed -4.0 threshold",
+    "Q80-Q95 targets are locked post-run queries rather than train support"
+  ],
+  "pairing": "same joint source rows, seeds, target order, training steps, decoding, candidate count and verifier protocol across arms",
+  "interpretation_boundary": "prediction-only; no MD, force-field execution or experimental claim",
+  "required_outputs": [
+    "frozen_manifest.json",
+    "source_audit.json",
+    "unsupported_cells.csv",
+    "candidate_predictions.csv",
+    "metrics_by_cell.csv",
+    "monotonicity.csv",
+    "pairing_acceptance_audit.json",
+    "REPORT.md",
+    "publication/*.svg",
+    "publication/*.png"
+  ]
+}

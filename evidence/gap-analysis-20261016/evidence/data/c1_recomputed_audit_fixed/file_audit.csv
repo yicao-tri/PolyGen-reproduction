@@ -1,0 +1,11 @@
+arm,seed,source_file,raw_samples,valid_count,eligible_count,strict_hit_count
+binary,17,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed17/samples.csv,300,146,139,45
+continuous,17,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/continuous-seed17/samples.csv,300,136,127,55
+binary,42,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed42/samples.csv,300,150,142,51
+continuous,42,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/continuous-seed42/samples.csv,300,142,128,54
+binary,202,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/extra-seeds/seeds202-303/binary-seed202/samples.csv,300,164,154,50
+continuous,202,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/extra-seeds/seeds202-303/continuous-seed202/samples.csv,300,145,137,53
+binary,303,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/extra-seeds/seeds202-303/binary-seed303/samples.csv,300,154,150,45
+continuous,303,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/extra-seeds/seeds202-303/continuous-seed303/samples.csv,300,136,131,53
+binary,907,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/binary-seed907/samples.csv,300,169,164,47
+continuous,907,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/c1/continuous-seed907/samples.csv,300,123,110,52

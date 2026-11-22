@@ -1,0 +1,54 @@
+{
+  "schema_version": "polygen.pfp-top1-paired-summary.v1",
+  "status": "succeeded",
+  "rows": [
+    {
+      "arm": "continuous",
+      "trajectory_sha256": "c8a920f0bc0cc7bc0f52f7272860b134e345cd9b81c931938ec8d89f1376a57f",
+      "frames_total": 2001,
+      "analysis_ps": 160.0,
+      "temperature_mean_K": 349.70618363522834,
+      "li_diffusivity_cm2_s": 3.4867602734192665e-06,
+      "tfsi_diffusivity_cm2_s": 5.774940768722111e-06,
+      "cluster_ne_conductivity_S_cm": 0.0030496928122887078,
+      "cluster_ne_log10_S_cm": -2.515743903816072,
+      "ne_conductivity_S_cm": 0.012357079171793413,
+      "transference_number_cluster": 0.36872641973273307,
+      "proxy_log10_S_cm": -3.7789737147968334,
+      "residual_pfp_minus_proxy_log10_S_cm": 1.2632298109807616,
+      "technical_gate_pass": true,
+      "scientific_convergence_status": "NON_CONVERGED_SMOKE_ONLY"
+    },
+    {
+      "arm": "binary",
+      "trajectory_sha256": "5e92e931ec697ba03340286c4d4684fc874f01e0b0a1a30cc9a14ecd5d98d234",
+      "frames_total": 2001,
+      "analysis_ps": 160.0,
+      "temperature_mean_K": 349.27807620237337,
+      "li_diffusivity_cm2_s": 2.5418346986014944e-06,
+      "tfsi_diffusivity_cm2_s": 3.571504136817133e-06,
+      "cluster_ne_conductivity_S_cm": 0.001155460907550424,
+      "cluster_ne_log10_S_cm": -2.9372447433240603,
+      "ne_conductivity_S_cm": 0.008156494325344925,
+      "transference_number_cluster": -0.2206180931924795,
+      "proxy_log10_S_cm": -3.8305837721099456,
+      "residual_pfp_minus_proxy_log10_S_cm": 0.8933390287858853,
+      "technical_gate_pass": true,
+      "scientific_convergence_status": "NON_CONVERGED_SMOKE_ONLY"
+    }
+  ],
+  "paired_contrast": {
+    "direction": "continuous_minus_binary",
+    "cluster_ne_log10_S_cm": 0.42150083950798845,
+    "cluster_ne_conductivity_S_cm": 0.0018942319047382838,
+    "li_diffusivity_cm2_s": 9.44925574817772e-07,
+    "tfsi_diffusivity_cm2_s": 2.203436631904978e-06,
+    "proxy_log10_S_cm": 0.05161005731311219,
+    "residual_log10_S_cm": 0.36989078219487626
+  },
+  "interpretation": {
+    "higher_pfp_pilot_conductivity_arm": "continuous",
+    "proxy_and_pfp_ranking_agree": true,
+    "claim_limit": "One 200 ps replica per arm; technical feasibility only, not converged truth."
+  }
+}

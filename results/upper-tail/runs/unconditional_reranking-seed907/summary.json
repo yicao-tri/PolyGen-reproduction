@@ -1,0 +1,12 @@
+{
+  "arm": "unconditional_reranking",
+  "seed": 907,
+  "steps": 1000,
+  "temperature": 1.0,
+  "raw_generation_budget": 400,
+  "reported_candidates": 400,
+  "first_loss": 6.383041858673096,
+  "last_loss": 0.2776850163936615,
+  "elapsed_seconds": 55.34469127655029,
+  "checkpoint_sha256": "8f4fc815f57e3a7a653ac6d0c3d7a555438bd0f78a3749d2790f4ac4a7febbe6"
+}

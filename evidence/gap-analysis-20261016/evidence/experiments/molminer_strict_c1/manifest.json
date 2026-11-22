@@ -1,0 +1,41 @@
+{
+  "schema_version": "polygen-c1-molminer-preflight-v1",
+  "source": "/Users/yicao/Documents/ARC/PolyGen-reproduction/inputs/release-data/htpmd-trainset.csv",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "split_policy": "train_test_split(test_size=0.2, random_state=20260923, stratified by 10 log-conductivity deciles)",
+  "source_rows": 6024,
+  "generator_training_source_rows": 4819,
+  "locked_source_rows": 1205,
+  "converted_train_rows": 4819,
+  "converted_locked_rows": 1205,
+  "train_unique_smiles": 4819,
+  "locked_unique_smiles": 1205,
+  "train_conversion_failures": [],
+  "locked_conversion_failures": [],
+  "property": "log_conductivity",
+  "endpoint_policy": "[Au]/[Cu] -> two MolMiner wildcard endpoints, then repeat_unit.canonical",
+  "valid_file_policy": "128-row structural smoke subset sampled from train support; not a final checkpoint-selection protocol",
+  "strict_claim_status": "preprocessing_preflight_only",
+  "files": {
+    "train.csv": {
+      "bytes": 218342,
+      "sha256": "1508beb53f106b7ea9a6dad688a828692fdd98e76ad3e086cdb5687b1eabdfd2"
+    },
+    "valid.csv": {
+      "bytes": 5839,
+      "sha256": "ddb3f9be2b0e4bd4c979ebd90bd0320e68f50127247b73ca260c8a524f0139b1"
+    },
+    "test.csv": {
+      "bytes": 54648,
+      "sha256": "a81a2374af247e6c0d322e9e10509ae4077fbbda6a3232bf4b41cc5110f0591d"
+    },
+    "source_train_rows.csv": {
+      "bytes": 241582,
+      "sha256": "577ba46a8c26a04f2255d2bc02ee024f059caade4b79bde253b44bbcfe14506f"
+    },
+    "source_locked_rows.csv": {
+      "bytes": 60444,
+      "sha256": "fea5ddb6ab7ba4fd96df7a28e2c12c2af9e372666b5d6d958a04fb216405da24"
+    }
+  }
+}

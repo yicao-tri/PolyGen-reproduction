@@ -1,0 +1,16 @@
+{
+  "arm": "binary_conductivity",
+  "seed": 907,
+  "steps": 1000,
+  "batch_size": 64,
+  "training_rows": 2494,
+  "training_source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "checkpoint_origin": "new_multi_property_upper_tail_run",
+  "first_loss": 6.386624813079834,
+  "last_loss": 0.27141791582107544,
+  "elapsed_seconds": 54.70976805686951,
+  "checkpoint_sha256": "8d50ccecc66b00618dbc6bbb1f4f1001f73ee0c1fa176c5175cc5f960d90682f",
+  "reported_candidates": 400,
+  "raw_pool_rows": 400,
+  "candidate_schema_version": "multi-property-upper-tail-v1"
+}

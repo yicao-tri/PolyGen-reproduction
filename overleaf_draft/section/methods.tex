@@ -1,0 +1,19 @@
+\subsection*{Generator and conditioning arms}
+
+The generator is a character-level autoregressive GPT-style model trained from scratch on the released HTP-MD polymer dataset. The continuous arm receives a numerical conductivity condition, whereas the binary arm receives the original fixed-threshold label. All comparisons use matched seeds, decoding budgets and temperature/top-$k$ settings. The unconditional reranking arm is treated as a diagnostic control and not as a fully independent unconditional generator where a released checkpoint is unavailable.
+
+\subsection*{Data splits and evaluation ladder}
+
+The training boundary is frozen before generation. Interpolation targets are Q50, Q65 and Q80. The upper-tail targets are the actual training boundary, Q85, Q90 and Q95. True extrapolation targets are Q90, Q100, train-max+0.25 and train-max+0.50; the locked Q80--Q100 tail is reserved for verifier auditing. Each cell contains 100 generated candidates per seed and arm unless a documented structural or threshold failure prevents generation.
+
+\subsection*{Validity, support and frontier crossing}
+
+Candidate validity is determined by the released structural parser and polymer end-count checks. Novelty is assessed against the generator training set. The RF verifier supplies predicted conductivity and uncertainty. A strict hit requires a valid, novel and support-eligible candidate whose absolute target error is within the frozen tolerance and whose uncertainty passes the audit threshold. A frontier crossing additionally requires the RF prediction to exceed the frozen training maximum. Empty or single-class cells are recorded as unsupported failures, not imputed as successful or comparable samples.
+
+\subsection*{Multi-property audit}
+
+The joint benchmark uses the intersection of rows with all six measured properties and applies the same validity, novelty, support, uncertainty and joint-error gates. A strict joint hit requires all six target errors to satisfy the frozen normalized threshold; an all-property frontier crossing requires the corresponding property-level frontier conditions to be met simultaneously.
+
+\subsection*{Statistical reporting}
+
+We report five-seed means and standard errors for descriptive comparison. Paired seed contrasts are used because the same seeds and decoding settings are shared between arms. Given the small number of independent seeds and the RF-only verifier boundary, results are presented as benchmark evidence rather than population-level estimates of experimental performance.

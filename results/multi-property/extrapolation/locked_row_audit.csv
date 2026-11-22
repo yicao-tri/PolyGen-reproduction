@@ -1,0 +1,4 @@
+check,status
+locked_rows_excluded_from_fit_and_selection,not_run_no_fit_started
+all_arm_budgets_matched,unsupported
+joint_targets_supported,unsupported

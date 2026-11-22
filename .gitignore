@@ -16,3 +16,9 @@ env/
 # Editors
 .vscode/
 .idea/
+
+# Large PFP/ASE trajectory and verbose-log artifacts stay on the recorded
+# Matlantis run root. Hashes, summaries, structures, and derived analyses are
+# committed as the reviewable evidence record.
+results/experiment-c/pfp-pilot/**/*.traj
+results/experiment-c/pfp-pilot/**/*.log

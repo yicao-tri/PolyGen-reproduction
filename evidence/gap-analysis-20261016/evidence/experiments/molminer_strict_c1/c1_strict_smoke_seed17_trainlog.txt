@@ -1,0 +1,1 @@
+INFO:root:Epoch [1/1], Batches seen 217, Mean train loss: nan, Train CE term: nan, Train CE non-term: nan, Mean val loss: nan, Val CE term: nan, Val CE non-term: nan, Val CE seed: nan, Non-term median: nan, Non-term p90: nan, Non-term top1: 0.0000, Term frac: 0.3525, Mean P(term): nan, Repet. id: 0, Learning rate: 0.00000100, Best val loss: inf

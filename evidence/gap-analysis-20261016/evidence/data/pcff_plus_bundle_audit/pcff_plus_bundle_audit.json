@@ -1,0 +1,232 @@
+{
+  "schema_version": "polygen-pcff-plus-bundle-audit-v1",
+  "status": "NO_GO",
+  "canonical_root": "/Users/yicao/Documents/ARC/PolyGen-reproduction",
+  "candidate_readiness_decision": "NO_GO",
+  "candidate": {
+    "cohort": "continuous_top20",
+    "rank_within_arm": 1,
+    "arm": "continuous",
+    "seed": 202,
+    "target_log10_S_cm": -3.0,
+    "source_index": 55,
+    "raw_smiles": "O=C([Au])OCCCOCCO[Cu]",
+    "canonical_smiles": "O=C(OCCCOCCO[*:1])[*:2]",
+    "frozen_manifest_sha256": "e1a4b644fe70270dbd6c9c8bf6e5bf05e4a55b894e4ce9ade5d19a4ea3047cf4"
+  },
+  "gates_from_canonical_readiness_audit": {
+    "candidate_identity": "PASS",
+    "paper_protocol_recovered": "PASS",
+    "ssh_and_arc_execution": "PASS",
+    "cluster_nernst_einstein_regression": "PASS",
+    "deterministic_top1_polymer_build": "PASS",
+    "top1_pcff_plus_parameter_coverage": "FAIL",
+    "audited_1_5_mol_kg_system_build": "PASS",
+    "standalone_lammps_class2_runtime": "PASS",
+    "arc_pcff_plus_execution_integration": "FAIL"
+  },
+  "local_bundle_scope": "top1-smoke-input only; remote or uncommitted parameter files were not assumed",
+  "candidate_specific_assets": {
+    "candidate_identity": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/top1_methyl_terminated.sdf",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/top1_methyl_terminated.sdf",
+      "present": true,
+      "status": "present",
+      "note": "present in the audited local top-1 bundle",
+      "bytes": 25623,
+      "sha256": "d871b57cc7e0749e1f2249a25f9aef027bb46ee55f90d092670df09477fde523"
+    },
+    "candidate_pdb": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/top1_methyl_terminated.pdb",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/top1_methyl_terminated.pdb",
+      "present": true,
+      "status": "present",
+      "note": "present in the audited local top-1 bundle",
+      "bytes": 28206,
+      "sha256": "adb0ac97feab2e6805a00b82229553ae1a2a95214fc1cc9ac341da5d2338466b"
+    },
+    "packed_geometry": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/system-geometry/top1_3chains_10litfsi_expanded.extxyz",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/system-geometry/top1_3chains_10litfsi_expanded.extxyz",
+      "present": true,
+      "status": "present",
+      "note": "present in the audited local top-1 bundle",
+      "bytes": 113804,
+      "sha256": "09f4e53c8ec6fefb0ff0c1e6b8b5fe80d36ef2c78fe64a0a4e0a27242ecfb13a"
+    },
+    "candidate_build_manifest": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/build_manifest.json",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/build_manifest.json",
+      "present": true,
+      "status": "present",
+      "note": "present in the audited local top-1 bundle",
+      "bytes": 824,
+      "sha256": "8167eea9c47e890e24e44ba12c4d36aae023093f72485e706c926a3926769fdb"
+    },
+    "system_geometry_manifest": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/system-geometry/system_geometry_manifest.json",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/system-geometry/system_geometry_manifest.json",
+      "present": true,
+      "status": "present",
+      "note": "present in the audited local top-1 bundle",
+      "bytes": 887,
+      "sha256": "562b6a1901d69f8fdffa0801b931d014e34944ea1d80937427cdf525068423d1"
+    },
+    "candidate_lammps_data": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/system.lmp",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/system.lmp",
+      "present": false,
+      "status": "missing_from_local_bundle",
+      "note": "not present in the audited local candidate-specific bundle; no parameter value inferred"
+    },
+    "candidate_lammps_input": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/in.lmp",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/in.lmp",
+      "present": false,
+      "status": "missing_from_local_bundle",
+      "note": "not present in the audited local candidate-specific bundle; no parameter value inferred"
+    },
+    "atom_typing_and_charges": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/pcff_plus_atom_types_charges.json",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/pcff_plus_atom_types_charges.json",
+      "present": false,
+      "status": "missing_from_local_bundle",
+      "note": "not present in the audited local candidate-specific bundle; no parameter value inferred"
+    },
+    "bond_coefficients": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/pcff_plus_bond_coeffs.txt",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/pcff_plus_bond_coeffs.txt",
+      "present": false,
+      "status": "missing_from_local_bundle",
+      "note": "not present in the audited local candidate-specific bundle; no parameter value inferred"
+    },
+    "angle_coefficients": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/pcff_plus_angle_coeffs.txt",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/pcff_plus_angle_coeffs.txt",
+      "present": false,
+      "status": "missing_from_local_bundle",
+      "note": "not present in the audited local candidate-specific bundle; no parameter value inferred"
+    },
+    "dihedral_coefficients": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/pcff_plus_dihedral_coeffs.txt",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/pcff_plus_dihedral_coeffs.txt",
+      "present": false,
+      "status": "missing_from_local_bundle",
+      "note": "not present in the audited local candidate-specific bundle; no parameter value inferred"
+    },
+    "improper_coefficients": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/pcff_plus_improper_coeffs.txt",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/pcff_plus_improper_coeffs.txt",
+      "present": false,
+      "status": "missing_from_local_bundle",
+      "note": "not present in the audited local candidate-specific bundle; no parameter value inferred"
+    },
+    "nonbonded_coefficients": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/pcff_plus_pair_coeffs.txt",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/pcff_plus_pair_coeffs.txt",
+      "present": false,
+      "status": "missing_from_local_bundle",
+      "note": "not present in the audited local candidate-specific bundle; no parameter value inferred"
+    },
+    "parameter_coverage_report": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/pcff_plus_coverage_report.json",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/pcff_plus_coverage_report.json",
+      "present": false,
+      "status": "missing_from_local_bundle",
+      "note": "not present in the audited local candidate-specific bundle; no parameter value inferred"
+    },
+    "run0_acceptance_report": {
+      "path": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/experiment-c/md-validation/top1-smoke-input/run0_acceptance.json",
+      "relative_to_canonical": "results/experiment-c/md-validation/top1-smoke-input/run0_acceptance.json",
+      "present": false,
+      "status": "missing_from_local_bundle",
+      "note": "not present in the audited local candidate-specific bundle; no parameter value inferred"
+    }
+  },
+  "reference_only_assets": [
+    {
+      "path": "/Users/yicao/Documents/ARC/liquid-electrolyte-entropy/work/htp_md_upstream_v2/example_for_relaxation_equilibration/newfile.data",
+      "relative_to_canonical": null,
+      "present": true,
+      "status": "reference_only",
+      "note": "already-parameterized PEO example; not the frozen PolyGen top-1 candidate",
+      "bytes": 1284307,
+      "sha256": "feee62ec8bcd7f1ef7954c826e03a23310980ac7069de71475a6f552e502af07"
+    },
+    {
+      "path": "/Users/yicao/Documents/ARC/resourses/htp-md-toolbox/data/ion_parameters/Li.params",
+      "relative_to_canonical": null,
+      "present": true,
+      "status": "reference_only",
+      "note": "ion template; does not supply candidate polymer typing or cross terms",
+      "bytes": 39,
+      "sha256": "dc31f9a20103e6fd44cab2308959bf2f2430d7d6cca24808dd67d3a380ea5896"
+    },
+    {
+      "path": "/Users/yicao/Documents/ARC/resourses/htp-md-toolbox/data/ion_parameters/TFSI.params",
+      "relative_to_canonical": null,
+      "present": true,
+      "status": "reference_only",
+      "note": "ion template; does not supply candidate polymer typing or cross terms",
+      "bytes": 3149,
+      "sha256": "8b7f2a0723da443cddb26689cdb9e55bb4eb33f943a9497ba66dca0b6dc250ea"
+    }
+  ],
+  "coverage_by_required_class": {
+    "atom_types_charges_masses": {
+      "status": "not_assessed_candidate_specific_bundle_missing",
+      "numerator": null,
+      "denominator": null,
+      "reason": "A complete candidate-specific PCFF+ bundle is absent; do not report a numerical coverage fraction."
+    },
+    "bond_coefficients": {
+      "status": "not_assessed_candidate_specific_bundle_missing",
+      "numerator": null,
+      "denominator": null,
+      "reason": "A complete candidate-specific PCFF+ bundle is absent; do not report a numerical coverage fraction."
+    },
+    "angle_coefficients": {
+      "status": "not_assessed_candidate_specific_bundle_missing",
+      "numerator": null,
+      "denominator": null,
+      "reason": "A complete candidate-specific PCFF+ bundle is absent; do not report a numerical coverage fraction."
+    },
+    "dihedral_coefficients": {
+      "status": "not_assessed_candidate_specific_bundle_missing",
+      "numerator": null,
+      "denominator": null,
+      "reason": "A complete candidate-specific PCFF+ bundle is absent; do not report a numerical coverage fraction."
+    },
+    "improper_coefficients": {
+      "status": "not_assessed_candidate_specific_bundle_missing",
+      "numerator": null,
+      "denominator": null,
+      "reason": "A complete candidate-specific PCFF+ bundle is absent; do not report a numerical coverage fraction."
+    },
+    "nonbonded_pair_coefficients": {
+      "status": "not_assessed_candidate_specific_bundle_missing",
+      "numerator": null,
+      "denominator": null,
+      "reason": "A complete candidate-specific PCFF+ bundle is absent; do not report a numerical coverage fraction."
+    },
+    "cross_terms_and_mixing_rules": {
+      "status": "not_assessed_candidate_specific_bundle_missing",
+      "numerator": null,
+      "denominator": null,
+      "reason": "A complete candidate-specific PCFF+ bundle is absent; do not report a numerical coverage fraction."
+    },
+    "topology_atom_map": {
+      "status": "not_assessed_candidate_specific_bundle_missing",
+      "numerator": null,
+      "denominator": null,
+      "reason": "A complete candidate-specific PCFF+ bundle is absent; do not report a numerical coverage fraction."
+    },
+    "lammps_run0_acceptance": {
+      "status": "not_assessed_candidate_specific_bundle_missing",
+      "numerator": null,
+      "denominator": null,
+      "reason": "A complete candidate-specific PCFF+ bundle is absent; do not report a numerical coverage fraction."
+    }
+  },
+  "launch_rule": "Do not launch PCFF+ MD until all required classes have candidate-specific coefficients, complete coverage counts, SHA-256 manifest, and a passing LAMMPS run-0 acceptance."
+}

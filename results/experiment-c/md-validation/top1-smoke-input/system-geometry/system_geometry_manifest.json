@@ -1,0 +1,28 @@
+{
+  "status": "PACKED_GEOMETRY_READY_FORCE_FIELD_NOT_ASSIGNED",
+  "packing_attempt": 2,
+  "packing_attempt_1": "FAILED_AT_DIRECT_1.2_G_CM3",
+  "initial_density_g_cm3": 0.4009580078279123,
+  "initial_box_scale_relative_to_1_2_density": 1.4411,
+  "polymer_chains": 3,
+  "li_ions": 10,
+  "tfsi_ions": 10,
+  "polymer_molecular_weight_g_mol": 2222.19999999997,
+  "calculated_molality_mol_kg": 1.500015000150022,
+  "target_molality_mol_kg": 1.5,
+  "relative_molality_error": 1.000010001472873e-05,
+  "box_lengths_A": [
+    34.049647806413965,
+    34.049647806413965,
+    34.049647806413965
+  ],
+  "atom_count": 1084,
+  "formula": "C296H468F60Li10N10O220S20",
+  "resolved_counts": {
+    "top1_polymer": 3,
+    "LiTFSI_Liplus": 10,
+    "LiTFSI_TFSIminus": 10
+  },
+  "pcff_plus_parameterized": false,
+  "packed_extxyz_sha256": "09f4e53c8ec6fefb0ff0c1e6b8b5fe80d36ef2c78fe64a0a4e0a27242ecfb13a"
+}

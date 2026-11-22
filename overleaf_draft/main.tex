@@ -1,0 +1,52 @@
+\documentclass[pdflatex,sn-nature]{sn-jnl}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{url}
+
+\newcommand{\placeholder}[1]{\textcolor{red}{[PLACEHOLDER: #1]}}
+\newcommand{\figref}[1]{Fig.~\ref{#1}}
+
+\raggedbottom
+
+\begin{document}
+
+\title[Controllability is not extrapolation]{Conditioning improves in-support controllability but does not produce true property extrapolation in polymer generative models}
+
+\author*[1]{\fnm{Yi} \sur{Cao}}\email{\placeholder{corresponding-author-email}}
+\affil*[1]{\orgname{Toyota Research Institute}, \orgaddress{\city{Los Altos}, \state{California}, \country{USA}}}
+\author[2]{\fnm{\placeholder{Coauthor}} \sur{\placeholder{Surname}}}
+\affil[2]{\orgname{\placeholder{Affiliation}}}
+
+\abstract{Conditional generative models are increasingly used to propose molecules with desired properties, but a central distinction is often left implicit: steering samples within the training support is not the same as generating candidates beyond the observed frontier. Here we establish a staged, support-aware benchmark for polymer electrolyte generation and apply it to a character-level autoregressive PolyGen model trained from scratch on a single high-throughput molecular-dynamics source. Continuous conditioning improves target adherence over a binary baseline at in-support quantiles and remains usable near the upper boundary, while incurring a modest validity and novelty trade-off. However, when the target is moved to the 90th and 100th percentiles or beyond the maximum training conductivity, neither continuous nor binary conditioning produces a surrogate-supported frontier crossing across five matched seeds. An independent six-property conditioning experiment reaches the same negative result: no arm produces a strict joint hit or an all-property frontier crossing. These results define a practical evaluation boundary for conditional molecular generation and motivate future gains through broader labelled data, richer molecular representations and closed-loop validation rather than finer conditioning alone.}
+
+\keywords{polymer electrolytes, molecular generation, conditional generation, extrapolation, controllability, active learning}
+
+\section*{Introduction}
+\input{section/introduction}
+
+\section*{Results}
+\input{section/results_interpolation}
+\input{section/results_upper_tail}
+\input{section/results_extrapolation}
+\input{section/results_multi_property}
+
+\section*{Methods}
+\input{section/methods}
+
+\section*{Discussion}
+\input{section/discussion}
+
+\section*{Limitations and outlook}
+\input{section/limitations_outlook}
+
+\section*{Data and code availability}
+\input{section/data_availability}
+
+\bibliography{sn-bibliography}
+
+\end{document}

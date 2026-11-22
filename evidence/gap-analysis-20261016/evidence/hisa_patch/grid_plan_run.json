@@ -1,0 +1,64 @@
+{
+  "schema_version": "polygen-grid-plan-v1",
+  "status": "design_only_not_executed",
+  "dimensions": {
+    "models": [
+      "gpt-nano",
+      "gpt-small"
+    ],
+    "steps": [
+      1000,
+      2000,
+      3000
+    ],
+    "temperatures": [
+      0.8,
+      1.0,
+      1.2
+    ],
+    "seeds": [
+      17,
+      42,
+      202,
+      303,
+      907
+    ],
+    "arms": [
+      "binary",
+      "continuous"
+    ],
+    "targets": [
+      -5.0,
+      -4.0,
+      -3.0
+    ]
+  },
+  "cells_total": 180,
+  "planned_executable_cells": 90,
+  "blocked_cells": 90,
+  "raw_samples_per_arm_config": 1500,
+  "raw_samples_per_seed_arm": 300,
+  "target_allocation_per_seed_arm": {
+    "-5.0": 100,
+    "-4.0": 100,
+    "-3.0": 100
+  },
+  "planned_raw_samples_gpt_nano": 27000,
+  "estimated_gpu_hours_gpt_nano": 90.0,
+  "blocked_raw_samples_gpt_small": 27000,
+  "estimated_gpu_hours_gpt_small": 90.0,
+  "model_totals_derived_from_rows": {
+    "gpt-nano": {
+      "raw_samples": 27000,
+      "estimated_gpu_hours": 90.0
+    },
+    "gpt-small": {
+      "raw_samples": 27000,
+      "estimated_gpu_hours": 90.0
+    }
+  },
+  "pairing_rule": "same seed, target allocation, split, steps, temperature, and sample budget for binary/continuous",
+  "identity_key": "model x steps x temperature x seed x arm",
+  "primary_ranking": "valid + novel + in-support + uncertainty gate, then predicted_log_sigma - 1.96 * uncertainty descending",
+  "stage_3_pfp_md": "out of scope and requires explicit user sign-off"
+}

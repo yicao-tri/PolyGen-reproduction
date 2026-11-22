@@ -1,0 +1,5 @@
+threshold,morgan_near_rows_in_systematic_sample,canonical_exact_rows_in_sample,nonexact_fingerprint_near_rows_in_sample,htp_rows,pi1m_rows,pi1m_sampled_rows,method_status
+0.85,21,7,14,6024,995799,99580,exploratory_sampled_heuristic
+0.90,13,7,6,6024,995799,99580,exploratory_sampled_heuristic
+0.95,13,7,6,6024,995799,99580,exploratory_sampled_heuristic
+1.00,8,7,1,6024,995799,99580,exploratory_sampled_heuristic

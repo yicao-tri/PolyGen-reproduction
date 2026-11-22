@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="620" viewBox="0 0 1500 620">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#111}.title{font-size:28px;font-weight:bold}.panel{font-size:22px;font-weight:bold}.tick{font-size:17px}.axis{stroke:#111;stroke-width:3}</style>
+<text x="40" y="42" class="title">Upper-tail hit definitions v2: blind versus full-source RF</text>
+<text x="70" y="85" class="panel">Target hit <0.50</text>
+<line x1="70" y1="115" x2="70" y2="485" class="axis"/>
+<line x1="70" y1="485" x2="355" y2="485" class="axis"/>
+<text x="60" y="491.0" text-anchor="end" class="tick">0.00</text>
+<line x1="65" y1="485.0" x2="70" y2="485.0" stroke="#111"/>
+<text x="60" y="398.5" text-anchor="end" class="tick">0.25</text>
+<line x1="65" y1="392.5" x2="70" y2="392.5" stroke="#111"/>
+<text x="60" y="306.0" text-anchor="end" class="tick">0.50</text>
+<line x1="65" y1="300.0" x2="70" y2="300.0" stroke="#111"/>
+<text x="60" y="213.5" text-anchor="end" class="tick">0.75</text>
+<line x1="65" y1="207.5" x2="70" y2="207.5" stroke="#111"/>
+<text x="60" y="121.0" text-anchor="end" class="tick">1.00</text>
+<line x1="65" y1="115.0" x2="70" y2="115.0" stroke="#111"/>
+<text x="130" y="515" text-anchor="middle" class="tick">Continuous</text>
+<rect x="115" y="281.13" width="24" height="203.87" fill="#4C78A8"/>
+<text x="127.0" y="275.13" text-anchor="middle" class="tick">0.551</text>
+<rect x="143" y="279.65" width="24" height="205.35000000000002" fill="#007C83"/>
+<text x="155.0" y="273.65" text-anchor="middle" class="tick">0.555</text>
+<text x="210" y="515" text-anchor="middle" class="tick">Binary</text>
+<rect x="195" y="405.45" width="24" height="79.55000000000001" fill="#4C78A8"/>
+<text x="207.0" y="399.45" text-anchor="middle" class="tick">0.215</text>
+<rect x="223" y="405.265" width="24" height="79.73500000000001" fill="#007C83"/>
+<text x="235.0" y="399.265" text-anchor="middle" class="tick">0.215</text>
+<text x="290" y="515" text-anchor="middle" class="tick">Unconditional</text>
+<rect x="275" y="484.445" width="24" height="0.5550000000000068" fill="#4C78A8"/>
+<text x="287.0" y="478.445" text-anchor="middle" class="tick">0.002</text>
+<rect x="303" y="484.445" width="24" height="0.5550000000000068" fill="#007C83"/>
+<text x="315.0" y="478.445" text-anchor="middle" class="tick">0.002</text>
+<text x="425" y="85" class="panel">Target hit <0.25</text>
+<line x1="425" y1="115" x2="425" y2="485" class="axis"/>
+<line x1="425" y1="485" x2="710" y2="485" class="axis"/>
+<text x="415" y="491.0" text-anchor="end" class="tick">0.00</text>
+<line x1="420" y1="485.0" x2="425" y2="485.0" stroke="#111"/>
+<text x="415" y="398.5" text-anchor="end" class="tick">0.25</text>
+<line x1="420" y1="392.5" x2="425" y2="392.5" stroke="#111"/>
+<text x="415" y="306.0" text-anchor="end" class="tick">0.50</text>
+<line x1="420" y1="300.0" x2="425" y2="300.0" stroke="#111"/>
+<text x="415" y="213.5" text-anchor="end" class="tick">0.75</text>
+<line x1="420" y1="207.5" x2="425" y2="207.5" stroke="#111"/>
+<text x="415" y="121.0" text-anchor="end" class="tick">1.00</text>
+<line x1="420" y1="115.0" x2="425" y2="115.0" stroke="#111"/>
+<text x="485" y="515" text-anchor="middle" class="tick">Continuous</text>
+<rect x="470" y="432.09000000000003" width="24" height="52.90999999999997" fill="#4C78A8"/>
+<text x="482.0" y="426.09000000000003" text-anchor="middle" class="tick">0.143</text>
+<rect x="498" y="375.48" width="24" height="109.51999999999998" fill="#007C83"/>
+<text x="510.0" y="369.48" text-anchor="middle" class="tick">0.296</text>
+<text x="565" y="515" text-anchor="middle" class="tick">Binary</text>
+<rect x="550" y="461.505" width="24" height="23.495000000000005" fill="#4C78A8"/>
+<text x="562.0" y="455.505" text-anchor="middle" class="tick">0.064</text>
+<rect x="578" y="442.265" width="24" height="42.735000000000014" fill="#007C83"/>
+<text x="590.0" y="436.265" text-anchor="middle" class="tick">0.116</text>
+<text x="645" y="515" text-anchor="middle" class="tick">Unconditional</text>
+<rect x="630" y="484.63" width="24" height="0.37000000000000455" fill="#4C78A8"/>
+<text x="642.0" y="478.63" text-anchor="middle" class="tick">0.001</text>
+<rect x="658" y="484.63" width="24" height="0.37000000000000455" fill="#007C83"/>
+<text x="670.0" y="478.63" text-anchor="middle" class="tick">0.001</text>
+<text x="780" y="85" class="panel">Target hit <0.10</text>
+<line x1="780" y1="115" x2="780" y2="485" class="axis"/>
+<line x1="780" y1="485" x2="1065" y2="485" class="axis"/>
+<text x="770" y="491.0" text-anchor="end" class="tick">0.00</text>
+<line x1="775" y1="485.0" x2="780" y2="485.0" stroke="#111"/>
+<text x="770" y="398.5" text-anchor="end" class="tick">0.25</text>
+<line x1="775" y1="392.5" x2="780" y2="392.5" stroke="#111"/>
+<text x="770" y="306.0" text-anchor="end" class="tick">0.50</text>
+<line x1="775" y1="300.0" x2="780" y2="300.0" stroke="#111"/>
+<text x="770" y="213.5" text-anchor="end" class="tick">0.75</text>
+<line x1="775" y1="207.5" x2="780" y2="207.5" stroke="#111"/>
+<text x="770" y="121.0" text-anchor="end" class="tick">1.00</text>
+<line x1="775" y1="115.0" x2="780" y2="115.0" stroke="#111"/>
+<text x="840" y="515" text-anchor="middle" class="tick">Continuous</text>
+<rect x="825" y="485.0" width="24" height="0.0" fill="#4C78A8"/>
+<rect x="853" y="469.645" width="24" height="15.355000000000018" fill="#007C83"/>
+<text x="865.0" y="463.645" text-anchor="middle" class="tick">0.042</text>
+<text x="920" y="515" text-anchor="middle" class="tick">Binary</text>
+<rect x="905" y="485.0" width="24" height="0.0" fill="#4C78A8"/>
+<rect x="933" y="480.005" width="24" height="4.9950000000000045" fill="#007C83"/>
+<text x="945.0" y="474.005" text-anchor="middle" class="tick">0.013</text>
+<text x="1000" y="515" text-anchor="middle" class="tick">Unconditional</text>
+<rect x="985" y="485.0" width="24" height="0.0" fill="#4C78A8"/>
+<rect x="1013" y="484.815" width="24" height="0.18500000000000227" fill="#007C83"/>
+<text x="1025.0" y="478.815" text-anchor="middle" class="tick">0.001</text>
+<text x="1135" y="85" class="panel">Frontier crossing</text>
+<line x1="1135" y1="115" x2="1135" y2="485" class="axis"/>
+<line x1="1135" y1="485" x2="1420" y2="485" class="axis"/>
+<text x="1125" y="491.0" text-anchor="end" class="tick">0.00</text>
+<line x1="1130" y1="485.0" x2="1135" y2="485.0" stroke="#111"/>
+<text x="1125" y="398.5" text-anchor="end" class="tick">0.25</text>
+<line x1="1130" y1="392.5" x2="1135" y2="392.5" stroke="#111"/>
+<text x="1125" y="306.0" text-anchor="end" class="tick">0.50</text>
+<line x1="1130" y1="300.0" x2="1135" y2="300.0" stroke="#111"/>
+<text x="1125" y="213.5" text-anchor="end" class="tick">0.75</text>
+<line x1="1130" y1="207.5" x2="1135" y2="207.5" stroke="#111"/>
+<text x="1125" y="121.0" text-anchor="end" class="tick">1.00</text>
+<line x1="1130" y1="115.0" x2="1135" y2="115.0" stroke="#111"/>
+<text x="1195" y="515" text-anchor="middle" class="tick">Continuous</text>
+<rect x="1180" y="485.0" width="24" height="0.0" fill="#4C78A8"/>
+<rect x="1208" y="479.265" width="24" height="5.735000000000014" fill="#007C83"/>
+<text x="1220.0" y="473.265" text-anchor="middle" class="tick">0.015</text>
+<text x="1275" y="515" text-anchor="middle" class="tick">Binary</text>
+<rect x="1260" y="485.0" width="24" height="0.0" fill="#4C78A8"/>
+<rect x="1288" y="484.445" width="24" height="0.5550000000000068" fill="#007C83"/>
+<text x="1300.0" y="478.445" text-anchor="middle" class="tick">0.002</text>
+<text x="1355" y="515" text-anchor="middle" class="tick">Unconditional</text>
+<rect x="1340" y="485.0" width="24" height="0.0" fill="#4C78A8"/>
+<rect x="1368" y="485.0" width="24" height="0.0" fill="#007C83"/>
+<rect x="1120" y="540" width="18" height="18" fill="#4C78A8"/><text x="1148" y="555" class="tick">Blind RF (Q80-only)</text>
+<rect x="1330" y="540" width="18" height="18" fill="#007C83"/><text x="1358" y="555" class="tick">Full-source RF</text>
+<text x="40" y="595" class="tick">Frontier crossing = quality gates plus RF prediction above actual Q80 boundary; MD-validated crossing remains unavailable.</text>
+</svg>

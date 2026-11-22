@@ -1,0 +1,77 @@
+{
+  "source": "/Users/yicao/Documents/ARC/PolyGen-reproduction/inputs/release-data/htpmd-trainset.csv",
+  "source_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "source_rows": 6024,
+  "source_unique_smiles": 6024,
+  "full_source_quantiles": {
+    "0.8": -4.084468800285627,
+    "0.9": -3.987531610782325,
+    "0.95": -3.902091615809661,
+    "1.0": -3.295367776501
+  },
+  "training_rule": "log10(conductivity) <= full-source Q80, inclusive",
+  "nominal_q80": -4.084468800285627,
+  "training_rows": 4819,
+  "training_unique_smiles": 4819,
+  "training_max_log10_sigma": -4.084499110675755,
+  "locked_tail_rows": 1205,
+  "locked_tail_unique_smiles": 1205,
+  "train_locked_exact_smiles_overlap": 0,
+  "binary_cutoff_log10_sigma": -4.0,
+  "binary_training_class_counts": {
+    "0": 4819
+  },
+  "binary_status": "degenerate_single_class",
+  "alternative_binary_cutoff": -4.3146323543921214,
+  "targets": [
+    {
+      "label": "Q90",
+      "definition": "full-source Q90",
+      "value": -3.987531610782325,
+      "quantile": 0.9
+    },
+    {
+      "label": "Q100",
+      "definition": "full-source maximum",
+      "value": -3.295367776501,
+      "quantile": 1.0
+    },
+    {
+      "label": "train_max_plus_0.25",
+      "definition": "actual inclusive train_max + 0.25",
+      "value": -3.834499110675755,
+      "quantile": null
+    },
+    {
+      "label": "train_max_plus_0.50",
+      "definition": "actual inclusive train_max + 0.50",
+      "value": -3.584499110675755,
+      "quantile": null
+    }
+  ],
+  "locked_holdout_policy": "post-run audit only; locked rows are not used for fitting, tuning, thresholds, filters or selection",
+  "benchmark": "continuous-vs-binary-vs-unconditional-reranking true extrapolation",
+  "arms": [
+    "continuous",
+    "binary",
+    "unconditional_reranking"
+  ],
+  "seeds": [
+    17,
+    42,
+    202,
+    303,
+    907
+  ],
+  "samples_per_cell": 100,
+  "matched_settings": {
+    "steps": 1000,
+    "temperature": 1.0,
+    "top_k": 40,
+    "block_size": 64,
+    "prefix_length": 5
+  },
+  "md": "not_run_by_contract",
+  "gnn": "unavailable_no_released_gnn_pipeline",
+  "force_field_coverage": "not_assessed_no_polymer_build_or_md"
+}

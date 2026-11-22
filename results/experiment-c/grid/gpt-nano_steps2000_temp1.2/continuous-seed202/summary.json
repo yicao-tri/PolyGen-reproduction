@@ -1,0 +1,12 @@
+{
+  "arm": "continuous",
+  "seed": 202,
+  "steps": 2000,
+  "temperature": 1.2,
+  "samples_per_target": 100,
+  "allocation": null,
+  "elapsed_seconds": 85.35969996452332,
+  "first_loss": 6.282576084136963,
+  "last_loss": 0.24245993793010712,
+  "samples": 300
+}

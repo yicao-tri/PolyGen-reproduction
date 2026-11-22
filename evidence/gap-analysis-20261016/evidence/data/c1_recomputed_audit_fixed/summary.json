@@ -1,0 +1,62 @@
+{
+  "status": "fixed_audit_complete",
+  "raw_total": 3000,
+  "raw_per_arm": {
+    "binary": 1500,
+    "continuous": 1500
+  },
+  "correlation_definition": "Pearson correlation over per-sample target and predicted_log_sigma across all three target levels within each arm x seed; single-target bins are undefined/NaN.",
+  "correlation_values": [
+    {
+      "arm": "binary",
+      "seed": 17,
+      "target_prediction_correlation": 0.45367182899499153
+    },
+    {
+      "arm": "binary",
+      "seed": 42,
+      "target_prediction_correlation": 0.27404074212896246
+    },
+    {
+      "arm": "binary",
+      "seed": 202,
+      "target_prediction_correlation": 0.5066124115214553
+    },
+    {
+      "arm": "binary",
+      "seed": 303,
+      "target_prediction_correlation": 0.44720675962518736
+    },
+    {
+      "arm": "binary",
+      "seed": 907,
+      "target_prediction_correlation": 0.45739959105605427
+    },
+    {
+      "arm": "continuous",
+      "seed": 17,
+      "target_prediction_correlation": 0.7697955784385722
+    },
+    {
+      "arm": "continuous",
+      "seed": 42,
+      "target_prediction_correlation": 0.7170026212736048
+    },
+    {
+      "arm": "continuous",
+      "seed": 202,
+      "target_prediction_correlation": 0.8454769557404938
+    },
+    {
+      "arm": "continuous",
+      "seed": 303,
+      "target_prediction_correlation": 0.7220338460875272
+    },
+    {
+      "arm": "continuous",
+      "seed": 907,
+      "target_prediction_correlation": 0.7682891201489523
+    }
+  ],
+  "source_is_canonical_read_only": true
+}

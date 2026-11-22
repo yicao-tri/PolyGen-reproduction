@@ -1,0 +1,31 @@
+training_seed,evaluation_seed,target,sample_index,batch_seed,smiles,canonical,generation_failed,failure_message,validation_reasons,valid_repeat_unit,exactly_two_stars,strict_corpus_novel,fragment_steps,heavy_atoms,verifier_valid,predicted_log_sigma,uncertainty,support,novel,target_error,strict_hit
+47,17,-5.0,0,4700170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,105,,False,,,,False,,False
+47,17,-5.0,1,4700170,*CNC(C)C(*)(C)N,*C(C)NCC(*)(C)N,False,,,True,True,True,14,7.0,True,-4.363083405511438,0.11530320677119252,0.28205128205128205,True,0.6369165944885617,False
+47,17,-5.0,2,4700170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,106,,False,,,,False,,False
+47,17,-5.0,3,4700170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,107,,False,,,,False,,False
+47,17,-5.0,4,4700170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,93,,False,,,,False,,False
+47,17,-5.0,5,4700170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,110,,False,,,,False,,False
+47,17,-5.0,6,4700170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,106,,False,,,,False,,False
+47,17,-5.0,7,4700170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,103,,False,,,,False,,False
+47,17,-5.0,8,4700170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,108,,False,,,,False,,False
+47,17,-5.0,9,4700170,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,99,,False,,,,False,,False
+47,17,-4.0,0,4700171,*N(*)N,*N(*)N,False,,,True,True,True,4,2.0,True,-4.283216216263009,0.13897436324917226,0.13793103448275862,True,0.28321621626300875,False
+47,17,-4.0,1,4700171,,,True,"Exception in docking, can_dock didnt catch it","Exception in docking, can_dock didnt catch it",False,False,False,75,,False,,,,False,,False
+47,17,-4.0,2,4700171,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,109,,False,,,,False,,False
+47,17,-4.0,3,4700171,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,118,,False,,,,False,,False
+47,17,-4.0,4,4700171,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,115,,False,,,,False,,False
+47,17,-4.0,5,4700171,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,103,,False,,,,False,,False
+47,17,-4.0,6,4700171,*C(OC(=O)OP)C(CNC(C)(C)C(C)S)OC(*)(F)CC,*C(CNC(C)(C)C(C)S)OC(F)(CC)C(*)OC(=O)OP,False,,,True,True,True,33,20.0,True,-4.407666982237414,0.15273436083934624,0.296875,True,0.40766698223741393,False
+47,17,-4.0,7,4700171,*C(C=CC)NC(C)(N)COC(*)C(CC(=O)N(C#C)C(=C)C(C)(C)C(=O)N(CC)C(=O)OC)CC(C)(C)N(C)CCC,*C(C=CC)NC(C)(N)COC(*)C(CC(=O)N(C#C)C(=C)C(C)(C)C(=O)N(CC)C(=O)OC)CC(C)(C)N(C)CCC,False,,,True,True,True,67,41.0,True,-4.3437327226833435,0.16546180352845652,0.20689655172413793,True,0.34373272268334354,False
+47,17,-4.0,8,4700171,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,111,,False,,,,False,,False
+47,17,-4.0,9,4700171,*C(*)OC(C)(C)CNCC(C)(C)C,*C(*)OC(C)(C)CNCC(C)(C)C,False,,,True,True,True,22,12.0,True,-4.375376159678871,0.1197963187225814,0.38235294117647056,True,0.37537615967887117,True
+47,17,-3.0,0,4700172,*CN(C(=O)NC(=O)NCC(C)(C)COC)C(C)CC(C)(COC(C)OC)N(*)C,*C(C)CC(C)(COC(C)OC)N(C)CN(*)C(=O)NC(=O)NCC(C)(C)COC,False,,,True,True,True,46,28.0,True,-4.323411346475253,0.1439333769337618,0.27941176470588236,True,1.323411346475253,False
+47,17,-3.0,1,4700172,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,116,,False,,,,False,,False
+47,17,-3.0,2,4700172,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,108,,False,,,,False,,False
+47,17,-3.0,3,4700172,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,112,,False,,,,False,,False
+47,17,-3.0,4,4700172,*OC(=O)NC(C)(NCC(=O)COCOC)C(NC)C(*)C,*C(C)OC(=O)NC(C)(NCC(=O)COCOC)C(*)NC,False,,,True,True,True,33,20.0,True,-4.244436111265159,0.19702115524208133,0.2786885245901639,True,1.2444361112651592,False
+47,17,-3.0,5,4700172,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,104,,False,,,,False,,False
+47,17,-3.0,6,4700172,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,110,,False,,,,False,,False
+47,17,-3.0,7,4700172,*CC(N)(OCOCCC(C)(OC)OCOC(*)C)C(=O)N(C)CC,*CC(C)OCOC(C)(CCOCOC(*)(N)C(=O)N(C)CC)OC,False,,,True,True,True,37,23.0,True,-4.25180494109943,0.20670789890029864,0.24615384615384617,True,1.2518049410994303,False
+47,17,-3.0,8,4700172,,,True,Fragment cap reached (80 fragments),Fragment cap reached (80 fragments),False,False,False,107,,False,,,,False,,False
+47,17,-3.0,9,4700172,*NCCC(C)OC(=O)OCC(C)N(*)C,*C(C)COC(=O)OC(C)CCNN(*)C,False,,,True,True,True,24,14.0,True,-4.291244334710552,0.12038209329670739,0.4444444444444444,True,1.2912443347105524,False

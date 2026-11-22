@@ -1,0 +1,12 @@
+{
+  "arm": "binary",
+  "seed": 202,
+  "steps": 1000,
+  "temperature": 1.0,
+  "raw_generation_budget": 400,
+  "reported_candidates": 400,
+  "first_loss": 6.279417991638184,
+  "last_loss": 0.279192715883255,
+  "elapsed_seconds": 62.46443319320679,
+  "checkpoint_sha256": "5143373c7f600682b16f5823a3704e2052380da1fa65743a195b6af90d2ce191"
+}

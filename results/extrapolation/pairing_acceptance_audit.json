@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "checks": {
+    "source_hash_matches_manifest": true,
+    "training_rows_are_leq_q80": true,
+    "locked_rows_are_strictly_above_q80": true,
+    "train_locked_exact_overlap_zero": true,
+    "all_arm_seed_target_cells_present": true,
+    "all_cells_n100": true,
+    "all_candidate_rows_present": true,
+    "unconditional_pool_budget_400": true,
+    "binary_receives_only_low_high_label": true,
+    "no_md_started": true,
+    "no_force_field_claim": true,
+    "gnn_unavailable_explicit": true,
+    "all_driver_exit_codes_zero": true,
+    "historical_reference_manifests_preserved": true
+  },
+  "counts": {
+    "runs": 15,
+    "candidate_rows": 6000,
+    "cells": 60,
+    "unsupported_or_blocked_cells": 26,
+    "proposed_md_rows": 200
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": "polygen-final-readiness-v1",
+  "status": "incomplete_by_design",
+  "package_root": "/Users/yicao/.codex/.chatgpt-projects/g-p-6aac94e5fbf48191a04f8a6e7af92676/polygen_gap_analysis_20261016",
+  "checks": {
+    "required_figures": {
+      "status": "PASS",
+      "missing": []
+    },
+    "required_tables": {
+      "status": "PASS",
+      "missing_prefixes": []
+    },
+    "figure_visual_qa": {
+      "status": "PASS",
+      "rows": 16,
+      "bad_rows": []
+    },
+    "provenance": {
+      "status": "PASS",
+      "rows": 54,
+      "missing": []
+    },
+    "package_manifest": {
+      "status": "PASS",
+      "files": 788,
+      "diff": {
+        "unlisted": [],
+        "missing": []
+      }
+    },
+    "claim_map": {
+      "status": "PASS",
+      "rows": 18,
+      "missing": []
+    },
+    "strict_molminer_smoke": {
+      "status": "PASS",
+      "summary": {
+        "status": "engineering_smoke_only",
+        "training_seeds": [
+          17,
+          23,
+          31,
+          47,
+          59
+        ],
+        "raw_rows": 150,
+        "valid_repeat_units": 47,
+        "exactly_two_star_units": 47,
+        "strict_hits": 8,
+        "valid_rate": 0.31333333333333335,
+        "exactly_two_star_rate": 0.31333333333333335,
+        "strict_hit_rate": 0.05333333333333334,
+        "target_mae_valid": 0.7059581748630964,
+        "per_training_seed": [
+          {
+            "training_seed": 17,
+            "raw_n": 30,
+            "valid_rate": 0.3333333333333333,
+            "exactly_two_star_rate": 0.3333333333333333,
+            "strict_hit_rate": 0.1
+          },
+          {
+            "training_seed": 23,
+            "raw_n": 30,
+            "valid_rate": 0.3333333333333333,
+            "exactly_two_star_rate": 0.3333333333333333,
+            "strict_hit_rate": 0.06666666666666667
+          },
+          {
+            "training_seed": 31,
+            "raw_n": 30,
+            "valid_rate": 0.3,
+            "exactly_two_star_rate": 0.3,
+            "strict_hit_rate": 0.03333333333333333
+          },
+          {
+            "training_seed": 47,
+            "raw_n": 30,
+            "valid_rate": 0.3,
+            "exactly_two_star_rate": 0.3,
+            "strict_hit_rate": 0.03333333333333333
+          },
+          {
+            "training_seed": 59,
+            "raw_n": 30,
+            "valid_rate": 0.3,
+            "exactly_two_star_rate": 0.3,
+            "strict_hit_rate": 0.03333333333333333
+          }
+        ],
+        "publication_boundary": "five-seed five-epoch smoke only; not the final matched-budget comparison",
+        "training_summary": "evidence/data/molminer_strict_c1_five_seed_training_summary.csv"
+      }
+    },
+    "physical_gate": {
+      "status": "BLOCKED",
+      "pcff_plus_preflight": "NO_GO",
+      "top1_readiness": "NO_GO",
+      "md_status": "not_run_by_contract"
+    }
+  },
+  "hard_failures": [],
+  "unresolved_scope": [
+    "physical PCFF+ bundle and extrapolation MD are not available",
+    "F7/F8 are synthetic/planned placeholders",
+    "final publication-budget MolMiner comparison and task-aligned WeeMiner arm remain open",
+    "A4 isolated Hisa fixes are not merged into canonical and A9 full-source PI1M/ablation experiments remain open",
+    "Overleaf/submission-root synchronization remains owner-authorized only"
+  ],
+  "interpretation": "The package is publication-ready only for its surrogate-only, verifier-limited claim boundary; physical crossing and final generator comparison are not claimed."
+}

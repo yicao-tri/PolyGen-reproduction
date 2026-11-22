@@ -1,0 +1,45 @@
+{
+  "status": "extended_training_engineering_comparison",
+  "raw_rows": 150,
+  "valid_repeat_units": 125,
+  "exactly_two_star_units": 125,
+  "strict_hits": 25,
+  "valid_rate": 0.8333333333333334,
+  "exactly_two_star_rate": 0.8333333333333334,
+  "strict_hit_rate": 0.16666666666666666,
+  "target_mae_valid": 0.6580362984780025,
+  "by_training_seed": [
+    {
+      "training_seed": 17,
+      "valid_rate": 0.7999999999999999,
+      "exactly_two_star_rate": 0.7999999999999999,
+      "strict_hit_rate": 0.16666666666666666
+    },
+    {
+      "training_seed": 23,
+      "valid_rate": 0.8333333333333334,
+      "exactly_two_star_rate": 0.8333333333333334,
+      "strict_hit_rate": 0.16666666666666666
+    },
+    {
+      "training_seed": 31,
+      "valid_rate": 0.8666666666666667,
+      "exactly_two_star_rate": 0.8666666666666667,
+      "strict_hit_rate": 0.2333333333333333
+    },
+    {
+      "training_seed": 47,
+      "valid_rate": 0.8666666666666667,
+      "exactly_two_star_rate": 0.8666666666666667,
+      "strict_hit_rate": 0.03333333333333333
+    },
+    {
+      "training_seed": 59,
+      "valid_rate": 0.7999999999999999,
+      "exactly_two_star_rate": 0.7999999999999999,
+      "strict_hit_rate": 0.2333333333333333
+    }
+  ],
+  "publication_boundary": "five-seed 50-epoch strict-C1 engineering comparison; same 150-row generation budget as the five-epoch smoke; not a final publication leaderboard",
+  "schema_version": "polygen-strict-c1-molminer-50epoch-comparison-v1"
+}

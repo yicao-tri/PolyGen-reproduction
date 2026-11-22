@@ -1,0 +1,77 @@
+{
+  "status": "engineering_smoke_only",
+  "source": {
+    "source_rows": 6024,
+    "training_rows": 4819,
+    "locked_rows": 1205,
+    "split_random_state": 20260923,
+    "training_max_log_conductivity": -4.084499111,
+    "locked_vocab_buildable_rows": 1202,
+    "locked_ood_or_dropped_rows": 3
+  },
+  "preprocessing": {
+    "training_stories": 110681,
+    "validation_stories": 2942,
+    "test_stories": 27553,
+    "training_molecules": 4819,
+    "validation_molecules": 128,
+    "test_molecules": 1202,
+    "all_story_arrays_finite": true,
+    "packed_saturation_finite": true
+  },
+  "legacy_unpacked_failure": {
+    "status": "failed_expected_to_fail",
+    "loss": "nan",
+    "root_cause": "legacy collate path divided the all-zero BOS saturation row by zero",
+    "not_a_data_nan": true
+  },
+  "packed_smoke": {
+    "status": "pass",
+    "seed": 17,
+    "epochs": 1,
+    "d_model": 128,
+    "num_layers": 2,
+    "parameters": 502296,
+    "condition_dropout": 0.0,
+    "mean_train_loss": 4.3306,
+    "mean_val_loss": 1.7651,
+    "nonterm_top1": 0.4620,
+    "checkpoint": "evidence/experiments/molminer_strict_c1/checkpoints_smoke_packed/best_c1_strict_smoke_packed_seed17.pth",
+    "checkpoint_sha256": "3e9b812b429e2511df3dee32060c7db3ba2df836657590dfee9a2585f00a4497"
+  },
+  "generation_path_smoke": {
+    "status": "pass_with_expected_low_smoke_yield",
+    "checkpoint": "evidence/experiments/molminer_strict_c1/checkpoints_smoke_packed_dropout/best_c1_strict_smoke_packed_dropout_seed17.pth",
+    "prompt": {
+      "log_conductivity": -3.6
+    },
+    "fixed_seeds": 8,
+    "valid_two_star_units": 4,
+    "empty_generations": 4,
+    "train_mean_loss": 4.3245,
+    "validation_mean_loss": 1.7643,
+    "nonterm_top1": 0.4789,
+    "result_file": "evidence/experiments/molminer_strict_c1/generation_smoke/results_dropout.json"
+  },
+  "five_seed_five_epoch_smoke": {
+    "status": "pass_engineering_smoke_only",
+    "training_seeds": [17, 23, 31, 47, 59],
+    "epochs": 5,
+    "model_width": 128,
+    "all_training_losses_finite": true,
+    "final_validation_loss_range": [1.2866, 1.308],
+    "final_nonterm_top1_range": [0.4693, 0.4834],
+    "generation_budget": "10 samples per target (-5, -4, -3) per training seed",
+    "raw_rows": 150,
+    "valid_two_star_units": 47,
+    "frozen_rf_strict_hits": 8,
+    "valid_rate": 0.31333333333333335,
+    "strict_hit_rate": 0.05333333333333334,
+    "target_mae_valid": 0.7059581748630964,
+    "aggregate_manifest": "evidence/experiments/molminer_strict_c1/five_seed_generation_smoke/aggregate_manifest.json",
+    "aggregate_summary": "evidence/experiments/molminer_strict_c1/five_seed_generation_smoke/aggregate_summary.json",
+    "aggregate_table": "assets/tables/T12_molminer_strict_c1_smoke.csv",
+    "training_summary": "evidence/data/molminer_strict_c1_five_seed_training_summary.csv"
+  },
+  "publication_boundary": "five-seed smoke only, not final matched-budget result; final same-support MolMiner and task-aligned WeeMiner/equivalent comparison remain TODO"
+}

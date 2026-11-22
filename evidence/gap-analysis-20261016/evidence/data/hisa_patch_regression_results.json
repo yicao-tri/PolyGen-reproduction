@@ -1,0 +1,30 @@
+{
+  "status": "isolated_regression_complete",
+  "canonical_project_modified": false,
+  "hisa_issues": {
+    "1_dynamic_population": "PASS_isolated",
+    "2_nullable_cne": "PASS_isolated",
+    "3_convergence_renderer": "PASS_isolated",
+    "4_c1_correlation": "PASS_real_audit",
+    "5_non_degenerate_cne_test": "PASS_isolated",
+    "6_orthorhombic_lattice": "PASS_isolated",
+    "7_grid_totals": "PASS_isolated",
+    "8_attributes_policy": "OPEN",
+    "9_process_and_diagnostics": "PARTIAL"
+  },
+  "grid_plan": {
+    "gpt_nano_raw_samples": 27000,
+    "gpt_nano_estimated_gpu_hours": 90.0,
+    "gpt_small_blocked_raw_samples": 27000
+  },
+  "c1_fixed_audit": {
+    "raw_total": 3000,
+    "raw_per_arm": {"binary": 1500, "continuous": 1500},
+    "single_target_correlation": "undefined_and_recorded_as_nan",
+    "cross_target_arm_seed_correlation_range": {
+      "binary": [0.27404074212896246, 0.5066124115214553],
+      "continuous": [0.7170026212736048, 0.8454769557404938]
+    }
+  },
+  "release_boundary": "isolated PASS does not mean canonical merge and does not authorize PCFF+/MD launch"
+}

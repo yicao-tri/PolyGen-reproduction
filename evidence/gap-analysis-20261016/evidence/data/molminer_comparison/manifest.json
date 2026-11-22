@@ -1,0 +1,70 @@
+{
+  "schema_version": "molminer-polygen-c1-v1",
+  "created_at_utc": "2026-10-05T22:03:58Z",
+  "runner": "/Users/yicao/Documents/ARC/PolyGen-reproduction/scripts/run_molminer_c1_comparison.py",
+  "molminer_root": "/Users/yicao/Documents/ARC/resourses/molminer-polymer",
+  "molminer_commit": "f78d55a43293ae7c70c30c53304d6beb44afd6f5",
+  "molminer_dirty_status": "",
+  "polygen_root": "/Users/yicao/Documents/ARC/PolyGen-reproduction",
+  "polygen_commit": "a8214ae6aa108d1dfb482519fa7e1a920e305ab6",
+  "polygen_dirty_status": "?? results/experiment-c/grid/gpt-nano_steps3000_temp0.8.log\n?? results/experiment-c/grid/gpt-nano_steps3000_temp0.8.pid\n?? results/experiment-c/grid/gpt-nano_steps3000_temp0.8/\n?? results/experiment-c/grid/gpt-nano_steps3000_temp1.2/\n?? results/molminer-comparison/\n?? scripts/render_atlas_composite_simple.py\n?? scripts/render_full_rf_svg.py\n?? scripts/render_hit_definition_png.py\n?? scripts/render_hit_definition_svg.py\n?? scripts/run_molminer_c1_comparison.py",
+  "checkpoint": "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/molminer-comparison/dependencies/best_polyru_s42.pth",
+  "checkpoint_sha256": "67dbb003e137a6d815e83c10e50e69e04c4fef3faf24c75ad2c8df61e10f7d98",
+  "polygen_input_sha256": "89fec2f276df6bbc393a13c4bcf9359ce2a512c0b8c59a9c9cb45499be0c5b69",
+  "molminer_source_hashes": {
+    "molminer/generator.py": "331f8cf24fb792d820afbd5832ba6dc63af5acf893aa446715a701dfc0fb0bb2",
+    "molminer/models.py": "1fb80a8402dc23674ea6cfad3839e0cc89b56e74fb353f650fa4bc62870db07a",
+    "molminer/processor.py": "4ee4a14b47a575f04e1e8258bee8076db5972037d62db578aa9bad30c38b1168",
+    "molminer/repeat_unit.py": "ae96c2fea68907d215a00ae694a489ebb916c1aadb107e4f482e0a3afc2bfdcc",
+    "data/polymer_ru_v1/polymers.csv": "089db0532a284a90d17bb21876c1f75e8253e5b156cf7b2beec99e623fba4ee7",
+    "data/polymer_ru_v1/stats.json": "12cbc487f3c2726d56c57e63df11fefe99187fd1536b684993487b466418d98b",
+    "data/polymer_ru_v1/vocab_fragments.csv": "f86175b207219c6304cb6f6f9e6a1056a654a37a8ebad3beb4468cab851cfa72",
+    "data/polymer_ru_v1/vocab_attachments.csv": "3763709d4566ec7d88eb13a1aab0d94a079a119eb01739515678f2897a801ccd",
+    "data/polymer_ru_v1/vocab_anchors.csv": "61079bc1e5c9c8cb14d386869e540e95a28a8f09ad61e1ec360ce4f7cfcaa982"
+  },
+  "python": "3.11.16 (main, Sep  1 2026, 14:08:22) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "package_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "rdkit": "2024.3.5",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.5.2",
+    "torch": "2.5.0",
+    "tqdm": "4.66.5"
+  },
+  "split": {
+    "policy": "train_test_split stratified by 10 quantile bins",
+    "test_size": 0.2,
+    "random_state": 20260923
+  },
+  "targets": [
+    -5.0,
+    -4.0,
+    -3.0
+  ],
+  "seeds": [
+    17,
+    42,
+    202,
+    303,
+    907
+  ],
+  "samples_per_target": 100,
+  "decoder": {
+    "greedy": false,
+    "max_tries": 10,
+    "max_fragments": 80,
+    "properties": [
+      "log_conductivity"
+    ],
+    "other_properties": "withheld by MolMiner condition mask"
+  },
+  "verifier": {
+    "test_rows": 1205,
+    "rmse": 0.15694132332055197,
+    "mae": 0.12427464729106281,
+    "r2": 0.4979499498164407
+  },
+  "support_note": "Released MolMiner checkpoint includes HTP-MD source rows; cross-model results are descriptive/support-mismatched."
+}

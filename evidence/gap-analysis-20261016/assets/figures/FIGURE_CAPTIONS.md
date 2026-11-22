@@ -1,0 +1,27 @@
+# Figure captions and evidence status
+
+**P1 | Decision-value tradeoff.** (A) Mean RF prediction across five matched seeds for valid C1 candidates; error bars are 95% t intervals across seed-level means. (B) Paired seed-level strict-hit rates at the C1 target −4.0. (C) Continuous-minus-binary effects with 95% t intervals; red denotes a quality cost. (D) The four extrapolation target cells are explicitly marked unsupported for the binary negative control in all five seeds. All panels are observed data; the C1 and extrapolation estimands differ and are not pooled.
+
+**P2/F5 | Verifier blind spot.** Each point in A is one locked Q80–Q100 source row. The grey band is the observed blind-RF prediction range; the diagonal is ideal calibration and teal rules mark the frozen training maximum. B reports nominal coverage of prediction ±1.645 tree SD; the full-source RF is a post-hoc audit and not valid for leakage-free extrapolation. No panel supports an MD or experimental conductivity claim.
+
+**P3/F6 | Verifier-repair experiment.** The RF stage is observed. Dashed PCFF+ and PFP curves are synthetic planning placeholders and must be replaced by matched measurements on the extrapolation queue. The PFP top-1 bars and Δ₁ values are observed single-structure smoke evidence labelled NON_CONVERGED_SMOKE_ONLY; they are not extrapolation-queue results. Δ₂ remains pending.
+
+**F1 | Framework and closed loop.** The four-stage benchmark and Act–Observe–Evaluate–Update loop are shown as an evidence map. Solid elements are completed prediction-stage evidence; dashed elements are planned physical validation or update steps.
+
+**F2 | In-support controllability.** Aggregate observed interpolation response at Q50/Q65/Q80. Curves show means across the five matched seeds; no physical extrapolation claim is implied.
+
+**F3 | Upper-tail response.** Observed upper-tail response from the frozen benchmark. Hatched cells mark structural unsupportedness, not zero performance.
+
+**F4 | Extrapolation response.** Observed five-seed RF-only response at Q90, Q100, train-max+0.25 and train-max+0.50. The frontier-crossing endpoint is surrogate-only and equals zero for every arm and query.
+
+**F7/F8.** Synthetic planning placeholders only. Replace with the same schema after fragment/data ablations, MD-confirmed hits, and at least one residual-calibration update are complete.
+
+**F9 | Existing generation-grid audit.** Real nine-configuration `gpt-nano` generation grid spanning 1,000/2,000/3,000 steps and temperatures 0.8/1.0/1.2, with five paired seeds per arm. The plotted property is frozen-RF prediction, not measured conductivity; Pareto fields unavailable from the current verifier output remain unavailable. This figure is included as a source asset and is not substituted for the physical-validation stage.
+
+**F9 repaired | Generation-grid audit.** Real nine-configuration grid summarized over five paired seeds and 27,000 raw rows. Panels show binary strict-hit rate, continuous strict-hit rate, continuous-minus-binary strict-hit difference, and continuous target MAE across training steps and temperature. Values are frozen-RF surrogate outputs, not measured conductivity; the figure does not close the physical-validation gap.
+
+**F10 | MolMiner descriptive C1 comparison.** Existing real figure from the matched-budget MolMiner run. MolMiner uses one released `best_polyru_s42.pth` checkpoint sampled with five seeds, while PolyGen values are means across five training seeds. The MolMiner checkpoint was trained on a merged corpus containing HTP-MD, so this is descriptive behavioral evidence rather than a strict held-out same-support leaderboard. Fragment steps and heavy atoms are native MolMiner quantities and are not token-equivalent to PolyGen sequence length.
+
+**S1 | Five-seed extended MolMiner engineering comparison.** Bars show means across five split-specific C1 training seeds and error bars show SEM; open points are the seed-level values. The 5-epoch smoke and 20-epoch extended arms use the same small model, frozen RF verifier, three targets (`-5/-4/-3`), and 150-request generation budget (10 samples per target per training seed, one fixed evaluation seed). The observed extended arm increases valid repeat-unit rate from 0.3133 to 0.5867 and strict-hit rate from 0.0533 to 0.1000 in this engineering comparison. These are real observed generation outcomes, but they are not a final matched-budget publication leaderboard, not a task-aligned WeeMiner comparison, and not physical conductivity measurements; strict hits remain verifier-defined and require later PCFF+/MD validation.
+
+**S2 | Five-seed 50-epoch extended MolMiner engineering comparison.** Bars show means across five split-specific C1 training seeds and error bars show SEM; open points are the seed-level values. The 5-epoch smoke and 50-epoch extended arms use the same small model, exact C1 support, frozen RF verifier, three targets (`-5/-4/-3`), and 150-request generation budget (10 samples per target per training seed, one fixed evaluation seed). The observed extended arm increases valid repeat-unit rate from 0.3133 to 0.8333 and strict-hit rate from 0.0533 to 0.1667; valid-unit target MAE changes from 0.7060 to 0.6580. All 50 checkpoints per seed are finite. These are real observed engineering outcomes, but they are not a final matched-budget publication leaderboard, not a task-aligned WeeMiner comparison, and not physical conductivity measurements; strict hits remain verifier-defined and require later PCFF+/MD validation.

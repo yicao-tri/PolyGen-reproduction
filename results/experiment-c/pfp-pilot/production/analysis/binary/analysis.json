@@ -1,0 +1,119 @@
+{
+  "schema_version": "polygen.pfp-htpmd-analysis.v1",
+  "label": "binary_top1",
+  "status": "succeeded",
+  "source": {
+    "trajectory": "production.traj",
+    "trajectory_sha256": "5e92e931ec697ba03340286c4d4684fc874f01e0b0a1a30cc9a14ecd5d98d234",
+    "htpmd_reference_commit": "4076e9baa8d2da0c9ee250bd2b75daa58d03986a",
+    "adapter_definition": "HTP-MD endpoint diffusivity, TFSI-N identity, 3.4-A O/S/N ion clusters, and range(10) cNE sum"
+  },
+  "frames_total": 2001,
+  "frames_analyzed": 1601,
+  "discard_ps": 40.0,
+  "analysis_ps": 160.0,
+  "frame_dt_ps": 0.1,
+  "temperature_K": 353.0,
+  "volume_A3": 39476.43013529834,
+  "polymer_atom_count": 1038,
+  "ion_pairs": 10,
+  "diffusivity": {
+    "htpmd_endpoint": {
+      "li_msd_A2": 24.401613106574345,
+      "li_cm2_s": 2.5418346986014944e-06,
+      "tfsi_N_msd_A2": 34.28643971344447,
+      "tfsi_cm2_s": 3.571504136817133e-06
+    },
+    "system_com_drift_diagnostic": {
+      "system_com_displacement_A": 0.00858635792715337,
+      "li_msd_A2": 24.404345795422216,
+      "li_cm2_s": 2.5421193536898143e-06,
+      "tfsi_N_msd_A2": 34.28185497162419,
+      "tfsi_cm2_s": 3.571026559544187e-06,
+      "primary_definition_remains_uncorrected_htpmd_endpoint": true
+    },
+    "multi_origin_slope_diagnostic": {
+      "li": {
+        "fit_start_ps": 40.0,
+        "fit_end_ps": 120.0,
+        "slope_A2_per_ps": 0.10928564260981563,
+        "intercept_A2": 2.1594354235790423,
+        "r_squared": 0.9964249102990761,
+        "diffusivity_cm2_s": 1.8214273768302607e-06
+      },
+      "tfsi_N": {
+        "fit_start_ps": 40.0,
+        "fit_end_ps": 120.0,
+        "slope_A2_per_ps": 0.20301487566372278,
+        "intercept_A2": -0.171124346681987,
+        "r_squared": 0.9912186988670098,
+        "diffusivity_cm2_s": 3.3835812610620466e-06
+      }
+    }
+  },
+  "conductivity": {
+    "cluster_nernst_einstein_S_cm": 0.001155460907550424,
+    "cluster_transference_number": -0.2206180931924795,
+    "nernst_einstein_S_cm": 0.008156494325344925,
+    "nernst_einstein_transference_number": 0.4157850181434341
+  },
+  "convergence_diagnostic": [
+    {
+      "analysis_duration_ps": 20.0,
+      "frame_count": 201,
+      "li_diffusivity_cm2_s": 4.752956077703567e-06,
+      "tfsi_diffusivity_cm2_s": 3.765055359593312e-06,
+      "cluster_ne_conductivity_S_cm": 0.0022729678109450814,
+      "cluster_ne_log10_S_cm": -2.6434067145732763,
+      "cluster_transference_number": 0.39497232208808775
+    },
+    {
+      "analysis_duration_ps": 40.0,
+      "frame_count": 401,
+      "li_diffusivity_cm2_s": 2.260629546095859e-06,
+      "tfsi_diffusivity_cm2_s": 4.32937002954983e-06,
+      "cluster_ne_conductivity_S_cm": 0.001758492227892314,
+      "cluster_ne_log10_S_cm": -2.754859546818713,
+      "cluster_transference_number": -0.13256369419795133
+    },
+    {
+      "analysis_duration_ps": 80.0,
+      "frame_count": 801,
+      "li_diffusivity_cm2_s": 3.469705185167979e-06,
+      "tfsi_diffusivity_cm2_s": 4.338472231337266e-06,
+      "cluster_ne_conductivity_S_cm": 0.001909274108399947,
+      "cluster_ne_log10_S_cm": -2.719131716855278,
+      "cluster_transference_number": 0.16463350902302887
+    },
+    {
+      "analysis_duration_ps": 120.0,
+      "frame_count": 1201,
+      "li_diffusivity_cm2_s": 2.564413468401317e-06,
+      "tfsi_diffusivity_cm2_s": 4.166403776040324e-06,
+      "cluster_ne_conductivity_S_cm": 0.0013967759032378466,
+      "cluster_ne_log10_S_cm": -2.854873265893019,
+      "cluster_transference_number": -0.18184837053124286
+    },
+    {
+      "analysis_duration_ps": 160.0,
+      "frame_count": 1601,
+      "li_diffusivity_cm2_s": 2.5418346986014944e-06,
+      "tfsi_diffusivity_cm2_s": 3.571504136817133e-06,
+      "cluster_ne_conductivity_S_cm": 0.001155460907550424,
+      "cluster_ne_log10_S_cm": -2.9372447433240603,
+      "cluster_transference_number": -0.2206180931924795
+    }
+  ],
+  "proxy_comparison": {
+    "proxy_log10_S_cm": -3.8305837721099456,
+    "pfp_cluster_ne_log10_S_cm": -2.9372447433240603,
+    "residual_pfp_minus_proxy_log10_S_cm": 0.8933390287858853
+  },
+  "quality": {
+    "finite_values": true,
+    "population_ion_count_mean": 20.0,
+    "expected_ion_count": 20,
+    "constant_cell": true,
+    "single_replica_short_pilot": true
+  }
+}

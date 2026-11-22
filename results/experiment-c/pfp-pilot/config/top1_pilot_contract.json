@@ -1,0 +1,67 @@
+{
+  "schema_version": "polygen.pfp-top1-pilot-contract.v1",
+  "frozen_at": "2026-09-25T02:15:00Z",
+  "purpose": "Paired PFP feasibility pilot comparing the continuous and binary PolyGen top-1 candidates selected by the frozen proxy-error-plus-uncertainty ranking.",
+  "candidates": [
+    {
+      "arm": "continuous",
+      "rank": 1,
+      "canonical_smiles": "O=C(OCCCOCCO[*:1])[*:2]",
+      "proxy_log10_conductivity_S_cm": -3.7789737147968334,
+      "proxy_uncertainty": 0.1371929409719111,
+      "proxy_target_error": 0.7789737147968343,
+      "source_structure_sha256": "09f4e53c8ec6fefb0ff0c1e6b8b5fe80d36ef2c78fe64a0a4e0a27242ecfb13a",
+      "polymer_chains": 3,
+      "litfsi_pairs": 10,
+      "molality_mol_kg": 1.500015
+    },
+    {
+      "arm": "binary",
+      "rank": 1,
+      "canonical_smiles": "O=C(OCCCOCCCCO[*:1])[*:2]",
+      "proxy_log10_conductivity_S_cm": -3.8305837721099456,
+      "proxy_uncertainty": 0.1404205444610002,
+      "proxy_target_error": 0.8305837721099456,
+      "source_structure_sha256": "fe96523becfd706c08258c10459594a0d3bbfc7e1522c954c282ddf55bd3bb0d",
+      "polymer_chains": 3,
+      "litfsi_pairs": 10,
+      "molality_mol_kg": 1.4526746209
+    }
+  ],
+  "engine": {
+    "platform": "Matlantis reached through ARC host kozo-dev-yi",
+    "calculator": "PFP ASECalculator",
+    "model_version": "v8.0.0",
+    "calculation_mode": "PBE"
+  },
+  "protocol": {
+    "geometry_relaxation": "FIRE to fmax <= 0.2 eV/A, maximum 200 steps",
+    "ensemble": "NVT Langevin",
+    "temperature_K": 353.0,
+    "timestep_fs": 1.0,
+    "friction_per_fs": 0.01,
+    "velocity_seed": 20260924,
+    "total_steps": 200000,
+    "total_ps": 200.0,
+    "trajectory_interval_steps": 100,
+    "equilibration_discard_ps": 40.0,
+    "analysis_window_ps": 160.0,
+    "replicates_per_candidate": 1
+  },
+  "primary_estimands": {
+    "conductivity_method": "HTP-MD-compatible cluster Nernst-Einstein analysis",
+    "paired_contrast": "continuous minus binary log10 conductivity in S/cm",
+    "proxy_residual": "PFP_MD_log10_conductivity minus proxy_log10_conductivity"
+  },
+  "gates": {
+    "preflight_required": true,
+    "relaxed_max_force_eV_A_max": 0.2,
+    "finite_energy_temperature_and_coordinates": true,
+    "minimum_production_frames": 2001
+  },
+  "interpretation_limits": [
+    "This is a one-replica 200 ps feasibility pilot, not an experimental ground truth measurement.",
+    "The two finite cells differ in salt molality by about 3.2 percent because both use 10 ion pairs with different polymer molecular weights.",
+    "A production claim requires longer trajectories, multiple independent seeds, and a concentration-matched finite-cell design."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "GEOMETRY_READY_FORCE_FIELD_NOT_ASSIGNED",
+  "candidate": "continuous_top20_rank1",
+  "canonical_repeat_smiles": "O=C(OCCCOCCO[*:1])[*:2]",
+  "builder_repeat_smiles": "[*]C(=O)OCCCOCCO[*]",
+  "degree_of_polymerization": 15,
+  "minimum_heavy_atoms": 150,
+  "actual_heavy_atoms": 152,
+  "total_atoms_with_hydrogen": 308,
+  "molecular_formula": "C92H156O60",
+  "molecular_weight_g_mol": 2222.19999999997,
+  "terminal_cap": "methyl",
+  "embedding": "RDKit ETKDGv3",
+  "optimization": "UFF geometry only; not the MD force field",
+  "random_seed": 20260924,
+  "pcff_plus_parameterized": false,
+  "files": {
+    "top1_methyl_terminated.sdf": "d871b57cc7e0749e1f2249a25f9aef027bb46ee55f90d092670df09477fde523",
+    "top1_methyl_terminated.pdb": "adb0ac97feab2e6805a00b82229553ae1a2a95214fc1cc9ac341da5d2338466b"
+  }
+}

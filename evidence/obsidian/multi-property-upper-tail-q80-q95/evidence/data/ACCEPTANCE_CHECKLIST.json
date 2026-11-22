@@ -1,0 +1,16 @@
+{
+  "source_hash_split_target_scaler_frozen": true,
+  "six_transforms_explicit": true,
+  "matched_arms_seeds_budget_generation_decoder_filter_schema": true,
+  "candidate_provenance_complete": true,
+  "unsupported_invalid_low_support_high_uncertainty_failures_reported": true,
+  "surrogate_md_separated": true,
+  "rf_top1_only": false,
+  "paired_identity_leakage_audit_pass": true,
+  "joint_strict_hit_available": true,
+  "property_mae_available": true,
+  "candidate_wise_monotonicity_available": true,
+  "locked_calibration_available": true,
+  "md_confirmed_frontier_crossing": false,
+  "residual_md_minus_rf": false
+}

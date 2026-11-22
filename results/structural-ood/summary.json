@@ -1,0 +1,14 @@
+{
+  "status": "blocked_for_matched_prediction",
+  "train_rows": 9126,
+  "heldout_rows": 1205,
+  "train_unique": 4819,
+  "heldout_unique": 1205,
+  "candidate_pool_rows": 0,
+  "blocking_reasons": [
+    "No continuous and binary checkpoints trained on the frozen structure-disjoint split.",
+    "Released structure-disjoint training run is unconditional only and cannot support the requested arm comparison.",
+    "Released table lacks polymer scaffold/family annotations; exact structure grouping is not equivalent to family grouping.",
+    "No MD launched; no MD-confirmed claims are made."
+  ]
+}

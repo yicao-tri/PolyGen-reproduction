@@ -1,0 +1,44 @@
+{
+  "source": "Files bundled with the original WeeMiner release; upstream provenance described in paper_data.py",
+  "columns": [
+    "smiles",
+    "logP",
+    "qed",
+    "SAS",
+    "FractionCSP3",
+    "molWt",
+    "TPSA",
+    "MR",
+    "hbd",
+    "hba",
+    "num_rings",
+    "num_rotable_bonds",
+    "num_quiral_centers"
+  ],
+  "files": [
+    {
+      "name": "train.csv",
+      "rows": 156646,
+      "bytes": 23954115,
+      "sha256": "672b3e0364d9e4836f7cf6236ffd32715986f405bf5e59a5d1a58c4e8a01a334"
+    },
+    {
+      "name": "valid.csv",
+      "rows": 19648,
+      "bytes": 3004609,
+      "sha256": "5a7ab5469430db2ce0681b53a813e531a6232614c8a3e041e935151f974bb6ce"
+    },
+    {
+      "name": "test.csv",
+      "rows": 19719,
+      "bytes": 3020316,
+      "sha256": "84e09f895ca2ecf6e48d47274048505d8983ca61f688bbe6e908265600ba8436"
+    },
+    {
+      "name": "augmented_zinc250k.txt",
+      "rows": 196013,
+      "bytes": 30554292,
+      "sha256": "2983f92f037e71006a01894d903e3bf5a4e1270fa616886458359bddc6d7f171"
+    }
+  ]
+}

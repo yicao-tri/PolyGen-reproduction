@@ -1,0 +1,27 @@
+{
+  "project_name": "Polymer-MIT / PolyGen reproduction",
+  "canonical_local_root": "/Users/yicao/Documents/ARC/PolyGen-reproduction",
+  "canonical_branch": "codex/internship-handoff-20261121",
+  "remote_training_root": "kozo-dev-yi:/home/yi/PolyGen-reproduction-grid",
+  "remote_training_status": "historical_root_absent_verified_2026-11-21",
+  "grid_results_root": "results/experiment-c/grid",
+  "grid_analysis_root": "results/experiment-c/grid/analysis",
+  "grid_figures_root": "results/experiment-c/grid/figures",
+  "primary_scripts": [
+    "scripts/run_experiment_c1.py",
+    "scripts/analyze_generation_grid.py",
+    "scripts/render_generation_grid_nature.py",
+    "scripts/build_grid_plan.py"
+  ],
+  "historical_reference_roots": [
+    "results/experiment-c/c1",
+    "results/experiment-c/extra-seeds/seeds202-303"
+  ],
+  "stage_3_policy": "PFP/MD remains out of scope and requires explicit user sign-off",
+  "path_policy": "All new code, configs, analysis and figures must be written under canonical_local_root; remote checkout is execution-only and must not be treated as a second local project.",
+  "canonical_branch_status": "proposed_integration_not_merged",
+  "handoff": "HANDOFF.md",
+  "evidence_registry": "registry/output/polygen_evidence.sqlite",
+  "registry_role": "evidence_index_not_scientific_results_master",
+  "operational_decision": "PARK_new_compute_pending_coverage_protocol_and_human_review"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "NO_GO",
+  "scope": "multi-property true extrapolation Tier-1 MD",
+  "primary_endpoint": "MD-confirmed joint frontier crossing",
+  "checks": {
+    "stratified_candidate_plan_exists": {"status": "PASS", "evidence": "md_validation_plan.csv", "value": "48 symmetric arm-target-stratum slots"},
+    "not_rf_top1_only": {"status": "PASS", "evidence": "md_validation_plan.csv", "value": "three acquisition strata per arm-target cell"},
+    "candidate_provenance": {"status": "PASS", "evidence": "candidate_predictions.csv", "value": "candidate_id, seed, target, structure, support, uncertainty, failure fields"},
+    "pcff_plus_atom_typing": {"status": "FAIL", "evidence": "TOP1_MD_VALIDATION_DESIGN_ZH.md", "value": "no complete candidate-specific atom typing/charges/topology bundle"},
+    "pcff_plus_parameter_coverage": {"status": "FAIL", "evidence": "TOP1_MD_VALIDATION_DESIGN_ZH.md", "value": "no 100% bond/angle/dihedral/improper/nonbonded coverage report"},
+    "lammps_provider_acceptance": {"status": "FAIL", "evidence": "TOP1_MD_VALIDATION_DESIGN_ZH.md", "value": "standalone runtime exists but formal ARC/provider integration is absent"},
+    "symmetric_replica_protocol": {"status": "PLANNED", "evidence": "md_validation_plan.csv", "value": "five replicas per structure required; no job launched"},
+    "md_confirmed_crossing": {"status": "UNAVAILABLE", "evidence": "no MD outputs", "value": null},
+    "rf_md_residual": {"status": "UNAVAILABLE", "evidence": "no MD outputs", "value": null}
+  },
+  "launch_rule": "Do not launch or interpret MD until all FAIL checks become PASS; do not substitute PFP/ASE for PCFF+ LAMMPS protocol.",
+  "interpretation": "Surrogate frontier crossing remains prediction-only and cannot support a true physical extrapolation claim."
+}

@@ -1,0 +1,10 @@
+{
+ "radius": 2,
+ "n_envs": 40,
+ "n_attachments": 41,
+ "n_slots": 1,
+ "max_arity": 1,
+ "collided_pairs": 0,
+ "head_collided_sites": 0,
+ "source_digest": null
+}

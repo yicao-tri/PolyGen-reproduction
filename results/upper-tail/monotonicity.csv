@@ -1,0 +1,16 @@
+arm,seed,mean_prediction_monotonic_increasing,mean_prediction_spearman
+continuous,17,True,1.0
+binary,17,False,-1.0
+unconditional_reranking,17,False,
+continuous,42,False,0.8
+binary,42,False,-1.0
+unconditional_reranking,42,False,
+continuous,202,False,0.2
+binary,202,False,1.0
+unconditional_reranking,202,False,
+continuous,303,False,0.6
+binary,303,False,1.0
+unconditional_reranking,303,False,
+continuous,907,False,0.8
+binary,907,False,1.0
+unconditional_reranking,907,False,

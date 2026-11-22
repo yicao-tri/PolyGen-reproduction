@@ -1,0 +1,8 @@
+arm,cell,generated,valid,novel,support_eligible,pcff_plus_parameterized,md_started,md_converged,md_confirmed_frontier_hit,status,evidence_status,notes
+Continuous,Q90,30,30,30,30,0,0,0,0,PLANNED_NOT_RUN,observed_status_only,candidate selection is proposed; no polymer construction or force-field assignment
+Continuous,Q100,26,26,26,26,0,0,0,0,PLANNED_NOT_RUN,observed_status_only,candidate selection is proposed; no polymer construction or force-field assignment
+Continuous,train_max_plus_0.25,30,30,30,30,0,0,0,0,PLANNED_NOT_RUN,observed_status_only,candidate selection is proposed; no polymer construction or force-field assignment
+Continuous,train_max_plus_0.50,30,30,30,30,0,0,0,0,PLANNED_NOT_RUN,observed_status_only,candidate selection is proposed; no polymer construction or force-field assignment
+Unconditional + reranking,Q90,30,30,30,30,0,0,0,0,PLANNED_NOT_RUN,observed_status_only,candidate selection is proposed; no polymer construction or force-field assignment
+Unconditional + reranking,Q100,30,30,30,30,0,0,0,0,PLANNED_NOT_RUN,observed_status_only,candidate selection is proposed; no polymer construction or force-field assignment
+Unconditional + reranking,train_max_plus_0.25,24,24,24,24,0,0,0,0,PLANNED_NOT_RUN,observed_status_only,candidate selection is proposed; no polymer construction or force-field assignment

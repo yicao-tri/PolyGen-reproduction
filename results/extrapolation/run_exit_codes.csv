@@ -1,0 +1,16 @@
+arm,seed,driver,exit_code,artifact
+continuous,17,continuous-seed17,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/continuous-seed17/reported_candidates.csv
+binary,17,binary-seed17,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/binary-seed17/reported_candidates.csv
+unconditional_reranking,17,unconditional_reranking-seed17,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/unconditional_reranking-seed17/reported_candidates.csv
+continuous,42,continuous-seed42,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/continuous-seed42/reported_candidates.csv
+binary,42,binary-seed42,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/binary-seed42/reported_candidates.csv
+unconditional_reranking,42,unconditional_reranking-seed42,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/unconditional_reranking-seed42/reported_candidates.csv
+continuous,202,continuous-seed202,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/continuous-seed202/reported_candidates.csv
+binary,202,binary-seed202,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/binary-seed202/reported_candidates.csv
+unconditional_reranking,202,unconditional_reranking-seed202,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/unconditional_reranking-seed202/reported_candidates.csv
+continuous,303,continuous-seed303,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/continuous-seed303/reported_candidates.csv
+binary,303,binary-seed303,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/binary-seed303/reported_candidates.csv
+unconditional_reranking,303,unconditional_reranking-seed303,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/unconditional_reranking-seed303/reported_candidates.csv
+continuous,907,continuous-seed907,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/continuous-seed907/reported_candidates.csv
+binary,907,binary-seed907,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/binary-seed907/reported_candidates.csv
+unconditional_reranking,907,unconditional_reranking-seed907,0,/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/runs/unconditional_reranking-seed907/reported_candidates.csv

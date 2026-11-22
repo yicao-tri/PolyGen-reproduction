@@ -1,0 +1,12 @@
+{
+  "arm": "unconditional_reranking",
+  "checkpoint_origin": "trained_in_multi_property_interpolation",
+  "elapsed_seconds": 55.58665895462036,
+  "first_loss": 6.474898815155029,
+  "last_loss": 0.29502052068710327,
+  "samples_per_cell": 100,
+  "seed": 303,
+  "steps": 1000,
+  "temperature": 1.0,
+  "top_k": 40
+}

@@ -1,0 +1,10 @@
+issue,topic,status,evidence,canonical_next_step
+1,dynamic population sum,PASS_isolated,evidence/hisa_patch/analyze_pfp_htpmd.py; evidence/data/hisa_patch_regression_results.json,merge analyzer and rerun canonical tests
+2,nullable cNE contrast,PASS_isolated,evidence/hisa_patch/summarize_pfp_top1_pair.py; evidence/data/hisa_patch_regression_results.json,merge summary and missing-value fixture
+3,convergence renderer boundary,PASS_isolated,evidence/hisa_patch/render_pfp_top1_report.py; evidence/data/hisa_patch_regression_results.json,merge renderer and unify duration gate
+4,C1 target correlation,PASS_real_audit,evidence/data/c1_recomputed_audit_fixed/summary.json; evidence/data/c1_recomputed_audit_fixed/arm_seed_metrics.csv,merge corrected audit metric
+5,non-degenerate cNE test,PASS_isolated,evidence/hisa_patch/test_hisa_regressions.py; evidence/data/hisa_patch_regression_tests.txt,merge test into canonical suite
+6,full orthorhombic check,PASS_isolated,evidence/hisa_patch/build_pfp_pilot_system.py; evidence/data/hisa_patch_regression_results.json,merge builder and fixture
+7,dynamic grid totals,PASS_isolated,evidence/GRID_PLAN.json; evidence/hisa_patch/build_grid_plan.py,regenerate canonical plan and archive stale log
+8,CSV/TSV repository policy,OPEN,evidence/source_snapshots/hisa_review/.gitattributes,owner chooses protection or manifest/LFS policy
+9,diagnostics and process reconciliation,PARTIAL,evidence/source_snapshots/hisa_review/HISA_REVIEW_2026-09-28.md; evidence/data/pfp_top1_validation_recomputed.json,document timestep and report reconciliation then complete physical evidence

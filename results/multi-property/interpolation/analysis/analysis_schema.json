@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "source": "candidate_predictions.csv and target_cells.csv",
+  "statistical_unit": "seed for arm summaries and paired contrasts; candidate for descriptive quality rows",
+  "ci": "two-sided 95% Student-t interval across five seed-level values",
+  "diversity": "mean pairwise 1-Tanimoto over up to 100 deterministic valid unique molecules per cell",
+  "monotonicity": "cell-mean RF prediction across Q50/Q65/Q80; candidate-wise monotonicity is not identifiable without shared structures",
+  "unavailable_metrics_file": "unavailable_metrics.csv"
+}

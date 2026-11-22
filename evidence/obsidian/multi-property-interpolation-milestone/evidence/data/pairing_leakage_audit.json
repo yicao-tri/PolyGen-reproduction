@@ -1,0 +1,36 @@
+{
+  "checks": {
+    "all_arm_seed_target_cells_present": true,
+    "all_cells_n100": true,
+    "all_runs_exit_zero": true,
+    "binary_receives_only_label": true,
+    "historical_reference_manifests_preserved": true,
+    "joint_cartesian_product_forbidden_and_unused": true,
+    "no_md_started": true,
+    "source_hash_matches_manifest": true,
+    "target_cells_train_only": true,
+    "train_only_transforms_and_scaler": true,
+    "train_test_disjoint": true
+  },
+  "counts": {
+    "arms": 4,
+    "candidate_rows": 42000,
+    "cells": 21,
+    "seeds": 5,
+    "source_rows": 6024,
+    "test_rows": 1205,
+    "train_rows": 4819,
+    "unsupported_rows": 0
+  },
+  "historical_hashes_after": {
+    "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/frozen_manifest.json": "a611d167354a8b7b29074e6f022eaa82641b63ddeb5fdcef4ae6fa329252bcc7",
+    "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/interpolation/frozen_manifest.json": "3460ddfd3c5c14b29db2bd9b1201f0cbb60b9c33865d3c820424eea8a321dd41",
+    "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/upper-tail/frozen_manifest.json": "5e3dfa0bc3be9bf386d46e651dcbae620019cffd3c48aaab75cb42573401fadd"
+  },
+  "historical_hashes_before": {
+    "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/extrapolation/frozen_manifest.json": "a611d167354a8b7b29074e6f022eaa82641b63ddeb5fdcef4ae6fa329252bcc7",
+    "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/interpolation/frozen_manifest.json": "3460ddfd3c5c14b29db2bd9b1201f0cbb60b9c33865d3c820424eea8a321dd41",
+    "/Users/yicao/Documents/ARC/PolyGen-reproduction/results/upper-tail/frozen_manifest.json": "5e3dfa0bc3be9bf386d46e651dcbae620019cffd3c48aaab75cb42573401fadd"
+  },
+  "status": "pass"
+}

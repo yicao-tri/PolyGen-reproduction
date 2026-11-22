@@ -1,0 +1,5 @@
+arm,target,strict_hit,target_mae,validity,novelty,delta_vs_binary,evidence_status,notes
+PolyGen binary,-4.0,0.1586666666666666,0.1984070155996226,0.522,0.5033333333333334,0.0,observed,five matched training seeds
+PolyGen continuous,-4.0,0.178,0.2115454229462729,0.4546666666666666,0.4313333333333333,0.0193333333333333,observed,five matched training seeds
+MolMiner,-4.0,0.754,0.2945803145090537,0.99,0.8459999999999999,,observed_descriptive,public checkpoint; corpus contains HTP-MD; not held-out
+Wee,-4.0,,,,,,unavailable_task_mismatch,C1 conductivity arm not run; local ZINC/logP software smoke only

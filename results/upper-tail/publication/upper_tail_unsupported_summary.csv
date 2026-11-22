@@ -1,0 +1,7 @@
+arm,target_label,unsupported_seed_cells
+binary,Q90,5
+binary,Q95,5
+unconditional_reranking,Q80_boundary_actual_train_max,3
+unconditional_reranking,Q85,5
+unconditional_reranking,Q90,5
+unconditional_reranking,Q95,5

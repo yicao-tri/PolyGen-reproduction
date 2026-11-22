@@ -1,0 +1,100 @@
+{
+  "status": "smoke_only",
+  "checkpoint": "evidence/experiments/molminer_strict_c1/checkpoints_smoke_packed_dropout/best_c1_strict_smoke_packed_dropout_seed17.pth",
+  "prompt": {
+    "log_conductivity": -3.6
+  },
+  "n_requested": 8,
+  "results": [
+    {
+      "seed": 0,
+      "smiles": "*NC(C(=O)OC(C)=O)(C(=O)C(*)C)C(C)NC",
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "seed": 1,
+      "smiles": null,
+      "valid": false,
+      "reasons": [
+        "empty_generation"
+      ]
+    },
+    {
+      "seed": 2,
+      "smiles": "*C(*)=O",
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "seed": 3,
+      "smiles": null,
+      "valid": false,
+      "reasons": [
+        "empty_generation"
+      ]
+    },
+    {
+      "seed": 4,
+      "smiles": null,
+      "valid": false,
+      "reasons": [
+        "empty_generation"
+      ]
+    },
+    {
+      "seed": 5,
+      "smiles": "*CN(C)C(C)(N)OCCOC(NC)(OC#N)OC(*)(C)N",
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "seed": 6,
+      "smiles": "*OC(C(C)C(=O)OC(*)(O)O)C(C)(C)C=O",
+      "valid": true,
+      "reasons": []
+    },
+    {
+      "seed": 7,
+      "smiles": null,
+      "valid": false,
+      "reasons": [
+        "empty_generation"
+      ]
+    }
+  ],
+  "dock_stats": {
+    "calls": 329,
+    "fragment_calls": 268,
+    "fails": 91,
+    "decisions": 238,
+    "retries_exhausted": 0,
+    "molecules_started": 8,
+    "placements": 177,
+    "cauterizations": 61,
+    "reject_pct_fragment": 33.95522388059702,
+    "reject_pct_pooled": 27.659574468085108,
+    "cauterize_share_of_calls_pct": 18.541033434650455,
+    "maskable_share_of_fails_pct": 92.3076923076923,
+    "fails_star_budget": 7,
+    "reject_pct_star_budget": 2.611940298507463,
+    "fails_arity": 0,
+    "reject_pct_arity": 0.0,
+    "fails_elements_single": 77,
+    "reject_pct_elements_single": 28.73134328358209,
+    "fails_elements_double": 0,
+    "reject_pct_elements_double": 0.0,
+    "fails_sanitize": 7,
+    "reject_pct_sanitize": 2.611940298507463,
+    "top_sanitize_reasons": [
+      [
+        "Explicit valence for atom C, is greater than permitted",
+        6
+      ],
+      [
+        "[FAILED] Fragment 'H' does not parse.",
+        1
+      ]
+    ]
+  }
+}

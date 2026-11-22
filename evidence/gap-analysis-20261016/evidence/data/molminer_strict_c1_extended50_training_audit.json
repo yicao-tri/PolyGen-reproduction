@@ -1,0 +1,74 @@
+{
+  "status": "finite_checkpoint_audit_pass",
+  "epochs": 50,
+  "training_seeds": [
+    17,
+    23,
+    31,
+    47,
+    59
+  ],
+  "all_checkpoints_finite": true,
+  "rows": [
+    {
+      "training_seed": 17,
+      "checkpoint_count": 50,
+      "expected_checkpoint_count": 50,
+      "all_checkpoints_finite": true,
+      "best_epoch": 42,
+      "best_val_loss": 0.99629823078733,
+      "best_nonterm_top1": 0.5357343837929094,
+      "final_epoch": 50,
+      "final_val_loss": 0.9983117077142191,
+      "final_nonterm_top1": 0.5430500844119303
+    },
+    {
+      "training_seed": 23,
+      "checkpoint_count": 50,
+      "expected_checkpoint_count": 50,
+      "all_checkpoints_finite": true,
+      "best_epoch": 40,
+      "best_val_loss": 0.9887927502033638,
+      "best_nonterm_top1": 0.5323579065841305,
+      "final_epoch": 50,
+      "final_val_loss": 0.9922146556558724,
+      "final_nonterm_top1": 0.546426561620709
+    },
+    {
+      "training_seed": 31,
+      "checkpoint_count": 50,
+      "expected_checkpoint_count": 50,
+      "all_checkpoints_finite": true,
+      "best_epoch": 45,
+      "best_val_loss": 0.9977272971776164,
+      "best_nonterm_top1": 0.5402363534046145,
+      "final_epoch": 50,
+      "final_val_loss": 0.9989667186181259,
+      "final_nonterm_top1": 0.5430500844119303
+    },
+    {
+      "training_seed": 47,
+      "checkpoint_count": 50,
+      "expected_checkpoint_count": 50,
+      "all_checkpoints_finite": true,
+      "best_epoch": 49,
+      "best_val_loss": 0.992023167071312,
+      "best_nonterm_top1": 0.5436128306133934,
+      "final_epoch": 50,
+      "final_val_loss": 0.9920251842246635,
+      "final_nonterm_top1": 0.5436128306133934
+    },
+    {
+      "training_seed": 59,
+      "checkpoint_count": 50,
+      "expected_checkpoint_count": 50,
+      "all_checkpoints_finite": true,
+      "best_epoch": 48,
+      "best_val_loss": 0.9881443980744992,
+      "best_nonterm_top1": 0.5385481148002251,
+      "final_epoch": 50,
+      "final_val_loss": 0.9888720915685245,
+      "final_nonterm_top1": 0.5396736072031514
+    }
+  ]
+}

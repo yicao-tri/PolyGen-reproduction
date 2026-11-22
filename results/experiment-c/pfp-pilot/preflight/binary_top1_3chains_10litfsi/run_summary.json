@@ -1,0 +1,39 @@
+{
+  "schema_version": "polygen.pfp-pilot-run.v1",
+  "label": "binary_top1_3chains_10litfsi",
+  "status": "succeeded",
+  "source_structure": "binary_top1_3chains_10litfsi.extxyz",
+  "source_sha256": "fe96523becfd706c08258c10459594a0d3bbfc7e1522c954c282ddf55bd3bb0d",
+  "atom_count": 1198,
+  "temperature_K": 353.0,
+  "timestep_fs": 1.0,
+  "steps": 100,
+  "production_ps": 0.1,
+  "trajectory_interval_steps": 10,
+  "friction_per_fs": 0.01,
+  "velocity_seed": 20260924,
+  "relaxation_steps": 200,
+  "relaxation_fmax_eV_A": 0.2,
+  "initial_energy_eV": -5190.84520182995,
+  "initial_max_force_eV_A": 30.56697999182472,
+  "relaxed_energy_eV": -5271.710125690269,
+  "relaxed_max_force_eV_A": 0.1702215691121179,
+  "final_energy_eV": -5230.783562863911,
+  "final_temperature_K": 296.8469584977444,
+  "frame_count": 11,
+  "elapsed_seconds": 23.997486352920532,
+  "artifacts": {
+    "trajectory": {
+      "path": "production.traj",
+      "sha256": "9d0de37c0be119efbde8b27a5ca5cc63932b993deed926b1790bae6d2a8adca1"
+    },
+    "log": {
+      "path": "production.log",
+      "sha256": "81180caf9ded4c401f30cea6123e1cd7750b74e8c1329cb7f3e388e68189cb61"
+    },
+    "relaxed_structure": {
+      "path": "relaxed.extxyz",
+      "sha256": "984fa69a50829da7c87ea56d2cfb352030586e0ec5e9d12107bc552e15087f2c"
+    }
+  }
+}

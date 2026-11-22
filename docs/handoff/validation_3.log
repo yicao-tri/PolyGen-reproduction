@@ -1,0 +1,13 @@
+test_candidate_grid_stays_inside_observed_support (test_complete_system_e2e.CompleteSystemTests) ... ok
+test_polygen_candidates_are_quarantined_from_pcl_surrogate (test_complete_system_e2e.CompleteSystemTests) ... [17:41:53] SMILES Parse Error: extra close parentheses while parsing: CCN(C)CC(O[Cu])C)C(COCCOC(=O)[Au]
+[17:41:53] SMILES Parse Error: Failed parsing SMILES 'CCN(C)CC(O[Cu])C)C(COCCOC(=O)[Au]' for input: 'CCN(C)CC(O[Cu])C)C(COCCOC(=O)[Au]'
+ok
+test_source_audit_and_identifiability (test_complete_system_e2e.CompleteSystemTests) ... ok
+test_corrected_split_is_deterministic (test_mingpt_split.MinGPTSplitTest) ... ok
+test_corrected_split_is_disjoint_and_balances_training_only (test_mingpt_split.MinGPTSplitTest) ... ok
+test_released_split_leaks_every_positive_validation_row (test_mingpt_split.MinGPTSplitTest) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.115s
+
+OK
