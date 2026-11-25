@@ -63,6 +63,9 @@ class RegistryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'Physical'):self.record(x)
         x=self.sample();x['stage_events']=[{'event_id':'fake-physics','stage_id':'S4','status':'complete','acceptance_scope':'scientific','source_id':'test-source','note':'must reject software as physical'}]
         with self.assertRaisesRegex(ValueError,'Scientific stage'):self.record(x)
+    def test_science_stage_cannot_complete_on_software_fixture(self):
+        x=self.sample();x['stage_events']=[{'event_id':'fake-science','stage_id':'S2','status':'complete','acceptance_scope':'scientific','source_id':'test-source','note':'software cannot complete evaluator science'}]
+        with self.assertRaisesRegex(ValueError,'Scientific stage'):self.record(x)
     def test_human_attestation_not_inferred(self):
         x=self.sample();x['reviews']=[{'review_id':'fake-human','stage_id':'S1','reviewer':'Someone','reviewer_kind':'human','status':'pass','source_id':'test-source','scope':'must reject'}]
         with self.assertRaisesRegex(ValueError,'attestation'):self.record(x)

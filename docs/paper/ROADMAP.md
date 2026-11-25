@@ -64,3 +64,10 @@ RF convex-range restriction alone is a known-method audit, not evidence that gen
 The paper-scoped [SQL registry](../../registry/paper/README.md) records append-only source records, stages, decisions, reviews and typed result summaries. Existing `registry/output/polygen_evidence.sqlite` remains unchanged as the historical evidence index. Neither index manufactures scientific acceptance.
 
 Read `python3 registry/paper/progress.py query stages`; register each future result using `record --input <versioned-record.json>`, then review generated queries and the stage implication before committing. No silent background monitoring is installed.
+
+## Review stack
+
+- Parent [PR #16](https://github.com/yicao-tri/PolyGen-reproduction/pull/16): positioning, roadmap and SQL workflow → main.
+- [Stage 1 PR #17](https://github.com/yicao-tri/PolyGen-reproduction/pull/17): the four original design documents and their SQL evidence event → parent roadmap branch.
+
+The green S1 node is backed by the [source-verified four-document package](https://github.com/yicao-tri/PolyGen-reproduction/tree/codex/stage1-design-20261124/docs/paper/stage1). Review the parent first; after merging it, retarget the child to main. Design completion does not grant execution approval.
