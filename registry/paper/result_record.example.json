@@ -1,0 +1,12 @@
+{
+  "record_id": "REPLACE-with-new-stable-id",
+  "recorded_at": "2026-11-25T00:00:00Z",
+  "source_files": [{"source_id": "REPLACE-source-id", "path": "REPLACE/repository/relative/summary.json", "sha256": "REPLACE-with-64-hex-SHA256"}],
+  "result_sets": [{
+    "result_id": "REPLACE-result-id", "stage_id": "S2", "scope": "new_study", "state": "complete", "evidence_tier": "observed_prediction",
+    "source_id": "REPLACE-source-id", "independent_unit": "canonical source-structure group; outer folds are not independent replicates",
+    "conditions": {"study": "R1", "panel": "full", "K": 100, "retrospective": true},
+    "interpretation_boundary": "Retrospective known-label nomination only; not physical or prospective generator evidence.", "review_state": "unreviewed"
+  }],
+  "observations": [{"observation_id": "REPLACE-observation-id", "result_id": "REPLACE-result-id", "metric": "precision_at_100", "unit": "fraction", "value": null, "missing_reason": "EXAMPLE ONLY: replace from real source after execution; never fill zero for missing"}]
+}

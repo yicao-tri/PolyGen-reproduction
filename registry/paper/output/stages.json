@@ -1,0 +1,58 @@
+{
+  "columns": [
+    "stage_id",
+    "ordinal",
+    "title",
+    "status",
+    "acceptance_scope",
+    "note",
+    "source_id"
+  ],
+  "rows": [
+    [
+      "S1",
+      1,
+      "Scope and design delivery",
+      "complete",
+      "design",
+      "Verified design artifacts only; human review pending",
+      "design-audit"
+    ],
+    [
+      "S2",
+      2,
+      "Evaluator qualification",
+      "blocked",
+      "none",
+      "Not executed under new design; no result or resource approval implied",
+      "design-audit"
+    ],
+    [
+      "S3",
+      3,
+      "Fair generator comparison",
+      "planned",
+      "none",
+      "Not executed under new design; no result or resource approval implied",
+      "design-audit"
+    ],
+    [
+      "S4",
+      4,
+      "Independent physical decision",
+      "blocked",
+      "none",
+      "Not executed under new design; no result or resource approval implied",
+      "design-audit"
+    ],
+    [
+      "S5",
+      5,
+      "One justified extension",
+      "optional",
+      "none",
+      "Not executed under new design; no result or resource approval implied",
+      "design-audit"
+    ]
+  ]
+}

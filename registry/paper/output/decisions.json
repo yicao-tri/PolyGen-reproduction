@@ -1,0 +1,44 @@
+{
+  "columns": [
+    "decision_id",
+    "stage_id",
+    "question",
+    "proposed_owner",
+    "status",
+    "recommendation"
+  ],
+  "rows": [
+    [
+      "D1",
+      "S2",
+      "Accept or revise useful-ranking and evaluator-change thresholds?",
+      "Hisa/project scientific reviewer (proposed)",
+      "proposed",
+      "Review 0.80 P@100 and +0.10 incremental P@100; not approved"
+    ],
+    [
+      "D2",
+      "S2",
+      "Who accepts analyst/reviewer scope and the bounded first fit budget?",
+      "Yi/Hisa scope decision; analyst unassigned",
+      "proposed",
+      "At most 54 predictor fits proposed; no generator or MD authorized"
+    ],
+    [
+      "D3",
+      "S4",
+      "Which independent physical assay is feasible?",
+      "Assigned parameterization/simulation owner (not accepted)",
+      "proposed",
+      "PCFF+ coverage/run-0, common protocol and convergence before MD"
+    ],
+    [
+      "D4",
+      "S5",
+      "Does a later mechanism justify DP/formulation or feedback expansion?",
+      "Hisa and consenting collaborator (proposed)",
+      "proposed",
+      "Choose one extension only after minimum evidence; otherwise narrow/park"
+    ]
+  ]
+}
