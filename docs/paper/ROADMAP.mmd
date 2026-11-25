@@ -1,0 +1,27 @@
+flowchart TD
+ V["Vision: generation changes independently validated material choices"] --> P["Pain: target control, surrogate score and physical improvement can disagree"]
+ P --> S1["S1 COMPLETE: scope, evidence matrix, first discriminating design and stop rules"]
+ S1 --> D1{"Decision: thresholds, owner and bounded R1 fit budget"}
+ D1 --> S2["S2 NOT RUN: qualify ranking and absolute extrapolation separately"]
+ S2 --> A["Known-label test: same 100 nomination slots; RF, ridge, MLP versus nearest neighbor"]
+ A --> G{"Is nomination useful, and does changing evaluator add value?"}
+ G -->|No useful ranking| K["PARK or separately scope unbiased physical labels; no larger RF crossing search"]
+ G -->|Useful simple baseline| S3["S3 PLANNED: fair continuous, train-only binary and unconditional comparison"]
+ G -->|Independent incremental gain| S3
+ S3 --> U["Seed-paired distinct valid novel yield under equal support and raw budget"]
+ U --> D2{"Decision: informative nominations and qualified physical assay?"}
+ D2 --> S4["S4 HOLD: build, parameter coverage and common-protocol replicated MD"]
+ S4 --> F["Explain which gains survive, disappear or reverse; keep failures and missingness"]
+ F --> C["Minimum paper: evaluator boundary, useful control, physical decision and failure explanation"]
+ C --> D3{"S5 OPTIONAL: does one specific mechanism justify expansion?"}
+ D3 --> DP["DP or formulation rank reversal"]
+ D3 --> FB["Independent feedback decision gain"]
+ D3 -->|No| STOP["Stop scope expansion; audit-only evidence cannot support discovery claims"]
+ classDef done fill:#d8f3dc,stroke:#237441,color:#102a18
+ classDef decision fill:#fef3c7,stroke:#a16207,color:#3d2b00
+ classDef todo fill:#f3f4f6,stroke:#6b7280,color:#20242a
+ classDef hold fill:#fee2e2,stroke:#b91c1c,color:#421414
+ class S1 done
+ class D1,G,D2,D3 decision
+ class S2,A,S3,U,F,C,DP,FB,V,P,STOP todo
+ class S4,K hold

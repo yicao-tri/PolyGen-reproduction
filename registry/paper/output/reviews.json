@@ -1,0 +1,28 @@
+{
+  "columns": [
+    "review_id",
+    "stage_id",
+    "reviewer",
+    "reviewer_kind",
+    "status",
+    "scope"
+  ],
+  "rows": [
+    [
+      "S1-agent-artifacts",
+      "S1",
+      "Codex artifact/hash verification",
+      "agent",
+      "pass",
+      "Four documents and input/package hashes; not scientific sign-off"
+    ],
+    [
+      "S1-human-science",
+      "S1",
+      "Scientific reviewer, to be assigned/accepted",
+      "human",
+      "pending",
+      "Thresholds, retrospective inference, staffing and proposed 54-fit resource envelope"
+    ]
+  ]
+}

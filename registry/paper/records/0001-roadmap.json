@@ -1,0 +1,197 @@
+{
+  "record_id": "0001-roadmap",
+  "recorded_at": "2026-11-25T00:49:22.161701+00:00",
+  "source_files": [
+    {
+      "source_id": "design-audit",
+      "path": "docs/paper/STAGE1_VERIFICATION.json",
+      "sha256": "e787c966a67a6d46a9e87544c75a74336045fb94875ce7ba50f20b6e2ded543a",
+      "size_bytes": 3450
+    },
+    {
+      "source_id": "pitch-source",
+      "path": "docs/paper/DISCUSSION_SOURCE_ZH.md",
+      "sha256": "56614c5d15e9fc34ed89175c2396d2c8ed8bcee53b28d781cbc84a210a57b2f1",
+      "size_bytes": 11288
+    },
+    {
+      "source_id": "legacy-c1-effects",
+      "path": "evidence/gap-analysis-20261016/evidence/data/c1_five_seed_effect_summary.csv",
+      "sha256": "68cf9038e5d1d16cf48b715f6b106f926c85214035ff534a072223cecd67ef59",
+      "size_bytes": 1005
+    }
+  ],
+  "stages": [
+    {
+      "stage_id": "S1",
+      "ordinal": 1,
+      "title": "Scope and design delivery",
+      "acceptance": "Four design documents plus checksum/source audit; no execution or human acceptance implied"
+    },
+    {
+      "stage_id": "S2",
+      "ordinal": 2,
+      "title": "Evaluator qualification",
+      "acceptance": "Useful known-label nomination and independently assessed evaluator-change benefit"
+    },
+    {
+      "stage_id": "S3",
+      "ordinal": 3,
+      "title": "Fair generator comparison",
+      "acceptance": "Paired seeds, nondegenerate binary, equal support/raw budgets and complete failure denominators"
+    },
+    {
+      "stage_id": "S4",
+      "ordinal": 4,
+      "title": "Independent physical decision",
+      "acceptance": "Common-protocol replicated transport, parameter/control/convergence gates and uncertainty"
+    },
+    {
+      "stage_id": "S5",
+      "ordinal": 5,
+      "title": "One justified extension",
+      "acceptance": "DP/formulation mechanism OR sealed independent feedback; otherwise stop expansion"
+    }
+  ],
+  "stage_events": [
+    {
+      "event_id": "initial-S1",
+      "sequence": 1,
+      "stage_id": "S1",
+      "status": "complete",
+      "acceptance_scope": "design",
+      "source_id": "design-audit",
+      "note": "Verified design artifacts only; human review pending"
+    },
+    {
+      "event_id": "initial-S2",
+      "sequence": 2,
+      "stage_id": "S2",
+      "status": "blocked",
+      "acceptance_scope": "none",
+      "source_id": "design-audit",
+      "note": "Not executed under new design; no result or resource approval implied"
+    },
+    {
+      "event_id": "initial-S3",
+      "sequence": 3,
+      "stage_id": "S3",
+      "status": "planned",
+      "acceptance_scope": "none",
+      "source_id": "design-audit",
+      "note": "Not executed under new design; no result or resource approval implied"
+    },
+    {
+      "event_id": "initial-S4",
+      "sequence": 4,
+      "stage_id": "S4",
+      "status": "blocked",
+      "acceptance_scope": "none",
+      "source_id": "design-audit",
+      "note": "Not executed under new design; no result or resource approval implied"
+    },
+    {
+      "event_id": "initial-S5",
+      "sequence": 5,
+      "stage_id": "S5",
+      "status": "optional",
+      "acceptance_scope": "none",
+      "source_id": "design-audit",
+      "note": "Not executed under new design; no result or resource approval implied"
+    }
+  ],
+  "reviews": [
+    {
+      "review_id": "S1-agent-artifacts",
+      "stage_id": "S1",
+      "reviewer": "Codex artifact/hash verification",
+      "reviewer_kind": "agent",
+      "status": "pass",
+      "source_id": "design-audit",
+      "scope": "Four documents and input/package hashes; not scientific sign-off"
+    },
+    {
+      "review_id": "S1-human-science",
+      "stage_id": "S1",
+      "reviewer": "Scientific reviewer, to be assigned/accepted",
+      "reviewer_kind": "human",
+      "status": "pending",
+      "source_id": "design-audit",
+      "scope": "Thresholds, retrospective inference, staffing and proposed 54-fit resource envelope"
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "D1",
+      "stage_id": "S2",
+      "question": "Accept or revise useful-ranking and evaluator-change thresholds?",
+      "proposed_owner": "Hisa/project scientific reviewer (proposed)",
+      "status": "proposed",
+      "recommendation": "Review 0.80 P@100 and +0.10 incremental P@100; not approved",
+      "source_id": "design-audit"
+    },
+    {
+      "decision_id": "D2",
+      "stage_id": "S2",
+      "question": "Who accepts analyst/reviewer scope and the bounded first fit budget?",
+      "proposed_owner": "Yi/Hisa scope decision; analyst unassigned",
+      "status": "proposed",
+      "recommendation": "At most 54 predictor fits proposed; no generator or MD authorized",
+      "source_id": "design-audit"
+    },
+    {
+      "decision_id": "D3",
+      "stage_id": "S4",
+      "question": "Which independent physical assay is feasible?",
+      "proposed_owner": "Assigned parameterization/simulation owner (not accepted)",
+      "status": "proposed",
+      "recommendation": "PCFF+ coverage/run-0, common protocol and convergence before MD",
+      "source_id": "design-audit"
+    },
+    {
+      "decision_id": "D4",
+      "stage_id": "S5",
+      "question": "Does a later mechanism justify DP/formulation or feedback expansion?",
+      "proposed_owner": "Hisa and consenting collaborator (proposed)",
+      "status": "proposed",
+      "recommendation": "Choose one extension only after minimum evidence; otherwise narrow/park",
+      "source_id": "design-audit"
+    }
+  ],
+  "result_sets": [
+    {
+      "result_id": "historical-c1-effects",
+      "stage_id": "S3",
+      "scope": "historical_context",
+      "state": "complete",
+      "evidence_tier": "observed_prediction",
+      "source_id": "legacy-c1-effects",
+      "independent_unit": "paired training seed",
+      "conditions": {
+        "benchmark": "historical C1",
+        "seed_pairs": 5,
+        "endpoint": "registered verifier-defined strict-hit"
+      },
+      "interpretation_boundary": "Surrogate-defined historical contrast, not new-study completion or physical superiority",
+      "review_state": "agent_checked"
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "historical-c1-hit-binary",
+      "result_id": "historical-c1-effects",
+      "metric": "strict_hit_rate_binary",
+      "unit": "fraction",
+      "value": 0.15866666666666668,
+      "independent_n": 5
+    },
+    {
+      "observation_id": "historical-c1-hit-continuous",
+      "result_id": "historical-c1-effects",
+      "metric": "strict_hit_rate_continuous",
+      "unit": "fraction",
+      "value": 0.178,
+      "independent_n": 5
+    }
+  ]
+}

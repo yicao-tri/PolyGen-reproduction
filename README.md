@@ -1,3 +1,5 @@
+> Current paper positioning, five-stage research roadmap and source-verified stage-1 design status: [docs/paper/ROADMAP.md](docs/paper/ROADMAP.md). Append new results through [the paper SQL update protocol](registry/paper/README.md). Scientific execution remains separate from design completion.
+
 > Current handoff: [HANDOFF.md](HANDOFF.md) and [Hisa roadmap](docs/handoff/ROADMAP.md). New compute is parked; physical evidence remains incomplete. Historical milestone text below retains its original context.
 
 # PolyGen actual-data reproduction

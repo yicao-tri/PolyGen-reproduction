@@ -1,0 +1,43 @@
+{
+  "columns": [
+    "result_id",
+    "stage_id",
+    "scope",
+    "state",
+    "evidence_tier",
+    "independent_unit",
+    "metric",
+    "unit",
+    "value",
+    "missing_reason",
+    "independent_n"
+  ],
+  "rows": [
+    [
+      "historical-c1-effects",
+      "S3",
+      "historical_context",
+      "complete",
+      "observed_prediction",
+      "paired training seed",
+      "strict_hit_rate_binary",
+      "fraction",
+      0.15866666666666668,
+      null,
+      5
+    ],
+    [
+      "historical-c1-effects",
+      "S3",
+      "historical_context",
+      "complete",
+      "observed_prediction",
+      "paired training seed",
+      "strict_hit_rate_continuous",
+      "fraction",
+      0.178,
+      null,
+      5
+    ]
+  ]
+}
