@@ -95,7 +95,7 @@ def build(root=ROOT, reg=REG, extra=None, publish=True):
             if status=='complete' and sid=='S1' and scope!='design':
                 raise ValueError('S1 completion is design-only')
             if status=='complete' and sid!='S1':
-                tier=" AND evidence_tier='observed_physical'" if sid=='S4' else ''
+                tier=" AND evidence_tier='observed_physical'" if sid=='S4' else " AND evidence_tier IN ('observed_prediction','observed_physical')"
                 n=cx.execute("SELECT count(*) FROM result_sets WHERE stage_id=? AND scope='new_study' AND state='complete'"+tier,(sid,)).fetchone()[0]
                 if not n or scope!='scientific':raise ValueError('Scientific stage completion requires completed new-study evidence: '+sid)
         queries={
