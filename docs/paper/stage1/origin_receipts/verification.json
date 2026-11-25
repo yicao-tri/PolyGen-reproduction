@@ -1,0 +1,19 @@
+{
+  "as_of": "2026-11-24T16:23:25.106179-08:00",
+  "checks": {
+    "four_required_deliverables": true,
+    "canonical_worktree_clean": true,
+    "main_matches_current_state_route": true,
+    "source_hashes_recorded": true,
+    "sql_snapshot_matches_prior_evidence_index": true,
+    "v1_completion_preserved": true
+  },
+  "main_head": "de9f877e4214e4abb51640793327b2f6d2396bd4",
+  "source_count": 11,
+  "scientific_computation_performed": false,
+  "new_remote_mutation": false,
+  "new_scientific_results": false,
+  "retrospective_design_not_preregistered": true,
+  "v1_status_sha256": "a9a1c02c53f285fdffde4fe503f647664606ecf505910633a8f946a32e458c22",
+  "v2_plan_sha256": "8593d77a1d8a54d56c0dedbe24fda32612e1342a08ba3ae431907dd524a214ce"
+}

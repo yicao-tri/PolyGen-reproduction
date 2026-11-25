@@ -1,0 +1,58 @@
+{
+  "record_id": "0002-stage1-design",
+  "recorded_at": "2026-11-25T00:55:05.909921+00:00",
+  "reviews": [
+    {
+      "review_id": "S1-packaging-agent",
+      "reviewer": "Codex source-copy/hash validation",
+      "reviewer_kind": "agent",
+      "scope": "Original four design files and package source hashes only",
+      "source_id": "stage1-package-verification",
+      "stage_id": "S1",
+      "status": "pass"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "docs/paper/stage1/ARTICLE_GOAL.md",
+      "sha256": "69e5ecbe7ba510a148fcd60d000887e6622f10570a62d39d0dfffe80f16248dc",
+      "size_bytes": 3948,
+      "source_id": "stage1-article-goal"
+    },
+    {
+      "path": "docs/paper/stage1/EVIDENCE_CLAIM_MATRIX.md",
+      "sha256": "d7186d5272079f9078112114bda50f8878ea877d92a4bcb5acd96e9cfb00d8fd",
+      "size_bytes": 7013,
+      "source_id": "stage1-evidence-claim-matrix"
+    },
+    {
+      "path": "docs/paper/stage1/FIRST_ROUND_DESIGN.md",
+      "sha256": "528aa0086a1481bcffb5e21ee78d4de02acee1e6266d3a1e8de311fefe3f9049",
+      "size_bytes": 12174,
+      "source_id": "stage1-first-round-design"
+    },
+    {
+      "path": "docs/paper/stage1/GO_NO_GO.md",
+      "sha256": "4a4c37b4bd8e832d0b6b87a82f43d952b216218e1d1b9487cae467e9f1be0a2e",
+      "size_bytes": 6239,
+      "source_id": "stage1-go-no-go"
+    },
+    {
+      "path": "docs/paper/stage1/PACKAGE_VERIFICATION.json",
+      "sha256": "f7cb3e08acfef5d278a84362780dca0ea8fe80faa45cdfb18f388ed64c6eb118",
+      "size_bytes": 928,
+      "source_id": "stage1-package-verification"
+    }
+  ],
+  "stage_events": [
+    {
+      "acceptance_scope": "design",
+      "event_id": "S1-packaged-original-design",
+      "note": "Original four design documents published byte-for-byte in stacked evidence PR; no new fits or human approval",
+      "sequence": 6,
+      "source_id": "stage1-package-verification",
+      "stage_id": "S1",
+      "status": "complete"
+    }
+  ]
+}

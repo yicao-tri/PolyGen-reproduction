@@ -1,24 +1,28 @@
 {
   "counts": {
-    "asset_registry": 3,
+    "asset_registry": 8,
     "data_dictionary": 74,
     "decisions": 4,
-    "ingest_runs": 1,
+    "ingest_runs": 2,
     "observations": 2,
     "query_catalog": 4,
     "result_sets": 1,
-    "reviews": 2,
+    "reviews": 3,
     "schema_meta": 3,
-    "source_files": 3,
-    "stage_events": 5,
+    "source_files": 8,
+    "stage_events": 6,
     "stages": 5
   },
-  "database_sha256": "c32d9f57cc8a536de7da66c6246e9b181844148ccadd3055fd298a81d7caf533",
+  "database_sha256": "7f3fc2443e7f75310844aa4b864069aef616a328acf92da8f2e2bf95d649a251",
   "foreign_keys": "ok",
   "inputs": [
     {
       "name": "0001-roadmap.json",
       "sha256": "8032513efc7343af0ef481caecdaf30d0e69cfcb978227aedde79f6418ef6a75"
+    },
+    {
+      "name": "0002-stage1-design.json",
+      "sha256": "c3ca5c829a0fee6c0194a2df704d2a1414b083978044bbffdc1bc18e0ecba56c"
     }
   ],
   "role": "coordination_and_results_index_not_scientific_acceptance",

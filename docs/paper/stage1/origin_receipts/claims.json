@@ -1,0 +1,90 @@
+[
+  {
+    "id": "C1",
+    "status": "Supported, conditional",
+    "claim": "Continuous improves registered verifier-defined C1 hit yield, with a validity/novelty cost",
+    "evidence": "Five paired training seeds: hit 0.1587\u21920.1780; validity 0.5220\u21920.4547; novelty 0.5033\u21920.4313. Seed\u2014not candidate row\u2014is the inferential unit.",
+    "boundary": "Does not identify independent conductivity gain; historical error/denominator conventions need reconciliation.",
+    "source_path": "evidence/gap-analysis-20261016/evidence/data/c1_five_seed_effect_summary.csv"
+  },
+  {
+    "id": "C2",
+    "status": "Supported diagnostic",
+    "claim": "Blind RF has poor known-tail behavior",
+    "evidence": "1,205 known tail rows; bin maxima below training maximum, Spearman approximately 0.05\u20130.17, nominal 90% tree-SD coverage approximately 0\u20130.25%.",
+    "boundary": "Does not establish that every rank-based use of RF fails; R1 directly tests nomination quality.",
+    "source_path": "evidence/gap-analysis-20261016/assets/tables/T3_locked_tail_verifier_bins.csv"
+  },
+  {
+    "id": "C3",
+    "status": "Contradicted inference / analytical boundary",
+    "claim": "Zero RF crossing proves generative AI cannot physically extrapolate",
+    "evidence": "Inspected code fits squared-error RF on lower-support labels, averages tree means, then requires prediction > max(train labels). That event is structurally impossible here.",
+    "boundary": "Refutes the inference, not the physical possibility or any particular material. Known method property; no novel universal AI-limit claim.",
+    "source_path": "scripts/run_extrapolation_benchmark.py"
+  },
+  {
+    "id": "C4",
+    "status": "Supported negative control; comparison non-identifying",
+    "claim": "Original binary is a competitive informative upper-tail comparator",
+    "evidence": "Historical cutoff \u22124.0 exceeds Q80 training maximum \u22124.084499; 0 positive / 4,819 negative training labels.",
+    "boundary": "Retain degenerate binary as historical negative control; a separately named train-only top-quintile binary is required for fair competitive testing.",
+    "source_path": "results/extrapolation/frozen_manifest.json"
+  },
+  {
+    "id": "C5",
+    "status": "Not identifiable from current design",
+    "claim": "Six-property zero hit proves adding conditions cannot help",
+    "evidence": "8,000 candidate rows; joint support 2,494/6,024; same type of surrogate restriction and changed data support.",
+    "boundary": "Cannot isolate conditioning dimension, support, representation or physical capability.",
+    "source_path": "results/multi-property/extrapolation/REPORT.md"
+  },
+  {
+    "id": "C6",
+    "status": "Unmeasured",
+    "claim": "Continuous nominees have greater independent conductivity or more physical frontier crossings",
+    "evidence": "No extrapolation MD labels; planned candidate rows are not measurements.",
+    "boundary": "Neither success nor physical failure established. Comparison needs common protocol and comparable concurrent boundary reference.",
+    "source_path": "results/extrapolation/manager_acceptance_summary.json"
+  },
+  {
+    "id": "C7",
+    "status": "Engineering HOLD, not a material failure",
+    "claim": "Candidate physical assay is ready",
+    "evidence": "PCFF+ candidate bundles absent; PFP evidence-chain 39/41 checks and non-converged smoke do not close the gate.",
+    "boundary": "Missing/unconverged outcomes must not become low conductivity.",
+    "source_path": "evidence/gap-analysis-20261016/FINAL_READINESS_AUDIT.md"
+  },
+  {
+    "id": "C8",
+    "status": "Engineering only / fair comparison untested",
+    "claim": "Fragment method is independently superior to PolyGen",
+    "evidence": "MolMiner extended50 has 125 valid / 150 requests, 25 strict hits, five training seeds; support/checkpoint/budget differences remain.",
+    "boundary": "Not a matched-support confirmatory leaderboard; Wee conductivity arm not tested here.",
+    "source_path": "evidence/gap-analysis-20261016/STRICT_MOLMINER_SMOKE.md"
+  },
+  {
+    "id": "C9",
+    "status": "Not identifiable from current design",
+    "claim": "Current data identify DP-driven or cross-chemistry system generalization",
+    "evidence": "Existing PolyGen PCL prototype has 711 observations, one chemistry and one MW; group-CV RMSE 0.962 versus 1.261 temperature-agnostic null.",
+    "boundary": "Can study within-PCL salt/loading/temperature diagnostic; cannot infer an effect of chemistry/DP that never varies. No MIT-repository work in this scope.",
+    "source_path": "EXPERIMENT_B_REPORT.md"
+  },
+  {
+    "id": "C10",
+    "status": "Untested / excluded from minimum scope",
+    "claim": "Exact novelty establishes unseen-family chemical extrapolation",
+    "evidence": "Structure disjointness is available; scaffold/family-disjoint matched checkpoints and controlled family evaluation are not complete.",
+    "boundary": "Exact novel structures can be close analogues. Do not rename novelty a family-OOD result.",
+    "source_path": "evidence/gap-analysis-20261016/TODO_AND_ACCEPTANCE.md"
+  },
+  {
+    "id": "C11",
+    "status": "Unmeasured",
+    "claim": "Independent feedback or an agent improves discovery decisions",
+    "evidence": "No sealed feedback-policy comparison or agent-planning experiment; planning/decision panels include synthetic placeholders.",
+    "boundary": "Agentic relevance is motivation; no tested agent capability. Feedback versus DP extension remains a later one-of-two choice.",
+    "source_path": "evidence/gap-analysis-20261016/CLAIM_MAP.csv"
+  }
+]

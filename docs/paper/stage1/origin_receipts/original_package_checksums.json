@@ -1,0 +1,13 @@
+{
+  "FIRST_ROUND_DESIGN.md": "528aa0086a1481bcffb5e21ee78d4de02acee1e6266d3a1e8de311fefe3f9049",
+  "EVIDENCE_CLAIM_MATRIX.md": "d7186d5272079f9078112114bda50f8878ea877d92a4bcb5acd96e9cfb00d8fd",
+  "README.md": "79ad83d7d86eaf1d90c595d2cfa6a2443c1ac7b01c8a695887b5282bd4b14932",
+  "ARTICLE_GOAL.md": "69e5ecbe7ba510a148fcd60d000887e6622f10570a62d39d0dfffe80f16248dc",
+  "GO_NO_GO.md": "4a4c37b4bd8e832d0b6b87a82f43d952b216218e1d1b9487cae467e9f1be0a2e",
+  "build_receipt.py": "426472d502ff7d63e3c04abc100242d88a5d9aa822425b5390b3298812dadd14",
+  "status.json": "252eecd7495590e8261b46880927fcd54e4099e43bbc251b4a108b2e2e204e35",
+  "evidence/sql_lookup.json": "66d3a97c99e8238d4a3c573793ca50992d2b0b97273cd7dc7ac5ae63a3a0f2dc",
+  "evidence/source_manifest.json": "2c32954fa03863360c828e2c9bca8558fa00034ce94748e57257a932473d372d",
+  "evidence/verification.json": "aa3e748dad1ac4a78ca40ec17a1c0df93523fc13c56e3b4c962a340386cce560",
+  "evidence/claims.json": "ce64bce1882690b5ffef4cbd02273cef460780ed408d0185615c3dac8e636a69"
+}
