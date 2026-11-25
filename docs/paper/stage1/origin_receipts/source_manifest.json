@@ -1,0 +1,46 @@
+[
+  {
+    "path": "/Users/yicao/Documents/ARC/internship-handoff-20261121/projects/polygenius-optional/review-worktree/EXPERIMENT_B_REPORT.md",
+    "sha256": "776411f9f38d27df9519f89266bde1adf26689714ae0508f44cecde30acb4af4"
+  },
+  {
+    "path": "/Users/yicao/Documents/ARC/internship-handoff-20261121/projects/polygenius-optional/review-worktree/evidence/gap-analysis-20261016/CLAIM_MAP.csv",
+    "sha256": "c51931d8816becdd6d68c3e7c34a744b1665e355bed393df0a4c7258341c181f"
+  },
+  {
+    "path": "/Users/yicao/Documents/ARC/internship-handoff-20261121/projects/polygenius-optional/review-worktree/evidence/gap-analysis-20261016/FINAL_READINESS_AUDIT.md",
+    "sha256": "fcdaa281a99d691c35dc94b1259ca842f5d55f77f75e8390c9874f0216d6761c"
+  },
+  {
+    "path": "/Users/yicao/Documents/ARC/internship-handoff-20261121/projects/polygenius-optional/review-worktree/evidence/gap-analysis-20261016/STRICT_MOLMINER_SMOKE.md",
+    "sha256": "85b255d79840b342a432ba1016e226aaa1003725bcf945910e0312b283fdebe4"
+  },
+  {
+    "path": "/Users/yicao/Documents/ARC/internship-handoff-20261121/projects/polygenius-optional/review-worktree/evidence/gap-analysis-20261016/TODO_AND_ACCEPTANCE.md",
+    "sha256": "128fcca2402dc9e3a30e5fdfc2f11d6218748acb51f3babe47a9d386ff5433be"
+  },
+  {
+    "path": "/Users/yicao/Documents/ARC/internship-handoff-20261121/projects/polygenius-optional/review-worktree/evidence/gap-analysis-20261016/assets/tables/T3_locked_tail_verifier_bins.csv",
+    "sha256": "32927ea14f2dd258004a078a5c14601a0102a0963dcaac3fd4b1fedf1a0ef523"
+  },
+  {
+    "path": "/Users/yicao/Documents/ARC/internship-handoff-20261121/projects/polygenius-optional/review-worktree/evidence/gap-analysis-20261016/evidence/data/c1_five_seed_effect_summary.csv",
+    "sha256": "68cf9038e5d1d16cf48b715f6b106f926c85214035ff534a072223cecd67ef59"
+  },
+  {
+    "path": "/Users/yicao/Documents/ARC/internship-handoff-20261121/projects/polygenius-optional/review-worktree/results/extrapolation/frozen_manifest.json",
+    "sha256": "a611d167354a8b7b29074e6f022eaa82641b63ddeb5fdcef4ae6fa329252bcc7"
+  },
+  {
+    "path": "/Users/yicao/Documents/ARC/internship-handoff-20261121/projects/polygenius-optional/review-worktree/results/extrapolation/manager_acceptance_summary.json",
+    "sha256": "4c4bf31de1bd262c14b87d3d29346209f17b6a7faccf141d8d2a134986bf0590"
+  },
+  {
+    "path": "/Users/yicao/Documents/ARC/internship-handoff-20261121/projects/polygenius-optional/review-worktree/results/multi-property/extrapolation/REPORT.md",
+    "sha256": "41e998020dfd428a9b946887343303c920dad200059cbdb82bad5210516169fe"
+  },
+  {
+    "path": "/Users/yicao/Documents/ARC/internship-handoff-20261121/projects/polygenius-optional/review-worktree/scripts/run_extrapolation_benchmark.py",
+    "sha256": "cde68cbd4afc4bcfd6e9c5819dc5670a666251ac0f1da766fc38ff5427efbc12"
+  }
+]

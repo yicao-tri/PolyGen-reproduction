@@ -1,0 +1,31 @@
+{
+  "as_of": "2026-11-25T00:55:05.908767+00:00",
+  "source_session": "session-design-20261124",
+  "byte_identical": {
+    "ARTICLE_GOAL.md": true,
+    "EVIDENCE_CLAIM_MATRIX.md": true,
+    "FIRST_ROUND_DESIGN.md": true,
+    "GO_NO_GO.md": true
+  },
+  "completion_scope": "S1 design documentation only",
+  "scientific_execution": false,
+  "human_signoff": "pending",
+  "original_source_hashes": [
+    {
+      "path": "ARTICLE_GOAL.md",
+      "sha256": "69e5ecbe7ba510a148fcd60d000887e6622f10570a62d39d0dfffe80f16248dc"
+    },
+    {
+      "path": "EVIDENCE_CLAIM_MATRIX.md",
+      "sha256": "d7186d5272079f9078112114bda50f8878ea877d92a4bcb5acd96e9cfb00d8fd"
+    },
+    {
+      "path": "FIRST_ROUND_DESIGN.md",
+      "sha256": "528aa0086a1481bcffb5e21ee78d4de02acee1e6266d3a1e8de311fefe3f9049"
+    },
+    {
+      "path": "GO_NO_GO.md",
+      "sha256": "4a4c37b4bd8e832d0b6b87a82f43d952b216218e1d1b9487cae467e9f1be0a2e"
+    }
+  ]
+}

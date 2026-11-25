@@ -23,6 +23,14 @@
       "human",
       "pending",
       "Thresholds, retrospective inference, staffing and proposed 54-fit resource envelope"
+    ],
+    [
+      "S1-packaging-agent",
+      "S1",
+      "Codex source-copy/hash validation",
+      "agent",
+      "pass",
+      "Original four design files and package source hashes only"
     ]
   ]
 }
